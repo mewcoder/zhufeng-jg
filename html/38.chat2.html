@@ -5,31 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
     <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
 </head>
 <body>
 <div class="nav">
     <div class="logo">
         
-            珠峰架构师成长计划
-        
-    </div>
-<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li class="active"><a href="../html/38.chat2.html">38.chat2</a></li><li class="active"><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li></ul></div>
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="0.Async.html">0.Async</a></li><li><a href="0.module.html">0.module</a></li><li><a href="1.ES2015.html">1.ES2015</a></li><li><a href="2.Promise.html">2.Promise</a></li><li><a href="3.Node.html">3.Node</a></li><li><a href="4.NodeInstall.html">4.NodeInstall</a></li><li><a href="5.REPL.html">5.REPL</a></li><li><a href="6.NodeCore.html">6.NodeCore</a></li><li><a href="7.module&amp;NPM.html">7.module&NPM</a></li><li><a href="8.Encoding.html">8.Encoding</a></li><li><a href="9.Buffer.html">9.Buffer</a></li><li><a href="10.fs.html">10.fs</a></li><li><a href="11.Stream-1.html">11.Stream-1</a></li><li><a href="11.Stream-2.html">11.Stream-2</a></li><li><a href="11.Stream-3.html">11.Stream-3</a></li><li><a href="11.Stream-4.html">11.Stream-4</a></li><li><a href="12-Network-2.html">12-Network-2</a></li><li><a href="12.NetWork-3.html">12.NetWork-3</a></li><li><a href="12.Network-1.html">12.Network-1</a></li><li><a href="13.tcp.html">13.tcp</a></li><li><a href="14.http-1.html">14.http-1</a></li><li><a href="14.http-2.html">14.http-2</a></li><li><a href="15.compress.html">15.compress</a></li><li><a href="16.crypto.html">16.crypto</a></li><li><a href="17.process.html">17.process</a></li><li><a href="18.yargs.html">18.yargs</a></li><li><a href="19.cache.html">19.cache</a></li><li><a href="20.action.html">20.action</a></li><li><a href="21.https.html">21.https</a></li><li><a href="22.cookie.html">22.cookie</a></li><li><a href="23.session.html">23.session</a></li><li><a href="24.express-1.html">24.express-1</a></li><li><a href="24.express-2.html">24.express-2</a></li><li><a href="24.express-3.html">24.express-3</a></li><li><a href="24.express-4.html">24.express-4</a></li><li><a href="25.koa-1.html">25.koa-1</a></li><li><a href="26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="28.redux.html">28.redux</a></li><li><a href="28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="29.mongodb-1.html">29.mongodb-1</a></li><li><a href="29.mongodb-2.html">29.mongodb-2</a></li><li><a href="29.mongodb-3.html">29.mongodb-3</a></li><li><a href="29.mongodb-4.html">29.mongodb-4</a></li><li><a href="29.mongodb-5.html">29.mongodb-5</a></li><li><a href="29.mongodb-6.html">29.mongodb-6</a></li><li><a href="30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="30.cms-7-api.html">30.cms-7-api</a></li><li><a href="30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="30.cms-14-front.html">30.cms-14-front</a></li><li><a href="30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="31.dva.html">31.dva</a></li><li><a href="31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="33.redis.html">33.redis</a></li><li><a href="34.unittest.html">34.unittest</a></li><li><a href="35.jwt.html">35.jwt</a></li><li><a href="36.websocket-1.html">36.websocket-1</a></li><li><a href="36.websocket-2.html">36.websocket-2</a></li><li><a href="38.chat-api-1.html">38.chat-api-1</a></li><li><a href="38.chat-api-2.html">38.chat-api-2</a></li><li><a href="38.chat-3.html">38.chat-3</a></li><li><a href="38.chat-api-3.html">38.chat-api-3</a></li><li><a href="38.chat.html">38.chat</a></li><li class="active"><a href="38.chat2.html">38.chat2</a></li><li class="active"><a href="38.chat2.html">38.chat2</a></li><li><a href="39.crawl-0.html">39.crawl-0</a></li><li><a href="39.crawl-1.html">39.crawl-1</a></li><li><a href="39.crawl-2.html">39.crawl-2</a></li><li><a href="40.deploy.html">40.deploy</a></li><li><a href="41.safe.html">41.safe</a></li><li><a href="42.test.html">42.test</a></li><li><a href="43.nginx.html">43.nginx</a></li><li><a href="44.enzyme.html">44.enzyme</a></li><li><a href="45.docker.html">45.docker</a></li><li><a href="46.elastic.html">46.elastic</a></li><li><a href="47.oauth.html">47.oauth</a></li><li><a href="48.wxpay.html">48.wxpay</a></li><li><a href="index.html">index</a></li><li><a href="52.UML.html">52.UML</a></li><li><a href="53.design.html">53.design</a></li><li><a href="index.html">index</a></li><li><a href="54.linux.html">54.linux</a></li><li><a href="57.ts.html">57.ts</a></li><li><a href="56.react-ssr.html">56.react-ssr</a></li><li><a href="58.ts_react.html">58.ts_react</a></li><li><a href="59.ketang.html">59.ketang</a></li><li><a href="59.ketang2.html">59.ketang2</a></li><li><a href="61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="61.3.devops-user.html">61.3.devops-user</a></li><li><a href="61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="61.6.devops-install.html">61.6.devops-install</a></li><li><a href="61.7.devops-system.html">61.7.devops-system</a></li><li><a href="61.8.devops-service.html">61.8.devops-service</a></li><li><a href="61.9.devops-network.html">61.9.devops-network</a></li><li><a href="61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="61.14.devops-php.html">61.14.devops-php</a></li><li><a href="61.15.devops-java.html">61.15.devops-java</a></li><li><a href="61.16.devops-node.html">61.16.devops-node</a></li><li><a href="61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="62.1.react-basic.html">62.1.react-basic</a></li><li><a href="62.2.react-state.html">62.2.react-state</a></li><li><a href="62.3.react-high.html">62.3.react-high</a></li><li><a href="62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="62.8.react-source.html">62.8.react-source</a></li><li><a href="63.1.redux.html">63.1.redux</a></li><li><a href="63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="64.1.router.html">64.1.router</a></li><li><a href="64.2.router-connected.html">64.2.router-connected</a></li><li><a href="65.1.typescript.html">65.1.typescript</a></li><li><a href="65.2.typescript.html">65.2.typescript</a></li><li><a href="65.3.typescript.html">65.3.typescript</a></li><li><a href="65.4.antd.html">65.4.antd</a></li><li><a href="65.4.definition.html">65.4.definition</a></li><li><a href="66-1.vue-base.html">66-1.vue-base</a></li><li><a href="66-2.vue-component.html">66-2.vue-component</a></li><li><a href="66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="66-4.$message组件.html">66-4.$message组件</a></li><li><a href="66-5.Form组件.html">66-5.Form组件</a></li><li><a href="66-6.tree.html">66-6.tree</a></li><li><a href="66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="66-13.pwa.html">66-13.pwa</a></li><li><a href="66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="66-15.权限校验.html">66-15.权限校验</a></li><li><a href="67-1-network.html">67-1-network</a></li><li><a href="68-2-wireshark.html">68-2-wireshark</a></li><li><a href="7.npm2.html">7.npm2</a></li><li><a href="69-hooks.html">69-hooks</a></li><li><a href="70-deploy.html">70-deploy</a></li><li><a href="71-hmr.html">71-hmr</a></li><li><a href="72.deploy.html">72.deploy</a></li><li><a href="73.import.html">73.import</a></li><li><a href="74.mobile.html">74.mobile</a></li><li><a href="75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="76.react_optimize.html">76.react_optimize</a></li><li><a href="77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="79.grammar.html">79.grammar</a></li><li><a href="80.tree.html">80.tree</a></li><li><a href="81.axios.html">81.axios</a></li><li><a href="82.1.react.html">82.1.react</a></li><li><a href="82.2.react-high.html">82.2.react-high</a></li><li><a href="82.3.react-router.html">82.3.react-router</a></li><li><a href="82.4.redux.html">82.4.redux</a></li><li><a href="82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="82.6.connected.html">82.6.connected</a></li><li><a href="82.7.saga.html">82.7.saga</a></li><li><a href="82.8.dva.html">82.8.dva</a></li><li><a href="82.8.dva-source.html">82.8.dva-source</a></li><li><a href="82.9.roadhog.html">82.9.roadhog</a></li><li><a href="82.10.umi.html">82.10.umi</a></li><li><a href="82.11.antdesign.html">82.11.antdesign</a></li><li><a href="82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="83.upload.html">83.upload</a></li><li><a href="84.graphql.html">84.graphql</a></li><li><a href="85.antpro.html">85.antpro</a></li><li><a href="86.1.uml.html">86.1.uml</a></li><li><a href="86.2.design.html">86.2.design</a></li><li><a href="87.postcss.html">87.postcss</a></li><li><a href="88.react16-1.html">88.react16-1</a></li><li><a href="89.nextjs.html">89.nextjs</a></li><li><a href="90.react-test.html">90.react-test</a></li><li><a href="91.react-ts.html">91.react-ts</a></li><li><a href="92.rbac.html">92.rbac</a></li><li><a href="93.tsnode.html">93.tsnode</a></li><li><a href="94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="94.3.MODULE.html">94.3.MODULE</a></li><li><a href="94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="94.5.文件上传.html">94.5.文件上传</a></li><li><a href="94.6.https.html">94.6.https</a></li><li><a href="94.7.&#32;nginx.html">94.7. nginx</a></li><li><a href="95.1.&#32;react.html">95.1. react</a></li><li><a href="95.2.react.html">95.2.react</a></li><li><a href="96.1.react16.html">96.1.react16</a></li><li><a href="96.2.fiber.html">96.2.fiber</a></li><li><a href="96.3.fiber.html">96.3.fiber</a></li><li><a href="97.serverless.html">97.serverless</a></li><li><a href="98.websocket.html">98.websocket</a></li><li><a href="100.1.react-basic.html">100.1.react-basic</a></li><li><a href="101.1.monitor.html">101.1.monitor</a></li><li><a href="101.2.monitor.html">101.2.monitor</a></li><li><a href="102.java.html">102.java</a></li><li><a href="103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="103.16.vite.source.html">103.16.vite.source</a></li><li><a href="103.17.polyfill.html">103.17.polyfill</a></li><li><a href="104.1.binary.html">104.1.binary</a></li><li><a href="104.2.binary.html">104.2.binary</a></li><li><a href="105.skeleton.html">105.skeleton</a></li><li><a href="106.1.react.html">106.1.react</a></li><li><a href="106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="106.3.react_router.html">106.3.react_router</a></li><li><a href="106.4.redux.html">106.4.redux</a></li><li><a href="106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="106.8.dva.html">106.8.dva</a></li><li><a href="106.9.umi.html">106.9.umi</a></li><li><a href="106.10.ketang.html">106.10.ketang</a></li><li><a href="106.11.antdesign.html">106.11.antdesign</a></li><li><a href="106.12.antpro.html">106.12.antpro</a></li><li><a href="107.fiber.html">107.fiber</a></li><li><a href="108.http.html">108.http</a></li><li><a href="109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="109.3.dll.html">109.3.dll</a></li><li><a href="110.nest.js.html">110.nest.js</a></li><li><a href="111.xstate.html">111.xstate</a></li><li><a href="112.Form.html">112.Form</a></li><li><a href="113.redux-saga.html">113.redux-saga</a></li><li><a href="114.react+typescript.html">114.react+typescript</a></li><li><a href="115.immer.html">115.immer</a></li><li><a href="116.pro5.html">116.pro5</a></li><li><a href="117.css-loader.html">117.css-loader</a></li><li><a href="118.1.umi-core.html">118.1.umi-core</a></li><li><a href="119.2.module-federation.html">119.2.module-federation</a></li><li><a href="119.1.module-federation.html">119.1.module-federation</a></li><li><a href="120.create-react-app.html">120.create-react-app</a></li><li><a href="121.react-scripts.html">121.react-scripts</a></li><li><a href="122.react-optimize.html">122.react-optimize</a></li><li><a href="123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="124.next.js.html">124.next.js</a></li><li><a href="125.1.linux.html">125.1.linux</a></li><li><a href="125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="125.3.linux-user.html">125.3.linux-user</a></li><li><a href="125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="125.6.linux-install.html">125.6.linux-install</a></li><li><a href="125.7.linux-system.html">125.7.linux-system</a></li><li><a href="125.8.linux-service.html">125.8.linux-service</a></li><li><a href="125.9.linux-network.html">125.9.linux-network</a></li><li><a href="125.10.nginx.html">125.10.nginx</a></li><li><a href="125.11.docker.html">125.11.docker</a></li><li><a href="125.12.ci.html">125.12.ci</a></li><li><a href="125.13.k8s.html">125.13.k8s</a></li><li><a href="125.14.k8s.html">125.14.k8s</a></li><li><a href="125.15.k8s.html">125.15.k8s</a></li><li><a href="125.16.k8s.html">125.16.k8s</a></li><li><a href="126.11.react-1.html">126.11.react-1</a></li><li><a href="126.12.react-2.html">126.12.react-2</a></li><li><a href="126.12.react-3.html">126.12.react-3</a></li><li><a href="126.12.react-4.html">126.12.react-4</a></li><li><a href="126.12.react-5.html">126.12.react-5</a></li><li><a href="127.frontend.html">127.frontend</a></li><li><a href="128.rollup.html">128.rollup</a></li><li><a href="129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="130.health.html">130.health</a></li><li><a href="131.hooks.html">131.hooks</a></li><li><a href="132.keepalive.html">132.keepalive</a></li><li><a href="133.vue-cli.html">133.vue-cli</a></li><li><a href="134.react18.html">134.react18</a></li><li><a href="135.function.html">135.function</a></li><li><a href="136.toolkit.html">136.toolkit</a></li><li><a href="137.lerna.html">137.lerna</a></li><li><a href="138.create-vite.html">138.create-vite</a></li><li><a href="139.cli.html">139.cli</a></li><li><a href="140.antd.html">140.antd</a></li><li><a href="141.react-dnd.html">141.react-dnd</a></li><li><a href="142.1.link.html">142.1.link</a></li><li><a href="143.1.gulp.html">143.1.gulp</a></li><li><a href="143.2.stream.html">143.2.stream</a></li><li><a href="143.3.gulp.html">143.3.gulp</a></li><li><a href="144.1.closure.html">144.1.closure</a></li><li><a href="106.13.router-6.html">106.13.router-6</a></li><li><a href="145.react-router-v6.html">145.react-router-v6</a></li><li><a href="144.2.v8.html">144.2.v8</a></li><li><a href="144.3.gc.html">144.3.gc</a></li><li><a href="106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="146.browser.html">146.browser</a></li><li><a href="147.lighthouse.html">147.lighthouse</a></li><li><a href="148.1.basic.html">148.1.basic</a></li><li><a href="148.2.basic&#32;.html">148.2.basic </a></li><li><a href="148.3.basic.html">148.3.basic</a></li></ul>                        </div>
 
-
+                        
 <div class="warpper">
-
     <div class="page-toc">
-        <ul><li><a href="#t01. 生成项目">1. 生成项目</a></li><li><a href="#t12. 实现注册和登录">2. 实现注册和登录</a><ul><li><a href="#t22.1 User/_layout.js">2.1 User/_layout.js</a></li><li><a href="#t32.2 User/User.less">2.2 User/User.less</a></li><li><a href="#t42.3 User/Register.js">2.3 User/Register.js</a></li><li><a href="#t52.4  User/Register.less">2.4  User/Register.less</a></li></ul></li><li><a href="#t63. 实现手机验证码验证">3. 实现手机验证码验证</a><ul><li><a href="#t73.1 request.js">3.1 request.js</a></li><li><a href="#t83.2 User/Register.js">3.2 User/Register.js</a></li><li><a href="#t93.3 models/register.js">3.3 models/register.js</a></li><li><a href="#t103.4 services/register.js">3.4 services/register.js</a></li><li><a href="#t113.5 server/app.js">3.5 server/app.js</a></li><li><a href="#t123.6 routes/user.js">3.6 routes/user.js</a></li><li><a href="#t133.7 server/config.js">3.7 server/config.js</a></li></ul></li><li><a href="#t144.手机注册和登录">4.手机注册和登录</a><ul><li><a href="#t154.1 server/app.js">4.1 server/app.js</a></li><li><a href="#t164.2 server/config.js">4.2 server/config.js</a></li><li><a href="#t174.3 models/index.js">4.3 models/index.js</a></li><li><a href="#t184.4 routes/user.js">4.4 routes/user.js</a></li><li><a href="#t194.5 Rooms/index.jsx">4.5 Rooms/index.jsx</a></li><li><a href="#t204.6 User/Login.jsx">4.6 User/Login.jsx</a></li><li><a href="#t214.7 User/Login.less">4.7 User/Login.less</a></li><li><a href="#t224.8 User/Register.jsx">4.8 User/Register.jsx</a></li><li><a href="#t234.9 models/login.js">4.9 models/login.js</a></li><li><a href="#t244.10 models/register.js">4.10 models/register.js</a></li><li><a href="#t254.11 services/login.js">4.11 services/login.js</a></li><li><a href="#t264.12 services/register.js">4.12 services/register.js</a></li><li><a href="#t274.13 utils/request.js">4.13 utils/request.js</a></li></ul></li><li><a href="#t285. 实现房间功能">5. 实现房间功能</a><ul><li><a href="#t295.1 server/app.js">5.1 server/app.js</a></li><li><a href="#t305.2 models/index.js">5.2 models/index.js</a></li><li><a href="#t315.3 routes/room.js">5.3 routes/room.js</a></li><li><a href="#t325.4 Room/index.jsx">5.4 Room/index.jsx</a></li><li><a href="#t335.5 Room/index.less">5.5 Room/index.less</a></li><li><a href="#t345.6 models/room.js">5.6 models/room.js</a></li><li><a href="#t355.7 services/room.js">5.7 services/room.js</a></li></ul></li><li><a href="#t366. 实现聊天功能">6. 实现聊天功能</a><ul><li><a href="#t376.1 server/app.js">6.1 server/app.js</a></li><li><a href="#t386.2 models/index.js">6.2 models/index.js</a></li><li><a href="#t396.3 routes/user.js">6.3 routes/user.js</a></li><li><a href="#t406.4 Room/$id.jsx">6.4 Room/$id.jsx</a></li><li><a href="#t416.5 Room/index.jsx">6.5 Room/index.jsx</a></li><li><a href="#t426.6 models/chat.js">6.6 models/chat.js</a></li><li><a href="#t436.7 models/room.js">6.7 models/room.js</a></li><li><a href="#t446.8 models/login.js">6.8 models/login.js</a></li></ul></li><li><a href="#t457. 上传图片">7. 上传图片</a><ul><li><a href="#t467.1 server/app.js">7.1 server/app.js</a></li><li><a href="#t477.2 models/index.js">7.2 models/index.js</a></li><li><a href="#t487.3 routes/room.js">7.3 routes/room.js</a></li><li><a href="#t497.4 routes/user.js">7.4 routes/user.js</a></li><li><a href="#t507.5 Room/index.jsx">7.5 Room/index.jsx</a></li><li><a href="#t517.6 /models/chat.js">7.6 /models/chat.js</a></li><li><a href="#t527.7 models/room.js">7.7 models/room.js</a></li><li><a href="#t537.8 models/login.js">7.8 models/login.js</a></li><li><a href="#t547.9 services/login.js">7.9 services/login.js</a></li></ul></li><li><a href="#t55参考链接">参考链接</a></li></ul>
+        <ul><li><a href="38.chat2.html#t01. 生成项目">1. 生成项目</a></li><li><a href="38.chat2.html#t12. 实现注册和登录">2. 实现注册和登录</a><ul><li><a href="38.chat2.html#t22.1 User/_layout.js">2.1 User/_layout.js</a></li><li><a href="38.chat2.html#t32.2 User/User.less">2.2 User/User.less</a></li><li><a href="38.chat2.html#t42.3 User/Register.js">2.3 User/Register.js</a></li><li><a href="38.chat2.html#t52.4  User/Register.less">2.4  User/Register.less</a></li></ul></li><li><a href="38.chat2.html#t63. 实现手机验证码验证">3. 实现手机验证码验证</a><ul><li><a href="38.chat2.html#t73.1 request.js">3.1 request.js</a></li><li><a href="38.chat2.html#t83.2 User/Register.js">3.2 User/Register.js</a></li><li><a href="38.chat2.html#t93.3 models/register.js">3.3 models/register.js</a></li><li><a href="38.chat2.html#t103.4 services/register.js">3.4 services/register.js</a></li><li><a href="38.chat2.html#t113.5 server/app.js">3.5 server/app.js</a></li><li><a href="38.chat2.html#t123.6 routes/user.js">3.6 routes/user.js</a></li><li><a href="38.chat2.html#t133.7 server/config.js">3.7 server/config.js</a></li></ul></li><li><a href="38.chat2.html#t144.手机注册和登录">4.手机注册和登录</a><ul><li><a href="38.chat2.html#t154.1 server/app.js">4.1 server/app.js</a></li><li><a href="38.chat2.html#t164.2 server/config.js">4.2 server/config.js</a></li><li><a href="38.chat2.html#t174.3 models/index.js">4.3 models/index.js</a></li><li><a href="38.chat2.html#t184.4 routes/user.js">4.4 routes/user.js</a></li><li><a href="38.chat2.html#t194.5 Rooms/index.jsx">4.5 Rooms/index.jsx</a></li><li><a href="38.chat2.html#t204.6 User/Login.jsx">4.6 User/Login.jsx</a></li><li><a href="38.chat2.html#t214.7 User/Login.less">4.7 User/Login.less</a></li><li><a href="38.chat2.html#t224.8 User/Register.jsx">4.8 User/Register.jsx</a></li><li><a href="38.chat2.html#t234.9 models/login.js">4.9 models/login.js</a></li><li><a href="38.chat2.html#t244.10 models/register.js">4.10 models/register.js</a></li><li><a href="38.chat2.html#t254.11 services/login.js">4.11 services/login.js</a></li><li><a href="38.chat2.html#t264.12 services/register.js">4.12 services/register.js</a></li><li><a href="38.chat2.html#t274.13 utils/request.js">4.13 utils/request.js</a></li></ul></li><li><a href="38.chat2.html#t285. 实现房间功能">5. 实现房间功能</a><ul><li><a href="38.chat2.html#t295.1 server/app.js">5.1 server/app.js</a></li><li><a href="38.chat2.html#t305.2 models/index.js">5.2 models/index.js</a></li><li><a href="38.chat2.html#t315.3 routes/room.js">5.3 routes/room.js</a></li><li><a href="38.chat2.html#t325.4 Room/index.jsx">5.4 Room/index.jsx</a></li><li><a href="38.chat2.html#t335.5 Room/index.less">5.5 Room/index.less</a></li><li><a href="38.chat2.html#t345.6 models/room.js">5.6 models/room.js</a></li><li><a href="38.chat2.html#t355.7 services/room.js">5.7 services/room.js</a></li></ul></li><li><a href="38.chat2.html#t366. 实现聊天功能">6. 实现聊天功能</a><ul><li><a href="38.chat2.html#t376.1 server/app.js">6.1 server/app.js</a></li><li><a href="38.chat2.html#t386.2 models/index.js">6.2 models/index.js</a></li><li><a href="38.chat2.html#t396.3 routes/user.js">6.3 routes/user.js</a></li><li><a href="38.chat2.html#t406.4 Room/$id.jsx">6.4 Room/$id.jsx</a></li><li><a href="38.chat2.html#t416.5 Room/index.jsx">6.5 Room/index.jsx</a></li><li><a href="38.chat2.html#t426.6 models/chat.js">6.6 models/chat.js</a></li><li><a href="38.chat2.html#t436.7 models/room.js">6.7 models/room.js</a></li><li><a href="38.chat2.html#t446.8 models/login.js">6.8 models/login.js</a></li></ul></li><li><a href="38.chat2.html#t457. 上传图片">7. 上传图片</a><ul><li><a href="38.chat2.html#t467.1 server/app.js">7.1 server/app.js</a></li><li><a href="38.chat2.html#t477.2 models/index.js">7.2 models/index.js</a></li><li><a href="38.chat2.html#t487.3 routes/room.js">7.3 routes/room.js</a></li><li><a href="38.chat2.html#t497.4 routes/user.js">7.4 routes/user.js</a></li><li><a href="38.chat2.html#t507.5 Room/index.jsx">7.5 Room/index.jsx</a></li><li><a href="38.chat2.html#t517.6 /models/chat.js">7.6 /models/chat.js</a></li><li><a href="38.chat2.html#t527.7 models/room.js">7.7 models/room.js</a></li><li><a href="38.chat2.html#t537.8 models/login.js">7.8 models/login.js</a></li><li><a href="38.chat2.html#t547.9 services/login.js">7.9 services/login.js</a></li></ul></li><li><a href="38.chat2.html#t55参考链接">参考链接</a></li></ul>
     </div>
-    
     <div class="content markdown-body">
-        <h2 id="t01. &#x751F;&#x6210;&#x9879;&#x76EE;">1. &#x751F;&#x6210;&#x9879;&#x76EE; <a href="#t01. &#x751F;&#x6210;&#x9879;&#x76EE;"> # </a></h2>
+        <h2 id="t01. &#x751F;&#x6210;&#x9879;&#x76EE;">1. &#x751F;&#x6210;&#x9879;&#x76EE; <a href="38.chat2.html#t01. &#x751F;&#x6210;&#x9879;&#x76EE;"> # </a></h2>
 <pre><code class="lang-js">$ npm install dva-cli -g
 $ dva -v
 $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
 </code></pre>
-<h2 id="t12. &#x5B9E;&#x73B0;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55;">2. &#x5B9E;&#x73B0;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55; <a href="#t12. &#x5B9E;&#x73B0;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55;"> # </a></h2>
-<h3 id="t22.1 User/_layout.js">2.1 User/_layout.js <a href="#t22.1 User/_layout.js"> # </a></h3>
+<h2 id="t12. &#x5B9E;&#x73B0;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55;">2. &#x5B9E;&#x73B0;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55; <a href="38.chat2.html#t12. &#x5B9E;&#x73B0;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55;"> # </a></h2>
+<h3 id="t22.1 User/_layout.js">2.1 User/_layout.js <a href="38.chat2.html#t22.1 User/_layout.js"> # </a></h3>
 <p>src/pages/User/_layout.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./User.less&apos;</span>;
@@ -43,7 +52,7 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
     }
 }
 </code></pre>
-<h3 id="t32.2 User/User.less">2.2 User/User.less <a href="#t32.2 User/User.less"> # </a></h3>
+<h3 id="t32.2 User/User.less">2.2 User/User.less <a href="38.chat2.html#t32.2 User/User.less"> # </a></h3>
 <p>src/pages/User/User.less</p>
 <pre><code class="lang-less"><span class="hljs-selector-class">.container</span>{
     <span class="hljs-attribute">display</span>: flex;
@@ -52,7 +61,7 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
     <span class="hljs-attribute">align-items</span>: center;
 }
 </code></pre>
-<h3 id="t42.3 User/Register.js">2.3 User/Register.js <a href="#t42.3 User/Register.js"> # </a></h3>
+<h3 id="t42.3 User/Register.js">2.3 User/Register.js <a href="38.chat2.html#t42.3 User/Register.js"> # </a></h3>
 <p>src/pages/User/Register.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva&apos;</span>;
@@ -117,79 +126,79 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
         <span class="hljs-keyword">const</span> value = form.getFieldValue(<span class="hljs-string">&apos;password&apos;</span>);
         <span class="hljs-keyword">const</span> passwordStatus = <span class="hljs-keyword">this</span>.getPasswordStatus();
         <span class="hljs-keyword">return</span> value &amp;&amp; value.length ? (
-          &lt;div className={styles[`progress-${passwordStatus}`]}&gt;
-            &lt;Progress
-              status={passwordProgressMap[passwordStatus]}
-              className={styles.progress}
-              strokeWidth={6}
-              percent={value.length * 10 &gt; 100 ? 100 : value.length * 10}
+          <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles[</span>`<span class="hljs-attr">progress-</span>${<span class="hljs-attr">passwordStatus</span>}`]}&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Progress</span>
+              <span class="hljs-attr">status</span>=<span class="hljs-string">{passwordProgressMap[passwordStatus]}</span>
+              <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.progress}</span>
+              <span class="hljs-attr">strokeWidth</span>=<span class="hljs-string">{6}</span>
+              <span class="hljs-attr">percent</span>=<span class="hljs-string">{value.length</span> * <span class="hljs-attr">10</span> &gt;</span> 100 ? 100 : value.length * 10}
               showInfo={false}
             /&gt;
-          &lt;/div&gt;
-        ) : null;
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        ) : <span class="hljs-literal">null</span>;
       };
 
-      checkPassword = (rule, value, callback) =&gt; {
-        const { visible, confirmDirty } = this.state;
-        if (!value) {
-          this.setState({
-            help:&quot;&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;!&quot;,
-            visible: !!value,
+      checkPassword = <span class="hljs-function">(<span class="hljs-params">rule, value, callback</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> { visible, confirmDirty } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">if</span> (!value) {
+          <span class="hljs-keyword">this</span>.setState({
+            <span class="hljs-attr">help</span>:<span class="hljs-string">&quot;&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;!&quot;</span>,
+            <span class="hljs-attr">visible</span>: !!value,
           });
-          callback(&apos;error&apos;);
-        } else {
-          this.setState({
-            help: &apos;&apos;,
+          callback(<span class="hljs-string">&apos;error&apos;</span>);
+        } <span class="hljs-keyword">else</span> {
+          <span class="hljs-keyword">this</span>.setState({
+            <span class="hljs-attr">help</span>: <span class="hljs-string">&apos;&apos;</span>,
           });
-          if (!visible) {
-            this.setState({
-              visible: !!value,
+          <span class="hljs-keyword">if</span> (!visible) {
+            <span class="hljs-keyword">this</span>.setState({
+              <span class="hljs-attr">visible</span>: !!value,
             });
           }
-          if (value.length &lt; 6) {
-            callback(&apos;error&apos;);
-          } else {
-            const { form } = this.props;
-            if (value &amp;&amp; confirmDirty) {
-              form.validateFields([&apos;confirm&apos;], { force: true });
+          <span class="hljs-keyword">if</span> (value.length &lt; <span class="hljs-number">6</span>) {
+            callback(<span class="hljs-string">&apos;error&apos;</span>);
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">const</span> { form } = <span class="hljs-keyword">this</span>.props;
+            <span class="hljs-keyword">if</span> (value &amp;&amp; confirmDirty) {
+              form.validateFields([<span class="hljs-string">&apos;confirm&apos;</span>], { <span class="hljs-attr">force</span>: <span class="hljs-literal">true</span> });
             }
             callback();
           }
         }
       };
-    checkConfirm = (rule, value, callback) =&gt; {
-        const { form } = this.props;
-        if (value &amp;&amp; value !== form.getFieldValue(&apos;password&apos;)) {
-          callback(&apos;&#x4E24;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x5339;&#x914D;!&apos;);
-        } else {
+    checkConfirm = <span class="hljs-function">(<span class="hljs-params">rule, value, callback</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> { form } = <span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">if</span> (value &amp;&amp; value !== form.getFieldValue(<span class="hljs-string">&apos;password&apos;</span>)) {
+          callback(<span class="hljs-string">&apos;&#x4E24;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x5339;&#x914D;!&apos;</span>);
+        } <span class="hljs-keyword">else</span> {
           callback();
         }
     };
-    changePrefix = value =&gt; {
-        this.setState({
-          prefix: value,
+    changePrefix = <span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+        <span class="hljs-keyword">this</span>.setState({
+          <span class="hljs-attr">prefix</span>: value,
         });
     };
-    onGetCaptcha = () =&gt; {
-        let count = 59;
-        this.setState({ count });
-        this.interval = setInterval(() =&gt; {
-          count -= 1;
-          this.setState({ count });
-          if (count === 0) {
-            clearInterval(this.interval);
+    onGetCaptcha = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-keyword">let</span> count = <span class="hljs-number">59</span>;
+        <span class="hljs-keyword">this</span>.setState({ count });
+        <span class="hljs-keyword">this</span>.interval = setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+          count -= <span class="hljs-number">1</span>;
+          <span class="hljs-keyword">this</span>.setState({ count });
+          <span class="hljs-keyword">if</span> (count === <span class="hljs-number">0</span>) {
+            clearInterval(<span class="hljs-keyword">this</span>.interval);
           }
-        }, 1000);
+        }, <span class="hljs-number">1000</span>);
       };
     render() {
-        const { form, submitting } = this.props;
-        const {getFieldDecorator}=form;
-        const { count, prefix, help, visible } = this.state;
-        return (
-            &lt;div className={styles.register}&gt;
-                &lt;h3&gt;&#x7528;&#x6237;&#x6CE8;&#x518C;&lt;/h3&gt;
-                &lt;Form onSubmit={this.handleSubmit}&gt;
-                    &lt;FormItem&gt;
+        <span class="hljs-keyword">const</span> { form, submitting } = <span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">const</span> {getFieldDecorator}=form;
+        <span class="hljs-keyword">const</span> { count, prefix, help, visible } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.register}</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>&#x7528;&#x6237;&#x6CE8;&#x518C;<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{this.handleSubmit}</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
                         {getFieldDecorator(&apos;mail&apos;, {
                             rules: [
                                 {
@@ -202,19 +211,19 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
                                 },
                             ],
                         })(
-                        &lt;Input size=&quot;large&quot; placeholder=&quot;&#x90AE;&#x7BB1;&quot;/&gt;
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x90AE;&#x7BB1;&quot;</span>/&gt;</span>
                         )}
-                    &lt;/FormItem&gt;
-                    &lt;FormItem help={help}&gt;
-                        &lt;Popover
-                        content={
-                            &lt;div style={{ padding: &apos;4px 0&apos; }}&gt;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span> <span class="hljs-attr">help</span>=<span class="hljs-string">{help}</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Popover</span>
+                        <span class="hljs-attr">content</span>=<span class="hljs-string">{</span>
+                            &lt;<span class="hljs-attr">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">padding:</span> &apos;<span class="hljs-attr">4px</span> <span class="hljs-attr">0</span>&apos; }}&gt;</span>
                                 {passwordStatusMap[this.getPasswordStatus()]}
                                 {this.renderPasswordProgress()}
-                                &lt;div style={{ marginTop: 10 }}&gt;
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">marginTop:</span> <span class="hljs-attr">10</span> }}&gt;</span>
                                   &#x8BF7;&#x81F3;&#x5C11;&#x8F93;&#x5165; 6 &#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x8BF7;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x5BB9;&#x6613;&#x88AB;&#x731C;&#x5230;&#x7684;&#x5BC6;&#x7801;&#x3002;
-                                &lt;/div&gt;
-                            &lt;/div&gt;
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                         }
                         overlayStyle={{ width: 240 }}
                         placement=&quot;right&quot;
@@ -227,15 +236,15 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
                             },
                             ],
                         })(
-                            &lt;Input
-                              size=&quot;large&quot;
-                              type=&quot;password&quot;
-                              placeholder=&apos;&#x81F3;&#x5C11;&#x516D;&#x4F4D;&#x5BC6;&#x7801;&#xFF0C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&apos;
-                            /&gt;
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                              <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span>
+                              <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;&#x81F3;&#x5C11;&#x516D;&#x4F4D;&#x5BC6;&#x7801;&#xFF0C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&apos;</span>
+                            /&gt;</span>
                         )}
-                        &lt;/Popover&gt;
-                    &lt;/FormItem&gt;
-                &lt;FormItem&gt;
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Popover</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
                     {getFieldDecorator(&apos;confirm&apos;, {
                     rules: [
                         {
@@ -247,24 +256,24 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
                         },
                     ],
                     })(
-                    &lt;Input
-                        size=&quot;large&quot;
-                        type=&quot;password&quot;
-                        placeholder=&quot;&#x786E;&#x8BA4;&#x5BC6;&#x7801;&quot;
-                    /&gt;
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                        <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span>
+                        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x786E;&#x8BA4;&#x5BC6;&#x7801;&quot;</span>
+                    /&gt;</span>
                     )}
-                &lt;/FormItem&gt;
-                &lt;FormItem&gt;
-                    &lt;InputGroup compact&gt;
-                    &lt;Select
-                        size=&quot;large&quot;
-                        value={prefix}
-                        onChange={this.changePrefix}
-                        style={{ width: &apos;20%&apos; }}
-                    &gt;
-                        &lt;Option value=&quot;86&quot;&gt;+86&lt;/Option&gt;
-                        &lt;Option value=&quot;87&quot;&gt;+87&lt;/Option&gt;
-                    &lt;/Select&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">InputGroup</span> <span class="hljs-attr">compact</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Select</span>
+                        <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                        <span class="hljs-attr">value</span>=<span class="hljs-string">{prefix}</span>
+                        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.changePrefix}</span>
+                        <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> &apos;<span class="hljs-attr">20</span>%&apos; }}
+                    &gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;86&quot;</span>&gt;</span>+86<span class="hljs-tag">&lt;/<span class="hljs-name">Option</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;87&quot;</span>&gt;</span>+87<span class="hljs-tag">&lt;/<span class="hljs-name">Option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Select</span>&gt;</span>
                     {getFieldDecorator(&apos;mobile&apos;, {
                         rules: [
                         {
@@ -277,17 +286,17 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
                         },
                         ],
                     })(
-                        &lt;Input
-                        size=&quot;large&quot;
-                        style={{ width: &apos;80%&apos; }}
-                        placeholder=&apos;&#x624B;&#x673A;&#x53F7;&apos;
-                        /&gt;
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                        <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                        <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> &apos;<span class="hljs-attr">80</span>%&apos; }}
+                        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;&#x624B;&#x673A;&#x53F7;&apos;</span>
+                        /&gt;</span>
                     )}
-                    &lt;/InputGroup&gt;
-                &lt;/FormItem&gt;
-                &lt;FormItem&gt;
-                    &lt;Row gutter={8}&gt;
-                        &lt;Col span={16}&gt;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">InputGroup</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Row</span> <span class="hljs-attr">gutter</span>=<span class="hljs-string">{8}</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{16}</span>&gt;</span>
                             {getFieldDecorator(&apos;captcha&apos;, {
                             rules: [
                                 {
@@ -296,46 +305,46 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
                                 },
                             ],
                             })(
-                            &lt;Input
-                                size=&quot;large&quot;
-                                placeholder=&quot;&#x9A8C;&#x8BC1;&#x7801;&quot;
-                            /&gt;
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                                <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                                <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x9A8C;&#x8BC1;&#x7801;&quot;</span>
+                            /&gt;</span>
                             )}
-                        &lt;/Col&gt;
-                        &lt;Col span={8}&gt;
-                            &lt;Button
-                            size=&quot;large&quot;
-                            disabled={count}
-                            className={styles.getCaptcha}
-                            onClick={this.onGetCaptcha}
-                            &gt;
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{8}</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                            <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                            <span class="hljs-attr">disabled</span>=<span class="hljs-string">{count}</span>
+                            <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.getCaptcha}</span>
+                            <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.onGetCaptcha}</span>
+                            &gt;</span>
                               {count? `${count} s`: &apos;&#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&apos;}
-                            &lt;/Button&gt;
-                        &lt;/Col&gt;
-                    &lt;/Row&gt;
-                &lt;/FormItem&gt;
-                &lt;FormItem&gt;
-                    &lt;Button
-                    size=&quot;large&quot;
-                    loading={submitting}
-                    className={styles.submit}
-                    type=&quot;primary&quot;
-                    htmlType=&quot;submit&quot;
-                    &gt;
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                    <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                    <span class="hljs-attr">loading</span>=<span class="hljs-string">{submitting}</span>
+                    <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.submit}</span>
+                    <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span>
+                    <span class="hljs-attr">htmlType</span>=<span class="hljs-string">&quot;submit&quot;</span>
+                    &gt;</span>
                     &#x6CE8;&#x518C;
-                    &lt;/Button&gt;
-                    &lt;Link className={styles.login} to=&quot;/User/Login&quot;&gt;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.login}</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/User/Login&quot;</span>&gt;</span>
                       &#x4F7F;&#x7528;&#x5DF2;&#x6709;&#x8D26;&#x6237;&#x767B;&#x5F55;
-                    &lt;/Link&gt;
-                &lt;/FormItem&gt;
-              &lt;/Form&gt;
-            &lt;/div&gt;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
 
         );
     }
 }
 </code></pre>
-<h3 id="t52.4  User/Register.less">2.4  User/Register.less <a href="#t52.4  User/Register.less"> # </a></h3>
+<h3 id="t52.4  User/Register.less">2.4  User/Register.less <a href="38.chat2.html#t52.4  User/Register.less"> # </a></h3>
 <p>src/pages/User/Register.less</p>
 <pre><code class="lang-less"><span class="hljs-selector-class">.register</span>{
     <span class="hljs-attribute">width</span>:<span class="hljs-number">450px</span>;
@@ -354,8 +363,8 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
     }
 }
 </code></pre>
-<h2 id="t63. &#x5B9E;&#x73B0;&#x624B;&#x673A;&#x9A8C;&#x8BC1;&#x7801;&#x9A8C;&#x8BC1;">3. &#x5B9E;&#x73B0;&#x624B;&#x673A;&#x9A8C;&#x8BC1;&#x7801;&#x9A8C;&#x8BC1; <a href="#t63. &#x5B9E;&#x73B0;&#x624B;&#x673A;&#x9A8C;&#x8BC1;&#x7801;&#x9A8C;&#x8BC1;"> # </a></h2>
-<h3 id="t73.1 request.js">3.1 request.js <a href="#t73.1 request.js"> # </a></h3>
+<h2 id="t63. &#x5B9E;&#x73B0;&#x624B;&#x673A;&#x9A8C;&#x8BC1;&#x7801;&#x9A8C;&#x8BC1;">3. &#x5B9E;&#x73B0;&#x624B;&#x673A;&#x9A8C;&#x8BC1;&#x7801;&#x9A8C;&#x8BC1; <a href="38.chat2.html#t63. &#x5B9E;&#x73B0;&#x624B;&#x673A;&#x9A8C;&#x8BC1;&#x7801;&#x9A8C;&#x8BC1;"> # </a></h2>
+<h3 id="t73.1 request.js">3.1 request.js <a href="38.chat2.html#t73.1 request.js"> # </a></h3>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> fetch <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva/fetch&apos;</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parseJSON</span>(<span class="hljs-params">response</span>) </span>{
@@ -384,9 +393,9 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
 <span class="hljs-comment">/**
  * Requests a URL, returning a promise.
  *
- * @param  {string} url       The URL we want to request
- * @param  {object} [options] The options we want to pass to &quot;fetch&quot;
- * @return {object}           An object containing either &quot;data&quot; or &quot;err&quot;
+ * <span class="hljs-doctag">@param  <span class="hljs-type">{string}</span> </span>url       The URL we want to request
+ * <span class="hljs-doctag">@param  <span class="hljs-type">{object}</span> </span>[options] The options we want to pass to &quot;fetch&quot;
+ * <span class="hljs-doctag">@return <span class="hljs-type">{object}</span>           </span>An object containing either &quot;data&quot; or &quot;err&quot;
  */</span>
 <span class="hljs-keyword">const</span> HOST=<span class="hljs-string">&apos;http://localhost:3000&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">request</span>(<span class="hljs-params">url, options</span>) </span>{
@@ -398,7 +407,7 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
 }
 
 </code></pre>
-<h3 id="t83.2 User/Register.js">3.2 User/Register.js <a href="#t83.2 User/Register.js"> # </a></h3>
+<h3 id="t83.2 User/Register.js">3.2 User/Register.js <a href="38.chat2.html#t83.2 User/Register.js"> # </a></h3>
 <p>src/pages/User/Register.js</p>
 <pre><code class="lang-diff"><span class="hljs-deletion">-    onGetCaptcha = () =&gt; {</span>
 <span class="hljs-addition">+    onGetCaptcha=() =&gt; {</span>
@@ -409,7 +418,7 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
 <span class="hljs-addition">+            payload:mobile</span>
 <span class="hljs-addition">+        });</span>
 </code></pre>
-<h3 id="t93.3 models/register.js">3.3 models/register.js <a href="#t93.3 models/register.js"> # </a></h3>
+<h3 id="t93.3 models/register.js">3.3 models/register.js <a href="38.chat2.html#t93.3 models/register.js"> # </a></h3>
 <p>src/pages/User/models/register.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> registerService <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../services/register&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
@@ -426,14 +435,14 @@ $ dva <span class="hljs-keyword">new</span> zhufeng-dva-chat
   <span class="hljs-attr">reducers</span>: {}
 };
 </code></pre>
-<h3 id="t103.4 services/register.js">3.4 services/register.js <a href="#t103.4 services/register.js"> # </a></h3>
+<h3 id="t103.4 services/register.js">3.4 services/register.js <a href="38.chat2.html#t103.4 services/register.js"> # </a></h3>
 <p>src/pages/User/services/register.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../../../utils/request&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getCaptcha</span>(<span class="hljs-params">mobile</span>) </span>{
   <span class="hljs-keyword">return</span> request(<span class="hljs-string">`/user/getCaptcha?mobile=<span class="hljs-subst">${mobile}</span>`</span>);
 }
 </code></pre>
-<h3 id="t113.5 server/app.js">3.5 server/app.js <a href="#t113.5 server/app.js"> # </a></h3>
+<h3 id="t113.5 server/app.js">3.5 server/app.js <a href="38.chat2.html#t113.5 server/app.js"> # </a></h3>
 <p>server/app.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> express=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
 <span class="hljs-keyword">let</span> session=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express-session&apos;</span>);
@@ -449,7 +458,7 @@ app.use(session({
 app.use(<span class="hljs-string">&apos;/user&apos;</span>,user);
 app.listen(<span class="hljs-number">3000</span>);
 </code></pre>
-<h3 id="t123.6 routes/user.js">3.6 routes/user.js <a href="#t123.6 routes/user.js"> # </a></h3>
+<h3 id="t123.6 routes/user.js">3.6 routes/user.js <a href="38.chat2.html#t123.6 routes/user.js"> # </a></h3>
 <p>server/routes/user.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> express=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
 <span class="hljs-keyword">let</span> router=express.Router();
@@ -480,19 +489,19 @@ router.get(<span class="hljs-string">&apos;/getCaptcha&apos;</span>,<span class=
 });
 <span class="hljs-built_in">module</span>.exports=router;
 </code></pre>
-<h3 id="t133.7 server/config.js">3.7 server/config.js <a href="#t133.7 server/config.js"> # </a></h3>
+<h3 id="t133.7 server/config.js">3.7 server/config.js <a href="38.chat2.html#t133.7 server/config.js"> # </a></h3>
 <p>server/config.js</p>
 <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports={
     <span class="hljs-attr">SMS</span>: {
-        <span class="hljs-attr">sid</span>: <span class="hljs-string">&apos;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a4979691909cc2c69d9195c5c794c0c296939dc0c694c192c19dc5919591919292e4">[email&#160;protected]</a>&apos;</span>,   <span class="hljs-comment">//&#x5F00;&#x53D1;&#x8005;&#x8D26;&#x53F7;id &#x53BB;&#x6389;@</span>
-    token: <span class="hljs-string">&apos;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="90f1f1a0a3a0a9f3a0a8a9a2a0f3f1a3a8a2a0a1f4f5a6a9f5f2a3f3a7a4a5f2a6d0">[email&#160;protected]</a>&apos;</span>, <span class="hljs-comment">//&#x5F00;&#x53D1;&#x8005;token</span>
-    appid: <span class="hljs-string">&apos;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b0a0d0a09025f0e0b0f590c580f030f58025e035d0b02590f5e580209020203087b">[email&#160;protected]</a>&apos;</span>, <span class="hljs-comment">//&#x5E94;&#x7528;id</span>
-        templateid: <span class="hljs-string">&apos;387675&apos;</span>,                      <span class="hljs-comment">//&#x77ED;&#x4FE1;&#x6A21;&#x677F;id</span>
+        <span class="hljs-attr">sid</span>: <span class="hljs-string">&apos;32548fb951ac0df279db0e6e9a515566@&apos;</span>,   <span class="hljs-comment">//&#x5F00;&#x53D1;&#x8005;&#x8D26;&#x53F7;id &#x53BB;&#x6389;@</span>
+    <span class="hljs-attr">token</span>: <span class="hljs-string">&apos;aa0309c08920ca38201de69eb3c745b6@&apos;</span>, <span class="hljs-comment">//&#x5F00;&#x53D1;&#x8005;token</span>
+    <span class="hljs-attr">appid</span>: <span class="hljs-string">&apos;16129d504b7c484c9e8f09b4ec929983@&apos;</span>, <span class="hljs-comment">//&#x5E94;&#x7528;id</span>
+        <span class="hljs-attr">templateid</span>: <span class="hljs-string">&apos;387675&apos;</span>,                      <span class="hljs-comment">//&#x77ED;&#x4FE1;&#x6A21;&#x677F;id</span>
     }
 }
 </code></pre>
-<h2 id="t144.&#x624B;&#x673A;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55;">4.&#x624B;&#x673A;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55; <a href="#t144.&#x624B;&#x673A;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55;"> # </a></h2>
-<h3 id="t154.1 server/app.js">4.1 server/app.js <a href="#t154.1 server/app.js"> # </a></h3>
+<h2 id="t144.&#x624B;&#x673A;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55;">4.&#x624B;&#x673A;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55; <a href="38.chat2.html#t144.&#x624B;&#x673A;&#x6CE8;&#x518C;&#x548C;&#x767B;&#x5F55;"> # </a></h2>
+<h3 id="t154.1 server/app.js">4.1 server/app.js <a href="38.chat2.html#t154.1 server/app.js"> # </a></h3>
 <p>server/app.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+const bodyParser=require(&apos;body-parser&apos;);</span>
  let app=express();
@@ -503,13 +512,13 @@ router.get(<span class="hljs-string">&apos;/getCaptcha&apos;</span>,<span class=
 <span class="hljs-addition">+}));</span>
 <span class="hljs-addition">+app.use(bodyParser.json());</span>
 </code></pre>
-<h3 id="t164.2 server/config.js">4.2 server/config.js <a href="#t164.2 server/config.js"> # </a></h3>
+<h3 id="t164.2 server/config.js">4.2 server/config.js <a href="38.chat2.html#t164.2 server/config.js"> # </a></h3>
 <p>server/config.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+    DB: {</span>
 <span class="hljs-addition">+        url:&apos;mongodb://localhost/chat&apos;</span>
 <span class="hljs-addition">+    }</span>
 </code></pre>
-<h3 id="t174.3 models/index.js">4.3 models/index.js <a href="#t174.3 models/index.js"> # </a></h3>
+<h3 id="t174.3 models/index.js">4.3 models/index.js <a href="38.chat2.html#t174.3 models/index.js"> # </a></h3>
 <p>server/models/index.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongoose&apos;</span>);
 <span class="hljs-keyword">const</span> Schema = mongoose.Schema;
@@ -527,7 +536,7 @@ router.get(<span class="hljs-string">&apos;/getCaptcha&apos;</span>,<span class=
     User
 }
 </code></pre>
-<h3 id="t184.4 routes/user.js">4.4 routes/user.js <a href="#t184.4 routes/user.js"> # </a></h3>
+<h3 id="t184.4 routes/user.js">4.4 routes/user.js <a href="38.chat2.html#t184.4 routes/user.js"> # </a></h3>
 <p>server/routes/user.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> express=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
 <span class="hljs-keyword">let</span> router=express.Router();
@@ -600,7 +609,7 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
 });
 <span class="hljs-built_in">module</span>.exports=router;
 </code></pre>
-<h3 id="t194.5 Rooms/index.jsx">4.5 Rooms/index.jsx <a href="#t194.5 Rooms/index.jsx"> # </a></h3>
+<h3 id="t194.5 Rooms/index.jsx">4.5 Rooms/index.jsx <a href="38.chat2.html#t194.5 Rooms/index.jsx"> # </a></h3>
 <p>src/pages/Rooms/index.jsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rooms</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
@@ -611,7 +620,7 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
     }
 }
 </code></pre>
-<h3 id="t204.6 User/Login.jsx">4.6 User/Login.jsx <a href="#t204.6 User/Login.jsx"> # </a></h3>
+<h3 id="t204.6 User/Login.jsx">4.6 User/Login.jsx <a href="38.chat2.html#t204.6 User/Login.jsx"> # </a></h3>
 <p>src/pages/User/Login.jsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva&apos;</span>;
@@ -715,7 +724,7 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
 ...
 
 </code></pre>
-<h3 id="t214.7 User/Login.less">4.7 User/Login.less <a href="#t214.7 User/Login.less"> # </a></h3>
+<h3 id="t214.7 User/Login.less">4.7 User/Login.less <a href="38.chat2.html#t214.7 User/Login.less"> # </a></h3>
 <p>src/pages/User/Login.less</p>
 <pre><code class="lang-less"><span class="hljs-selector-class">.register</span>{
     <span class="hljs-attribute">width</span>:<span class="hljs-number">450px</span>;
@@ -734,7 +743,7 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
     }
 }
 </code></pre>
-<h3 id="t224.8 User/Register.jsx">4.8 User/Register.jsx <a href="#t224.8 User/Register.jsx"> # </a></h3>
+<h3 id="t224.8 User/Register.jsx">4.8 User/Register.jsx <a href="38.chat2.html#t224.8 User/Register.jsx"> # </a></h3>
 <p>src/pages/User/Register.jsx</p>
 <pre><code class="lang-jsx"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva&apos;</span>;
@@ -805,83 +814,83 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
         <span class="hljs-keyword">const</span> passwordStatus=<span class="hljs-keyword">this</span>.getPasswordStatus();
         <span class="hljs-keyword">return</span> value&amp;&amp;value.length
             ? (
-                &lt;div className={styles[`progress-${passwordStatus}`]}&gt;
-                    &lt;Progress
-                        status={passwordProgressMap[passwordStatus]}
-                        className={styles.progress}
-                        strokeWidth={6}
-                        percent={value.length*10&gt;100
+                <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles[</span>`<span class="hljs-attr">progress-</span>${<span class="hljs-attr">passwordStatus</span>}`]}&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Progress</span>
+                        <span class="hljs-attr">status</span>=<span class="hljs-string">{passwordProgressMap[passwordStatus]}</span>
+                        <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.progress}</span>
+                        <span class="hljs-attr">strokeWidth</span>=<span class="hljs-string">{6}</span>
+                        <span class="hljs-attr">percent</span>=<span class="hljs-string">{value.length*10</span>&gt;</span>100
                             ? 100
                             :value.length*10}
                         showInfo={false} /&gt;
-                &lt;/div&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
             )
-            :null;
+            :<span class="hljs-literal">null</span>;
     };
 
-    checkPassword=(rule,value,callback) =&gt; {
-        const {visible,confirmDirty}=this.state;
-        if (!value) {
-            this.setState({
-                help: &quot;&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;!&quot;,
-                visible: !!value
+    checkPassword=<span class="hljs-function">(<span class="hljs-params">rule,value,callback</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> {visible,confirmDirty}=<span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">if</span> (!value) {
+            <span class="hljs-keyword">this</span>.setState({
+                <span class="hljs-attr">help</span>: <span class="hljs-string">&quot;&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;!&quot;</span>,
+                <span class="hljs-attr">visible</span>: !!value
             });
-            callback(&apos;error&apos;);
-        } else {
-            this.setState({help: &apos;&apos;});
-            if (!visible) {
-                this.setState({
-                    visible: !!value
+            callback(<span class="hljs-string">&apos;error&apos;</span>);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>.setState({<span class="hljs-attr">help</span>: <span class="hljs-string">&apos;&apos;</span>});
+            <span class="hljs-keyword">if</span> (!visible) {
+                <span class="hljs-keyword">this</span>.setState({
+                    <span class="hljs-attr">visible</span>: !!value
                 });
             }
-            if (value.length&lt;6) {
-                callback(&apos;error&apos;);
-            } else {
-                const {form}=this.props;
-                if (value&amp;&amp;confirmDirty) {
-                    form.validateFields([&apos;confirm&apos;],{force: true});
+            <span class="hljs-keyword">if</span> (value.length&lt;<span class="hljs-number">6</span>) {
+                callback(<span class="hljs-string">&apos;error&apos;</span>);
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">const</span> {form}=<span class="hljs-keyword">this</span>.props;
+                <span class="hljs-keyword">if</span> (value&amp;&amp;confirmDirty) {
+                    form.validateFields([<span class="hljs-string">&apos;confirm&apos;</span>],{<span class="hljs-attr">force</span>: <span class="hljs-literal">true</span>});
                 }
                 callback();
             }
         }
     };
-    checkConfirm=(rule,value,callback) =&gt; {
-        const {form}=this.props;
-        if (value&amp;&amp;value!==form.getFieldValue(&apos;password&apos;)) {
-            callback(&apos;&#x4E24;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x5339;&#x914D;!&apos;);
-        } else {
+    checkConfirm=<span class="hljs-function">(<span class="hljs-params">rule,value,callback</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> {form}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">if</span> (value&amp;&amp;value!==form.getFieldValue(<span class="hljs-string">&apos;password&apos;</span>)) {
+            callback(<span class="hljs-string">&apos;&#x4E24;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x5339;&#x914D;!&apos;</span>);
+        } <span class="hljs-keyword">else</span> {
             callback();
         }
     };
-    changePrefix=value =&gt; {
-        this.setState({prefix: value});
+    changePrefix=<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+        <span class="hljs-keyword">this</span>.setState({<span class="hljs-attr">prefix</span>: value});
     };
-    onGetCaptcha=() =&gt; {
-        const {dispatch,form}=this.props;
-        let mobile=form.getFieldValue(&apos;mobile&apos;);
-        dispatch({type: &apos;register/getCaptcha&apos;,payload: mobile});
-        let count=59;
-        this.setState({count});
-        this.interval=setInterval(() =&gt; {
-            count-=1;
-            this.setState({count});
-            if (count===0) {
-                clearInterval(this.interval);
+    onGetCaptcha=<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-keyword">const</span> {dispatch,form}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">let</span> mobile=form.getFieldValue(<span class="hljs-string">&apos;mobile&apos;</span>);
+        dispatch({<span class="hljs-attr">type</span>: <span class="hljs-string">&apos;register/getCaptcha&apos;</span>,<span class="hljs-attr">payload</span>: mobile});
+        <span class="hljs-keyword">let</span> count=<span class="hljs-number">59</span>;
+        <span class="hljs-keyword">this</span>.setState({count});
+        <span class="hljs-keyword">this</span>.interval=setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+            count-=<span class="hljs-number">1</span>;
+            <span class="hljs-keyword">this</span>.setState({count});
+            <span class="hljs-keyword">if</span> (count===<span class="hljs-number">0</span>) {
+                clearInterval(<span class="hljs-keyword">this</span>.interval);
             }
-        },1000);
+        },<span class="hljs-number">1000</span>);
     };
-    handleSubmit=e =&gt; {
+    handleSubmit=<span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
         e.preventDefault();
-        const {form,dispatch}=this.props;
+        <span class="hljs-keyword">const</span> {form,dispatch}=<span class="hljs-keyword">this</span>.props;
         form.validateFields({
-            force: true
+            <span class="hljs-attr">force</span>: <span class="hljs-literal">true</span>
         },(err,values) =&gt; {
-            console.log(&apos;values&apos;,values);
-            if (!err) {
-                const {prefix}=this.state;
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;values&apos;</span>,values);
+            <span class="hljs-keyword">if</span> (!err) {
+                <span class="hljs-keyword">const</span> {prefix}=<span class="hljs-keyword">this</span>.state;
                 dispatch({
-                    type: &apos;register/submit&apos;,
-                    payload: {
+                    <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;register/submit&apos;</span>,
+                    <span class="hljs-attr">payload</span>: {
                         ...values,
                         prefix
                     }
@@ -890,14 +899,14 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
         });
     };
     render() {
-        const {form,submitting}=this.props;
-        const {getFieldDecorator}=form;
-        const {count,prefix,help,visible}=this.state;
-        return (
-            &lt;div className={styles.register}&gt;
-                &lt;h3&gt;&#x7528;&#x6237;&#x6CE8;&#x518C;&lt;/h3&gt;
-                &lt;Form onSubmit={this.handleSubmit}&gt;
-                    &lt;FormItem&gt;
+        <span class="hljs-keyword">const</span> {form,submitting}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">const</span> {getFieldDecorator}=form;
+        <span class="hljs-keyword">const</span> {count,prefix,help,visible}=<span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.register}</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>&#x7528;&#x6237;&#x6CE8;&#x518C;<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{this.handleSubmit}</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
                         {getFieldDecorator(&apos;email&apos;,{
                             rules: [
                                 {
@@ -908,18 +917,18 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
                                     message: &apos;&#x90AE;&#x7BB1;&#x683C;&#x5F0F;&#x4E0D;&#x5408;&#x6CD5;&apos;
                                 }
                             ]
-                        })(&lt;Input size=&quot;large&quot; placeholder=&quot;&#x90AE;&#x7BB1;&quot; /&gt;)}
-                    &lt;/FormItem&gt;
-                    &lt;FormItem help={help}&gt;
-                        &lt;Popover
-                            content={
-                                &lt;div style={{padding: &apos;4px 0&apos;}}&gt;
+                        })(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x90AE;&#x7BB1;&quot;</span> /&gt;</span>)}
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span> <span class="hljs-attr">help</span>=<span class="hljs-string">{help}</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Popover</span>
+                            <span class="hljs-attr">content</span>=<span class="hljs-string">{</span>
+                                &lt;<span class="hljs-attr">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{padding:</span> &apos;<span class="hljs-attr">4px</span> <span class="hljs-attr">0</span>&apos;}}&gt;</span>
                                     {passwordStatusMap[this.getPasswordStatus()]}
                                     {this.renderPasswordProgress()}
-                                    &lt;div style={{marginTop: 10}}&gt;
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{marginTop:</span> <span class="hljs-attr">10</span>}}&gt;</span>
                                       &#x8BF7;&#x81F3;&#x5C11;&#x8F93;&#x5165; 6 &#x4E2A;&#x5B57;&#x7B26;&#x3002;&#x8BF7;&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x5BB9;&#x6613;&#x88AB;&#x731C;&#x5230;&#x7684;&#x5BC6;&#x7801;&#x3002;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                             }
                             overlayStyle={{width: 240}}
                             placement=&quot;right&quot;
@@ -931,10 +940,10 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
                                         validator: this.checkPassword
                                     }
                                 ]
-                            })(&lt;Input size=&quot;large&quot; type=&quot;password&quot; placeholder=&apos;&#x81F3;&#x5C11;&#x516D;&#x4F4D;&#x5BC6;&#x7801;&#xFF0C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&apos; /&gt;)}
-                        &lt;/Popover&gt;
-                    &lt;/FormItem&gt;
-                    &lt;FormItem&gt;
+                            })(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;&#x81F3;&#x5C11;&#x516D;&#x4F4D;&#x5BC6;&#x7801;&#xFF0C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&apos;</span> /&gt;</span>)}
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Popover</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
                         {getFieldDecorator(&apos;confirm&apos;,{
                             rules: [
                                 {
@@ -944,20 +953,20 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
                                     validator: this.checkConfirm
                                 }
                             ]
-                        })(&lt;Input size=&quot;large&quot; type=&quot;password&quot; placeholder=&quot;&#x786E;&#x8BA4;&#x5BC6;&#x7801;&quot; /&gt;)}
-                    &lt;/FormItem&gt;
-                    &lt;FormItem&gt;
-                        &lt;InputGroup compact&gt;
-                            &lt;Select
-                                size=&quot;large&quot;
-                                value={prefix}
-                                onChange={this.changePrefix}
-                                style={{
-                                    width: &apos;20%&apos;
-                                }}&gt;
-                                &lt;Option value=&quot;86&quot;&gt;+86&lt;/Option&gt;
-                                &lt;Option value=&quot;87&quot;&gt;+87&lt;/Option&gt;
-                            &lt;/Select&gt;
+                        })(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x786E;&#x8BA4;&#x5BC6;&#x7801;&quot;</span> /&gt;</span>)}
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">InputGroup</span> <span class="hljs-attr">compact</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Select</span>
+                                <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                                <span class="hljs-attr">value</span>=<span class="hljs-string">{prefix}</span>
+                                <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.changePrefix}</span>
+                                <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span>
+                                    <span class="hljs-attr">width:</span> &apos;<span class="hljs-attr">20</span>%&apos;
+                                }}&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;86&quot;</span>&gt;</span>+86<span class="hljs-tag">&lt;/<span class="hljs-name">Option</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;87&quot;</span>&gt;</span>+87<span class="hljs-tag">&lt;/<span class="hljs-name">Option</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Select</span>&gt;</span>
                             {getFieldDecorator(&apos;mobile&apos;,{
                                 rules: [
                                     {
@@ -968,17 +977,17 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
                                         message: &apos;&#x624B;&#x673A;&#x53F7;&#x683C;&#x5F0F;&#x9519;&#x8BEF;&#xFF01;&apos;
                                     }
                                 ]
-                            })(&lt;Input
-                                size=&quot;large&quot;
-                                style={{
-                                    width: &apos;80%&apos;
+                            })(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                                <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                                <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span>
+                                    <span class="hljs-attr">width:</span> &apos;<span class="hljs-attr">80</span>%&apos;
                                 }}
-                                placeholder=&apos;&#x624B;&#x673A;&#x53F7;&apos; /&gt;)}
-                        &lt;/InputGroup&gt;
-                    &lt;/FormItem&gt;
-                    &lt;FormItem&gt;
-                        &lt;Row gutter={8}&gt;
-                            &lt;Col span={16}&gt;
+                                <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&apos;&#x624B;&#x673A;&#x53F7;&apos;</span> /&gt;</span>)}
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">InputGroup</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span> <span class="hljs-attr">gutter</span>=<span class="hljs-string">{8}</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{16}</span>&gt;</span>
                                 {getFieldDecorator(&apos;captcha&apos;,{
                                     rules: [
                                         {
@@ -986,42 +995,42 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
                                             message: &apos;&#x8BF7;&#x8F93;&#x5165;&#x9A8C;&#x8BC1;&#x7801;&#xFF01;&apos;
                                         }
                                     ]
-                                })(&lt;Input size=&quot;large&quot; placeholder=&quot;&#x9A8C;&#x8BC1;&#x7801;&quot; /&gt;)}
-                            &lt;/Col&gt;
-                            &lt;Col span={8}&gt;
-                                &lt;Button
-                                    size=&quot;large&quot;
-                                    disabled={count}
-                                    className={styles.getCaptcha}
-                                    onClick={this.onGetCaptcha}&gt;
+                                })(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x9A8C;&#x8BC1;&#x7801;&quot;</span> /&gt;</span>)}
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{8}</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                                    <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                                    <span class="hljs-attr">disabled</span>=<span class="hljs-string">{count}</span>
+                                    <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.getCaptcha}</span>
+                                    <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.onGetCaptcha}</span>&gt;</span>
                                     {count
                                         ? `${count} s`
                                         :&apos;&#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&apos;}
-                                &lt;/Button&gt;
-                            &lt;/Col&gt;
-                        &lt;/Row&gt;
-                    &lt;/FormItem&gt;
-                    &lt;FormItem&gt;
-                        &lt;Button
-                            size=&quot;large&quot;
-                            loading={submitting}
-                            className={styles.submit}
-                            type=&quot;primary&quot;
-                            htmlType=&quot;submit&quot;&gt;
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Button</span>
+                            <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span>
+                            <span class="hljs-attr">loading</span>=<span class="hljs-string">{submitting}</span>
+                            <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.submit}</span>
+                            <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span>
+                            <span class="hljs-attr">htmlType</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>
                             &#x6CE8;&#x518C;
-                                                &lt;/Button&gt;
-                        &lt;Link className={styles.login} to=&quot;/User/Login&quot;&gt;
+                                                <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.login}</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/User/Login&quot;</span>&gt;</span>
                             &#x4F7F;&#x7528;&#x5DF2;&#x6709;&#x8D26;&#x6237;&#x767B;&#x5F55;
-                                                &lt;/Link&gt;
-                    &lt;/FormItem&gt;
-                &lt;/Form&gt;
-            &lt;/div&gt;
+                                                <span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
 
         );
     }
 }
 </code></pre>
-<h3 id="t234.9 models/login.js">4.9 models/login.js <a href="#t234.9 models/login.js"> # </a></h3>
+<h3 id="t234.9 models/login.js">4.9 models/login.js <a href="38.chat2.html#t234.9 models/login.js"> # </a></h3>
 <p>src/pages/User/models/login.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> loginService <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../services/login&apos;</span>;
 <span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;umi/router&apos;</span>;
@@ -1049,7 +1058,7 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
 };
 
 </code></pre>
-<h3 id="t244.10 models/register.js">4.10 models/register.js <a href="#t244.10 models/register.js"> # </a></h3>
+<h3 id="t244.10 models/register.js">4.10 models/register.js <a href="38.chat2.html#t244.10 models/register.js"> # </a></h3>
 <p>src/pages/User/models/register.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> registerService <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../services/register&apos;</span>;
 <span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;umi/router&apos;</span>;
@@ -1076,7 +1085,7 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
 };
 
 </code></pre>
-<h3 id="t254.11 services/login.js">4.11 services/login.js <a href="#t254.11 services/login.js"> # </a></h3>
+<h3 id="t254.11 services/login.js">4.11 services/login.js <a href="38.chat2.html#t254.11 services/login.js"> # </a></h3>
 <p>src/pages/User/services/login.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../../../utils/request&apos;</span>;
 
@@ -1096,7 +1105,7 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
 }
 
 </code></pre>
-<h3 id="t264.12 services/register.js">4.12 services/register.js <a href="#t264.12 services/register.js"> # </a></h3>
+<h3 id="t264.12 services/register.js">4.12 services/register.js <a href="38.chat2.html#t264.12 services/register.js"> # </a></h3>
 <p>src/pages/User/services/register.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">submit</span>(<span class="hljs-params">values</span>) </span>{
   <span class="hljs-keyword">return</span> request(<span class="hljs-string">`/user/register`</span>,{
@@ -1109,7 +1118,7 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
   });
 }
 </code></pre>
-<h3 id="t274.13 utils/request.js">4.13 utils/request.js <a href="#t274.13 utils/request.js"> # </a></h3>
+<h3 id="t274.13 utils/request.js">4.13 utils/request.js <a href="38.chat2.html#t274.13 utils/request.js"> # </a></h3>
 <p>src/utils/request.js</p>
 <pre><code class="lang-diff"><span class="hljs-deletion">-  return fetch(HOST+url, options)</span>
 <span class="hljs-addition">+  return fetch(HOST+url,{</span>
@@ -1117,14 +1126,14 @@ router.post(<span class="hljs-string">&apos;/login&apos;</span>,<span class="hlj
 <span class="hljs-addition">+    credentials:&apos;include&apos;</span>
 <span class="hljs-addition">+  })</span>
 </code></pre>
-<h2 id="t285. &#x5B9E;&#x73B0;&#x623F;&#x95F4;&#x529F;&#x80FD;">5. &#x5B9E;&#x73B0;&#x623F;&#x95F4;&#x529F;&#x80FD; <a href="#t285. &#x5B9E;&#x73B0;&#x623F;&#x95F4;&#x529F;&#x80FD;"> # </a></h2>
-<h3 id="t295.1 server/app.js">5.1 server/app.js <a href="#t295.1 server/app.js"> # </a></h3>
+<h2 id="t285. &#x5B9E;&#x73B0;&#x623F;&#x95F4;&#x529F;&#x80FD;">5. &#x5B9E;&#x73B0;&#x623F;&#x95F4;&#x529F;&#x80FD; <a href="38.chat2.html#t285. &#x5B9E;&#x73B0;&#x623F;&#x95F4;&#x529F;&#x80FD;"> # </a></h2>
+<h3 id="t295.1 server/app.js">5.1 server/app.js <a href="38.chat2.html#t295.1 server/app.js"> # </a></h3>
 <p>server/app.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+ let room=require(&apos;./routes/room&apos;);</span>
 app.use(&apos;/user&apos;,user);
 <span class="hljs-addition">+ app.use(&apos;/room&apos;,room);</span>
 </code></pre>
-<h3 id="t305.2 models/index.js">5.2 models/index.js <a href="#t305.2 models/index.js"> # </a></h3>
+<h3 id="t305.2 models/index.js">5.2 models/index.js <a href="38.chat2.html#t305.2 models/index.js"> # </a></h3>
 <p>server/models/index.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+</span>
 <span class="hljs-addition">+const Room = conn.model(&apos;Room&apos;, {</span>
@@ -1137,7 +1146,7 @@ app.use(&apos;/user&apos;,user);
 <span class="hljs-addition">+    Room</span>
  }
 </code></pre>
-<h3 id="t315.3 routes/room.js">5.3 routes/room.js <a href="#t315.3 routes/room.js"> # </a></h3>
+<h3 id="t315.3 routes/room.js">5.3 routes/room.js <a href="38.chat2.html#t315.3 routes/room.js"> # </a></h3>
 <p>server/routes/room.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> express=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
 <span class="hljs-keyword">let</span> router=express.Router();
@@ -1162,7 +1171,7 @@ router.post(<span class="hljs-string">&apos;/create&apos;</span>,<span class="hl
 
 <span class="hljs-built_in">module</span>.exports=router;
 </code></pre>
-<h3 id="t325.4 Room/index.jsx">5.4 Room/index.jsx <a href="#t325.4 Room/index.jsx"> # </a></h3>
+<h3 id="t325.4 Room/index.jsx">5.4 Room/index.jsx <a href="38.chat2.html#t325.4 Room/index.jsx"> # </a></h3>
 <p>src/pages/Room/index.jsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;umi/link&apos;</span>;
@@ -1191,59 +1200,59 @@ router.post(<span class="hljs-string">&apos;/create&apos;</span>,<span class="hl
         }
 
         <span class="hljs-keyword">return</span> (
-            &lt;Layout&gt;
-                &lt;Header&gt;
-                    &lt;a className={styles.logo}&gt;&#x73E0;&#x5CF0;&#x804A;&#x5929;&#x5BA4;&lt;/a&gt;
-                    &lt;Menu
-                        theme=&quot;dark&quot;
-                        mode=&quot;horizontal&quot;
-                        defaultSelectedKeys={[&apos;register&apos;]}
-                        style={{ lineHeight: &apos;64px&apos; }}
-                    &gt;
-                        &lt;Menu.Item key=&quot;register&quot;&gt;&#x6CE8;&#x518C;&lt;/Menu.Item&gt;
-                        &lt;Menu.Item key=&quot;login&quot;&gt;&#x767B;&#x5F55;&lt;/Menu.Item&gt;
-                    &lt;/Menu&gt;
-                &lt;/Header&gt;
-                &lt;Content&gt;
-                    &lt;Card&gt;
-                        &lt;Row gutter={16}&gt;
-                            &lt;Col span={6} offset={8}&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Layout</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.logo}</span>&gt;</span>&#x73E0;&#x5CF0;&#x804A;&#x5929;&#x5BA4;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Menu</span>
+                        <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;dark&quot;</span>
+                        <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;horizontal&quot;</span>
+                        <span class="hljs-attr">defaultSelectedKeys</span>=<span class="hljs-string">{[</span>&apos;<span class="hljs-attr">register</span>&apos;]}
+                        <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">lineHeight:</span> &apos;<span class="hljs-attr">64px</span>&apos; }}
+                    &gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;register&quot;</span>&gt;</span>&#x6CE8;&#x518C;<span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;login&quot;</span>&gt;</span>&#x767B;&#x5F55;<span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span> <span class="hljs-attr">gutter</span>=<span class="hljs-string">{16}</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">offset</span>=<span class="hljs-string">{8}</span>&gt;</span>
                                 {
                                     this.props.form.getFieldDecorator(&apos;keyword&apos;)(
-                                        &lt;Input type=&quot;text&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x623F;&#x95F4;&#x540D;&quot;&gt;&lt;/Input&gt;
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8BF7;&#x8F93;&#x5165;&#x623F;&#x95F4;&#x540D;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Input</span>&gt;</span>
                                     )
                                 }
-                            &lt;/Col&gt;
-                        &lt;/Row&gt;                
-                    &lt;/Card&gt;
-                    &lt;Card&gt;
-                        &lt;Row gutter={16}&gt;
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>                
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span> <span class="hljs-attr">gutter</span>=<span class="hljs-string">{16}</span>&gt;</span>
                             {
                                 rooms.length&gt;0?rooms.map(item =&gt; (
-                                    &lt;Col span={6} key={item._id}&gt;
-                                        &lt;Card
-                                            title={item.name}
-                                            extra={&lt;Link to={`/Rooms/${item._id}`}&gt;&#x8FDB;&#x5165;&lt;/Link&gt;}
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item._id}</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>
+                                            <span class="hljs-attr">title</span>=<span class="hljs-string">{item.name}</span>
+                                            <span class="hljs-attr">extra</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">{</span>`/<span class="hljs-attr">Rooms</span>/${<span class="hljs-attr">item._id</span>}`}&gt;</span>&#x8FDB;&#x5165;<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>}
                                         &gt;
-                                            &lt;p&gt;&#x7528;&#x6237;1&lt;/p&gt;
-                                            &lt;p&gt;&#x7528;&#x6237;2&lt;/p&gt;
-                                            &lt;p&gt;&#x7528;&#x6237;3&lt;/p&gt;
-                                        &lt;/Card&gt;
-                                    &lt;/Col&gt;    
-                                )):&lt;Button onClick={this.createRoom}&gt;&#x521B;&#x5EFA;&#x623F;&#x95F4;&lt;/Button&gt;
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x7528;&#x6237;1<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x7528;&#x6237;2<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x7528;&#x6237;3<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>    
+                                )):<span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.createRoom}</span>&gt;</span>&#x521B;&#x5EFA;&#x623F;&#x95F4;<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                             }
-                        &lt;/Row&gt;
-                    &lt;/Card&gt;
-                &lt;/Content&gt;
-                &lt;Footer&gt;
-                    &lt;div className={styles.copyright}&gt; &#xA9;2018 &#x73E0;&#x5CF0;&#x57F9;&#x8BAD;&lt;/div&gt;
-                &lt;/Footer&gt;
-            &lt;/Layout&gt;
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Footer</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.copyright}</span>&gt;</span> &#xA9;2018 &#x73E0;&#x5CF0;&#x57F9;&#x8BAD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Footer</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span></span>
         )
     }
 }
 </code></pre>
-<h3 id="t335.5 Room/index.less">5.5 Room/index.less <a href="#t335.5 Room/index.less"> # </a></h3>
+<h3 id="t335.5 Room/index.less">5.5 Room/index.less <a href="38.chat2.html#t335.5 Room/index.less"> # </a></h3>
 <p>src/pages/Room/index.less</p>
 <pre><code class="lang-less"><span class="hljs-selector-class">.logo</span>{
     <span class="hljs-attribute">width</span>:<span class="hljs-number">120px</span>;
@@ -1257,7 +1266,7 @@ router.post(<span class="hljs-string">&apos;/create&apos;</span>,<span class="hl
 }
 
 </code></pre>
-<h3 id="t345.6 models/room.js">5.6 models/room.js <a href="#t345.6 models/room.js"> # </a></h3>
+<h3 id="t345.6 models/room.js">5.6 models/room.js <a href="38.chat2.html#t345.6 models/room.js"> # </a></h3>
 <p>src/pages/Room/models/room.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> roomService <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../services/room&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
@@ -1298,7 +1307,7 @@ router.post(<span class="hljs-string">&apos;/create&apos;</span>,<span class="hl
   },
 };
 </code></pre>
-<h3 id="t355.7 services/room.js">5.7 services/room.js <a href="#t355.7 services/room.js"> # </a></h3>
+<h3 id="t355.7 services/room.js">5.7 services/room.js <a href="38.chat2.html#t355.7 services/room.js"> # </a></h3>
 <p>src/pages/Room/services/room.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../../../utils/request&apos;</span>;
 
@@ -1316,8 +1325,8 @@ router.post(<span class="hljs-string">&apos;/create&apos;</span>,<span class="hl
   });
 }
 </code></pre>
-<h2 id="t366. &#x5B9E;&#x73B0;&#x804A;&#x5929;&#x529F;&#x80FD;">6. &#x5B9E;&#x73B0;&#x804A;&#x5929;&#x529F;&#x80FD; <a href="#t366. &#x5B9E;&#x73B0;&#x804A;&#x5929;&#x529F;&#x80FD;"> # </a></h2>
-<h3 id="t376.1 server/app.js">6.1 server/app.js <a href="#t376.1 server/app.js"> # </a></h3>
+<h2 id="t366. &#x5B9E;&#x73B0;&#x804A;&#x5929;&#x529F;&#x80FD;">6. &#x5B9E;&#x73B0;&#x804A;&#x5929;&#x529F;&#x80FD; <a href="38.chat2.html#t366. &#x5B9E;&#x73B0;&#x804A;&#x5929;&#x529F;&#x80FD;"> # </a></h2>
+<h3 id="t376.1 server/app.js">6.1 server/app.js <a href="38.chat2.html#t376.1 server/app.js"> # </a></h3>
 <p>server/app.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> express=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
 <span class="hljs-keyword">let</span> session=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express-session&apos;</span>);
@@ -1370,7 +1379,7 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 
 });
 </code></pre>
-<h3 id="t386.2 models/index.js">6.2 models/index.js <a href="#t386.2 models/index.js"> # </a></h3>
+<h3 id="t386.2 models/index.js">6.2 models/index.js <a href="38.chat2.html#t386.2 models/index.js"> # </a></h3>
 <p>server/models/index.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongoose&apos;</span>);
 <span class="hljs-keyword">const</span> Schema = mongoose.Schema;
@@ -1379,24 +1388,24 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <span class="hljs-keyword">const</span> conn = mongoose.createConnection(DB.url,{ <span class="hljs-attr">useNewUrlParser</span>: <span class="hljs-literal">true</span> });
 <span class="hljs-keyword">const</span> User = conn.model(<span class="hljs-string">&apos;User&apos;</span>, {
     <span class="hljs-attr">email</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,<span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>},        <span class="hljs-comment">//&#x90AE;&#x7BB1; </span>
-    password: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,<span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>},     <span class="hljs-comment">//&#x5BC6;&#x7801;</span>
-    mobile: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,<span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>},       <span class="hljs-comment">//&#x624B;&#x673A;&#x53F7;</span>
-    avatar: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,<span class="hljs-attr">required</span>: <span class="hljs-literal">false</span>},      <span class="hljs-comment">//&#x5934;&#x50CF;</span>
-    createAt: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">Date</span>,<span class="hljs-attr">default</span>: <span class="hljs-built_in">Date</span>.now},    <span class="hljs-comment">//&#x521B;&#x5EFA;&#x65F6;&#x95F4; </span>
-    room:{<span class="hljs-attr">type</span>:ObjectId,<span class="hljs-attr">ref</span>:<span class="hljs-string">&apos;Room&apos;</span>}              <span class="hljs-comment">//&#x6240;&#x5C5E;&#x623F;&#x95F4;</span>
+    <span class="hljs-attr">password</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,<span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>},     <span class="hljs-comment">//&#x5BC6;&#x7801;</span>
+    <span class="hljs-attr">mobile</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,<span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>},       <span class="hljs-comment">//&#x624B;&#x673A;&#x53F7;</span>
+    <span class="hljs-attr">avatar</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,<span class="hljs-attr">required</span>: <span class="hljs-literal">false</span>},      <span class="hljs-comment">//&#x5934;&#x50CF;</span>
+    <span class="hljs-attr">createAt</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">Date</span>,<span class="hljs-attr">default</span>: <span class="hljs-built_in">Date</span>.now},    <span class="hljs-comment">//&#x521B;&#x5EFA;&#x65F6;&#x95F4; </span>
+    <span class="hljs-attr">room</span>:{<span class="hljs-attr">type</span>:ObjectId,<span class="hljs-attr">ref</span>:<span class="hljs-string">&apos;Room&apos;</span>}              <span class="hljs-comment">//&#x6240;&#x5C5E;&#x623F;&#x95F4;</span>
 });
 
 <span class="hljs-keyword">const</span> Room = conn.model(<span class="hljs-string">&apos;Room&apos;</span>, {
     <span class="hljs-attr">name</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>,<span class="hljs-attr">required</span>: <span class="hljs-literal">true</span>},         <span class="hljs-comment">//&#x623F;&#x95F4;&#x540D;</span>
-    avatar: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>},                      <span class="hljs-comment">//&#x623F;&#x95F4;&#x56FE;&#x7247;</span>
-    createAt:{<span class="hljs-attr">type</span>:<span class="hljs-built_in">Date</span>,<span class="hljs-attr">default</span>:<span class="hljs-built_in">Date</span>.now}        <span class="hljs-comment">//&#x521B;&#x5EFA;&#x65F6;&#x95F4;</span>
+    <span class="hljs-attr">avatar</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>},                      <span class="hljs-comment">//&#x623F;&#x95F4;&#x56FE;&#x7247;</span>
+    <span class="hljs-attr">createAt</span>:{<span class="hljs-attr">type</span>:<span class="hljs-built_in">Date</span>,<span class="hljs-attr">default</span>:<span class="hljs-built_in">Date</span>.now}        <span class="hljs-comment">//&#x521B;&#x5EFA;&#x65F6;&#x95F4;</span>
 });
 
 <span class="hljs-keyword">const</span> Message = conn.model(<span class="hljs-string">&apos;Message&apos;</span>, {
     <span class="hljs-attr">content</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">String</span>},                     <span class="hljs-comment">//&#x5185;&#x5BB9;</span>
-    user: {<span class="hljs-attr">type</span>: ObjectId,<span class="hljs-attr">ref</span>: <span class="hljs-string">&apos;User&apos;</span>},          <span class="hljs-comment">//&#x7528;&#x6237;</span>
-    createAt: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">Date</span>,<span class="hljs-attr">default</span>: <span class="hljs-built_in">Date</span>.now},    <span class="hljs-comment">//&#x521B;&#x5EFA;&#x65F6;&#x95F4; </span>
-    room:{<span class="hljs-attr">type</span>:ObjectId,<span class="hljs-attr">ref</span>:<span class="hljs-string">&apos;Room&apos;</span>}              <span class="hljs-comment">//&#x623F;&#x95F4;</span>
+    <span class="hljs-attr">user</span>: {<span class="hljs-attr">type</span>: ObjectId,<span class="hljs-attr">ref</span>: <span class="hljs-string">&apos;User&apos;</span>},          <span class="hljs-comment">//&#x7528;&#x6237;</span>
+    <span class="hljs-attr">createAt</span>: {<span class="hljs-attr">type</span>: <span class="hljs-built_in">Date</span>,<span class="hljs-attr">default</span>: <span class="hljs-built_in">Date</span>.now},    <span class="hljs-comment">//&#x521B;&#x5EFA;&#x65F6;&#x95F4; </span>
+    <span class="hljs-attr">room</span>:{<span class="hljs-attr">type</span>:ObjectId,<span class="hljs-attr">ref</span>:<span class="hljs-string">&apos;Room&apos;</span>}              <span class="hljs-comment">//&#x623F;&#x95F4;</span>
 });
 
 
@@ -1406,7 +1415,7 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
     Message
 }
 </code></pre>
-<h3 id="t396.3 routes/user.js">6.3 routes/user.js <a href="#t396.3 routes/user.js"> # </a></h3>
+<h3 id="t396.3 routes/user.js">6.3 routes/user.js <a href="38.chat2.html#t396.3 routes/user.js"> # </a></h3>
 <p>server/routes/user.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+ const gravatar=require(&apos;gravatar&apos;);</span>
 <span class="hljs-deletion">-    let user=new User({email,password,mobile});</span>
@@ -1416,7 +1425,7 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <span class="hljs-deletion">-            res.json({code:0,data:&apos;&#x767B;&#x5F55;&#x6210;&#x529F;&apos;});</span>
 <span class="hljs-addition">+            res.json({code:0,data:oldUser});</span>
 </code></pre>
-<h3 id="t406.4 Room/$id.jsx">6.4 Room/$id.jsx <a href="#t406.4 Room/$id.jsx"> # </a></h3>
+<h3 id="t406.4 Room/$id.jsx">6.4 Room/$id.jsx <a href="38.chat2.html#t406.4 Room/$id.jsx"> # </a></h3>
 <p>src/pages/Room/$id.jsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva&apos;</span>;
@@ -1435,63 +1444,63 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
     render() {
         <span class="hljs-keyword">let</span> {users,messages}=<span class="hljs-keyword">this</span>.props.chat;
         <span class="hljs-keyword">return</span> (
-            &lt;Layout&gt;
-                &lt;Header&gt;&lt;a href=&quot;#&quot;&gt;&#x73E0;&#x5CF0;&#x804A;&#x5929;&#x5BA4;&lt;/a&gt;&lt;/Header&gt;
-                &lt;Layout&gt;
-                    &lt;Sider&gt;
-                        &lt;Menu
-                            theme=&quot;dark&quot;
-                            mode=&quot;vertical&quot;
-                            defaultSelectedKeys={[]}
-                        &gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Layout</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>&#x73E0;&#x5CF0;&#x804A;&#x5929;&#x5BA4;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Layout</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Sider</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu</span>
+                            <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;dark&quot;</span>
+                            <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;vertical&quot;</span>
+                            <span class="hljs-attr">defaultSelectedKeys</span>=<span class="hljs-string">{[]}</span>
+                        &gt;</span>
                             {
-                                users.map(user =&gt; (&lt;Menu.Item key={user._id}&gt;{user.email}&lt;/Menu.Item&gt;))
+                                users.map(user =&gt; (<span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{user._id}</span>&gt;</span>{user.email}<span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>))
                             }
-                        &lt;/Menu&gt;
-                    &lt;/Sider&gt;
-                    &lt;Content style={{height: &apos;600px&apos;}}&gt;
-                        &lt;Card&gt;
-                            &lt;List
-                                itemLayout=&quot;horizontal&quot;
-                                dataSource={messages}
-                                renderItem={item =&gt; (
-                                &lt;List.Item&gt;
-                                    &lt;List.Item.Meta
-                                        avatar={&lt;Avatar src={item.user.avatar} /&gt;}
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Menu</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Sider</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{height:</span> &apos;<span class="hljs-attr">600px</span>&apos;}}&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">List</span>
+                                <span class="hljs-attr">itemLayout</span>=<span class="hljs-string">&quot;horizontal&quot;</span>
+                                <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{messages}</span>
+                                <span class="hljs-attr">renderItem</span>=<span class="hljs-string">{item</span> =&gt;</span> (
+                                <span class="hljs-tag">&lt;<span class="hljs-name">List.Item</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">List.Item.Meta</span>
+                                        <span class="hljs-attr">avatar</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Avatar</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{item.user.avatar}</span> /&gt;</span>}
                                         title={item.user.email}
                                         description={item.content}
                                     /&gt;
-                                &lt;/List.Item&gt;
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">List.Item</span>&gt;</span>
                             )}
                          /&gt;
-                        &lt;/Card&gt;
-                        &lt;Card&gt;
-                            &lt;Row gutter={8}&gt;
-                                &lt;Col span={23}&gt;
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Row</span> <span class="hljs-attr">gutter</span>=<span class="hljs-string">{8}</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{23}</span>&gt;</span>
                                     {
-                                        this.props.form.getFieldDecorator(&apos;content&apos;)(&lt;Input/&gt;)
+                                        this.props.form.getFieldDecorator(&apos;content&apos;)(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span>/&gt;</span>)
                                     }
-                                &lt;/Col&gt;
-                                &lt;Col span={1}&gt;&lt;Button onClick={this.talk}&gt;&#x53D1;&#x8A00;&lt;/Button&gt;&lt;/Col&gt;
-                            &lt;/Row&gt;
-                        &lt;/Card&gt;
-                    &lt;/Content&gt;
-                &lt;/Layout&gt;
-                &lt;Footer style={{textAlign:&apos;center&apos;}}&gt;
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{1}</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.talk}</span>&gt;</span>&#x53D1;&#x8A00;<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Footer</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{textAlign:</span>&apos;<span class="hljs-attr">center</span>&apos;}}&gt;</span>
                         @2018 &#x73E0;&#x5CF0;&#x57F9;&#x8BAD;
-                &lt;/Footer&gt;
-            &lt;/Layout&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Footer</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span></span>
         )
     }
 }
 
 </code></pre>
-<h3 id="t416.5 Room/index.jsx">6.5 Room/index.jsx <a href="#t416.5 Room/index.jsx"> # </a></h3>
+<h3 id="t416.5 Room/index.jsx">6.5 Room/index.jsx <a href="38.chat2.html#t416.5 Room/index.jsx"> # </a></h3>
 <p>src/pages/Room/index.jsx</p>
 <pre><code class="lang-diff"><span class="hljs-deletion">-     extra={&lt;Link to={`/Rooms/${item._id}`}&gt;&#x8FDB;&#x5165;&lt;/Link&gt;}</span>
 <span class="hljs-addition">+     extra={&lt;Link to={`/Room/${item._id}`}&gt;&#x8FDB;&#x5165;&lt;/Link&gt;}</span>
 </code></pre>
-<h3 id="t426.6 models/chat.js">6.6 models/chat.js <a href="#t426.6 models/chat.js"> # </a></h3>
+<h3 id="t426.6 models/chat.js">6.6 models/chat.js <a href="38.chat2.html#t426.6 models/chat.js"> # </a></h3>
 <p>src/pages/Room/models/chat.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> IO <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;socket.io-client&apos;</span>;
 <span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;umi/router&apos;</span>;
@@ -1546,14 +1555,14 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 };
 
 </code></pre>
-<h3 id="t436.7 models/room.js">6.7 models/room.js <a href="#t436.7 models/room.js"> # </a></h3>
+<h3 id="t436.7 models/room.js">6.7 models/room.js <a href="38.chat2.html#t436.7 models/room.js"> # </a></h3>
 <p>src/pages/Room/models/room.js</p>
 <pre><code class="lang-js">-    dispatch({
 -       type:<span class="hljs-string">&apos;getRooms&apos;</span>
 -    });
 +    dispatch({<span class="hljs-attr">type</span>:<span class="hljs-string">&apos;getRooms&apos;</span>});
 </code></pre>
-<h3 id="t446.8 models/login.js">6.8 models/login.js <a href="#t446.8 models/login.js"> # </a></h3>
+<h3 id="t446.8 models/login.js">6.8 models/login.js <a href="38.chat2.html#t446.8 models/login.js"> # </a></h3>
 <p>src/pages/User/models/login.js</p>
 <pre><code class="lang-diff"><span class="hljs-deletion">-      let {code}=yield call(loginService.submit,payload);</span>
 <span class="hljs-deletion">-      if(code == 0)</span>
@@ -1565,8 +1574,8 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <span class="hljs-addition">+        router.push(&apos;/Room&apos;);</span>
 <span class="hljs-addition">+      }</span>
 </code></pre>
-<h2 id="t457. &#x4E0A;&#x4F20;&#x56FE;&#x7247;">7. &#x4E0A;&#x4F20;&#x56FE;&#x7247; <a href="#t457. &#x4E0A;&#x4F20;&#x56FE;&#x7247;"> # </a></h2>
-<h3 id="t467.1 server/app.js">7.1 server/app.js <a href="#t467.1 server/app.js"> # </a></h3>
+<h2 id="t457. &#x4E0A;&#x4F20;&#x56FE;&#x7247;">7. &#x4E0A;&#x4F20;&#x56FE;&#x7247; <a href="38.chat2.html#t457. &#x4E0A;&#x4F20;&#x56FE;&#x7247;"> # </a></h2>
+<h3 id="t467.1 server/app.js">7.1 server/app.js <a href="38.chat2.html#t467.1 server/app.js"> # </a></h3>
 <p>server/app.js</p>
 <pre><code class="lang-diff"><span class="hljs-deletion">-app.use(bodyParser.json());</span>
 <span class="hljs-addition">+app.use(bodyParser.json({limit:&apos;1000kb&apos;}));</span>
@@ -1575,13 +1584,13 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <span class="hljs-deletion">-        console.log(room,users,messages);</span>
 <span class="hljs-addition">+        let messages = await Message.find({room: roomId}).populate(&apos;user&apos;); </span>
 </code></pre>
-<h3 id="t477.2 models/index.js">7.2 models/index.js <a href="#t477.2 models/index.js"> # </a></h3>
+<h3 id="t477.2 models/index.js">7.2 models/index.js <a href="38.chat2.html#t477.2 models/index.js"> # </a></h3>
 <p>server/models/index.js</p>
 <pre><code class="lang-diff"><span class="hljs-deletion">-    createAt:{type:Date,default:Date.now}        //&#x521B;&#x5EFA;&#x65F6;&#x95F4;</span>
 <span class="hljs-addition">+    createAt: {type: Date,default: Date.now},        //&#x521B;&#x5EFA;&#x65F6;&#x95F4;</span>
 <span class="hljs-addition">+    users:[{type:ObjectId,ref:&apos;User&apos;}]</span>
 </code></pre>
-<h3 id="t487.3 routes/room.js">7.3 routes/room.js <a href="#t487.3 routes/room.js"> # </a></h3>
+<h3 id="t487.3 routes/room.js">7.3 routes/room.js <a href="38.chat2.html#t487.3 routes/room.js"> # </a></h3>
 <p>server/routes/room.js</p>
 <pre><code class="lang-diff"><span class="hljs-deletion">-const {Room}=require(&apos;../models&apos;);</span>
 <span class="hljs-addition">+const {Room,User}=require(&apos;../models&apos;);</span>
@@ -1595,7 +1604,7 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+    console.log(list);</span>
 </code></pre>
-<h3 id="t497.4 routes/user.js">7.4 routes/user.js <a href="#t497.4 routes/user.js"> # </a></h3>
+<h3 id="t497.4 routes/user.js">7.4 routes/user.js <a href="38.chat2.html#t497.4 routes/user.js"> # </a></h3>
 <p>server/routes/user.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+ router.post(&apos;/changeAvatar&apos;,async function (req,res) {</span>
 <span class="hljs-addition">+     let {userId,avatar}=req.body;</span>
@@ -1609,7 +1618,7 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <span class="hljs-addition">+     }</span>
 <span class="hljs-addition">+ });</span>
 </code></pre>
-<h3 id="t507.5 Room/index.jsx">7.5 Room/index.jsx <a href="#t507.5 Room/index.jsx"> # </a></h3>
+<h3 id="t507.5 Room/index.jsx">7.5 Room/index.jsx <a href="38.chat2.html#t507.5 Room/index.jsx"> # </a></h3>
 <p>src/pages/Room/index.jsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;umi/link&apos;</span>;
@@ -1675,77 +1684,77 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
         }
 
         <span class="hljs-keyword">return</span> (
-            &lt;Layout&gt;
-                &lt;Header&gt;
-                    &lt;Row&gt;
-                        &lt;Col span={2}&gt;&lt;a className={styles.logo}&gt;&#x73E0;&#x5CF0;&#x804A;&#x5929;&#x5BA4;&lt;/a&gt;&lt;/Col&gt;
-                        &lt;Col span={21}&gt;&lt;Menu
-                        theme=&quot;dark&quot;
-                        mode=&quot;horizontal&quot;
-                        defaultSelectedKeys={[&apos;register&apos;]}
-                        style={{ lineHeight: &apos;64px&apos; }}
-                        &gt;
-                        &lt;Menu.Item key=&quot;register&quot;&gt;&#x6CE8;&#x518C;&lt;/Menu.Item&gt;
-                        &lt;Menu.Item key=&quot;login&quot;&gt;&#x767B;&#x5F55;&lt;/Menu.Item&gt;
-                        &lt;/Menu&gt;&lt;/Col&gt;
-                        &lt;Col span={1}&gt;{this.props.login.user&amp;&amp;&lt;Avatar onClick={()=&gt;this.changeAvatar(this.props.login.user._id)} src={this.props.login.user.avatar}/&gt;}&lt;/Col&gt;
-                    &lt;/Row&gt;
-                &lt;/Header&gt;
-                &lt;Content&gt;
-                    &lt;Card&gt;
-                        &lt;Row gutter={16}&gt;
-                            &lt;Col span={6} offset={8}&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Layout</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Header</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Row</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{2}</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.logo}</span>&gt;</span>&#x73E0;&#x5CF0;&#x804A;&#x5929;&#x5BA4;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{21}</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Menu</span>
+                        <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;dark&quot;</span>
+                        <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;horizontal&quot;</span>
+                        <span class="hljs-attr">defaultSelectedKeys</span>=<span class="hljs-string">{[</span>&apos;<span class="hljs-attr">register</span>&apos;]}
+                        <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">lineHeight:</span> &apos;<span class="hljs-attr">64px</span>&apos; }}
+                        &gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;register&quot;</span>&gt;</span>&#x6CE8;&#x518C;<span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;login&quot;</span>&gt;</span>&#x767B;&#x5F55;<span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Menu</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{1}</span>&gt;</span>{this.props.login.user&amp;&amp;<span class="hljs-tag">&lt;<span class="hljs-name">Avatar</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span>=&gt;</span>this.changeAvatar(this.props.login.user._id)} src={this.props.login.user.avatar}/&gt;}<span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span> <span class="hljs-attr">gutter</span>=<span class="hljs-string">{16}</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">offset</span>=<span class="hljs-string">{8}</span>&gt;</span>
                                 {
                                     this.props.form.getFieldDecorator(&apos;keyword&apos;)(
-                                        &lt;Input type=&quot;text&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x623F;&#x95F4;&#x540D;&quot;&gt;&lt;/Input&gt;
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8BF7;&#x8F93;&#x5165;&#x623F;&#x95F4;&#x540D;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Input</span>&gt;</span>
                                     )
                                 }
-                            &lt;/Col&gt;
-                        &lt;/Row&gt;                
-                    &lt;/Card&gt;
-                    &lt;Card&gt;
-                        &lt;Row gutter={16}&gt;
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>                
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Row</span> <span class="hljs-attr">gutter</span>=<span class="hljs-string">{16}</span>&gt;</span>
                             {
                                 rooms.length&gt;0?rooms.map(item =&gt; (
-                                    &lt;Col span={6} key={item._id}&gt;
-                                        &lt;Card
-                                            title={item.name}
-                                            extra={&lt;Link to={`/Room/${item._id}`}&gt;&#x8FDB;&#x5165;&lt;/Link&gt;}
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">Col</span> <span class="hljs-attr">span</span>=<span class="hljs-string">{6}</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item._id}</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>
+                                            <span class="hljs-attr">title</span>=<span class="hljs-string">{item.name}</span>
+                                            <span class="hljs-attr">extra</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">{</span>`/<span class="hljs-attr">Room</span>/${<span class="hljs-attr">item._id</span>}`}&gt;</span>&#x8FDB;&#x5165;<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>}
                                         &gt;
                                             {
-                                                item.users.map(user =&gt; &lt;Avatar style={{marginLeft:5}} src={user.avatar} /&gt;)
+                                                item.users.map(user =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">Avatar</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{marginLeft:5}}</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{user.avatar}</span> /&gt;</span>)
                                             }
-                                        &lt;/Card&gt;
-                                    &lt;/Col&gt;    
-                                )):&lt;Button onClick={this.createRoom}&gt;&#x521B;&#x5EFA;&#x623F;&#x95F4;&lt;/Button&gt;
+                                        <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-name">Col</span>&gt;</span>    
+                                )):<span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.createRoom}</span>&gt;</span>&#x521B;&#x5EFA;&#x623F;&#x95F4;<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
                             }
-                        &lt;/Row&gt;
-                    &lt;/Card&gt;
-                &lt;/Content&gt;
-                &lt;Footer&gt;
-                    &lt;div className={styles.copyright}&gt; &#xA9;2018 &#x73E0;&#x5CF0;&#x57F9;&#x8BAD;&lt;/div&gt;
-                &lt;/Footer&gt;
-                &lt;Modal
-                    onOk={()=&gt;this.confirmChange(this.props.login.user._id)}
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Row</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Footer</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.copyright}</span>&gt;</span> &#xA9;2018 &#x73E0;&#x5CF0;&#x57F9;&#x8BAD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Footer</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Modal</span>
+                    <span class="hljs-attr">onOk</span>=<span class="hljs-string">{()</span>=&gt;</span>this.confirmChange(this.props.login.user._id)}
                     onCancel={()=&gt;this.setState({cropperVisible:false})}
                     visible={this.state.cropperVisible} &gt;
-                    &lt;Cropper
-                            ref={i=&gt;this.cropper =i}
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Cropper</span>
+                            <span class="hljs-attr">ref</span>=<span class="hljs-string">{i</span>=&gt;</span>this.cropper =i}
                             src={this.state.src}
                             style={{height: 400, width: 400}}
                             aspectRatio={16 / 9}
                         guides={false} /&gt;
-                &lt;/Modal&gt;
-            &lt;/Layout&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Modal</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span></span>
         )
     }
 }
 </code></pre>
-<h3 id="t517.6 /models/chat.js">7.6 /models/chat.js <a href="#t517.6 /models/chat.js"> # </a></h3>
+<h3 id="t517.6 /models/chat.js">7.6 /models/chat.js <a href="38.chat2.html#t517.6 /models/chat.js"> # </a></h3>
 <p>src/pages/Room/models/chat.js</p>
 <pre><code class="lang-js">+ dispatch({<span class="hljs-attr">type</span>: <span class="hljs-string">&apos;login/save&apos;</span>,<span class="hljs-attr">payload</span>: {user}});
 </code></pre>
-<h3 id="t527.7 models/room.js">7.7 models/room.js <a href="#t527.7 models/room.js"> # </a></h3>
+<h3 id="t527.7 models/room.js">7.7 models/room.js <a href="38.chat2.html#t527.7 models/room.js"> # </a></h3>
 <p>src/pages/Room/models/room.js</p>
 <pre><code class="lang-diff"><span class="hljs-deletion">-        if(pathname == &apos;/Room&apos;){</span>
 <span class="hljs-deletion">-          dispatch({type:&apos;getRooms&apos;});</span>
@@ -1759,7 +1768,7 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <span class="hljs-addition">+            router.push(&apos;/User/Login&apos;);</span>
 <span class="hljs-addition">+          }</span>
 </code></pre>
-<h3 id="t537.8 models/login.js">7.8 models/login.js <a href="#t537.8 models/login.js"> # </a></h3>
+<h3 id="t537.8 models/login.js">7.8 models/login.js <a href="38.chat2.html#t537.8 models/login.js"> # </a></h3>
 <p>src/pages/User/models/login.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+    *changeAvatar({payload},{call,put}) {</span>
 <span class="hljs-addition">+      let {code,data}=yield call(loginService.changeAvatar,payload);</span>
@@ -1768,7 +1777,7 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <span class="hljs-addition">+        yield put({type: &apos;save&apos;,payload: {user: data}});</span>
 <span class="hljs-addition">+      }</span>
 </code></pre>
-<h3 id="t547.9 services/login.js">7.9 services/login.js <a href="#t547.9 services/login.js"> # </a></h3>
+<h3 id="t547.9 services/login.js">7.9 services/login.js <a href="38.chat2.html#t547.9 services/login.js"> # </a></h3>
 <p>src/pages/User/services/login.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeAvatar</span>(<span class="hljs-params">values</span>) </span>{
   <span class="hljs-keyword">return</span> request(<span class="hljs-string">`/user/changeAvatar`</span>,{
@@ -1781,7 +1790,7 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
   });
 }
 </code></pre>
-<h2 id="t55&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5; <a href="#t55&#x53C2;&#x8003;&#x94FE;&#x63A5;"> # </a></h2>
+<h2 id="t55&#x53C2;&#x8003;&#x94FE;&#x63A5;">&#x53C2;&#x8003;&#x94FE;&#x63A5; <a href="38.chat2.html#t55&#x53C2;&#x8003;&#x94FE;&#x63A5;"> # </a></h2>
 <ul>
 <li><a href="https://gitee.com/zhufengpeixun/zhufeng-dva-chat">zhufeng-dva-chat</a></li>
 <li><a href="https://ant.design/docs/react/introduce-cn">ant.design</a></li>
@@ -1790,18 +1799,74 @@ io.on(<span class="hljs-string">&apos;connection&apos;</span>,<span class="hljs-
 <li><a href="http://www.ucpaas.com">ucpaas</a></li>
 </ul>
 
-        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
     </div>
-    
 </div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+    aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">姓名:</label>
+                        <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码:</label>
+                        <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                    data-dismiss="modal">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+let zhufengjiagou = localStorage.getItem('zhufengjiagou');
+const host = 'http://login.zhufengpeixun.com';
+if(zhufengjiagou){
+  fetch(host+'/check',{method:"GET",mode: 'cors',
+　　headers: {'Content-Type': 'application/json', authorization: `Bearer ${zhufengjiagou}`}}).then(response => response.json()).then(res => {
+    if(res.success){
+     
+    }else{
+      $('#loginModal').modal('show')
+    }
+  }) 
+}else{
+   $('#loginModal').modal('show')
+}
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+$('#loginModal').on('hidden.bs.modal', function (event) {
+  var modal = $(this)
+  let username = modal.find('.modal-body #username').val();
+  let password = modal.find('.modal-body #password').val();
+  fetch(host+'/login',{method:"POST",mode: 'cors',
+　　headers: {'Content-Type': 'application/json'},
+　　body:JSON.stringify({username,password})}).then(response => response.json()).then(res => {
+    if(res.success){
+      localStorage.setItem('zhufengjiagou',res.zhufengjiagou);
+    }else{
+      window.location.href = 'http://www.zhufengpeixun.cn';
+    }
+  })
+})
+</script>
 <script>
 $('.warpper .page-toc ul ul li a').on('click',function(){
   $('.warpper .page-toc ul ul li a').removeClass('my-active')
   $(this).addClass('my-active')
 })
-
 $('.logo').on('mouseenter',function(){
   $('.nav').height('450px');
 })
@@ -1812,61 +1877,6 @@ $('.logo').on('click',function(){
   $('.nav').css('display','none');
  $('.warpper').css('padding','0px');
 })
-// if (!$('.understand-me').length) {
-  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
-  //   var count = bar / 26 / 2;
-  //   var barHeight = $('.page-toc').outerHeight();
-  //   $('.page-toc li').eq(0).children('a').addClass('red');
-  //   var arr = [];
-  //   $("h1,h2,h3,h4,h5,h6").each(function () {
-  //     arr.push($(this).position().top);
-  //   });
-  //   var timer
-  //   function dark() {
-  //     clearTimeout(timer)
-  //      timer = setTimeout(function () {
-  //      var top = Math.abs($('.page-toc > ul').position().top);
-  //      var cur = $('.content').scrollTop();
-  //      for (var i = arr.length; i >= 0; i--) {
-  //        if (arr[i] <= cur) {
-  //          break;
-  //        }
-  //      }
-  //      if (i === -1) {
-  //        i = 0;
-  //      }
-  //      $('.page-toc li a').removeClass('red');
-  //      $('.page-toc li').eq(i).children('a').addClass('red');
-  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
-  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
-  //    },200)
-  //   }
-
-  //   $('.content').on('scroll', dark);
-  // }
 </script>
-<style>
-
-    /* ::-webkit-scrollbar{width:14px;}
-    ::-webkit-scrollbar-track{background-color:transparent;}
-    ::-webkit-scrollbar-thumb{background-color:transparent;}
-    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
-    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
-
-    .page-toc > ul .red {
-        background: #f3f3f3;
-        z-index: 1;
-        border-left: 3px solid #009a61;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        color: #000
-    }
-
-
-
-
-
-</style>
-<script type="text/javascript"  src="https://idm-su.baidu.com/su_new.js"></script>
 </body>
 </html>

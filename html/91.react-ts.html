@@ -5,34 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
     <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
 </head>
 <body>
 <div class="nav">
     <div class="logo">
         
-            珠峰架构师成长计划
-        
-    </div>
-<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li class="active"><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li></ul></div>
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="0.Async.html">0.Async</a></li><li><a href="0.module.html">0.module</a></li><li><a href="1.ES2015.html">1.ES2015</a></li><li><a href="2.Promise.html">2.Promise</a></li><li><a href="3.Node.html">3.Node</a></li><li><a href="4.NodeInstall.html">4.NodeInstall</a></li><li><a href="5.REPL.html">5.REPL</a></li><li><a href="6.NodeCore.html">6.NodeCore</a></li><li><a href="7.module&amp;NPM.html">7.module&NPM</a></li><li><a href="8.Encoding.html">8.Encoding</a></li><li><a href="9.Buffer.html">9.Buffer</a></li><li><a href="10.fs.html">10.fs</a></li><li><a href="11.Stream-1.html">11.Stream-1</a></li><li><a href="11.Stream-2.html">11.Stream-2</a></li><li><a href="11.Stream-3.html">11.Stream-3</a></li><li><a href="11.Stream-4.html">11.Stream-4</a></li><li><a href="12-Network-2.html">12-Network-2</a></li><li><a href="12.NetWork-3.html">12.NetWork-3</a></li><li><a href="12.Network-1.html">12.Network-1</a></li><li><a href="13.tcp.html">13.tcp</a></li><li><a href="14.http-1.html">14.http-1</a></li><li><a href="14.http-2.html">14.http-2</a></li><li><a href="15.compress.html">15.compress</a></li><li><a href="16.crypto.html">16.crypto</a></li><li><a href="17.process.html">17.process</a></li><li><a href="18.yargs.html">18.yargs</a></li><li><a href="19.cache.html">19.cache</a></li><li><a href="20.action.html">20.action</a></li><li><a href="21.https.html">21.https</a></li><li><a href="22.cookie.html">22.cookie</a></li><li><a href="23.session.html">23.session</a></li><li><a href="24.express-1.html">24.express-1</a></li><li><a href="24.express-2.html">24.express-2</a></li><li><a href="24.express-3.html">24.express-3</a></li><li><a href="24.express-4.html">24.express-4</a></li><li><a href="25.koa-1.html">25.koa-1</a></li><li><a href="26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="28.redux.html">28.redux</a></li><li><a href="28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="29.mongodb-1.html">29.mongodb-1</a></li><li><a href="29.mongodb-2.html">29.mongodb-2</a></li><li><a href="29.mongodb-3.html">29.mongodb-3</a></li><li><a href="29.mongodb-4.html">29.mongodb-4</a></li><li><a href="29.mongodb-5.html">29.mongodb-5</a></li><li><a href="29.mongodb-6.html">29.mongodb-6</a></li><li><a href="30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="30.cms-7-api.html">30.cms-7-api</a></li><li><a href="30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="30.cms-14-front.html">30.cms-14-front</a></li><li><a href="30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="31.dva.html">31.dva</a></li><li><a href="31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="33.redis.html">33.redis</a></li><li><a href="34.unittest.html">34.unittest</a></li><li><a href="35.jwt.html">35.jwt</a></li><li><a href="36.websocket-1.html">36.websocket-1</a></li><li><a href="36.websocket-2.html">36.websocket-2</a></li><li><a href="38.chat-api-1.html">38.chat-api-1</a></li><li><a href="38.chat-api-2.html">38.chat-api-2</a></li><li><a href="38.chat-3.html">38.chat-3</a></li><li><a href="38.chat-api-3.html">38.chat-api-3</a></li><li><a href="38.chat.html">38.chat</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="39.crawl-0.html">39.crawl-0</a></li><li><a href="39.crawl-1.html">39.crawl-1</a></li><li><a href="39.crawl-2.html">39.crawl-2</a></li><li><a href="40.deploy.html">40.deploy</a></li><li><a href="41.safe.html">41.safe</a></li><li><a href="42.test.html">42.test</a></li><li><a href="43.nginx.html">43.nginx</a></li><li><a href="44.enzyme.html">44.enzyme</a></li><li><a href="45.docker.html">45.docker</a></li><li><a href="46.elastic.html">46.elastic</a></li><li><a href="47.oauth.html">47.oauth</a></li><li><a href="48.wxpay.html">48.wxpay</a></li><li><a href="index.html">index</a></li><li><a href="52.UML.html">52.UML</a></li><li><a href="53.design.html">53.design</a></li><li><a href="index.html">index</a></li><li><a href="54.linux.html">54.linux</a></li><li><a href="57.ts.html">57.ts</a></li><li><a href="56.react-ssr.html">56.react-ssr</a></li><li><a href="58.ts_react.html">58.ts_react</a></li><li><a href="59.ketang.html">59.ketang</a></li><li><a href="59.ketang2.html">59.ketang2</a></li><li><a href="61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="61.3.devops-user.html">61.3.devops-user</a></li><li><a href="61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="61.6.devops-install.html">61.6.devops-install</a></li><li><a href="61.7.devops-system.html">61.7.devops-system</a></li><li><a href="61.8.devops-service.html">61.8.devops-service</a></li><li><a href="61.9.devops-network.html">61.9.devops-network</a></li><li><a href="61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="61.14.devops-php.html">61.14.devops-php</a></li><li><a href="61.15.devops-java.html">61.15.devops-java</a></li><li><a href="61.16.devops-node.html">61.16.devops-node</a></li><li><a href="61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="62.1.react-basic.html">62.1.react-basic</a></li><li><a href="62.2.react-state.html">62.2.react-state</a></li><li><a href="62.3.react-high.html">62.3.react-high</a></li><li><a href="62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="62.8.react-source.html">62.8.react-source</a></li><li><a href="63.1.redux.html">63.1.redux</a></li><li><a href="63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="64.1.router.html">64.1.router</a></li><li><a href="64.2.router-connected.html">64.2.router-connected</a></li><li><a href="65.1.typescript.html">65.1.typescript</a></li><li><a href="65.2.typescript.html">65.2.typescript</a></li><li><a href="65.3.typescript.html">65.3.typescript</a></li><li><a href="65.4.antd.html">65.4.antd</a></li><li><a href="65.4.definition.html">65.4.definition</a></li><li><a href="66-1.vue-base.html">66-1.vue-base</a></li><li><a href="66-2.vue-component.html">66-2.vue-component</a></li><li><a href="66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="66-4.$message组件.html">66-4.$message组件</a></li><li><a href="66-5.Form组件.html">66-5.Form组件</a></li><li><a href="66-6.tree.html">66-6.tree</a></li><li><a href="66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="66-13.pwa.html">66-13.pwa</a></li><li><a href="66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="66-15.权限校验.html">66-15.权限校验</a></li><li><a href="67-1-network.html">67-1-network</a></li><li><a href="68-2-wireshark.html">68-2-wireshark</a></li><li><a href="7.npm2.html">7.npm2</a></li><li><a href="69-hooks.html">69-hooks</a></li><li><a href="70-deploy.html">70-deploy</a></li><li><a href="71-hmr.html">71-hmr</a></li><li><a href="72.deploy.html">72.deploy</a></li><li><a href="73.import.html">73.import</a></li><li><a href="74.mobile.html">74.mobile</a></li><li><a href="75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="76.react_optimize.html">76.react_optimize</a></li><li><a href="77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="79.grammar.html">79.grammar</a></li><li><a href="80.tree.html">80.tree</a></li><li><a href="81.axios.html">81.axios</a></li><li><a href="82.1.react.html">82.1.react</a></li><li><a href="82.2.react-high.html">82.2.react-high</a></li><li><a href="82.3.react-router.html">82.3.react-router</a></li><li><a href="82.4.redux.html">82.4.redux</a></li><li><a href="82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="82.6.connected.html">82.6.connected</a></li><li><a href="82.7.saga.html">82.7.saga</a></li><li><a href="82.8.dva.html">82.8.dva</a></li><li><a href="82.8.dva-source.html">82.8.dva-source</a></li><li><a href="82.9.roadhog.html">82.9.roadhog</a></li><li><a href="82.10.umi.html">82.10.umi</a></li><li><a href="82.11.antdesign.html">82.11.antdesign</a></li><li><a href="82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="83.upload.html">83.upload</a></li><li><a href="84.graphql.html">84.graphql</a></li><li><a href="85.antpro.html">85.antpro</a></li><li><a href="86.1.uml.html">86.1.uml</a></li><li><a href="86.2.design.html">86.2.design</a></li><li><a href="87.postcss.html">87.postcss</a></li><li><a href="88.react16-1.html">88.react16-1</a></li><li><a href="89.nextjs.html">89.nextjs</a></li><li><a href="90.react-test.html">90.react-test</a></li><li class="active"><a href="91.react-ts.html">91.react-ts</a></li><li><a href="92.rbac.html">92.rbac</a></li><li><a href="93.tsnode.html">93.tsnode</a></li><li><a href="94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="94.3.MODULE.html">94.3.MODULE</a></li><li><a href="94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="94.5.文件上传.html">94.5.文件上传</a></li><li><a href="94.6.https.html">94.6.https</a></li><li><a href="94.7.&#32;nginx.html">94.7. nginx</a></li><li><a href="95.1.&#32;react.html">95.1. react</a></li><li><a href="95.2.react.html">95.2.react</a></li><li><a href="96.1.react16.html">96.1.react16</a></li><li><a href="96.2.fiber.html">96.2.fiber</a></li><li><a href="96.3.fiber.html">96.3.fiber</a></li><li><a href="97.serverless.html">97.serverless</a></li><li><a href="98.websocket.html">98.websocket</a></li><li><a href="100.1.react-basic.html">100.1.react-basic</a></li><li><a href="101.1.monitor.html">101.1.monitor</a></li><li><a href="101.2.monitor.html">101.2.monitor</a></li><li><a href="102.java.html">102.java</a></li><li><a href="103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="103.16.vite.source.html">103.16.vite.source</a></li><li><a href="103.17.polyfill.html">103.17.polyfill</a></li><li><a href="104.1.binary.html">104.1.binary</a></li><li><a href="104.2.binary.html">104.2.binary</a></li><li><a href="105.skeleton.html">105.skeleton</a></li><li><a href="106.1.react.html">106.1.react</a></li><li><a href="106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="106.3.react_router.html">106.3.react_router</a></li><li><a href="106.4.redux.html">106.4.redux</a></li><li><a href="106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="106.8.dva.html">106.8.dva</a></li><li><a href="106.9.umi.html">106.9.umi</a></li><li><a href="106.10.ketang.html">106.10.ketang</a></li><li><a href="106.11.antdesign.html">106.11.antdesign</a></li><li><a href="106.12.antpro.html">106.12.antpro</a></li><li><a href="107.fiber.html">107.fiber</a></li><li><a href="108.http.html">108.http</a></li><li><a href="109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="109.3.dll.html">109.3.dll</a></li><li><a href="110.nest.js.html">110.nest.js</a></li><li><a href="111.xstate.html">111.xstate</a></li><li><a href="112.Form.html">112.Form</a></li><li><a href="113.redux-saga.html">113.redux-saga</a></li><li><a href="114.react+typescript.html">114.react+typescript</a></li><li><a href="115.immer.html">115.immer</a></li><li><a href="116.pro5.html">116.pro5</a></li><li><a href="117.css-loader.html">117.css-loader</a></li><li><a href="118.1.umi-core.html">118.1.umi-core</a></li><li><a href="119.2.module-federation.html">119.2.module-federation</a></li><li><a href="119.1.module-federation.html">119.1.module-federation</a></li><li><a href="120.create-react-app.html">120.create-react-app</a></li><li><a href="121.react-scripts.html">121.react-scripts</a></li><li><a href="122.react-optimize.html">122.react-optimize</a></li><li><a href="123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="124.next.js.html">124.next.js</a></li><li><a href="125.1.linux.html">125.1.linux</a></li><li><a href="125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="125.3.linux-user.html">125.3.linux-user</a></li><li><a href="125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="125.6.linux-install.html">125.6.linux-install</a></li><li><a href="125.7.linux-system.html">125.7.linux-system</a></li><li><a href="125.8.linux-service.html">125.8.linux-service</a></li><li><a href="125.9.linux-network.html">125.9.linux-network</a></li><li><a href="125.10.nginx.html">125.10.nginx</a></li><li><a href="125.11.docker.html">125.11.docker</a></li><li><a href="125.12.ci.html">125.12.ci</a></li><li><a href="125.13.k8s.html">125.13.k8s</a></li><li><a href="125.14.k8s.html">125.14.k8s</a></li><li><a href="125.15.k8s.html">125.15.k8s</a></li><li><a href="125.16.k8s.html">125.16.k8s</a></li><li><a href="126.11.react-1.html">126.11.react-1</a></li><li><a href="126.12.react-2.html">126.12.react-2</a></li><li><a href="126.12.react-3.html">126.12.react-3</a></li><li><a href="126.12.react-4.html">126.12.react-4</a></li><li><a href="126.12.react-5.html">126.12.react-5</a></li><li><a href="127.frontend.html">127.frontend</a></li><li><a href="128.rollup.html">128.rollup</a></li><li><a href="129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="130.health.html">130.health</a></li><li><a href="131.hooks.html">131.hooks</a></li><li><a href="132.keepalive.html">132.keepalive</a></li><li><a href="133.vue-cli.html">133.vue-cli</a></li><li><a href="134.react18.html">134.react18</a></li><li><a href="135.function.html">135.function</a></li><li><a href="136.toolkit.html">136.toolkit</a></li><li><a href="137.lerna.html">137.lerna</a></li><li><a href="138.create-vite.html">138.create-vite</a></li><li><a href="139.cli.html">139.cli</a></li><li><a href="140.antd.html">140.antd</a></li><li><a href="141.react-dnd.html">141.react-dnd</a></li><li><a href="142.1.link.html">142.1.link</a></li><li><a href="143.1.gulp.html">143.1.gulp</a></li><li><a href="143.2.stream.html">143.2.stream</a></li><li><a href="143.3.gulp.html">143.3.gulp</a></li><li><a href="144.1.closure.html">144.1.closure</a></li><li><a href="106.13.router-6.html">106.13.router-6</a></li><li><a href="145.react-router-v6.html">145.react-router-v6</a></li><li><a href="144.2.v8.html">144.2.v8</a></li><li><a href="144.3.gc.html">144.3.gc</a></li><li><a href="106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="146.browser.html">146.browser</a></li><li><a href="147.lighthouse.html">147.lighthouse</a></li><li><a href="148.1.basic.html">148.1.basic</a></li><li><a href="148.2.basic&#32;.html">148.2.basic </a></li><li><a href="148.3.basic.html">148.3.basic</a></li></ul>                        </div>
 
-
+                        
 <div class="warpper">
-
     <div class="page-toc">
-        <ul><li><a href="#t01. 搭建开发环境">1. 搭建开发环境</a></li><li><a href="#t12. 生成ts配置文件">2. 生成ts配置文件</a></li><li><a href="#t23.配置webpack">3.配置webpack</a><ul><li><a href="#t33.1 package.json">3.1 package.json</a></li><li><a href="#t43.2 config\webpack.base.js">3.2 config\webpack.base.js</a></li><li><a href="#t53.3 config\webpack.dev.js">3.3 config\webpack.dev.js</a></li><li><a href="#t63.4 config\webpack.prod.js">3.4 config\webpack.prod.js</a></li></ul></li><li><a href="#t74.配置eslint">4.配置eslint</a><ul><li><a href="#t84.1 安装">4.1 安装</a></li><li><a href="#t94.2 .eslintrc.json">4.2 .eslintrc.json</a></li><li><a href="#t104.3 package.json">4.3 package.json</a></li></ul></li><li><a href="#t115.配置jest">5.配置jest</a><ul><li><a href="#t125.1 安装配置">5.1 安装配置</a></li><li><a href="#t135.2 src\calculator.tsx">5.2 src\calculator.tsx</a></li><li><a href="#t145.3 tests\calculator.spec.tsx">5.3 tests\calculator.spec.tsx</a></li><li><a href="#t155.4 package.json">5.4 package.json</a></li></ul></li><li><a href="#t166.支持react">6.支持react</a><ul><li><a href="#t176.1 安装">6.1 安装</a></li><li><a href="#t186.2 src\index.tsx">6.2 src\index.tsx</a></li><li><a href="#t196.3 typings\react.tsx">6.3 typings\react.tsx</a></li></ul></li><li><a href="#t207.函数组件声明">7.函数组件声明</a><ul><li><a href="#t217.1 src\index.tsx">7.1 src\index.tsx</a></li><li><a href="#t227.2 typings\react.tsx">7.2 typings\react.tsx</a></li></ul></li><li><a href="#t238.类组件声明">8.类组件声明</a><ul><li><a href="#t248.1 src\index.tsx">8.1 src\index.tsx</a></li><li><a href="#t258.2 typings\react.tsx">8.2 typings\react.tsx</a></li></ul></li><li><a href="#t269.使用redux">9.使用redux</a><ul><li><a href="#t279.1 src\index.tsx">9.1 src\index.tsx</a></li><li><a href="#t289.2 src\store\index.tsx">9.2 src\store\index.tsx</a></li><li><a href="#t299.3 store\action-types.tsx">9.3 store\action-types.tsx</a></li><li><a href="#t309.4 reducers\counter1.tsx">9.4 reducers\counter1.tsx</a></li><li><a href="#t319.5 reducers\counter2.tsx">9.5 reducers\counter2.tsx</a></li><li><a href="#t329.6 reducers\index.tsx">9.6 reducers\index.tsx</a></li><li><a href="#t339.7 actions\counter1.tsx">9.7 actions\counter1.tsx</a></li><li><a href="#t349.8 actions\counter2.tsx">9.8 actions\counter2.tsx</a></li><li><a href="#t359.9 src\components\Counter1.tsx">9.9 src\components\Counter1.tsx</a></li><li><a href="#t369.10 src\components\Counter2.tsx">9.10 src\components\Counter2.tsx</a></li><li><a href="#t379.11 redux-thunk\index.tsx">9.11 redux-thunk\index.tsx</a></li></ul></li><li><a href="#t3810.支持路由">10.支持路由</a><ul><li><a href="#t3910.1 安装">10.1 安装</a></li><li><a href="#t4010.2 src\index.tsx">10.2 src\index.tsx</a></li><li><a href="#t4110.2 src\history.tsx">10.2 src\history.tsx</a></li><li><a href="#t4210.3 store\index.tsx">10.3 store\index.tsx</a></li><li><a href="#t4310.4 reducers\index.tsx">10.4 reducers\index.tsx</a></li><li><a href="#t4410.5 store\actions\counter1.tsx">10.5 store\actions\counter1.tsx</a></li><li><a href="#t4510.6 components\Counter1.tsx">10.6 components\Counter1.tsx</a></li><li><a href="#t4610.7 components\Counter2.tsx">10.7 components\Counter2.tsx</a></li></ul></li><li><a href="#t4711.路由和antdesign">11.路由和antdesign</a><ul><li><a href="#t4811.1 安装依赖">11.1 安装依赖</a></li><li><a href="#t4911.2 config\webpack.base.js">11.2 config\webpack.base.js</a></li><li><a href="#t5011.3 src\index.tsx">11.3 src\index.tsx</a></li><li><a href="#t5111.4 action-types.tsx">11.4 action-types.tsx</a></li><li><a href="#t5211.5 reducers\index.tsx">11.5 reducers\index.tsx</a></li><li><a href="#t5311.6 typings\response.tsx">11.6 typings\response.tsx</a></li><li><a href="#t5411.7 store\reducers\user.tsx">11.7 store\reducers\user.tsx</a></li><li><a href="#t5511.8 store\actions\user.tsx">11.8 store\actions\user.tsx</a></li><li><a href="#t5611.9 src\api\request.tsx">11.9 src\api\request.tsx</a></li><li><a href="#t5711.10 src\components\NavBar.tsx">11.10 src\components\NavBar.tsx</a></li><li><a href="#t5811.11 components\User.tsx">11.11 components\User.tsx</a></li><li><a href="#t5911.12 src\components\UserAdd.tsx">11.12 src\components\UserAdd.tsx</a></li><li><a href="#t6011.13 src\components\UserList.tsx">11.13 src\components\UserList.tsx</a></li></ul></li><li><a href="#t6112. 后台接口">12. 后台接口</a><ul><li><a href="#t6212.1. 初始化项目">12.1. 初始化项目</a></li><li><a href="#t6312.2 tsconfig.json">12.2 tsconfig.json</a></li><li><a href="#t6412.3 server.ts">12.3 server.ts</a></li><li><a href="#t6512.4 config.ts">12.4 config.ts</a></li><li><a href="#t6612.5 db.ts">12.5 db.ts</a></li><li><a href="#t6712.6 shelljs\index.d.ts">12.6 shelljs\index.d.ts</a></li><li><a href="#t6812.7 copy.ts">12.7 copy.ts</a></li><li><a href="#t6912.8 package.json">12.8 package.json</a></li></ul></li><li><a href="#t7013. dva">13. dva</a></li></ul>
+        <ul><li><a href="91.react-ts.html#t01. 搭建开发环境">1. 搭建开发环境</a></li><li><a href="91.react-ts.html#t12. 生成ts配置文件">2. 生成ts配置文件</a></li><li><a href="91.react-ts.html#t23.配置webpack">3.配置webpack</a><ul><li><a href="91.react-ts.html#t33.1 package.json">3.1 package.json</a></li><li><a href="91.react-ts.html#t43.2 config\webpack.base.js">3.2 config\webpack.base.js</a></li><li><a href="91.react-ts.html#t53.3 config\webpack.dev.js">3.3 config\webpack.dev.js</a></li><li><a href="91.react-ts.html#t63.4 config\webpack.prod.js">3.4 config\webpack.prod.js</a></li></ul></li><li><a href="91.react-ts.html#t74.配置eslint">4.配置eslint</a><ul><li><a href="91.react-ts.html#t84.1 安装">4.1 安装</a></li><li><a href="91.react-ts.html#t94.2 .eslintrc.json">4.2 .eslintrc.json</a></li><li><a href="91.react-ts.html#t104.3 package.json">4.3 package.json</a></li></ul></li><li><a href="91.react-ts.html#t115.配置jest">5.配置jest</a><ul><li><a href="91.react-ts.html#t125.1 安装配置">5.1 安装配置</a></li><li><a href="91.react-ts.html#t135.2 src\calculator.tsx">5.2 src\calculator.tsx</a></li><li><a href="91.react-ts.html#t145.3 tests\calculator.spec.tsx">5.3 tests\calculator.spec.tsx</a></li><li><a href="91.react-ts.html#t155.4 package.json">5.4 package.json</a></li></ul></li><li><a href="91.react-ts.html#t166.支持react">6.支持react</a><ul><li><a href="91.react-ts.html#t176.1 安装">6.1 安装</a></li><li><a href="91.react-ts.html#t186.2 src\index.tsx">6.2 src\index.tsx</a></li><li><a href="91.react-ts.html#t196.3 typings\react.tsx">6.3 typings\react.tsx</a></li></ul></li><li><a href="91.react-ts.html#t207.函数组件声明">7.函数组件声明</a><ul><li><a href="91.react-ts.html#t217.1 src\index.tsx">7.1 src\index.tsx</a></li><li><a href="91.react-ts.html#t227.2 typings\react.tsx">7.2 typings\react.tsx</a></li></ul></li><li><a href="91.react-ts.html#t238.类组件声明">8.类组件声明</a><ul><li><a href="91.react-ts.html#t248.1 src\index.tsx">8.1 src\index.tsx</a></li><li><a href="91.react-ts.html#t258.2 typings\react.tsx">8.2 typings\react.tsx</a></li></ul></li><li><a href="91.react-ts.html#t269.使用redux">9.使用redux</a><ul><li><a href="91.react-ts.html#t279.1 src\index.tsx">9.1 src\index.tsx</a></li><li><a href="91.react-ts.html#t289.2 src\store\index.tsx">9.2 src\store\index.tsx</a></li><li><a href="91.react-ts.html#t299.3 store\action-types.tsx">9.3 store\action-types.tsx</a></li><li><a href="91.react-ts.html#t309.4 reducers\counter1.tsx">9.4 reducers\counter1.tsx</a></li><li><a href="91.react-ts.html#t319.5 reducers\counter2.tsx">9.5 reducers\counter2.tsx</a></li><li><a href="91.react-ts.html#t329.6 reducers\index.tsx">9.6 reducers\index.tsx</a></li><li><a href="91.react-ts.html#t339.7 actions\counter1.tsx">9.7 actions\counter1.tsx</a></li><li><a href="91.react-ts.html#t349.8 actions\counter2.tsx">9.8 actions\counter2.tsx</a></li><li><a href="91.react-ts.html#t359.9 src\components\Counter1.tsx">9.9 src\components\Counter1.tsx</a></li><li><a href="91.react-ts.html#t369.10 src\components\Counter2.tsx">9.10 src\components\Counter2.tsx</a></li><li><a href="91.react-ts.html#t379.11 redux-thunk\index.tsx">9.11 redux-thunk\index.tsx</a></li></ul></li><li><a href="91.react-ts.html#t3810.支持路由">10.支持路由</a><ul><li><a href="91.react-ts.html#t3910.1 安装">10.1 安装</a></li><li><a href="91.react-ts.html#t4010.2 src\index.tsx">10.2 src\index.tsx</a></li><li><a href="91.react-ts.html#t4110.2 src\history.tsx">10.2 src\history.tsx</a></li><li><a href="91.react-ts.html#t4210.3 store\index.tsx">10.3 store\index.tsx</a></li><li><a href="91.react-ts.html#t4310.4 reducers\index.tsx">10.4 reducers\index.tsx</a></li><li><a href="91.react-ts.html#t4410.5 store\actions\counter1.tsx">10.5 store\actions\counter1.tsx</a></li><li><a href="91.react-ts.html#t4510.6 components\Counter1.tsx">10.6 components\Counter1.tsx</a></li><li><a href="91.react-ts.html#t4610.7 components\Counter2.tsx">10.7 components\Counter2.tsx</a></li></ul></li><li><a href="91.react-ts.html#t4711.路由和antdesign">11.路由和antdesign</a><ul><li><a href="91.react-ts.html#t4811.1 安装依赖">11.1 安装依赖</a></li><li><a href="91.react-ts.html#t4911.2 config\webpack.base.js">11.2 config\webpack.base.js</a></li><li><a href="91.react-ts.html#t5011.3 src\index.tsx">11.3 src\index.tsx</a></li><li><a href="91.react-ts.html#t5111.4 action-types.tsx">11.4 action-types.tsx</a></li><li><a href="91.react-ts.html#t5211.5 reducers\index.tsx">11.5 reducers\index.tsx</a></li><li><a href="91.react-ts.html#t5311.6 typings\response.tsx">11.6 typings\response.tsx</a></li><li><a href="91.react-ts.html#t5411.7 store\reducers\user.tsx">11.7 store\reducers\user.tsx</a></li><li><a href="91.react-ts.html#t5511.8 store\actions\user.tsx">11.8 store\actions\user.tsx</a></li><li><a href="91.react-ts.html#t5611.9 src\api\request.tsx">11.9 src\api\request.tsx</a></li><li><a href="91.react-ts.html#t5711.10 src\components\NavBar.tsx">11.10 src\components\NavBar.tsx</a></li><li><a href="91.react-ts.html#t5811.11 components\User.tsx">11.11 components\User.tsx</a></li><li><a href="91.react-ts.html#t5911.12 src\components\UserAdd.tsx">11.12 src\components\UserAdd.tsx</a></li><li><a href="91.react-ts.html#t6011.13 src\components\UserList.tsx">11.13 src\components\UserList.tsx</a></li></ul></li><li><a href="91.react-ts.html#t6112. 后台接口">12. 后台接口</a><ul><li><a href="91.react-ts.html#t6212.1. 初始化项目">12.1. 初始化项目</a></li><li><a href="91.react-ts.html#t6312.2 tsconfig.json">12.2 tsconfig.json</a></li><li><a href="91.react-ts.html#t6412.3 server.ts">12.3 server.ts</a></li><li><a href="91.react-ts.html#t6512.4 config.ts">12.4 config.ts</a></li><li><a href="91.react-ts.html#t6612.5 db.ts">12.5 db.ts</a></li><li><a href="91.react-ts.html#t6712.6 shelljs\index.d.ts">12.6 shelljs\index.d.ts</a></li><li><a href="91.react-ts.html#t6812.7 copy.ts">12.7 copy.ts</a></li><li><a href="91.react-ts.html#t6912.8 package.json">12.8 package.json</a></li></ul></li><li><a href="91.react-ts.html#t7013. dva">13. dva</a></li></ul>
     </div>
-    
     <div class="content markdown-body">
-        <h2 id="t01. &#x642D;&#x5EFA;&#x5F00;&#x53D1;&#x73AF;&#x5883;">1. &#x642D;&#x5EFA;&#x5F00;&#x53D1;&#x73AF;&#x5883; <a href="#t01. &#x642D;&#x5EFA;&#x5F00;&#x53D1;&#x73AF;&#x5883;"> # </a></h2>
+        <h2 id="t01. &#x642D;&#x5EFA;&#x5F00;&#x53D1;&#x73AF;&#x5883;">1. &#x642D;&#x5EFA;&#x5F00;&#x53D1;&#x73AF;&#x5883; <a href="91.react-ts.html#t01. &#x642D;&#x5EFA;&#x5F00;&#x53D1;&#x73AF;&#x5883;"> # </a></h2>
 <pre><code class="lang-js">mkdir zhufeng_typescript_react
 cd zhufeng_typescript_react
 npm init -y
 cd zhufeng_typescript_react
 </code></pre>
-<h2 id="t12. &#x751F;&#x6210;ts&#x914D;&#x7F6E;&#x6587;&#x4EF6;">2. &#x751F;&#x6210;ts&#x914D;&#x7F6E;&#x6587;&#x4EF6; <a href="#t12. &#x751F;&#x6210;ts&#x914D;&#x7F6E;&#x6587;&#x4EF6;"> # </a></h2>
+<h2 id="t12. &#x751F;&#x6210;ts&#x914D;&#x7F6E;&#x6587;&#x4EF6;">2. &#x751F;&#x6210;ts&#x914D;&#x7F6E;&#x6587;&#x4EF6; <a href="91.react-ts.html#t12. &#x751F;&#x6210;ts&#x914D;&#x7F6E;&#x6587;&#x4EF6;"> # </a></h2>
 <ul>
-<li><a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html">tsconfig-json</a></li>
-<li><a href="https://www.typescriptlang.org/docs/handbook/compiler-options.html">&#x7F16;&#x8BD1;&#x9009;&#x9879;</a></li>
+<li><a href="http://www.typescriptlang.org/docs/handbook/tsconfig-json.html">tsconfig-json</a></li>
+<li><a href="http://www.typescriptlang.org/docs/handbook/compiler-options.html">&#x7F16;&#x8BD1;&#x9009;&#x9879;</a></li>
 </ul>
 <pre><code class="lang-js">tsc --init
 </code></pre>
@@ -67,7 +76,7 @@ cd zhufeng_typescript_react
 </tr>
 <tr>
 <td style="text-align:left">jsx</td>
-<td style="text-align:left">&#x6307;&#x5B9A;jsx&#x4EE3;&#x7801;&#x7528;&#x4E8E;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883; <code>preserve</code>&#x6307;&#x4FDD;&#x7559;JSX&#x8BED;&#x6CD5;,&#x6269;&#x5C55;&#x540D;&#x4E3A;<code>.jsx</code>,react-native&#x662F;&#x6307;&#x4FDD;&#x7559;jsx&#x8BED;&#x6CD5;&#xFF0C;&#x6269;&#x5C55;&#x540D;js,react&#x6307;&#x4F1A;&#x7F16;&#x8BD1;&#x6210;ES5&#x8BED;&#x6CD5; <a href="https://www.typescriptlang.org/docs/handbook/jsx.html">&#x8BE6;&#x89E3;</a></td>
+<td style="text-align:left">&#x6307;&#x5B9A;jsx&#x4EE3;&#x7801;&#x7528;&#x4E8E;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883; <code>preserve</code>&#x6307;&#x4FDD;&#x7559;JSX&#x8BED;&#x6CD5;,&#x6269;&#x5C55;&#x540D;&#x4E3A;<code>.jsx</code>,react-native&#x662F;&#x6307;&#x4FDD;&#x7559;jsx&#x8BED;&#x6CD5;&#xFF0C;&#x6269;&#x5C55;&#x540D;js,react&#x6307;&#x4F1A;&#x7F16;&#x8BD1;&#x6210;ES5&#x8BED;&#x6CD5; <a href="http://www.typescriptlang.org/docs/handbook/jsx.html">&#x8BE6;&#x89E3;</a></td>
 </tr>
 <tr>
 <td style="text-align:left">declaration</td>
@@ -204,7 +213,7 @@ cd zhufeng_typescript_react
 <tbody>
 <tr>
 <td style="text-align:left">moduleResolution</td>
-<td style="text-align:left">&#x9009;&#x62E9;&#x6A21;&#x5757;&#x89E3;&#x6790;&#x7B56;&#x7565;&#xFF0C;&#x6709;<code>node</code>&#x548C;<code>classic</code>&#x4E24;&#x79CD;&#x7C7B;&#x578B;,<a href="https://www.typescriptlang.org/docs/handbook/module-resolution.html">&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;</a></td>
+<td style="text-align:left">&#x9009;&#x62E9;&#x6A21;&#x5757;&#x89E3;&#x6790;&#x7B56;&#x7565;&#xFF0C;&#x6709;<code>node</code>&#x548C;<code>classic</code>&#x4E24;&#x79CD;&#x7C7B;&#x578B;,<a href="http://www.typescriptlang.org/docs/handbook/module-resolution.html">&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;</a></td>
 </tr>
 <tr>
 <td style="text-align:left">baseUrl</td>
@@ -321,18 +330,18 @@ cd zhufeng_typescript_react
 </tr>
 </tbody>
 </table>
-<h2 id="t23.&#x914D;&#x7F6E;webpack">3.&#x914D;&#x7F6E;webpack <a href="#t23.&#x914D;&#x7F6E;webpack"> # </a></h2>
+<h2 id="t23.&#x914D;&#x7F6E;webpack">3.&#x914D;&#x7F6E;webpack <a href="91.react-ts.html#t23.&#x914D;&#x7F6E;webpack"> # </a></h2>
 <pre><code class="lang-js">cnpm i typescript webpack webpack-cli webpack-dev-server ts-loader cross-env webpack-merge clean-webpack-plugin html-webpack-plugin -D
 </code></pre>
 <pre><code class="lang-js">cnpm i babel-loader @babel/core @babel/cli @babel/plugin-proposal-<span class="hljs-class"><span class="hljs-keyword">class</span>-<span class="hljs-title">properties</span> @<span class="hljs-title">babel</span>/<span class="hljs-title">plugin</span>-<span class="hljs-title">proposal</span>-<span class="hljs-title">object</span>-<span class="hljs-title">rest</span>-<span class="hljs-title">spread</span> @<span class="hljs-title">babel</span>/<span class="hljs-title">preset</span>-<span class="hljs-title">env</span> @<span class="hljs-title">babel</span>/<span class="hljs-title">preset</span>-<span class="hljs-title">typescript</span> -<span class="hljs-title">D</span>
 </span></code></pre>
-<h3 id="t33.1 package.json">3.1 package.json <a href="#t33.1 package.json"> # </a></h3>
+<h3 id="t33.1 package.json">3.1 package.json <a href="91.react-ts.html#t33.1 package.json"> # </a></h3>
 <pre><code class="lang-js">  <span class="hljs-string">&quot;scripts&quot;</span>: {
     <span class="hljs-string">&quot;dev&quot;</span>: <span class="hljs-string">&quot;cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.dev.js&quot;</span>,
     <span class="hljs-string">&quot;build&quot;</span>: <span class="hljs-string">&quot;cross-env NODE_ENV=production webpack --config ./config/webpack.prod.js&quot;</span>
   },
 </code></pre>
-<h3 id="t43.2 config\webpack.base.js">3.2 config\webpack.base.js <a href="#t43.2 config\webpack.base.js"> # </a></h3>
+<h3 id="t43.2 config\webpack.base.js">3.2 config\webpack.base.js <a href="91.react-ts.html#t43.2 config\webpack.base.js"> # </a></h3>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> { CleanWebpackPlugin } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;clean-webpack-plugin&apos;</span>);
 <span class="hljs-keyword">const</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;html-webpack-plugin&apos;</span>);
 
@@ -365,7 +374,7 @@ cd zhufeng_typescript_react
     ]
 }
 </code></pre>
-<h3 id="t53.3 config\webpack.dev.js">3.3 config\webpack.dev.js <a href="#t53.3 config\webpack.dev.js"> # </a></h3>
+<h3 id="t53.3 config\webpack.dev.js">3.3 config\webpack.dev.js <a href="91.react-ts.html#t53.3 config\webpack.dev.js"> # </a></h3>
 <p>config\webpack.dev.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> { smart } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;webpack-merge&apos;</span>);
 <span class="hljs-keyword">const</span> base = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./webpack.base&apos;</span>);
@@ -374,7 +383,7 @@ cd zhufeng_typescript_react
     <span class="hljs-attr">devtool</span>: <span class="hljs-string">&apos;inline-source-map&apos;</span>
 });
 </code></pre>
-<h3 id="t63.4 config\webpack.prod.js">3.4 config\webpack.prod.js <a href="#t63.4 config\webpack.prod.js"> # </a></h3>
+<h3 id="t63.4 config\webpack.prod.js">3.4 config\webpack.prod.js <a href="91.react-ts.html#t63.4 config\webpack.prod.js"> # </a></h3>
 <p>config\webpack.prod.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> { smart } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;webpack-merge&apos;</span>);
 <span class="hljs-keyword">const</span> base = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./webpack.base&apos;</span>);
@@ -383,11 +392,11 @@ cd zhufeng_typescript_react
     <span class="hljs-attr">devtool</span>: <span class="hljs-literal">false</span>
 });
 </code></pre>
-<h2 id="t74.&#x914D;&#x7F6E;eslint">4.&#x914D;&#x7F6E;eslint <a href="#t74.&#x914D;&#x7F6E;eslint"> # </a></h2>
-<h3 id="t84.1 &#x5B89;&#x88C5;">4.1 &#x5B89;&#x88C5; <a href="#t84.1 &#x5B89;&#x88C5;"> # </a></h3>
+<h2 id="t74.&#x914D;&#x7F6E;eslint">4.&#x914D;&#x7F6E;eslint <a href="91.react-ts.html#t74.&#x914D;&#x7F6E;eslint"> # </a></h2>
+<h3 id="t84.1 &#x5B89;&#x88C5;">4.1 &#x5B89;&#x88C5; <a href="91.react-ts.html#t84.1 &#x5B89;&#x88C5;"> # </a></h3>
 <pre><code class="lang-js">cnpm i eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
 </code></pre>
-<h3 id="t94.2 .eslintrc.json">4.2 .eslintrc.json <a href="#t94.2 .eslintrc.json"> # </a></h3>
+<h3 id="t94.2 .eslintrc.json">4.2 .eslintrc.json <a href="91.react-ts.html#t94.2 .eslintrc.json"> # </a></h3>
 <p>.eslintrc.json</p>
 <pre><code class="lang-js">{
     <span class="hljs-string">&quot;parser&quot;</span>: <span class="hljs-string">&quot;@typescript-eslint/parser&quot;</span>,
@@ -402,19 +411,19 @@ cd zhufeng_typescript_react
     }
 }
 </code></pre>
-<h3 id="t104.3 package.json">4.3 package.json <a href="#t104.3 package.json"> # </a></h3>
+<h3 id="t104.3 package.json">4.3 package.json <a href="91.react-ts.html#t104.3 package.json"> # </a></h3>
 <pre><code class="lang-diff">  &quot;scripts&quot;: {
     &quot;dev&quot;: &quot;cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.dev.js&quot;,
     &quot;build&quot;: &quot;cross-env NODE_ENV=production webpack --config ./config/webpack.prod.js&quot;,
 <span class="hljs-addition">+    &quot;eslint&quot;: &quot;eslint src --ext .js,.ts,.tsx&quot;</span>
   },
 </code></pre>
-<h2 id="t115.&#x914D;&#x7F6E;jest">5.&#x914D;&#x7F6E;jest <a href="#t115.&#x914D;&#x7F6E;jest"> # </a></h2>
-<h3 id="t125.1 &#x5B89;&#x88C5;&#x914D;&#x7F6E;">5.1 &#x5B89;&#x88C5;&#x914D;&#x7F6E; <a href="#t125.1 &#x5B89;&#x88C5;&#x914D;&#x7F6E;"> # </a></h3>
+<h2 id="t115.&#x914D;&#x7F6E;jest">5.&#x914D;&#x7F6E;jest <a href="91.react-ts.html#t115.&#x914D;&#x7F6E;jest"> # </a></h2>
+<h3 id="t125.1 &#x5B89;&#x88C5;&#x914D;&#x7F6E;">5.1 &#x5B89;&#x88C5;&#x914D;&#x7F6E; <a href="91.react-ts.html#t125.1 &#x5B89;&#x88C5;&#x914D;&#x7F6E;"> # </a></h3>
 <pre><code class="lang-js">cnpm i jest @types/jest ts-jest -D
 npx ts-jest config:init
 </code></pre>
-<h3 id="t135.2 src\calculator.tsx">5.2 src\calculator.tsx <a href="#t135.2 src\calculator.tsx"> # </a></h3>
+<h3 id="t135.2 src\calculator.tsx">5.2 src\calculator.tsx <a href="91.react-ts.html#t135.2 src\calculator.tsx"> # </a></h3>
 <p>src\calculator.tsx</p>
 <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params">a: number, b: number</span>) </span>{
     <span class="hljs-keyword">return</span> a + b;
@@ -427,7 +436,7 @@ npx ts-jest config:init
     minus
 }
 </code></pre>
-<h3 id="t145.3 tests\calculator.spec.tsx">5.3 tests\calculator.spec.tsx <a href="#t145.3 tests\calculator.spec.tsx"> # </a></h3>
+<h3 id="t145.3 tests\calculator.spec.tsx">5.3 tests\calculator.spec.tsx <a href="91.react-ts.html#t145.3 tests\calculator.spec.tsx"> # </a></h3>
 <p><strong>tests</strong>\calculator.spec.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> math = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;../src/calculator&apos;</span>);
 test(<span class="hljs-string">&apos;1+1=2&apos;</span>, () =&gt; {
@@ -437,17 +446,17 @@ test(<span class="hljs-string">&apos;1-1=0&apos;</span>, () =&gt; {
     expect(math.minus(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)).toBe(<span class="hljs-number">0</span>);
 });
 </code></pre>
-<h3 id="t155.4 package.json">5.4 package.json <a href="#t155.4 package.json"> # </a></h3>
+<h3 id="t155.4 package.json">5.4 package.json <a href="91.react-ts.html#t155.4 package.json"> # </a></h3>
 <p>package.json</p>
 <pre><code class="lang-diff">  &quot;scripts&quot;: {
 <span class="hljs-addition">+    &quot;test&quot;: &quot;jest&quot;</span>
   },
 </code></pre>
-<h2 id="t166.&#x652F;&#x6301;react">6.&#x652F;&#x6301;react <a href="#t166.&#x652F;&#x6301;react"> # </a></h2>
-<h3 id="t176.1 &#x5B89;&#x88C5;">6.1 &#x5B89;&#x88C5; <a href="#t176.1 &#x5B89;&#x88C5;"> # </a></h3>
+<h2 id="t166.&#x652F;&#x6301;react">6.&#x652F;&#x6301;react <a href="91.react-ts.html#t166.&#x652F;&#x6301;react"> # </a></h2>
+<h3 id="t176.1 &#x5B89;&#x88C5;">6.1 &#x5B89;&#x88C5; <a href="91.react-ts.html#t176.1 &#x5B89;&#x88C5;"> # </a></h3>
 <pre><code class="lang-js">cnpm i react @types/react react-dom @types/react-dom -S
 </code></pre>
-<h3 id="t186.2 src\index.tsx">6.2 src\index.tsx <a href="#t186.2 src\index.tsx"> # </a></h3>
+<h3 id="t186.2 src\index.tsx">6.2 src\index.tsx <a href="91.react-ts.html#t186.2 src\index.tsx"> # </a></h3>
 <p>src\index.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { ReactElement, DOMElement, DetailedReactHTMLElement } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
@@ -459,7 +468,7 @@ interface Props {
 <span class="hljs-keyword">let</span> element: DetailedReactHTMLElement&lt;Props, HTMLHeadingElement&gt; = React.createElement&lt;Props, HTMLHeadingElement&gt;(<span class="hljs-string">&apos;h1&apos;</span>, props, <span class="hljs-string">&apos;hello&apos;</span>);
 ReactDOM.render(element, root);
 </code></pre>
-<h3 id="t196.3 typings\react.tsx">6.3 typings\react.tsx <a href="#t196.3 typings\react.tsx"> # </a></h3>
+<h3 id="t196.3 typings\react.tsx">6.3 typings\react.tsx <a href="91.react-ts.html#t196.3 typings\react.tsx"> # </a></h3>
 <p><img src="http://img.zhufengpeixun.cn/elementss.png" alt="elements"></p>
 <p>src\typings\react.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> interface ReactHTML { <span class="hljs-attr">h1</span>: any }
@@ -505,8 +514,8 @@ ReactDOM.render(element, root);
     props?: ClassAttributes&lt;T&gt; &amp; P | null,
     ...children: ReactNode[]</span>): <span class="hljs-title">DetailedReactHTMLElement</span>&lt;<span class="hljs-title">P</span>, <span class="hljs-title">T</span>&gt;;
 </span></code></pre>
-<h2 id="t207.&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x58F0;&#x660E;">7.&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x58F0;&#x660E; <a href="#t207.&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x58F0;&#x660E;"> # </a></h2>
-<h3 id="t217.1 src\index.tsx">7.1 src\index.tsx <a href="#t217.1 src\index.tsx"> # </a></h3>
+<h2 id="t207.&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x58F0;&#x660E;">7.&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x58F0;&#x660E; <a href="91.react-ts.html#t207.&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x58F0;&#x660E;"> # </a></h2>
+<h3 id="t217.1 src\index.tsx">7.1 src\index.tsx <a href="91.react-ts.html#t217.1 src\index.tsx"> # </a></h3>
 <p>src\index.tsx</p>
 <pre><code class="lang-diff">import React, { ReactElement, DOMElement, DetailedReactHTMLElement, FunctionComponentElement } from &apos;react&apos;;
 import ReactDOM from &apos;react-dom&apos;;
@@ -521,7 +530,7 @@ let root: HTMLElement | null = document.getElementById(&apos;root&apos;);
 <span class="hljs-addition">+let element: FunctionComponentElement&lt;Props&gt; = React.createElement&lt;Props&gt;(Welcome, props);</span>
 ReactDOM.render(element, root);
 </code></pre>
-<h3 id="t227.2 typings\react.tsx">7.2 typings\react.tsx <a href="#t227.2 typings\react.tsx"> # </a></h3>
+<h3 id="t227.2 typings\react.tsx">7.2 typings\react.tsx <a href="91.react-ts.html#t227.2 typings\react.tsx"> # </a></h3>
 <p>src\typings\react.tsx</p>
 <pre><code class="lang-diff">export interface ReactHTML { h1: any }
 
@@ -580,8 +589,8 @@ export declare function createElement&lt;P extends HTMLAttributes&lt;T&gt;, T ex
     ...children: ReactNode[]): DetailedReactHTMLElement&lt;P, T&gt;;
 
 </code></pre>
-<h2 id="t238.&#x7C7B;&#x7EC4;&#x4EF6;&#x58F0;&#x660E;">8.&#x7C7B;&#x7EC4;&#x4EF6;&#x58F0;&#x660E; <a href="#t238.&#x7C7B;&#x7EC4;&#x4EF6;&#x58F0;&#x660E;"> # </a></h2>
-<h3 id="t248.1 src\index.tsx">8.1 src\index.tsx <a href="#t248.1 src\index.tsx"> # </a></h3>
+<h2 id="t238.&#x7C7B;&#x7EC4;&#x4EF6;&#x58F0;&#x660E;">8.&#x7C7B;&#x7EC4;&#x4EF6;&#x58F0;&#x660E; <a href="91.react-ts.html#t238.&#x7C7B;&#x7EC4;&#x4EF6;&#x58F0;&#x660E;"> # </a></h2>
+<h3 id="t248.1 src\index.tsx">8.1 src\index.tsx <a href="91.react-ts.html#t248.1 src\index.tsx"> # </a></h3>
 <p>src\index.tsx</p>
 <pre><code class="lang-diff">import React, { ReactElement, DOMElement, DetailedReactHTMLElement, FunctionComponentElement, ComponentClass } from &apos;react&apos;;
 import ReactDOM from &apos;react-dom&apos;;
@@ -603,7 +612,7 @@ interface Props {
 <span class="hljs-addition">+let element: ReactElement&lt;Props&gt; = React.createElement&lt;Props&gt;(Welcome, props);</span>
 ReactDOM.render(element, root);
 </code></pre>
-<h3 id="t258.2 typings\react.tsx">8.2 typings\react.tsx <a href="#t258.2 typings\react.tsx"> # </a></h3>
+<h3 id="t258.2 typings\react.tsx">8.2 typings\react.tsx <a href="91.react-ts.html#t258.2 typings\react.tsx"> # </a></h3>
 <p>src\typings\react.tsx</p>
 <pre><code class="lang-diff">export interface ReactHTML { h1: any }
 
@@ -669,10 +678,10 @@ interface FunctionComponentElement&lt;P&gt; extends ReactElement&lt;P, FunctionC
 <span class="hljs-addition">+    props?: Attributes &amp; P | null,</span>
 <span class="hljs-addition">+    ...children: ReactNode[]): ReactElement&lt;P&gt;;</span>
 </code></pre>
-<h2 id="t269.&#x4F7F;&#x7528;redux">9.&#x4F7F;&#x7528;redux <a href="#t269.&#x4F7F;&#x7528;redux"> # </a></h2>
+<h2 id="t269.&#x4F7F;&#x7528;redux">9.&#x4F7F;&#x7528;redux <a href="91.react-ts.html#t269.&#x4F7F;&#x7528;redux"> # </a></h2>
 <pre><code class="lang-js">cnpm i redux react-redux @types/react-redux redux-logger redux-promise redux-thunk   @types/redux-logger @types/redux-promise -D 
 </code></pre>
-<h3 id="t279.1 src\index.tsx">9.1 src\index.tsx <a href="#t279.1 src\index.tsx"> # </a></h3>
+<h3 id="t279.1 src\index.tsx">9.1 src\index.tsx <a href="91.react-ts.html#t279.1 src\index.tsx"> # </a></h3>
 <p>src\index.tsx</p>
 <pre><code class="lang-diff">import React from &apos;react&apos;;
 import ReactDOM from &apos;react-dom&apos;;
@@ -686,7 +695,7 @@ import ReactDOM from &apos;react-dom&apos;;
 <span class="hljs-addition">+        &lt;Counter2 /&gt;</span>
 <span class="hljs-addition">+    &lt;/Provider&gt;, document.getElementById(&apos;root&apos;));</span>
 </code></pre>
-<h3 id="t289.2 src\store\index.tsx">9.2 src\store\index.tsx <a href="#t289.2 src\store\index.tsx"> # </a></h3>
+<h3 id="t289.2 src\store\index.tsx">9.2 src\store\index.tsx <a href="91.react-ts.html#t289.2 src\store\index.tsx"> # </a></h3>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> { createStore, Store, AnyAction, applyMiddleware, StoreEnhancer, StoreEnhancerStoreCreator } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
 <span class="hljs-keyword">import</span> logger <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-logger&apos;</span>;
 <span class="hljs-keyword">import</span> thunk <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-thunk&apos;</span>;
@@ -725,7 +734,7 @@ console.log(store.getState().age);
 <span class="hljs-keyword">const</span> store: Store&lt;CombinedState, AnyAction&gt; = storeEnhancerStoreCreator(reducer);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> store;
 </code></pre>
-<h3 id="t299.3 store\action-types.tsx">9.3 store\action-types.tsx <a href="#t299.3 store\action-types.tsx"> # </a></h3>
+<h3 id="t299.3 store\action-types.tsx">9.3 store\action-types.tsx <a href="91.react-ts.html#t299.3 store\action-types.tsx"> # </a></h3>
 <p>src\store\action-types.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT1 = <span class="hljs-string">&apos;INCREMENT1&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> DECREMENT1 = <span class="hljs-string">&apos;DECREMENT1&apos;</span>;
@@ -733,7 +742,7 @@ console.log(store.getState().age);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT2 = <span class="hljs-string">&apos;INCREMENT2&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> DECREMENT2 = <span class="hljs-string">&apos;DECREMENT2&apos;</span>;
 </code></pre>
-<h3 id="t309.4 reducers\counter1.tsx">9.4 reducers\counter1.tsx <a href="#t309.4 reducers\counter1.tsx"> # </a></h3>
+<h3 id="t309.4 reducers\counter1.tsx">9.4 reducers\counter1.tsx <a href="91.react-ts.html#t309.4 reducers\counter1.tsx"> # </a></h3>
 <p>src\store\reducers\counter1.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
 <span class="hljs-keyword">import</span> { AnyAction } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
@@ -753,7 +762,7 @@ console.log(store.getState().age);
     }
 }
 </code></pre>
-<h3 id="t319.5 reducers\counter2.tsx">9.5 reducers\counter2.tsx <a href="#t319.5 reducers\counter2.tsx"> # </a></h3>
+<h3 id="t319.5 reducers\counter2.tsx">9.5 reducers\counter2.tsx <a href="91.react-ts.html#t319.5 reducers\counter2.tsx"> # </a></h3>
 <p>src\store\reducers\counter2.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
 <span class="hljs-keyword">import</span> { AnyAction } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
@@ -773,7 +782,7 @@ console.log(store.getState().age);
     }
 }
 </code></pre>
-<h3 id="t329.6 reducers\index.tsx">9.6 reducers\index.tsx <a href="#t329.6 reducers\index.tsx"> # </a></h3>
+<h3 id="t329.6 reducers\index.tsx">9.6 reducers\index.tsx <a href="91.react-ts.html#t329.6 reducers\index.tsx"> # </a></h3>
 <p>src\store\reducers\index.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> { combineReducers, ReducersMapObject, Reducer, AnyAction } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
 <span class="hljs-keyword">import</span> counter1, { Counter1State } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counter1&apos;</span>;
@@ -792,7 +801,7 @@ interface Reducers {
 <span class="hljs-keyword">let</span> rootReducer: Reducer&lt;CombinedState, AnyAction&gt; = combineReducers&lt;CombinedState, AnyAction&gt;(reducers);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> rootReducer;
 </code></pre>
-<h3 id="t339.7 actions\counter1.tsx">9.7 actions\counter1.tsx <a href="#t339.7 actions\counter1.tsx"> # </a></h3>
+<h3 id="t339.7 actions\counter1.tsx">9.7 actions\counter1.tsx <a href="91.react-ts.html#t339.7 actions\counter1.tsx"> # </a></h3>
 <p>src\store\actions\counter1.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
 <span class="hljs-keyword">import</span> { AnyAction, Dispatch, Store } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
@@ -825,7 +834,7 @@ interface Reducers {
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> actions;
 </code></pre>
-<h3 id="t349.8 actions\counter2.tsx">9.8 actions\counter2.tsx <a href="#t349.8 actions\counter2.tsx"> # </a></h3>
+<h3 id="t349.8 actions\counter2.tsx">9.8 actions\counter2.tsx <a href="91.react-ts.html#t349.8 actions\counter2.tsx"> # </a></h3>
 <p>src\store\actions\counter2.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
 <span class="hljs-keyword">import</span> { AnyAction } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
@@ -838,7 +847,7 @@ interface Reducers {
     }
 }
 </code></pre>
-<h3 id="t359.9 src\components\Counter1.tsx">9.9 src\components\Counter1.tsx <a href="#t359.9 src\components\Counter1.tsx"> # </a></h3>
+<h3 id="t359.9 src\components\Counter1.tsx">9.9 src\components\Counter1.tsx <a href="91.react-ts.html#t359.9 src\components\Counter1.tsx"> # </a></h3>
 <p>src\components\Counter1.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/actions/counter1&apos;</span>;
@@ -867,7 +876,7 @@ type Props = Counter1State &amp; <span class="hljs-keyword">typeof</span> action
 )(Counter1)
 
 </code></pre>
-<h3 id="t369.10 src\components\Counter2.tsx">9.10 src\components\Counter2.tsx <a href="#t369.10 src\components\Counter2.tsx"> # </a></h3>
+<h3 id="t369.10 src\components\Counter2.tsx">9.10 src\components\Counter2.tsx <a href="91.react-ts.html#t369.10 src\components\Counter2.tsx"> # </a></h3>
 <p>src\components\Counter2.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/actions/counter2&apos;</span>;
@@ -903,7 +912,7 @@ type ThunkDispatchs = ThunkDispatch&lt;CombinedState, { <span class="hljs-attr">
     actions
 )(Counter2)
 </code></pre>
-<h3 id="t379.11 redux-thunk\index.tsx">9.11 redux-thunk\index.tsx <a href="#t379.11 redux-thunk\index.tsx"> # </a></h3>
+<h3 id="t379.11 redux-thunk\index.tsx">9.11 redux-thunk\index.tsx <a href="91.react-ts.html#t379.11 redux-thunk\index.tsx"> # </a></h3>
 <p>src\redux-thunk\index.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> { Middleware, Action, AnyAction } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
 type MiddlewareExt = Middleware &amp; {
@@ -934,11 +943,11 @@ thunk.withExtraArgument = createThunkMiddleware;
 
 export default thunk;
 </code></pre>
-<h2 id="t3810.&#x652F;&#x6301;&#x8DEF;&#x7531;">10.&#x652F;&#x6301;&#x8DEF;&#x7531; <a href="#t3810.&#x652F;&#x6301;&#x8DEF;&#x7531;"> # </a></h2>
-<h3 id="t3910.1 &#x5B89;&#x88C5;">10.1 &#x5B89;&#x88C5; <a href="#t3910.1 &#x5B89;&#x88C5;"> # </a></h3>
+<h2 id="t3810.&#x652F;&#x6301;&#x8DEF;&#x7531;">10.&#x652F;&#x6301;&#x8DEF;&#x7531; <a href="91.react-ts.html#t3810.&#x652F;&#x6301;&#x8DEF;&#x7531;"> # </a></h2>
+<h3 id="t3910.1 &#x5B89;&#x88C5;">10.1 &#x5B89;&#x88C5; <a href="91.react-ts.html#t3910.1 &#x5B89;&#x88C5;"> # </a></h3>
 <pre><code class="lang-js">cnpm i react-router-dom @types/react-router-dom  connected-react-router -S
 </code></pre>
-<h3 id="t4010.2 src\index.tsx">10.2 src\index.tsx <a href="#t4010.2 src\index.tsx"> # </a></h3>
+<h3 id="t4010.2 src\index.tsx">10.2 src\index.tsx <a href="91.react-ts.html#t4010.2 src\index.tsx"> # </a></h3>
 <p>src\index.tsx</p>
 <pre><code class="lang-diff">import React from &apos;react&apos;;
 import ReactDOM from &apos;react-dom&apos;;
@@ -963,13 +972,13 @@ ReactDOM.render(
 <span class="hljs-addition">+        &lt;/ConnectedRouter&gt;</span>
 <span class="hljs-addition">+    &lt;/Provider&gt;, document.getElementById(&apos;root&apos;));</span>
 </code></pre>
-<h3 id="t4110.2 src\history.tsx">10.2 src\history.tsx <a href="#t4110.2 src\history.tsx"> # </a></h3>
+<h3 id="t4110.2 src\history.tsx">10.2 src\history.tsx <a href="91.react-ts.html#t4110.2 src\history.tsx"> # </a></h3>
 <p>src\history.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> { createHashHistory } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;history&apos;</span>
 <span class="hljs-keyword">let</span> history = createHashHistory();
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> history;
 </code></pre>
-<h3 id="t4210.3 store\index.tsx">10.3 store\index.tsx <a href="#t4210.3 store\index.tsx"> # </a></h3>
+<h3 id="t4210.3 store\index.tsx">10.3 store\index.tsx <a href="91.react-ts.html#t4210.3 store\index.tsx"> # </a></h3>
 <p>src\store\index.tsx</p>
 <pre><code class="lang-diff">import { createStore, Store, AnyAction, applyMiddleware, StoreEnhancer, StoreEnhancerStoreCreator } from &apos;redux&apos;;
 import logger from &apos;redux-logger&apos;;
@@ -984,7 +993,7 @@ const storeEnhancerStoreCreator: StoreEnhancerStoreCreator = storeEnhancer(creat
 const store: Store&lt;CombinedState, AnyAction&gt; = storeEnhancerStoreCreator(reducer);
 export default store;
 </code></pre>
-<h3 id="t4310.4 reducers\index.tsx">10.4 reducers\index.tsx <a href="#t4310.4 reducers\index.tsx"> # </a></h3>
+<h3 id="t4310.4 reducers\index.tsx">10.4 reducers\index.tsx <a href="91.react-ts.html#t4310.4 reducers\index.tsx"> # </a></h3>
 <p>src\store\reducers\index.tsx</p>
 <pre><code class="lang-diff">import { combineReducers, ReducersMapObject, Reducer, AnyAction } from &apos;redux&apos;;
 import counter1, { Counter1State } from &apos;./counter1&apos;;
@@ -1008,7 +1017,7 @@ export type CombinedState = {
 let rootReducer: Reducer&lt;CombinedState, AnyAction&gt; = combineReducers&lt;CombinedState, AnyAction&gt;(reducers);
 export default rootReducer;
 </code></pre>
-<h3 id="t4410.5 store\actions\counter1.tsx">10.5 store\actions\counter1.tsx <a href="#t4410.5 store\actions\counter1.tsx"> # </a></h3>
+<h3 id="t4410.5 store\actions\counter1.tsx">10.5 store\actions\counter1.tsx <a href="91.react-ts.html#t4410.5 store\actions\counter1.tsx"> # </a></h3>
 <p>src\store\actions\counter1.tsx</p>
 <pre><code class="lang-diff">import * as types from &apos;../action-types&apos;;
 import { AnyAction, Dispatch, Store } from &apos;redux&apos;;
@@ -1043,7 +1052,7 @@ const actions = {
 }
 export default actions;
 </code></pre>
-<h3 id="t4510.6 components\Counter1.tsx">10.6 components\Counter1.tsx <a href="#t4510.6 components\Counter1.tsx"> # </a></h3>
+<h3 id="t4510.6 components\Counter1.tsx">10.6 components\Counter1.tsx <a href="91.react-ts.html#t4510.6 components\Counter1.tsx"> # </a></h3>
 <p>src\components\Counter1.tsx</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+import React, { Component, PropsWithChildren } from &apos;react&apos;;</span>
 import actions from &apos;../store/actions/counter1&apos;;
@@ -1075,7 +1084,7 @@ export default connect(
     actions
 )(Counter1)
 </code></pre>
-<h3 id="t4610.7 components\Counter2.tsx">10.7 components\Counter2.tsx <a href="#t4610.7 components\Counter2.tsx"> # </a></h3>
+<h3 id="t4610.7 components\Counter2.tsx">10.7 components\Counter2.tsx <a href="91.react-ts.html#t4610.7 components\Counter2.tsx"> # </a></h3>
 <p>src\components\Counter2.tsx</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+import React, { Component, PropsWithChildren } from &apos;react&apos;;</span>
 import actions from &apos;../store/actions/counter2&apos;;
@@ -1104,12 +1113,12 @@ export default connect(
     actions
 )(Counter2)
 </code></pre>
-<h2 id="t4711.&#x8DEF;&#x7531;&#x548C;antdesign">11.&#x8DEF;&#x7531;&#x548C;antdesign <a href="#t4711.&#x8DEF;&#x7531;&#x548C;antdesign"> # </a></h2>
-<h3 id="t4811.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;">11.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56; <a href="#t4811.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;"> # </a></h3>
+<h2 id="t4711.&#x8DEF;&#x7531;&#x548C;antdesign">11.&#x8DEF;&#x7531;&#x548C;antdesign <a href="91.react-ts.html#t4711.&#x8DEF;&#x7531;&#x548C;antdesign"> # </a></h2>
+<h3 id="t4811.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;">11.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56; <a href="91.react-ts.html#t4811.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;"> # </a></h3>
 <pre><code class="lang-js">cnpm i redux-thunk antd axios react-router-dom connected-react-router  -S
 cnpm i style-loader css-loader  @types/react-router-dom -D
 </code></pre>
-<h3 id="t4911.2 config\webpack.base.js">11.2 config\webpack.base.js <a href="#t4911.2 config\webpack.base.js"> # </a></h3>
+<h3 id="t4911.2 config\webpack.base.js">11.2 config\webpack.base.js <a href="91.react-ts.html#t4911.2 config\webpack.base.js"> # </a></h3>
 <p>config\webpack.base.js</p>
 <pre><code class="lang-diff">    module: {
         rules: [
@@ -1123,7 +1132,7 @@ cnpm i style-loader css-loader  @types/react-router-dom -D
 <span class="hljs-addition">+        ]</span>
     },
 </code></pre>
-<h3 id="t5011.3 src\index.tsx">11.3 src\index.tsx <a href="#t5011.3 src\index.tsx"> # </a></h3>
+<h3 id="t5011.3 src\index.tsx">11.3 src\index.tsx <a href="91.react-ts.html#t5011.3 src\index.tsx"> # </a></h3>
 <p>src\index.tsx</p>
 <pre><code class="lang-diff">import React from &apos;react&apos;;
 import ReactDOM from &apos;react-dom&apos;;
@@ -1156,11 +1165,11 @@ ReactDOM.render(
         &lt;/ConnectedRouter&gt;
     &lt;/Provider&gt;, document.getElementById(&apos;root&apos;));
 </code></pre>
-<h3 id="t5111.4 action-types.tsx">11.4 action-types.tsx <a href="#t5111.4 action-types.tsx"> # </a></h3>
+<h3 id="t5111.4 action-types.tsx">11.4 action-types.tsx <a href="91.react-ts.html#t5111.4 action-types.tsx"> # </a></h3>
 <p>src\store\action-types.tsx</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+ export const SET_USERS = &apos;SET_USERS&apos;;</span>
 </code></pre>
-<h3 id="t5211.5 reducers\index.tsx">11.5 reducers\index.tsx <a href="#t5211.5 reducers\index.tsx"> # </a></h3>
+<h3 id="t5211.5 reducers\index.tsx">11.5 reducers\index.tsx <a href="91.react-ts.html#t5211.5 reducers\index.tsx"> # </a></h3>
 <p>src\store\reducers\index.tsx</p>
 <pre><code class="lang-diff">import { combineReducers, ReducersMapObject, Reducer, AnyAction } from &apos;redux&apos;;
 import counter1, { Counter1State } from &apos;./counter1&apos;;
@@ -1187,7 +1196,7 @@ export type CombinedState = {
 let rootReducer: Reducer&lt;CombinedState, AnyAction&gt; = combineReducers&lt;CombinedState, AnyAction&gt;(reducers);
 export default rootReducer;
 </code></pre>
-<h3 id="t5311.6 typings\response.tsx">11.6 typings\response.tsx <a href="#t5311.6 typings\response.tsx"> # </a></h3>
+<h3 id="t5311.6 typings\response.tsx">11.6 typings\response.tsx <a href="91.react-ts.html#t5311.6 typings\response.tsx"> # </a></h3>
 <p>src\typings\response.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> interface User {
     <span class="hljs-attr">_id</span>: string;
@@ -1202,7 +1211,7 @@ export default rootReducer;
     data: User
 }
 </code></pre>
-<h3 id="t5411.7 store\reducers\user.tsx">11.7 store\reducers\user.tsx <a href="#t5411.7 store\reducers\user.tsx"> # </a></h3>
+<h3 id="t5411.7 store\reducers\user.tsx">11.7 store\reducers\user.tsx <a href="91.react-ts.html#t5411.7 store\reducers\user.tsx"> # </a></h3>
 <p>src\store\reducers\user.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
 <span class="hljs-keyword">import</span> { AnyAction } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
@@ -1223,7 +1232,7 @@ export default rootReducer;
     }
 }
 </code></pre>
-<h3 id="t5511.8 store\actions\user.tsx">11.8 store\actions\user.tsx <a href="#t5511.8 store\actions\user.tsx"> # </a></h3>
+<h3 id="t5511.8 store\actions\user.tsx">11.8 store\actions\user.tsx <a href="91.react-ts.html#t5511.8 store\actions\user.tsx"> # </a></h3>
 <p>src\store\actions\user.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../action-types&apos;</span>;
 <span class="hljs-keyword">import</span> { User } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../../typings/response&apos;</span>;
@@ -1233,7 +1242,7 @@ export default rootReducer;
     }
 }
 </code></pre>
-<h3 id="t5611.9 src\api\request.tsx">11.9 src\api\request.tsx <a href="#t5611.9 src\api\request.tsx"> # </a></h3>
+<h3 id="t5611.9 src\api\request.tsx">11.9 src\api\request.tsx <a href="91.react-ts.html#t5611.9 src\api\request.tsx"> # </a></h3>
 <p>src\api\request.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
 
@@ -1244,7 +1253,7 @@ export default rootReducer;
 <span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> instance;
 </code></pre>
-<h3 id="t5711.10 src\components\NavBar.tsx">11.10 src\components\NavBar.tsx <a href="#t5711.10 src\components\NavBar.tsx"> # </a></h3>
+<h3 id="t5711.10 src\components\NavBar.tsx">11.10 src\components\NavBar.tsx <a href="91.react-ts.html#t5711.10 src\components\NavBar.tsx"> # </a></h3>
 <p>src\components\NavBar.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component, PropsWithChildren } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Link, withRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
@@ -1256,23 +1265,23 @@ type Props = PropsWithChildren&lt;RouteProps&gt;;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NavBar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>&gt; </span>{
     render() {
         <span class="hljs-keyword">return</span> (
-            &lt;Layout.Header&gt;
-                &lt;Menu
-                    theme=&quot;dark&quot;
-                    style={{ lineHeight: &apos;64px&apos; }}
-                    mode=&quot;horizontal&quot;
-                    selectedKeys={[this.props.location.pathname]} &gt;
-                    &lt;Menu.Item key=&quot;/counter1&quot;&gt;&lt;Link to=&quot;/counter1&quot;&gt;Counter1&lt;/Link&gt;&lt;/Menu.Item&gt;
-                    &lt;Menu.Item key=&quot;/counter2&quot;&gt;&lt;Link to=&quot;/counter2&quot;&gt;Counter2&lt;/Link&gt;&lt;/Menu.Item&gt;
-                    &lt;Menu.Item key=&quot;/user&quot;&gt;&lt;Link to=&quot;/user&quot;&gt;&#x7528;&#x6237;&#x7BA1;&#x7406;&lt;/Link&gt;&lt;/Menu.Item&gt;
-                &lt;/Menu&gt;
-            &lt;/Layout.Header&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Layout.Header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Menu</span>
+                    <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;dark&quot;</span>
+                    <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">lineHeight:</span> &apos;<span class="hljs-attr">64px</span>&apos; }}
+                    <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;horizontal&quot;</span>
+                    <span class="hljs-attr">selectedKeys</span>=<span class="hljs-string">{[this.props.location.pathname]}</span> &gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/counter1&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/counter1&quot;</span>&gt;</span>Counter1<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/counter2&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/counter2&quot;</span>&gt;</span>Counter2<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/user&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/user&quot;</span>&gt;</span>&#x7528;&#x6237;&#x7BA1;&#x7406;<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Menu</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Layout.Header</span>&gt;</span></span>
         )
     }
 }
-export default withRouter(NavBar);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> withRouter(NavBar);
 </code></pre>
-<h3 id="t5811.11 components\User.tsx">11.11 components\User.tsx <a href="#t5811.11 components\User.tsx"> # </a></h3>
+<h3 id="t5811.11 components\User.tsx">11.11 components\User.tsx <a href="91.react-ts.html#t5811.11 components\User.tsx"> # </a></h3>
 <p>src\components\User.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component, PropsWithChildren } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/actions/user&apos;</span>;
@@ -1290,36 +1299,36 @@ type Props = PropsWithChildren&lt;RouteProps &amp; UserState &amp; <span class="
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span>&lt;<span class="hljs-title">Props</span>&gt; </span>{
     render() {
         <span class="hljs-keyword">return</span> (
-            &lt;Layout&gt;
-                &lt;Sider&gt;
-                    &lt;Menu
-                        theme=&quot;dark&quot;
-                        defaultSelectedKeys={[&apos;/user/list&apos;]}
-                        mode=&quot;inline&quot;
-                    &gt;
-                        &lt;Menu.Item key={&apos;/user/add&apos;}&gt;
-                            &lt;Link to={&apos;/user/add&apos;}&gt;&lt;Icon type={&apos;plus&apos;} /&gt;&#x6DFB;&#x52A0;&#x7528;&#x6237;&lt;/Link&gt;
-                        &lt;/Menu.Item&gt;;
-                        &lt;Menu.Item key={&apos;/user/list&apos;}&gt;
-                            &lt;Link to={&apos;/user/list&apos;}&gt;&lt;Icon type={&apos;user&apos;} /&gt;&#x7528;&#x6237;&#x5217;&#x8868;&lt;/Link&gt;
-                        &lt;/Menu.Item&gt;;
-                    &lt;/Menu&gt;
-                &lt;/Sider&gt;
-                &lt;Content style={{ padding: &apos;20px&apos; }}&gt;
-                    &lt;Route path=&quot;/user/list&quot; component={UserList} /&gt;
-                    &lt;Route path=&quot;/user/add&quot; component={UserAdd} /&gt;
-                &lt;/Content&gt;
-            &lt;/Layout&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Layout</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Sider</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Menu</span>
+                        <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;dark&quot;</span>
+                        <span class="hljs-attr">defaultSelectedKeys</span>=<span class="hljs-string">{[</span>&apos;/<span class="hljs-attr">user</span>/<span class="hljs-attr">list</span>&apos;]}
+                        <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;inline&quot;</span>
+                    &gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{</span>&apos;/<span class="hljs-attr">user</span>/<span class="hljs-attr">add</span>&apos;}&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">{</span>&apos;/<span class="hljs-attr">user</span>/<span class="hljs-attr">add</span>&apos;}&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{</span>&apos;<span class="hljs-attr">plus</span>&apos;} /&gt;</span>&#x6DFB;&#x52A0;&#x7528;&#x6237;<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>;
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{</span>&apos;/<span class="hljs-attr">user</span>/<span class="hljs-attr">list</span>&apos;}&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">{</span>&apos;/<span class="hljs-attr">user</span>/<span class="hljs-attr">list</span>&apos;}&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{</span>&apos;<span class="hljs-attr">user</span>&apos;} /&gt;</span>&#x7528;&#x6237;&#x5217;&#x8868;<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Sider</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">padding:</span> &apos;<span class="hljs-attr">20px</span>&apos; }}&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/user/list&quot;</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{UserList}</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/user/add&quot;</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{UserAdd}</span> /&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span></span>
         )
     }
 }
-let mapStateToProps = (state: CombinedState): UserState =&gt; state.user;
-export default connect(
+<span class="hljs-keyword">let</span> mapStateToProps = (state: CombinedState): <span class="hljs-function"><span class="hljs-params">UserState</span> =&gt;</span> state.user;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(
     mapStateToProps,
     actions
 )(User)
 </code></pre>
-<h3 id="t5911.12 src\components\UserAdd.tsx">11.12 src\components\UserAdd.tsx <a href="#t5911.12 src\components\UserAdd.tsx"> # </a></h3>
+<h3 id="t5911.12 src\components\UserAdd.tsx">11.12 src\components\UserAdd.tsx <a href="91.react-ts.html#t5911.12 src\components\UserAdd.tsx"> # </a></h3>
 <p>src\components\UserAdd.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component, PropsWithChildren, useState, useCallback } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Link, withRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
@@ -1351,25 +1360,25 @@ type Props = PropsWithChildren&lt;RouteProps&gt;;
         });
     }, [user])
     <span class="hljs-keyword">return</span> (
-        &lt;Form onSubmit={handleSubmit}&gt;
-            &lt;Form.Item&gt;
-                &lt;Input
-                    placeholder=&quot;&#x7528;&#x6237;&#x540D;&quot;
-                    style={{ width: 120 }}
-                    value={user.username}
-                    onChange={handleNameChange}
-                /&gt;
-            &lt;/Form.Item&gt;
-            &lt;Form.Item&gt;
-                &lt;Button type=&quot;primary&quot; htmlType=&quot;submit&quot;&gt;&#x6DFB;&#x52A0;&lt;/Button&gt;
-            &lt;/Form.Item&gt;
-        &lt;/Form&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{handleSubmit}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Form.Item</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                    <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&quot;</span>
+                    <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> <span class="hljs-attr">120</span> }}
+                    <span class="hljs-attr">value</span>=<span class="hljs-string">{user.username}</span>
+                    <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleNameChange}</span>
+                /&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Form.Item</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Form.Item</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> <span class="hljs-attr">htmlType</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>&#x6DFB;&#x52A0;<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Form.Item</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
     )
 }
 
-export default UserAdd;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> UserAdd;
 </code></pre>
-<h3 id="t6011.13 src\components\UserList.tsx">11.13 src\components\UserList.tsx <a href="#t6011.13 src\components\UserList.tsx"> # </a></h3>
+<h3 id="t6011.13 src\components\UserList.tsx">11.13 src\components\UserList.tsx <a href="91.react-ts.html#t6011.13 src\components\UserList.tsx"> # </a></h3>
 <p>src\components\UserList.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { PropsWithChildren, useState, useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { RouteComponentProps } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-router-dom&apos;</span>;
@@ -1405,23 +1414,23 @@ type Props = PropsWithChildren&lt;RouteProps &amp; UserState &amp; <span class="
         })()
     }, []);
     <span class="hljs-keyword">return</span> (
-        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Table</span> <span class="hljs-attr">columns</span>=<span class="hljs-string">{columns}</span> <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{users}</span> <span class="hljs-attr">rowKey</span>=<span class="hljs-string">{(record:</span> <span class="hljs-attr">User</span>) =&gt;</span> record._id} /&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Table</span> <span class="hljs-attr">columns</span>=<span class="hljs-string">{columns}</span> <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{users}</span> <span class="hljs-attr">rowKey</span>=<span class="hljs-string">{(record:</span> <span class="hljs-attr">User</span>) =&gt;</span> record._id} /&gt;</span>
     )
 }
-let mapStateToProps = (state: CombinedState): UserState =&gt; state.user;
-export default connect(
+<span class="hljs-keyword">let</span> mapStateToProps = (state: CombinedState): <span class="hljs-function"><span class="hljs-params">UserState</span> =&gt;</span> state.user;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(
     mapStateToProps,
     actions
 )(UserList);
-</span></code></pre>
-<h2 id="t6112. &#x540E;&#x53F0;&#x63A5;&#x53E3;">12. &#x540E;&#x53F0;&#x63A5;&#x53E3; <a href="#t6112. &#x540E;&#x53F0;&#x63A5;&#x53E3;"> # </a></h2>
-<h3 id="t6212.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">12.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE; <a href="#t6212.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;"> # </a></h3>
+</code></pre>
+<h2 id="t6112. &#x540E;&#x53F0;&#x63A5;&#x53E3;">12. &#x540E;&#x53F0;&#x63A5;&#x53E3; <a href="91.react-ts.html#t6112. &#x540E;&#x53F0;&#x63A5;&#x53E3;"> # </a></h2>
+<h3 id="t6212.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">12.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE; <a href="91.react-ts.html#t6212.1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;"> # </a></h3>
 <pre><code class="lang-js">mkdir C:\vipdata\prepare8\zhufeng_ts_react_api
 cd zhufeng_ts_react_api
 cnpm init -y
 cnpm i @types/node express @types/express body-parser cors @types/cors mongoose @types/mongoose shelljs -S
 </code></pre>
-<h3 id="t6312.2 tsconfig.json">12.2 tsconfig.json <a href="#t6312.2 tsconfig.json"> # </a></h3>
+<h3 id="t6312.2 tsconfig.json">12.2 tsconfig.json <a href="91.react-ts.html#t6312.2 tsconfig.json"> # </a></h3>
 <pre><code class="lang-json">{
   <span class="hljs-attr">&quot;compilerOptions&quot;</span>: {
     <span class="hljs-attr">&quot;target&quot;</span>: <span class="hljs-string">&quot;es5&quot;</span>,
@@ -1444,7 +1453,7 @@ cnpm i @types/node express @types/express body-parser cors @types/cors mongoose 
   }
 }
 </code></pre>
-<h3 id="t6412.3 server.ts">12.3 server.ts <a href="#t6412.3 server.ts"> # </a></h3>
+<h3 id="t6412.3 server.ts">12.3 server.ts <a href="91.react-ts.html#t6412.3 server.ts"> # </a></h3>
 <p>server.ts</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> express, { Express, Request, Response } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;express&apos;</span>;
 <span class="hljs-keyword">import</span> bodyParser <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;body-parser&apos;</span>;
@@ -1483,7 +1492,7 @@ app.listen(<span class="hljs-number">4000</span>, () =&gt; {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x670D;&#x52A1;&#x5668;&#x5728;4000&#x7AEF;&#x53E3;&#x542F;&#x52A8;!&apos;</span>);
 });
 </code></pre>
-<h3 id="t6512.4 config.ts">12.4 config.ts <a href="#t6512.4 config.ts"> # </a></h3>
+<h3 id="t6512.4 config.ts">12.4 config.ts <a href="91.react-ts.html#t6512.4 config.ts"> # </a></h3>
 <pre><code class="lang-js">interface IConfig {
     <span class="hljs-attr">secret</span>: string;
     dbUrl: string;
@@ -1497,7 +1506,7 @@ app.listen(<span class="hljs-number">4000</span>, () =&gt; {
 
 <span class="hljs-keyword">export</span> =  config;
 </code></pre>
-<h3 id="t6612.5 db.ts">12.5 db.ts <a href="#t6612.5 db.ts"> # </a></h3>
+<h3 id="t6612.5 db.ts">12.5 db.ts <a href="91.react-ts.html#t6612.5 db.ts"> # </a></h3>
 <p>db.ts</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> mongoose, { Schema, Connection, Model } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;mongoose&apos;</span>;
 <span class="hljs-keyword">import</span> config <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./config&apos;</span>;
@@ -1510,16 +1519,16 @@ app.listen(<span class="hljs-number">4000</span>, () =&gt; {
     UserModel
 }
 </code></pre>
-<h3 id="t6712.6 shelljs\index.d.ts">12.6 shelljs\index.d.ts <a href="#t6712.6 shelljs\index.d.ts"> # </a></h3>
+<h3 id="t6712.6 shelljs\index.d.ts">12.6 shelljs\index.d.ts <a href="91.react-ts.html#t6712.6 shelljs\index.d.ts"> # </a></h3>
 <p>typings\shelljs\index.d.ts</p>
 <pre><code class="lang-js">declare <span class="hljs-built_in">module</span> <span class="hljs-string">&apos;shelljs&apos;</span>;
 </code></pre>
-<h3 id="t6812.7 copy.ts">12.7 copy.ts <a href="#t6812.7 copy.ts"> # </a></h3>
+<h3 id="t6812.7 copy.ts">12.7 copy.ts <a href="91.react-ts.html#t6812.7 copy.ts"> # </a></h3>
 <p>copy.ts</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> shell <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;shelljs&apos;</span>;
 shell.cp(<span class="hljs-string">&quot;-R&quot;</span>, <span class="hljs-string">&quot;./public/&quot;</span>, <span class="hljs-string">&quot;./dist/&quot;</span>);
 </code></pre>
-<h3 id="t6912.8 package.json">12.8 package.json <a href="#t6912.8 package.json"> # </a></h3>
+<h3 id="t6912.8 package.json">12.8 package.json <a href="91.react-ts.html#t6912.8 package.json"> # </a></h3>
 <p>package.json</p>
 <pre><code class="lang-json">{
 <span class="hljs-attr">&quot;scripts&quot;</span>: {
@@ -1528,111 +1537,111 @@ shell.cp(<span class="hljs-string">&quot;-R&quot;</span>, <span class="hljs-stri
   }
 }
 </code></pre>
-<h2 id="t7013. dva">13. dva <a href="#t7013. dva"> # </a></h2>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
-<span class="hljs-keyword">import</span> { Dispatch } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
-<span class="hljs-keyword">import</span> dva, { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva&apos;</span>;
-<span class="hljs-keyword">import</span> keymaster <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;keymaster&apos;</span>;
-<span class="hljs-keyword">import</span> { RouterAPI } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva&apos;</span>;
-<span class="hljs-keyword">import</span> { Router, Route } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva/router&apos;</span>;
+<h2 id="t7013. dva">13. dva <a href="91.react-ts.html#t7013. dva"> # </a></h2>
+<pre><code class="lang-js">import React from &apos;react&apos;;
+import { Dispatch } from &apos;redux&apos;;
+import dva, { connect } from &apos;dva&apos;;
+import keymaster from &apos;keymaster&apos;;
+import { RouterAPI } from &apos;dva&apos;;
+import { Router, Route } from &apos;dva/router&apos;;
 interface Counter1State {
-    <span class="hljs-attr">number</span>: <span class="hljs-number">0</span>
+    number: 0
 }
 interface Counter2State {
-    <span class="hljs-attr">number</span>: <span class="hljs-number">0</span>
+    number: 0
 }
 interface CombinedState {
-    <span class="hljs-attr">counter1</span>: Counter1State;
+    counter1: Counter1State;
     counter2: Counter2State;
 }
-<span class="hljs-keyword">const</span> app = dva();
-<span class="hljs-keyword">const</span> delay = <span class="hljs-function">(<span class="hljs-params">millseconds: number</span>) =&gt;</span> {
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve, reject</span>) </span>{
-        setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+const app = dva();
+const delay = (millseconds: number) =&gt; {
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
             resolve();
         }, millseconds);
     });
 }
 app.model({
-    <span class="hljs-attr">namespace</span>: <span class="hljs-string">&apos;counter1&apos;</span>,
-    <span class="hljs-attr">state</span>: { <span class="hljs-attr">number</span>: <span class="hljs-number">0</span> },
-    <span class="hljs-attr">reducers</span>: {<span class="hljs-comment">//&#x63A5;&#x6536;&#x8001;&#x72B6;&#x6001;&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x72B6;&#x6001;</span>
-        add(state) { <span class="hljs-comment">//dispatch({type:&apos;add&apos;});</span>
-            <span class="hljs-keyword">return</span> { <span class="hljs-attr">number</span>: state.number + <span class="hljs-number">1</span> };
+    namespace: &apos;counter1&apos;,
+    state: { number: 0 },
+    reducers: {//&#x63A5;&#x6536;&#x8001;&#x72B6;&#x6001;&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x72B6;&#x6001;
+        add(state) { //dispatch({type:&apos;add&apos;});
+            return { number: state.number + 1 };
         },
-        minus(state) {<span class="hljs-comment">//dispatch({type:&apos;minus&apos;})</span>
-            <span class="hljs-keyword">return</span> { <span class="hljs-attr">number</span>: state.number - <span class="hljs-number">1</span> };
+        minus(state) {//dispatch({type:&apos;minus&apos;})
+            return { number: state.number - 1 };
         }
     },
-    <span class="hljs-comment">// &#x5EF6;&#x65F6;&#x64CD;&#x4F5C; &#x8C03;&#x7528;&#x63A5;&#x53E3;  &#x7B49;&#x5F85;</span>
+    // &#x5EF6;&#x65F6;&#x64CD;&#x4F5C; &#x8C03;&#x7528;&#x63A5;&#x53E3;  &#x7B49;&#x5F85;
     effects: {
-        *asyncAdd(action, { put, call }) { <span class="hljs-comment">//redux-saga/effects {put,call}</span>
-            <span class="hljs-keyword">yield</span> call(delay, <span class="hljs-number">1000</span>);<span class="hljs-comment">//&#x628A;100&#x4F20;&#x7ED9;delay&#x5E76;&#x8C03;&#x7528;&#xFF0C;yield&#x4F1A;&#x7B49;&#x5F85;promise&#x5B8C;&#x6210;</span>
-            <span class="hljs-keyword">yield</span> put({ <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;add&apos;</span> });
+        *asyncAdd(action, { put, call }) { //redux-saga/effects {put,call}
+            yield call(delay, 1000);//&#x628A;100&#x4F20;&#x7ED9;delay&#x5E76;&#x8C03;&#x7528;&#xFF0C;yield&#x4F1A;&#x7B49;&#x5F85;promise&#x5B8C;&#x6210;
+            yield put({ type: &apos;add&apos; });
         }
     },
-    <span class="hljs-attr">subscriptions</span>: {
+    subscriptions: {
         keyboard({ dispatch }) {
-            keymaster(<span class="hljs-string">&apos;space&apos;</span>, () =&gt; {
-                dispatch({ <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;add&apos;</span> });
+            keymaster(&apos;space&apos;, () =&gt; {
+                dispatch({ type: &apos;add&apos; });
             });
         },
         changeTitle({ history }) {
-            setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-                history.listen(<span class="hljs-function">(<span class="hljs-params">{ pathname }</span>) =&gt;</span> {
-                    <span class="hljs-built_in">document</span>.title = pathname;
+            setTimeout(function () {
+                history.listen(({ pathname }) =&gt; {
+                    document.title = pathname;
                 });
-            }, <span class="hljs-number">1000</span>);
+            }, 1000);
 
         }
     }
 });
 app.model({
-    <span class="hljs-attr">namespace</span>: <span class="hljs-string">&apos;counter2&apos;</span>,
-    <span class="hljs-attr">state</span>: { <span class="hljs-attr">number</span>: <span class="hljs-number">0</span> },
-    <span class="hljs-attr">reducers</span>: {<span class="hljs-comment">//&#x63A5;&#x6536;&#x8001;&#x72B6;&#x6001;&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x72B6;&#x6001;</span>
-        add(state) { <span class="hljs-comment">//dispatch({type:&apos;add&apos;});</span>
-            <span class="hljs-keyword">return</span> { <span class="hljs-attr">number</span>: state.number + <span class="hljs-number">1</span> };
+    namespace: &apos;counter2&apos;,
+    state: { number: 0 },
+    reducers: {//&#x63A5;&#x6536;&#x8001;&#x72B6;&#x6001;&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x72B6;&#x6001;
+        add(state) { //dispatch({type:&apos;add&apos;});
+            return { number: state.number + 1 };
         },
-        minus(state) {<span class="hljs-comment">//dispatch({type:&apos;minus&apos;})</span>
-            <span class="hljs-keyword">return</span> { <span class="hljs-attr">number</span>: state.number - <span class="hljs-number">1</span> };
+        minus(state) {//dispatch({type:&apos;minus&apos;})
+            return { number: state.number - 1 };
         }
     }
 });
-type Counter1Props = Counter1State &amp; { <span class="hljs-attr">dispatch</span>: Dispatch };
-<span class="hljs-keyword">const</span> Counter1 = <span class="hljs-function">(<span class="hljs-params">props: Counter1Props</span>) =&gt;</span> {
-    <span class="hljs-keyword">return</span> (
-        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{props.number}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> props.dispatch({ type: &apos;counter1/add&apos; })}&gt;add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> props.dispatch({ type: &apos;counter1/asyncAdd&apos; })}&gt;asyncAdd<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> props.dispatch({ type: &apos;counter1/minus&apos; })}&gt;-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+type Counter1Props = Counter1State &amp; { dispatch: Dispatch };
+const Counter1 = (props: Counter1Props) =&gt; {
+    return (
+        &lt;div&gt;
+            &lt;p&gt;{props.number}&lt;/p&gt;
+            &lt;button onClick={() =&gt; props.dispatch({ type: &apos;counter1/add&apos; })}&gt;add&lt;/button&gt;
+            &lt;button onClick={() =&gt; props.dispatch({ type: &apos;counter1/asyncAdd&apos; })}&gt;asyncAdd&lt;/button&gt;
+            &lt;button onClick={() =&gt; props.dispatch({ type: &apos;counter1/minus&apos; })}&gt;-&lt;/button&gt;
+        &lt;/div&gt;
     )
 }
-type Counter2Props = Counter2State &amp; { <span class="hljs-attr">dispatch</span>: Dispatch };
-<span class="hljs-keyword">const</span> Counter2 = <span class="hljs-function">(<span class="hljs-params">props: Counter2Props</span>) =&gt;</span> {
-    <span class="hljs-keyword">return</span> (
-        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{props.number}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> props.dispatch({ type: &apos;counter2/add&apos; })}&gt;+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> props.dispatch({ type: &apos;counter2/minus&apos; })}&gt;-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+type Counter2Props = Counter2State &amp; { dispatch: Dispatch };
+const Counter2 = (props: Counter2Props) =&gt; {
+    return (
+        &lt;div&gt;
+            &lt;p&gt;{props.number}&lt;/p&gt;
+            &lt;button onClick={() =&gt; props.dispatch({ type: &apos;counter2/add&apos; })}&gt;+&lt;/button&gt;
+            &lt;button onClick={() =&gt; props.dispatch({ type: &apos;counter2/minus&apos; })}&gt;-&lt;/button&gt;
+        &lt;/div&gt;
     )
 }
 
-<span class="hljs-keyword">const</span> mapStateToProps1 = (state: CombinedState): <span class="hljs-function"><span class="hljs-params">Counter1State</span> =&gt;</span> state.counter1;
-<span class="hljs-keyword">const</span> ConnectedCounter = connect(
+const mapStateToProps1 = (state: CombinedState): Counter1State =&gt; state.counter1;
+const ConnectedCounter = connect(
     mapStateToProps1
 )(Counter1);
-<span class="hljs-keyword">const</span> mapStateToProps2 = (state: CombinedState): <span class="hljs-function"><span class="hljs-params">Counter2State</span> =&gt;</span> state.counter2;
-<span class="hljs-keyword">const</span> ConnectedCounter2 = connect(
+const mapStateToProps2 = (state: CombinedState): Counter2State =&gt; state.counter2;
+const ConnectedCounter2 = connect(
     mapStateToProps2
 )(Counter2);
 app.router(
-    <span class="hljs-function">(<span class="hljs-params">api?: RouterAPI</span>) =&gt;</span> {
-        <span class="hljs-keyword">let</span> { history } = api!;
-        <span class="hljs-keyword">return</span> (
+    (api?: RouterAPI) =&gt; {
+        let { history } = api!;
+        return (
             (
                 &lt;Router history={history}&gt;
                     &lt;&gt;
@@ -1647,18 +1656,74 @@ app.router(
 app.start(&apos;#root&apos;);
 </code></pre>
 
-        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
     </div>
-    
 </div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+    aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">姓名:</label>
+                        <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码:</label>
+                        <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                    data-dismiss="modal">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+let zhufengjiagou = localStorage.getItem('zhufengjiagou');
+const host = 'http://login.zhufengpeixun.com';
+if(zhufengjiagou){
+  fetch(host+'/check',{method:"GET",mode: 'cors',
+　　headers: {'Content-Type': 'application/json', authorization: `Bearer ${zhufengjiagou}`}}).then(response => response.json()).then(res => {
+    if(res.success){
+     
+    }else{
+      $('#loginModal').modal('show')
+    }
+  }) 
+}else{
+   $('#loginModal').modal('show')
+}
 
-<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+$('#loginModal').on('hidden.bs.modal', function (event) {
+  var modal = $(this)
+  let username = modal.find('.modal-body #username').val();
+  let password = modal.find('.modal-body #password').val();
+  fetch(host+'/login',{method:"POST",mode: 'cors',
+　　headers: {'Content-Type': 'application/json'},
+　　body:JSON.stringify({username,password})}).then(response => response.json()).then(res => {
+    if(res.success){
+      localStorage.setItem('zhufengjiagou',res.zhufengjiagou);
+    }else{
+      window.location.href = 'http://www.zhufengpeixun.cn';
+    }
+  })
+})
+</script>
 <script>
 $('.warpper .page-toc ul ul li a').on('click',function(){
   $('.warpper .page-toc ul ul li a').removeClass('my-active')
   $(this).addClass('my-active')
 })
-
 $('.logo').on('mouseenter',function(){
   $('.nav').height('450px');
 })
@@ -1669,61 +1734,6 @@ $('.logo').on('click',function(){
   $('.nav').css('display','none');
  $('.warpper').css('padding','0px');
 })
-// if (!$('.understand-me').length) {
-  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
-  //   var count = bar / 26 / 2;
-  //   var barHeight = $('.page-toc').outerHeight();
-  //   $('.page-toc li').eq(0).children('a').addClass('red');
-  //   var arr = [];
-  //   $("h1,h2,h3,h4,h5,h6").each(function () {
-  //     arr.push($(this).position().top);
-  //   });
-  //   var timer
-  //   function dark() {
-  //     clearTimeout(timer)
-  //      timer = setTimeout(function () {
-  //      var top = Math.abs($('.page-toc > ul').position().top);
-  //      var cur = $('.content').scrollTop();
-  //      for (var i = arr.length; i >= 0; i--) {
-  //        if (arr[i] <= cur) {
-  //          break;
-  //        }
-  //      }
-  //      if (i === -1) {
-  //        i = 0;
-  //      }
-  //      $('.page-toc li a').removeClass('red');
-  //      $('.page-toc li').eq(i).children('a').addClass('red');
-  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
-  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
-  //    },200)
-  //   }
-
-  //   $('.content').on('scroll', dark);
-  // }
 </script>
-<style>
-
-    /* ::-webkit-scrollbar{width:14px;}
-    ::-webkit-scrollbar-track{background-color:transparent;}
-    ::-webkit-scrollbar-thumb{background-color:transparent;}
-    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
-    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
-
-    .page-toc > ul .red {
-        background: #f3f3f3;
-        z-index: 1;
-        border-left: 3px solid #009a61;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        color: #000
-    }
-
-
-
-
-
-</style>
-<script type="text/javascript"  src="https://idm-su.baidu.com/su_new.js"></script>
 </body>
 </html>

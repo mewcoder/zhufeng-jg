@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
     <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
 </head>
 <body>
 <div class="nav">
     <div class="logo">
         
-            珠峰架构师成长计划
-        
-    </div>
-<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li class="active"><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li></ul></div>
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="0.Async.html">0.Async</a></li><li><a href="0.module.html">0.module</a></li><li><a href="1.ES2015.html">1.ES2015</a></li><li><a href="2.Promise.html">2.Promise</a></li><li><a href="3.Node.html">3.Node</a></li><li><a href="4.NodeInstall.html">4.NodeInstall</a></li><li><a href="5.REPL.html">5.REPL</a></li><li><a href="6.NodeCore.html">6.NodeCore</a></li><li><a href="7.module&amp;NPM.html">7.module&NPM</a></li><li><a href="8.Encoding.html">8.Encoding</a></li><li><a href="9.Buffer.html">9.Buffer</a></li><li><a href="10.fs.html">10.fs</a></li><li><a href="11.Stream-1.html">11.Stream-1</a></li><li><a href="11.Stream-2.html">11.Stream-2</a></li><li><a href="11.Stream-3.html">11.Stream-3</a></li><li><a href="11.Stream-4.html">11.Stream-4</a></li><li><a href="12-Network-2.html">12-Network-2</a></li><li><a href="12.NetWork-3.html">12.NetWork-3</a></li><li><a href="12.Network-1.html">12.Network-1</a></li><li><a href="13.tcp.html">13.tcp</a></li><li><a href="14.http-1.html">14.http-1</a></li><li><a href="14.http-2.html">14.http-2</a></li><li><a href="15.compress.html">15.compress</a></li><li><a href="16.crypto.html">16.crypto</a></li><li><a href="17.process.html">17.process</a></li><li><a href="18.yargs.html">18.yargs</a></li><li><a href="19.cache.html">19.cache</a></li><li><a href="20.action.html">20.action</a></li><li><a href="21.https.html">21.https</a></li><li><a href="22.cookie.html">22.cookie</a></li><li><a href="23.session.html">23.session</a></li><li><a href="24.express-1.html">24.express-1</a></li><li><a href="24.express-2.html">24.express-2</a></li><li><a href="24.express-3.html">24.express-3</a></li><li><a href="24.express-4.html">24.express-4</a></li><li><a href="25.koa-1.html">25.koa-1</a></li><li><a href="26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="28.redux.html">28.redux</a></li><li><a href="28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="29.mongodb-1.html">29.mongodb-1</a></li><li><a href="29.mongodb-2.html">29.mongodb-2</a></li><li><a href="29.mongodb-3.html">29.mongodb-3</a></li><li><a href="29.mongodb-4.html">29.mongodb-4</a></li><li><a href="29.mongodb-5.html">29.mongodb-5</a></li><li><a href="29.mongodb-6.html">29.mongodb-6</a></li><li><a href="30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="30.cms-7-api.html">30.cms-7-api</a></li><li><a href="30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li class="active"><a href="30.cms-14-front.html">30.cms-14-front</a></li><li><a href="30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="31.dva.html">31.dva</a></li><li><a href="31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="33.redis.html">33.redis</a></li><li><a href="34.unittest.html">34.unittest</a></li><li><a href="35.jwt.html">35.jwt</a></li><li><a href="36.websocket-1.html">36.websocket-1</a></li><li><a href="36.websocket-2.html">36.websocket-2</a></li><li><a href="38.chat-api-1.html">38.chat-api-1</a></li><li><a href="38.chat-api-2.html">38.chat-api-2</a></li><li><a href="38.chat-3.html">38.chat-3</a></li><li><a href="38.chat-api-3.html">38.chat-api-3</a></li><li><a href="38.chat.html">38.chat</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="39.crawl-0.html">39.crawl-0</a></li><li><a href="39.crawl-1.html">39.crawl-1</a></li><li><a href="39.crawl-2.html">39.crawl-2</a></li><li><a href="40.deploy.html">40.deploy</a></li><li><a href="41.safe.html">41.safe</a></li><li><a href="42.test.html">42.test</a></li><li><a href="43.nginx.html">43.nginx</a></li><li><a href="44.enzyme.html">44.enzyme</a></li><li><a href="45.docker.html">45.docker</a></li><li><a href="46.elastic.html">46.elastic</a></li><li><a href="47.oauth.html">47.oauth</a></li><li><a href="48.wxpay.html">48.wxpay</a></li><li><a href="index.html">index</a></li><li><a href="52.UML.html">52.UML</a></li><li><a href="53.design.html">53.design</a></li><li><a href="index.html">index</a></li><li><a href="54.linux.html">54.linux</a></li><li><a href="57.ts.html">57.ts</a></li><li><a href="56.react-ssr.html">56.react-ssr</a></li><li><a href="58.ts_react.html">58.ts_react</a></li><li><a href="59.ketang.html">59.ketang</a></li><li><a href="59.ketang2.html">59.ketang2</a></li><li><a href="61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="61.3.devops-user.html">61.3.devops-user</a></li><li><a href="61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="61.6.devops-install.html">61.6.devops-install</a></li><li><a href="61.7.devops-system.html">61.7.devops-system</a></li><li><a href="61.8.devops-service.html">61.8.devops-service</a></li><li><a href="61.9.devops-network.html">61.9.devops-network</a></li><li><a href="61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="61.14.devops-php.html">61.14.devops-php</a></li><li><a href="61.15.devops-java.html">61.15.devops-java</a></li><li><a href="61.16.devops-node.html">61.16.devops-node</a></li><li><a href="61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="62.1.react-basic.html">62.1.react-basic</a></li><li><a href="62.2.react-state.html">62.2.react-state</a></li><li><a href="62.3.react-high.html">62.3.react-high</a></li><li><a href="62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="62.8.react-source.html">62.8.react-source</a></li><li><a href="63.1.redux.html">63.1.redux</a></li><li><a href="63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="64.1.router.html">64.1.router</a></li><li><a href="64.2.router-connected.html">64.2.router-connected</a></li><li><a href="65.1.typescript.html">65.1.typescript</a></li><li><a href="65.2.typescript.html">65.2.typescript</a></li><li><a href="65.3.typescript.html">65.3.typescript</a></li><li><a href="65.4.antd.html">65.4.antd</a></li><li><a href="65.4.definition.html">65.4.definition</a></li><li><a href="66-1.vue-base.html">66-1.vue-base</a></li><li><a href="66-2.vue-component.html">66-2.vue-component</a></li><li><a href="66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="66-4.$message组件.html">66-4.$message组件</a></li><li><a href="66-5.Form组件.html">66-5.Form组件</a></li><li><a href="66-6.tree.html">66-6.tree</a></li><li><a href="66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="66-13.pwa.html">66-13.pwa</a></li><li><a href="66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="66-15.权限校验.html">66-15.权限校验</a></li><li><a href="67-1-network.html">67-1-network</a></li><li><a href="68-2-wireshark.html">68-2-wireshark</a></li><li><a href="7.npm2.html">7.npm2</a></li><li><a href="69-hooks.html">69-hooks</a></li><li><a href="70-deploy.html">70-deploy</a></li><li><a href="71-hmr.html">71-hmr</a></li><li><a href="72.deploy.html">72.deploy</a></li><li><a href="73.import.html">73.import</a></li><li><a href="74.mobile.html">74.mobile</a></li><li><a href="75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="76.react_optimize.html">76.react_optimize</a></li><li><a href="77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="79.grammar.html">79.grammar</a></li><li><a href="80.tree.html">80.tree</a></li><li><a href="81.axios.html">81.axios</a></li><li><a href="82.1.react.html">82.1.react</a></li><li><a href="82.2.react-high.html">82.2.react-high</a></li><li><a href="82.3.react-router.html">82.3.react-router</a></li><li><a href="82.4.redux.html">82.4.redux</a></li><li><a href="82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="82.6.connected.html">82.6.connected</a></li><li><a href="82.7.saga.html">82.7.saga</a></li><li><a href="82.8.dva.html">82.8.dva</a></li><li><a href="82.8.dva-source.html">82.8.dva-source</a></li><li><a href="82.9.roadhog.html">82.9.roadhog</a></li><li><a href="82.10.umi.html">82.10.umi</a></li><li><a href="82.11.antdesign.html">82.11.antdesign</a></li><li><a href="82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="83.upload.html">83.upload</a></li><li><a href="84.graphql.html">84.graphql</a></li><li><a href="85.antpro.html">85.antpro</a></li><li><a href="86.1.uml.html">86.1.uml</a></li><li><a href="86.2.design.html">86.2.design</a></li><li><a href="87.postcss.html">87.postcss</a></li><li><a href="88.react16-1.html">88.react16-1</a></li><li><a href="89.nextjs.html">89.nextjs</a></li><li><a href="90.react-test.html">90.react-test</a></li><li><a href="91.react-ts.html">91.react-ts</a></li><li><a href="92.rbac.html">92.rbac</a></li><li><a href="93.tsnode.html">93.tsnode</a></li><li><a href="94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="94.3.MODULE.html">94.3.MODULE</a></li><li><a href="94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="94.5.文件上传.html">94.5.文件上传</a></li><li><a href="94.6.https.html">94.6.https</a></li><li><a href="94.7.&#32;nginx.html">94.7. nginx</a></li><li><a href="95.1.&#32;react.html">95.1. react</a></li><li><a href="95.2.react.html">95.2.react</a></li><li><a href="96.1.react16.html">96.1.react16</a></li><li><a href="96.2.fiber.html">96.2.fiber</a></li><li><a href="96.3.fiber.html">96.3.fiber</a></li><li><a href="97.serverless.html">97.serverless</a></li><li><a href="98.websocket.html">98.websocket</a></li><li><a href="100.1.react-basic.html">100.1.react-basic</a></li><li><a href="101.1.monitor.html">101.1.monitor</a></li><li><a href="101.2.monitor.html">101.2.monitor</a></li><li><a href="102.java.html">102.java</a></li><li><a href="103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="103.16.vite.source.html">103.16.vite.source</a></li><li><a href="103.17.polyfill.html">103.17.polyfill</a></li><li><a href="104.1.binary.html">104.1.binary</a></li><li><a href="104.2.binary.html">104.2.binary</a></li><li><a href="105.skeleton.html">105.skeleton</a></li><li><a href="106.1.react.html">106.1.react</a></li><li><a href="106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="106.3.react_router.html">106.3.react_router</a></li><li><a href="106.4.redux.html">106.4.redux</a></li><li><a href="106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="106.8.dva.html">106.8.dva</a></li><li><a href="106.9.umi.html">106.9.umi</a></li><li><a href="106.10.ketang.html">106.10.ketang</a></li><li><a href="106.11.antdesign.html">106.11.antdesign</a></li><li><a href="106.12.antpro.html">106.12.antpro</a></li><li><a href="107.fiber.html">107.fiber</a></li><li><a href="108.http.html">108.http</a></li><li><a href="109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="109.3.dll.html">109.3.dll</a></li><li><a href="110.nest.js.html">110.nest.js</a></li><li><a href="111.xstate.html">111.xstate</a></li><li><a href="112.Form.html">112.Form</a></li><li><a href="113.redux-saga.html">113.redux-saga</a></li><li><a href="114.react+typescript.html">114.react+typescript</a></li><li><a href="115.immer.html">115.immer</a></li><li><a href="116.pro5.html">116.pro5</a></li><li><a href="117.css-loader.html">117.css-loader</a></li><li><a href="118.1.umi-core.html">118.1.umi-core</a></li><li><a href="119.2.module-federation.html">119.2.module-federation</a></li><li><a href="119.1.module-federation.html">119.1.module-federation</a></li><li><a href="120.create-react-app.html">120.create-react-app</a></li><li><a href="121.react-scripts.html">121.react-scripts</a></li><li><a href="122.react-optimize.html">122.react-optimize</a></li><li><a href="123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="124.next.js.html">124.next.js</a></li><li><a href="125.1.linux.html">125.1.linux</a></li><li><a href="125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="125.3.linux-user.html">125.3.linux-user</a></li><li><a href="125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="125.6.linux-install.html">125.6.linux-install</a></li><li><a href="125.7.linux-system.html">125.7.linux-system</a></li><li><a href="125.8.linux-service.html">125.8.linux-service</a></li><li><a href="125.9.linux-network.html">125.9.linux-network</a></li><li><a href="125.10.nginx.html">125.10.nginx</a></li><li><a href="125.11.docker.html">125.11.docker</a></li><li><a href="125.12.ci.html">125.12.ci</a></li><li><a href="125.13.k8s.html">125.13.k8s</a></li><li><a href="125.14.k8s.html">125.14.k8s</a></li><li><a href="125.15.k8s.html">125.15.k8s</a></li><li><a href="125.16.k8s.html">125.16.k8s</a></li><li><a href="126.11.react-1.html">126.11.react-1</a></li><li><a href="126.12.react-2.html">126.12.react-2</a></li><li><a href="126.12.react-3.html">126.12.react-3</a></li><li><a href="126.12.react-4.html">126.12.react-4</a></li><li><a href="126.12.react-5.html">126.12.react-5</a></li><li><a href="127.frontend.html">127.frontend</a></li><li><a href="128.rollup.html">128.rollup</a></li><li><a href="129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="130.health.html">130.health</a></li><li><a href="131.hooks.html">131.hooks</a></li><li><a href="132.keepalive.html">132.keepalive</a></li><li><a href="133.vue-cli.html">133.vue-cli</a></li><li><a href="134.react18.html">134.react18</a></li><li><a href="135.function.html">135.function</a></li><li><a href="136.toolkit.html">136.toolkit</a></li><li><a href="137.lerna.html">137.lerna</a></li><li><a href="138.create-vite.html">138.create-vite</a></li><li><a href="139.cli.html">139.cli</a></li><li><a href="140.antd.html">140.antd</a></li><li><a href="141.react-dnd.html">141.react-dnd</a></li><li><a href="142.1.link.html">142.1.link</a></li><li><a href="143.1.gulp.html">143.1.gulp</a></li><li><a href="143.2.stream.html">143.2.stream</a></li><li><a href="143.3.gulp.html">143.3.gulp</a></li><li><a href="144.1.closure.html">144.1.closure</a></li><li><a href="106.13.router-6.html">106.13.router-6</a></li><li><a href="145.react-router-v6.html">145.react-router-v6</a></li><li><a href="144.2.v8.html">144.2.v8</a></li><li><a href="144.3.gc.html">144.3.gc</a></li><li><a href="106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="146.browser.html">146.browser</a></li><li><a href="147.lighthouse.html">147.lighthouse</a></li><li><a href="148.1.basic.html">148.1.basic</a></li><li><a href="148.2.basic&#32;.html">148.2.basic </a></li><li><a href="148.3.basic.html">148.3.basic</a></li></ul>                        </div>
 
-
+                        
 <div class="warpper">
-
     <div class="page-toc">
-        <ul><li><a href="#t01. 初始化项目">1. 初始化项目</a></li><li><a href="#t12. 配置别名">2. 配置别名</a></li><li><a href="#t23. 注册登录">3. 注册登录</a><ul><li><a href="#t33.1 login/index.js">3.1 login/index.js</a><ul><li><a href="#t43.1.1 Login">3.1.1 Login</a></li><li><a href="#t53.1.2 LoginForm">3.1.2 LoginForm</a></li><li><a href="#t63.1.3 getFieldItems.js">3.1.3 getFieldItems.js</a></li><li><a href="#t73.1.4 addresses.js">3.1.4 addresses.js</a></li><li><a href="#t83.1.4 utils/request.js">3.1.4 utils/request.js</a></li></ul></li><li><a href="#t93.3  models/login.js">3.3  models/login.js</a></li><li><a href="#t103.4 login/services/login.js">3.4 login/services/login.js</a></li></ul></li><li><a href="#t114.验证码">4.验证码</a><ul><li><a href="#t124.1 login/index.js">4.1 login/index.js</a></li></ul></li><li><a href="#t135.后台管理界面布局模版">5.后台管理界面布局模版</a><ul><li><a href="#t145.1 /admin/_layout.js">5.1 /admin/_layout.js</a></li></ul></li><li><a href="#t156. 顶部导航条">6. 顶部导航条</a><ul><li><a href="#t166.1 components\AdminHeader\index.js">6.1 components\AdminHeader\index.js</a></li><li><a href="#t176.2 components\AdminHeader\index.less">6.2 components\AdminHeader\index.less</a></li><li><a href="#t186.3 admin/_layout.js">6.3 admin/_layout.js</a></li></ul></li><li><a href="#t197.左侧菜单和用户页面">7.左侧菜单和用户页面</a><ul><li><a href="#t207.1 components/MenuList.js">7.1 components/MenuList.js</a></li><li><a href="#t217.2 admin/_layout.js">7.2 admin/_layout.js</a></li></ul></li><li><a href="#t228. 用户管理">8. 用户管理</a><ul><li><a href="#t238.1 用户列表">8.1 用户列表</a><ul><li><a href="#t248.1.1 index.js">8.1.1 index.js</a></li><li><a href="#t258.1.2 constants.js">8.1.2 constants.js</a></li><li><a href="#t268.1.3 models\user.js">8.1.3 models\user.js</a></li><li><a href="#t278.1.4 services\user.js">8.1.4 services\user.js</a></li></ul></li><li><a href="#t288.2 新增和编辑用户">8.2 新增和编辑用户</a><ul><li><a href="#t298.1.1 index.js">8.1.1 index.js</a></li><li><a href="#t308.1.2 models/user.js">8.1.2 models/user.js</a></li><li><a href="#t318.1.3 services/user.js">8.1.3 services/user.js</a></li></ul></li><li><a href="#t328.3 删除用户">8.3 删除用户</a><ul><li><a href="#t338.3.1 index.js">8.3.1 index.js</a></li><li><a href="#t348.3.2 models\user.js">8.3.2 models\user.js</a></li><li><a href="#t358.3.3 services\user.js">8.3.3 services\user.js</a></li></ul></li><li><a href="#t368.4 全部删除">8.4 全部删除</a><ul><li><a href="#t378.4.1 src\pages\admin\user\index.js">8.4.1 src\pages\admin\user\index.js</a></li><li><a href="#t388.4.2 user.js">8.4.2 user.js</a></li><li><a href="#t398.4.3 services\user.js">8.4.3 services\user.js</a></li></ul></li><li><a href="#t408.5 搜索">8.5 搜索</a><ul><li><a href="#t418.5.1 src\pages\admin\user\index.js">8.5.1 src\pages\admin\user\index.js</a></li><li><a href="#t428.5.2 user.js">8.5.2 user.js</a></li><li><a href="#t438.5.3 services\user.js">8.5.3 services\user.js</a></li></ul></li><li><a href="#t448.6 点行选择行">8.6 点行选择行</a><ul><li><a href="#t458.6.1 src\pages\admin\user\index.js">8.6.1 src\pages\admin\user\index.js</a></li></ul></li></ul></li><li><a href="#t469 角色管理">9 角色管理</a><ul><li><a href="#t479.1 role\index.js">9.1 role\index.js</a></li><li><a href="#t489.2 role\constants.js">9.2 role\constants.js</a></li><li><a href="#t499.3 models\role.js">9.3 models\role.js</a></li><li><a href="#t509.4 services\role.js">9.4 services\role.js</a></li></ul></li><li><a href="#t5110. 设置权限">10. 设置权限</a><ul><li><a href="#t5210.1 service\role.js">10.1 service\role.js</a></li><li><a href="#t5310.2 role/index.js">10.2 role/index.js</a></li><li><a href="#t5410.3 models\role.js">10.3 models\role.js</a></li><li><a href="#t5510.4 role.js">10.4 role.js</a></li></ul></li><li><a href="#t5611.给角色加用户">11.给角色加用户</a><ul><li><a href="#t5711.1 roles/index.js">11.1 roles/index.js</a></li><li><a href="#t5811.2 models/roles.js">11.2 models/roles.js</a></li><li><a href="#t5911.3 services/roles.js">11.3 services/roles.js</a></li></ul></li></ul>
+        <ul><li><a href="30.cms-14-front.html#t01. 初始化项目">1. 初始化项目</a></li><li><a href="30.cms-14-front.html#t12. 配置别名">2. 配置别名</a></li><li><a href="30.cms-14-front.html#t23. 注册登录">3. 注册登录</a><ul><li><a href="30.cms-14-front.html#t33.1 login/index.js">3.1 login/index.js</a><ul><li><a href="30.cms-14-front.html#t43.1.1 Login">3.1.1 Login</a></li><li><a href="30.cms-14-front.html#t53.1.2 LoginForm">3.1.2 LoginForm</a></li><li><a href="30.cms-14-front.html#t63.1.3 getFieldItems.js">3.1.3 getFieldItems.js</a></li><li><a href="30.cms-14-front.html#t73.1.4 addresses.js">3.1.4 addresses.js</a></li><li><a href="30.cms-14-front.html#t83.1.4 utils/request.js">3.1.4 utils/request.js</a></li></ul></li><li><a href="30.cms-14-front.html#t93.3  models/login.js">3.3  models/login.js</a></li><li><a href="30.cms-14-front.html#t103.4 login/services/login.js">3.4 login/services/login.js</a></li></ul></li><li><a href="30.cms-14-front.html#t114.验证码">4.验证码</a><ul><li><a href="30.cms-14-front.html#t124.1 login/index.js">4.1 login/index.js</a></li></ul></li><li><a href="30.cms-14-front.html#t135.后台管理界面布局模版">5.后台管理界面布局模版</a><ul><li><a href="30.cms-14-front.html#t145.1 /admin/_layout.js">5.1 /admin/_layout.js</a></li></ul></li><li><a href="30.cms-14-front.html#t156. 顶部导航条">6. 顶部导航条</a><ul><li><a href="30.cms-14-front.html#t166.1 components\AdminHeader\index.js">6.1 components\AdminHeader\index.js</a></li><li><a href="30.cms-14-front.html#t176.2 components\AdminHeader\index.less">6.2 components\AdminHeader\index.less</a></li><li><a href="30.cms-14-front.html#t186.3 admin/_layout.js">6.3 admin/_layout.js</a></li></ul></li><li><a href="30.cms-14-front.html#t197.左侧菜单和用户页面">7.左侧菜单和用户页面</a><ul><li><a href="30.cms-14-front.html#t207.1 components/MenuList.js">7.1 components/MenuList.js</a></li><li><a href="30.cms-14-front.html#t217.2 admin/_layout.js">7.2 admin/_layout.js</a></li></ul></li><li><a href="30.cms-14-front.html#t228. 用户管理">8. 用户管理</a><ul><li><a href="30.cms-14-front.html#t238.1 用户列表">8.1 用户列表</a><ul><li><a href="30.cms-14-front.html#t248.1.1 index.js">8.1.1 index.js</a></li><li><a href="30.cms-14-front.html#t258.1.2 constants.js">8.1.2 constants.js</a></li><li><a href="30.cms-14-front.html#t268.1.3 models\user.js">8.1.3 models\user.js</a></li><li><a href="30.cms-14-front.html#t278.1.4 services\user.js">8.1.4 services\user.js</a></li></ul></li><li><a href="30.cms-14-front.html#t288.2 新增和编辑用户">8.2 新增和编辑用户</a><ul><li><a href="30.cms-14-front.html#t298.1.1 index.js">8.1.1 index.js</a></li><li><a href="30.cms-14-front.html#t308.1.2 models/user.js">8.1.2 models/user.js</a></li><li><a href="30.cms-14-front.html#t318.1.3 services/user.js">8.1.3 services/user.js</a></li></ul></li><li><a href="30.cms-14-front.html#t328.3 删除用户">8.3 删除用户</a><ul><li><a href="30.cms-14-front.html#t338.3.1 index.js">8.3.1 index.js</a></li><li><a href="30.cms-14-front.html#t348.3.2 models\user.js">8.3.2 models\user.js</a></li><li><a href="30.cms-14-front.html#t358.3.3 services\user.js">8.3.3 services\user.js</a></li></ul></li><li><a href="30.cms-14-front.html#t368.4 全部删除">8.4 全部删除</a><ul><li><a href="30.cms-14-front.html#t378.4.1 src\pages\admin\user\index.js">8.4.1 src\pages\admin\user\index.js</a></li><li><a href="30.cms-14-front.html#t388.4.2 user.js">8.4.2 user.js</a></li><li><a href="30.cms-14-front.html#t398.4.3 services\user.js">8.4.3 services\user.js</a></li></ul></li><li><a href="30.cms-14-front.html#t408.5 搜索">8.5 搜索</a><ul><li><a href="30.cms-14-front.html#t418.5.1 src\pages\admin\user\index.js">8.5.1 src\pages\admin\user\index.js</a></li><li><a href="30.cms-14-front.html#t428.5.2 user.js">8.5.2 user.js</a></li><li><a href="30.cms-14-front.html#t438.5.3 services\user.js">8.5.3 services\user.js</a></li></ul></li><li><a href="30.cms-14-front.html#t448.6 点行选择行">8.6 点行选择行</a><ul><li><a href="30.cms-14-front.html#t458.6.1 src\pages\admin\user\index.js">8.6.1 src\pages\admin\user\index.js</a></li></ul></li></ul></li><li><a href="30.cms-14-front.html#t469 角色管理">9 角色管理</a><ul><li><a href="30.cms-14-front.html#t479.1 role\index.js">9.1 role\index.js</a></li><li><a href="30.cms-14-front.html#t489.2 role\constants.js">9.2 role\constants.js</a></li><li><a href="30.cms-14-front.html#t499.3 models\role.js">9.3 models\role.js</a></li><li><a href="30.cms-14-front.html#t509.4 services\role.js">9.4 services\role.js</a></li></ul></li><li><a href="30.cms-14-front.html#t5110. 设置权限">10. 设置权限</a><ul><li><a href="30.cms-14-front.html#t5210.1 service\role.js">10.1 service\role.js</a></li><li><a href="30.cms-14-front.html#t5310.2 role/index.js">10.2 role/index.js</a></li><li><a href="30.cms-14-front.html#t5410.3 models\role.js">10.3 models\role.js</a></li><li><a href="30.cms-14-front.html#t5510.4 role.js">10.4 role.js</a></li></ul></li><li><a href="30.cms-14-front.html#t5611.给角色加用户">11.给角色加用户</a><ul><li><a href="30.cms-14-front.html#t5711.1 roles/index.js">11.1 roles/index.js</a></li><li><a href="30.cms-14-front.html#t5811.2 models/roles.js">11.2 models/roles.js</a></li><li><a href="30.cms-14-front.html#t5911.3 services/roles.js">11.3 services/roles.js</a></li></ul></li></ul>
     </div>
-    
     <div class="content markdown-body">
-        <h2 id="t01. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE; <a href="#t01. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;"> # </a></h2>
+        <h2 id="t01. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">1. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE; <a href="30.cms-14-front.html#t01. &#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;"> # </a></h2>
 <ul>
 <li><a href="https://umijs.org/zh/guide/create-umi-app.html">create-umi-app</a></li>
 <li><a href="https://ant.design/docs/react/introduce-cn">ant.design</a></li>
@@ -33,7 +42,7 @@ $ yarn create umi
 $ cnpm i styled-components jsonwebtoken -S
 $ npm start
 </code></pre>
-<h2 id="t12. &#x914D;&#x7F6E;&#x522B;&#x540D;">2. &#x914D;&#x7F6E;&#x522B;&#x540D; <a href="#t12. &#x914D;&#x7F6E;&#x522B;&#x540D;"> # </a></h2>
+<h2 id="t12. &#x914D;&#x7F6E;&#x522B;&#x540D;">2. &#x914D;&#x7F6E;&#x522B;&#x540D; <a href="30.cms-14-front.html#t12. &#x914D;&#x7F6E;&#x522B;&#x540D;"> # </a></h2>
 <p>.webpackrc.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> {resolve}=<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
@@ -42,10 +51,10 @@ $ npm start
     }
 }
 </code></pre>
-<h2 id="t23. &#x6CE8;&#x518C;&#x767B;&#x5F55;">3. &#x6CE8;&#x518C;&#x767B;&#x5F55; <a href="#t23. &#x6CE8;&#x518C;&#x767B;&#x5F55;"> # </a></h2>
+<h2 id="t23. &#x6CE8;&#x518C;&#x767B;&#x5F55;">3. &#x6CE8;&#x518C;&#x767B;&#x5F55; <a href="30.cms-14-front.html#t23. &#x6CE8;&#x518C;&#x767B;&#x5F55;"> # </a></h2>
 <p><img src="http://img.zhufengpeixun.cn/loginregister.png" alt="&#x6CE8;&#x518C;"></p>
-<h3 id="t33.1 login/index.js">3.1 login/index.js <a href="#t33.1 login/index.js"> # </a></h3>
-<h4 id="t43.1.1 Login">3.1.1 Login <a href="#t43.1.1 Login"> # </a></h4>
+<h3 id="t33.1 login/index.js">3.1 login/index.js <a href="30.cms-14-front.html#t33.1 login/index.js"> # </a></h3>
+<h4 id="t43.1.1 Login">3.1.1 Login <a href="30.cms-14-front.html#t43.1.1 Login"> # </a></h4>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {Layout,Form,Input,Radio,Cascader,Select,AutoComplete,Checkbox,Button,message} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
 <span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;styled-components&apos;</span>;
@@ -80,12 +89,12 @@ $ npm start
                  handleSubmit={this.handleSubmit}
               /&gt;
             <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
-           <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span></span>
        )
    }
 }
-</span></code></pre>
-<h4 id="t53.1.2 LoginForm">3.1.2 LoginForm <a href="#t53.1.2 LoginForm"> # </a></h4>
+</code></pre>
+<h4 id="t53.1.2 LoginForm">3.1.2 LoginForm <a href="30.cms-14-front.html#t53.1.2 LoginForm"> # </a></h4>
 <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LoginForm</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
     state ={<span class="hljs-attr">gender</span>:<span class="hljs-number">1</span>,<span class="hljs-attr">autoCompleteResult</span>:[],<span class="hljs-attr">repasswordDirty</span>:<span class="hljs-literal">false</span>}
     handleWebsiteChange = <span class="hljs-function">(<span class="hljs-params">value</span>)=&gt;</span>{<span class="hljs-comment">//1 [1.com,1.cn,1.org]</span>
@@ -129,52 +138,52 @@ $ npm start
             <span class="hljs-tag">&lt;/<span class="hljs-name">Select</span>&gt;</span></span>
         );
         <span class="hljs-keyword">let</span> websiteOptions = <span class="hljs-keyword">this</span>.state.autoCompleteResult.map(<span class="hljs-function"><span class="hljs-params">item</span>=&gt;</span>(
-            &lt;AutoComplete.Option key={item}&gt;{item}&lt;/AutoComplete.Option&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">AutoComplete.Option</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item}</span>&gt;</span>{item}<span class="hljs-tag">&lt;/<span class="hljs-name">AutoComplete.Option</span>&gt;</span></span>
         ));
-        let websiteField = (
-            &lt;AutoComplete onChange={this.handleWebsiteChange}&gt;
+        <span class="hljs-keyword">let</span> websiteField = (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">AutoComplete</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.handleWebsiteChange}</span>&gt;</span>
                 {websiteOptions}
-            &lt;/AutoComplete&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">AutoComplete</span>&gt;</span></span>
         )
-        let genderField = (
-            &lt;Radio.Group &gt;
-                    &lt;Radio value={1}&gt;&#x7537;&lt;/Radio&gt;
-                    &lt;Radio value={0}&gt;&#x5973;&lt;/Radio&gt;
-            &lt;/Radio.Group&gt;
+        <span class="hljs-keyword">let</span> genderField = (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Radio.Group</span> &gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Radio</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{1}</span>&gt;</span>&#x7537;<span class="hljs-tag">&lt;/<span class="hljs-name">Radio</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Radio</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{0}</span>&gt;</span>&#x5973;<span class="hljs-tag">&lt;/<span class="hljs-name">Radio</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Radio.Group</span>&gt;</span></span>
         )
-        let filedItems = getFieldItems(getFieldDecorator,[
-            {visible:true,label:&quot;&#x7528;&#x6237;&#x540D;&quot;,name:&quot;username&quot;,required:true,input:&lt;Input/&gt;},
-            {visible:true,label:&quot;&#x5BC6;&#x7801;&quot;,name:&quot;password&quot;,required:true,input:&lt;Input onChange={this.repasswordChange}/&gt;,rules:[
-                {validator:this.compareWithRepassword},
-                {min:1,message:&apos;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x6700;&#x77ED;1&#x4F4D;&apos;},
-                {max:8,message:&apos;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x6700;&#x957F;8&#x4F4D;&apos;}
+        <span class="hljs-keyword">let</span> filedItems = getFieldItems(getFieldDecorator,[
+            {<span class="hljs-attr">visible</span>:<span class="hljs-literal">true</span>,<span class="hljs-attr">label</span>:<span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&quot;</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;username&quot;</span>,<span class="hljs-attr">required</span>:<span class="hljs-literal">true</span>,<span class="hljs-attr">input</span>:<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Input</span>/&gt;</span></span>},
+            {<span class="hljs-attr">visible</span>:<span class="hljs-literal">true</span>,<span class="hljs-attr">label</span>:<span class="hljs-string">&quot;&#x5BC6;&#x7801;&quot;</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;password&quot;</span>,<span class="hljs-attr">required</span>:<span class="hljs-literal">true</span>,<span class="hljs-attr">input</span>:<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.repasswordChange}/</span>&gt;</span></span>,<span class="hljs-attr">rules</span>:[
+                {<span class="hljs-attr">validator</span>:<span class="hljs-keyword">this</span>.compareWithRepassword},
+                {<span class="hljs-attr">min</span>:<span class="hljs-number">1</span>,<span class="hljs-attr">message</span>:<span class="hljs-string">&apos;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x6700;&#x77ED;1&#x4F4D;&apos;</span>},
+                {<span class="hljs-attr">max</span>:<span class="hljs-number">8</span>,<span class="hljs-attr">message</span>:<span class="hljs-string">&apos;&#x5BC6;&#x7801;&#x957F;&#x5EA6;&#x6700;&#x957F;8&#x4F4D;&apos;</span>}
             ]},
-            {visible:!isLogin,label:&quot;&#x786E;&#x8BA4;&#x5BC6;&#x7801;&quot;,name:&quot;repassword&quot;,required:false,input:&lt;Input/&gt;,rules:[
-                {validator:this.compareWithPassword}
+            {<span class="hljs-attr">visible</span>:!isLogin,<span class="hljs-attr">label</span>:<span class="hljs-string">&quot;&#x786E;&#x8BA4;&#x5BC6;&#x7801;&quot;</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;repassword&quot;</span>,<span class="hljs-attr">required</span>:<span class="hljs-literal">false</span>,<span class="hljs-attr">input</span>:<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Input</span>/&gt;</span></span>,<span class="hljs-attr">rules</span>:[
+                {<span class="hljs-attr">validator</span>:<span class="hljs-keyword">this</span>.compareWithPassword}
             ]},
-            {visible:!isLogin,label:&quot;&#x90AE;&#x7BB1;&quot;,name:&quot;email&quot;,required:true,input:&lt;Input/&gt;,rules:[{type:&apos;email&apos;,message:&apos;&#x5FC5;&#x987B;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x90AE;&#x7BB1;!&apos;}]},
-            {visible:!isLogin,label:&quot;&#x6027;&#x522B;&quot;,name:&quot;gender&quot;,required:true,input:genderField,extra:{initialValue:1}},
-            {visible:!isLogin,label:&quot;&#x4F4F;&#x5740;&quot;,name:&quot;address&quot;,required:true,input:&lt;Cascader options={addresses}/&gt;},
-            {visible:!isLogin,label:&quot;&#x624B;&#x673A;&#x53F7;&quot;,name:&quot;phone&quot;,required:true,rules:[{pattern:/^1\d{10}$/,message:&apos;&#x8BF7;&#x8F93;&#x5165;&#x5408;&#x6CD5;&#x624B;&#x673A;&#x53F7;&apos;}],input:&lt;Input addonBefore={countrySelector} style={{width:&apos;100%&apos;}}/&gt;},
-            {visible:!isLogin,label:&quot;&#x7F51;&#x5740;&quot;,name:&quot;website&quot;,input:websiteField},
-            {visible:!isLogin,name:&quot;agreement&quot;,layout:formTailItemLayout,input:&lt;Checkbox&gt;&#x6211;&#x5DF2;&#x7ECF;&#x540C;&#x610F;&#x672C;&#x534F;&#x8BAE;&lt;/Checkbox&gt;,extra:{valuePropName:&apos;checked&apos;}}
+            {<span class="hljs-attr">visible</span>:!isLogin,<span class="hljs-attr">label</span>:<span class="hljs-string">&quot;&#x90AE;&#x7BB1;&quot;</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;email&quot;</span>,<span class="hljs-attr">required</span>:<span class="hljs-literal">true</span>,<span class="hljs-attr">input</span>:<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Input</span>/&gt;</span></span>,<span class="hljs-attr">rules</span>:[{<span class="hljs-attr">type</span>:<span class="hljs-string">&apos;email&apos;</span>,<span class="hljs-attr">message</span>:<span class="hljs-string">&apos;&#x5FC5;&#x987B;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x90AE;&#x7BB1;!&apos;</span>}]},
+            {<span class="hljs-attr">visible</span>:!isLogin,<span class="hljs-attr">label</span>:<span class="hljs-string">&quot;&#x6027;&#x522B;&quot;</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;gender&quot;</span>,<span class="hljs-attr">required</span>:<span class="hljs-literal">true</span>,<span class="hljs-attr">input</span>:genderField,<span class="hljs-attr">extra</span>:{<span class="hljs-attr">initialValue</span>:<span class="hljs-number">1</span>}},
+            {<span class="hljs-attr">visible</span>:!isLogin,<span class="hljs-attr">label</span>:<span class="hljs-string">&quot;&#x4F4F;&#x5740;&quot;</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;address&quot;</span>,<span class="hljs-attr">required</span>:<span class="hljs-literal">true</span>,<span class="hljs-attr">input</span>:<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Cascader</span> <span class="hljs-attr">options</span>=<span class="hljs-string">{addresses}/</span>&gt;</span></span>},
+            {<span class="hljs-attr">visible</span>:!isLogin,<span class="hljs-attr">label</span>:<span class="hljs-string">&quot;&#x624B;&#x673A;&#x53F7;&quot;</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;phone&quot;</span>,<span class="hljs-attr">required</span>:<span class="hljs-literal">true</span>,<span class="hljs-attr">rules</span>:[{<span class="hljs-attr">pattern</span>:<span class="hljs-regexp">/^1\d{10}$/</span>,<span class="hljs-attr">message</span>:<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x5408;&#x6CD5;&#x624B;&#x673A;&#x53F7;&apos;</span>}],<span class="hljs-attr">input</span>:<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">addonBefore</span>=<span class="hljs-string">{countrySelector}</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{width:</span>&apos;<span class="hljs-attr">100</span>%&apos;}}/&gt;</span></span>},
+            {<span class="hljs-attr">visible</span>:!isLogin,<span class="hljs-attr">label</span>:<span class="hljs-string">&quot;&#x7F51;&#x5740;&quot;</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;website&quot;</span>,<span class="hljs-attr">input</span>:websiteField},
+            {<span class="hljs-attr">visible</span>:!isLogin,<span class="hljs-attr">name</span>:<span class="hljs-string">&quot;agreement&quot;</span>,<span class="hljs-attr">layout</span>:formTailItemLayout,<span class="hljs-attr">input</span>:<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Checkbox</span>&gt;</span>&#x6211;&#x5DF2;&#x7ECF;&#x540C;&#x610F;&#x672C;&#x534F;&#x8BAE;<span class="hljs-tag">&lt;/<span class="hljs-name">Checkbox</span>&gt;</span></span>,<span class="hljs-attr">extra</span>:{<span class="hljs-attr">valuePropName</span>:<span class="hljs-string">&apos;checked&apos;</span>}}
         ]);
-        return (
-            &lt;FormWrapper&gt;
-                &lt;Form style={{width:&apos;500px&apos;}} onSubmit={handleSubmit}&gt;
-                    &lt;h3&gt;&#x6B22;&#x8FCE;{isLogin?&quot;&#x767B;&#x5F55;&quot;:&quot;&#x6CE8;&#x518C;&quot;}&lt;/h3&gt;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">FormWrapper</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{width:</span>&apos;<span class="hljs-attr">500px</span>&apos;}} <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{handleSubmit}</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>&#x6B22;&#x8FCE;{isLogin?&quot;&#x767B;&#x5F55;&quot;:&quot;&#x6CE8;&#x518C;&quot;}<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                      {filedItems}
-                     &lt;FormItem&gt;
-                       &lt;Button type=&quot;primary&quot; htmlType=&quot;submit&quot; style={{width:&apos;100%&apos;}}&gt;{isLogin?&quot;&#x767B;&#x5F55;&quot;:&quot;&#x6CE8;&#x518C;&quot;}&lt;/Button&gt;
-                        &#x5DF2;&#x6709;&#x8D26;&#x53F7;?&lt;a href=&quot;#&quot; onClick={this.props.changeLoginStatus}&gt;&#x7ACB;&#x523B;{isLogin?&quot;&#x6CE8;&#x518C;&quot;:&quot;&#x767B;&#x5F55;&quot;}&lt;/a&gt;
-                    &lt;/FormItem&gt;
-                &lt;/Form&gt;
-            &lt;/FormWrapper&gt;
+                     <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
+                       <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> <span class="hljs-attr">htmlType</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{width:</span>&apos;<span class="hljs-attr">100</span>%&apos;}}&gt;</span>{isLogin?&quot;&#x767B;&#x5F55;&quot;:&quot;&#x6CE8;&#x518C;&quot;}<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                        &#x5DF2;&#x6709;&#x8D26;&#x53F7;?<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.props.changeLoginStatus}</span>&gt;</span>&#x7ACB;&#x523B;{isLogin?&quot;&#x6CE8;&#x518C;&quot;:&quot;&#x767B;&#x5F55;&quot;}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">FormWrapper</span>&gt;</span></span>
         )
     }
 }
 LoginForm  = Form.create()(LoginForm);
-const FormWrapper = styled.div`
+<span class="hljs-keyword">const</span> FormWrapper = styled.div<span class="hljs-string">`
   display:flex;
   justify-content:center;
   align-items:center;
@@ -187,13 +196,13 @@ const FormWrapper = styled.div`
       border-radius:5px;
       padding:20px;
   }
-`
-//&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x5728;dva&#x91CC;&#xFF0C;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x8DEF;&#x7531;&#x7EC4;&#x4EF6;&#x4F1A;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x5B50;&#x72B6;&#x6001; login
-export default connect(
-    state=&gt;state.login
+`</span>
+<span class="hljs-comment">//&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x5728;dva&#x91CC;&#xFF0C;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x8DEF;&#x7531;&#x7EC4;&#x4EF6;&#x4F1A;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x5B50;&#x72B6;&#x6001; login</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(
+    <span class="hljs-function"><span class="hljs-params">state</span>=&gt;</span>state.login
 )(Login);
 </code></pre>
-<h4 id="t63.1.3 getFieldItems.js">3.1.3 getFieldItems.js <a href="#t63.1.3 getFieldItems.js"> # </a></h4>
+<h4 id="t63.1.3 getFieldItems.js">3.1.3 getFieldItems.js <a href="30.cms-14-front.html#t63.1.3 getFieldItems.js"> # </a></h4>
 <p>src\utils\getFieldItems.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> {Form} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
 <span class="hljs-keyword">const</span> FormItem = Form.Item;
@@ -220,7 +229,7 @@ export default connect(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> getFieldItems;
 </code></pre>
-<h4 id="t73.1.4 addresses.js">3.1.4 addresses.js <a href="#t73.1.4 addresses.js"> # </a></h4>
+<h4 id="t73.1.4 addresses.js">3.1.4 addresses.js <a href="30.cms-14-front.html#t73.1.4 addresses.js"> # </a></h4>
 <p>src\utils\addresses.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span>  [
             {
@@ -241,7 +250,7 @@ export default connect(
             }
         ]
 </code></pre>
-<h4 id="t83.1.4 utils/request.js">3.1.4 utils/request.js <a href="#t83.1.4 utils/request.js"> # </a></h4>
+<h4 id="t83.1.4 utils/request.js">3.1.4 utils/request.js <a href="30.cms-14-front.html#t83.1.4 utils/request.js"> # </a></h4>
 <p>src/utils/request.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> fetch <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva/fetch&apos;</span>;
 <span class="hljs-keyword">const</span> BASE_URL = <span class="hljs-string">&apos;http://127.0.0.1:7001&apos;</span>;
@@ -258,7 +267,7 @@ export default connect(
   <span class="hljs-keyword">return</span> fetch(BASE_URL + url,options).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> res.json());
 }
 </code></pre>
-<h3 id="t93.3  models/login.js">3.3  models/login.js <a href="#t93.3  models/login.js"> # </a></h3>
+<h3 id="t93.3  models/login.js">3.3  models/login.js <a href="30.cms-14-front.html#t93.3  models/login.js"> # </a></h3>
 <p>src/pages/login/models/login.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> service <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../services/login&apos;</span>;
 <span class="hljs-keyword">import</span> {decode} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;jsonwebtoken&apos;</span>;
@@ -268,8 +277,8 @@ export default connect(
   <span class="hljs-attr">namespace</span>:<span class="hljs-string">&apos;login&apos;</span>,
   <span class="hljs-attr">state</span>:{
       <span class="hljs-attr">isLogin</span>:<span class="hljs-literal">true</span>,<span class="hljs-comment">//&#x662F;&#x5426;&#x6B63;&#x5728;&#x6CE8;&#x518C;</span>
-      errorInfo:<span class="hljs-string">&apos;&apos;</span>,<span class="hljs-comment">//&#x653E;&#x7740;&#x62A5;&#x9519;&#x4FE1;&#x606F;</span>
-      userInfo:<span class="hljs-literal">null</span><span class="hljs-comment">//&#x5982;&#x679C;&#x7528;&#x6237;&#x767B;&#x5F55;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x628A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x653E;&#x5728;&#x8FD9;&#x91CC;</span>
+      <span class="hljs-attr">errorInfo</span>:<span class="hljs-string">&apos;&apos;</span>,<span class="hljs-comment">//&#x653E;&#x7740;&#x62A5;&#x9519;&#x4FE1;&#x606F;</span>
+      <span class="hljs-attr">userInfo</span>:<span class="hljs-literal">null</span><span class="hljs-comment">//&#x5982;&#x679C;&#x7528;&#x6237;&#x767B;&#x5F55;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x628A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x653E;&#x5728;&#x8FD9;&#x91CC;</span>
   },
   <span class="hljs-attr">effects</span>:{
       *signup({payload},{call,put}){
@@ -308,7 +317,7 @@ export default connect(
   }
 }
 </code></pre>
-<h3 id="t103.4 login/services/login.js">3.4 login/services/login.js <a href="#t103.4 login/services/login.js"> # </a></h3>
+<h3 id="t103.4 login/services/login.js">3.4 login/services/login.js <a href="30.cms-14-front.html#t103.4 login/services/login.js"> # </a></h3>
 <p>src/pages/login/services/login.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../../../utils/request&apos;</span>;
 
@@ -327,8 +336,8 @@ export default connect(
   });
 }
 </code></pre>
-<h2 id="t114.&#x9A8C;&#x8BC1;&#x7801;">4.&#x9A8C;&#x8BC1;&#x7801; <a href="#t114.&#x9A8C;&#x8BC1;&#x7801;"> # </a></h2>
-<h3 id="t124.1 login/index.js">4.1 login/index.js <a href="#t124.1 login/index.js"> # </a></h3>
+<h2 id="t114.&#x9A8C;&#x8BC1;&#x7801;">4.&#x9A8C;&#x8BC1;&#x7801; <a href="30.cms-14-front.html#t114.&#x9A8C;&#x8BC1;&#x7801;"> # </a></h2>
+<h3 id="t124.1 login/index.js">4.1 login/index.js <a href="30.cms-14-front.html#t124.1 login/index.js"> # </a></h3>
 <p>src/pages/login/index.js
 LoginForm</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+ import getFieldItems,{formItemLayout} from &apos;../../utils/getFieldItems&apos;;</span>
@@ -354,8 +363,8 @@ LoginForm</p>
 <span class="hljs-addition">+     &lt;/Row&gt;</span>
 <span class="hljs-addition">+ &lt;/FormItem&gt;</span>
 </code></pre>
-<h2 id="t135.&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5E03;&#x5C40;&#x6A21;&#x7248;">5.&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5E03;&#x5C40;&#x6A21;&#x7248; <a href="#t135.&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5E03;&#x5C40;&#x6A21;&#x7248;"> # </a></h2>
-<h3 id="t145.1 /admin/_layout.js">5.1 /admin/_layout.js <a href="#t145.1 /admin/_layout.js"> # </a></h3>
+<h2 id="t135.&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5E03;&#x5C40;&#x6A21;&#x7248;">5.&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5E03;&#x5C40;&#x6A21;&#x7248; <a href="30.cms-14-front.html#t135.&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x754C;&#x9762;&#x5E03;&#x5C40;&#x6A21;&#x7248;"> # </a></h2>
+<h3 id="t145.1 /admin/_layout.js">5.1 /admin/_layout.js <a href="30.cms-14-front.html#t145.1 /admin/_layout.js"> # </a></h3>
 <p>src/pages/admin/_layout.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -377,9 +386,9 @@ LoginForm</p>
    }
 }
 </code></pre>
-<h2 id="t156. &#x9876;&#x90E8;&#x5BFC;&#x822A;&#x6761;">6. &#x9876;&#x90E8;&#x5BFC;&#x822A;&#x6761; <a href="#t156. &#x9876;&#x90E8;&#x5BFC;&#x822A;&#x6761;"> # </a></h2>
+<h2 id="t156. &#x9876;&#x90E8;&#x5BFC;&#x822A;&#x6761;">6. &#x9876;&#x90E8;&#x5BFC;&#x822A;&#x6761; <a href="30.cms-14-front.html#t156. &#x9876;&#x90E8;&#x5BFC;&#x822A;&#x6761;"> # </a></h2>
 <p><img src="http://img.zhufengpeixun.cn/adminheader.png" alt="adminheader"></p>
-<h3 id="t166.1 components\AdminHeader\index.js">6.1 components\AdminHeader\index.js <a href="#t166.1 components\AdminHeader\index.js"> # </a></h3>
+<h3 id="t166.1 components\AdminHeader\index.js">6.1 components\AdminHeader\index.js <a href="30.cms-14-front.html#t166.1 components\AdminHeader\index.js"> # </a></h3>
 <p>src\components\AdminHeader\index.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {Layout} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -396,15 +405,15 @@ LoginForm</p>
         <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Header</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.header}</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.logo}</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://img.zhufengpeixun.cn/zfpxlogo.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;logo&quot;</span>/&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">className</span>=<span class="hljs-string">{styles.welcome}</span>&gt;</span>&#x6B22;&#x8FCE;&#x767B;&#x5F55; {userInfo&amp;&amp;userInfo.username}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span></span>
       )
   }
 }
-export default connect(
-  state =&gt; state.login
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(
+  <span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> state.login
 )(AdminHeader);
-</span></code></pre>
-<h3 id="t176.2 components\AdminHeader\index.less">6.2 components\AdminHeader\index.less <a href="#t176.2 components\AdminHeader\index.less"> # </a></h3>
+</code></pre>
+<h3 id="t176.2 components\AdminHeader\index.less">6.2 components\AdminHeader\index.less <a href="30.cms-14-front.html#t176.2 components\AdminHeader\index.less"> # </a></h3>
 <p>src\components\AdminHeader\index.less</p>
 <pre><code class="lang-less"><span class="hljs-selector-class">.logo</span>{
     <span class="hljs-attribute">width</span>:<span class="hljs-number">120px</span>;
@@ -417,7 +426,7 @@ export default connect(
     <span class="hljs-attribute">color</span>:<span class="hljs-number">#FFF</span>;
 }
 </code></pre>
-<h3 id="t186.3 admin/_layout.js">6.3 admin/_layout.js <a href="#t186.3 admin/_layout.js"> # </a></h3>
+<h3 id="t186.3 admin/_layout.js">6.3 admin/_layout.js <a href="30.cms-14-front.html#t186.3 admin/_layout.js"> # </a></h3>
 <p>src/pages/admin/_layout.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -440,10 +449,10 @@ export default connect(
    }
 }
 </code></pre>
-<h2 id="t197.&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x548C;&#x7528;&#x6237;&#x9875;&#x9762;">7.&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x548C;&#x7528;&#x6237;&#x9875;&#x9762; <a href="#t197.&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x548C;&#x7528;&#x6237;&#x9875;&#x9762;"> # </a></h2>
+<h2 id="t197.&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x548C;&#x7528;&#x6237;&#x9875;&#x9762;">7.&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x548C;&#x7528;&#x6237;&#x9875;&#x9762; <a href="30.cms-14-front.html#t197.&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x548C;&#x7528;&#x6237;&#x9875;&#x9762;"> # </a></h2>
 <p><img src="http://img.zhufengpeixun.cn/resources.png" alt="resources"></p>
 <p><img src="http://img.zhufengpeixun.cn/leftmenus.png" alt="leftmenus"></p>
-<h3 id="t207.1 components/MenuList.js">7.1 components/MenuList.js <a href="#t207.1 components/MenuList.js"> # </a></h3>
+<h3 id="t207.1 components/MenuList.js">7.1 components/MenuList.js <a href="30.cms-14-front.html#t207.1 components/MenuList.js"> # </a></h3>
 <p>src/components/MenuList.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {Menu,Icon} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -455,35 +464,35 @@ export default connect(
         <span class="hljs-keyword">return</span> resources.map(<span class="hljs-function"><span class="hljs-params">resource</span> =&gt;</span> {
             <span class="hljs-keyword">if</span> (resource.children.length&gt;<span class="hljs-number">0</span>) {
                 <span class="hljs-keyword">return</span> (
-                    &lt;SubMenu key={resource.key} title={&lt;span&gt;&lt;Icon type={resource.icon} /&gt;{resource.name}&lt;/span&gt;}&gt;
+                    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">SubMenu</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{resource.key}</span> <span class="hljs-attr">title</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{resource.icon}</span> /&gt;</span>{resource.name}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}&gt;
                         {this.renderMenus(resource.children)}
-                    &lt;/SubMenu&gt;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">SubMenu</span>&gt;</span></span>
                 )    
-            } else {
-                return &lt;Menu.Item key={resource.key}&gt;&lt;Link to={resource.key}&gt;&lt;Icon type={resource.icon} /&gt;{resource.name}&lt;/Link&gt;&lt;/Menu.Item&gt;;
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{resource.key}</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">{resource.key}</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">{resource.icon}</span> /&gt;</span>{resource.name}<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span></span>;
             }
         });
     }
     render() {
-        let {userInfo}=this.props;
-        if (!userInfo)
-            return null;
-        return (
-            &lt;Menu
-                theme=&quot;dark&quot;
-                defaultSelectedKeys={[&apos;/admin&apos;]}
-                defaultOpenKeys={[&apos;/admin&apos;]}
-                mode=&quot;inline&quot;
-            &gt;
+        <span class="hljs-keyword">let</span> {userInfo}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">if</span> (!userInfo)
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Menu</span>
+                <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;dark&quot;</span>
+                <span class="hljs-attr">defaultSelectedKeys</span>=<span class="hljs-string">{[</span>&apos;/<span class="hljs-attr">admin</span>&apos;]}
+                <span class="hljs-attr">defaultOpenKeys</span>=<span class="hljs-string">{[</span>&apos;/<span class="hljs-attr">admin</span>&apos;]}
+                <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;inline&quot;</span>
+            &gt;</span>
                 {
                     this.renderMenus(userInfo.resources)
                 }
-            &lt;/Menu&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Menu</span>&gt;</span></span>
         )
     }
 }
-export default connect(
-    state =&gt; state.login
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(
+    <span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> state.login
   )(MenuList);
 </code></pre>
 <p>app\controller\user.js</p>
@@ -501,7 +510,7 @@ export default connect(
       });
       user.resources=resources;
 </code></pre>
-<h3 id="t217.2 admin/_layout.js">7.2 admin/_layout.js <a href="#t217.2 admin/_layout.js"> # </a></h3>
+<h3 id="t217.2 admin/_layout.js">7.2 admin/_layout.js <a href="30.cms-14-front.html#t217.2 admin/_layout.js"> # </a></h3>
 <p>src/pages/admin/_layout.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -529,9 +538,9 @@ export default connect(
    }
 }
 </code></pre>
-<h2 id="t228. &#x7528;&#x6237;&#x7BA1;&#x7406;">8. &#x7528;&#x6237;&#x7BA1;&#x7406; <a href="#t228. &#x7528;&#x6237;&#x7BA1;&#x7406;"> # </a></h2>
-<h3 id="t238.1 &#x7528;&#x6237;&#x5217;&#x8868;">8.1 &#x7528;&#x6237;&#x5217;&#x8868; <a href="#t238.1 &#x7528;&#x6237;&#x5217;&#x8868;"> # </a></h3>
-<h4 id="t248.1.1 index.js">8.1.1 index.js <a href="#t248.1.1 index.js"> # </a></h4>
+<h2 id="t228. &#x7528;&#x6237;&#x7BA1;&#x7406;">8. &#x7528;&#x6237;&#x7BA1;&#x7406; <a href="30.cms-14-front.html#t228. &#x7528;&#x6237;&#x7BA1;&#x7406;"> # </a></h2>
+<h3 id="t238.1 &#x7528;&#x6237;&#x5217;&#x8868;">8.1 &#x7528;&#x6237;&#x5217;&#x8868; <a href="30.cms-14-front.html#t238.1 &#x7528;&#x6237;&#x5217;&#x8868;"> # </a></h3>
+<h4 id="t248.1.1 index.js">8.1.1 index.js <a href="30.cms-14-front.html#t248.1.1 index.js"> # </a></h4>
 <p>src\pages\admin\user\index.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva&apos;</span>;
@@ -588,16 +597,16 @@ export default connect(
                         <span class="hljs-attr">rowKey</span>=<span class="hljs-string">{record</span> =&gt;</span> record.id}
                         pagination={pagination}
                 /&gt;
-            <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span></span>
          )
      }
 }
-</span></code></pre>
-<h4 id="t258.1.2 constants.js">8.1.2 constants.js <a href="#t258.1.2 constants.js"> # </a></h4>
+</code></pre>
+<h4 id="t258.1.2 constants.js">8.1.2 constants.js <a href="30.cms-14-front.html#t258.1.2 constants.js"> # </a></h4>
 <p>src\pages\admin\user\constants.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> PAGE_SIZE = <span class="hljs-number">3</span>;
 </code></pre>
-<h4 id="t268.1.3 models\user.js">8.1.3 models\user.js <a href="#t268.1.3 models\user.js"> # </a></h4>
+<h4 id="t268.1.3 models\user.js">8.1.3 models\user.js <a href="30.cms-14-front.html#t268.1.3 models\user.js"> # </a></h4>
 <p>src\pages\admin\user\models\user.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> userService <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../services/user&apos;</span>;
 
@@ -634,7 +643,7 @@ export default connect(
     }
 }
 </code></pre>
-<h4 id="t278.1.4 services\user.js">8.1.4 services\user.js <a href="#t278.1.4 services\user.js"> # </a></h4>
+<h4 id="t278.1.4 services\user.js">8.1.4 services\user.js <a href="30.cms-14-front.html#t278.1.4 services\user.js"> # </a></h4>
 <p>src\pages\admin\user\services\user.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@/utils/request&apos;</span>;
 <span class="hljs-keyword">import</span> {PAGE_SIZE} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../constants&apos;</span>;
@@ -642,8 +651,8 @@ export default connect(
     <span class="hljs-keyword">return</span> request(<span class="hljs-string">`/api/user?pageNum=<span class="hljs-subst">${pageNum}</span>&amp;pageSize=<span class="hljs-subst">${PAGE_SIZE}</span>`</span>);
 }
 </code></pre>
-<h3 id="t288.2 &#x65B0;&#x589E;&#x548C;&#x7F16;&#x8F91;&#x7528;&#x6237;">8.2 &#x65B0;&#x589E;&#x548C;&#x7F16;&#x8F91;&#x7528;&#x6237; <a href="#t288.2 &#x65B0;&#x589E;&#x548C;&#x7F16;&#x8F91;&#x7528;&#x6237;"> # </a></h3>
-<h4 id="t298.1.1 index.js">8.1.1 index.js <a href="#t298.1.1 index.js"> # </a></h4>
+<h3 id="t288.2 &#x65B0;&#x589E;&#x548C;&#x7F16;&#x8F91;&#x7528;&#x6237;">8.2 &#x65B0;&#x589E;&#x548C;&#x7F16;&#x8F91;&#x7528;&#x6237; <a href="30.cms-14-front.html#t288.2 &#x65B0;&#x589E;&#x548C;&#x7F16;&#x8F91;&#x7528;&#x6237;"> # </a></h3>
+<h4 id="t298.1.1 index.js">8.1.1 index.js <a href="30.cms-14-front.html#t298.1.1 index.js"> # </a></h4>
 <p>src\pages\admin\user\index.js</p>
 <pre><code class="lang-diff">import React,{Component,Fragment} from &apos;react&apos;;
 import {connect} from &apos;dva&apos;;
@@ -749,7 +758,7 @@ class user extends Component{
          )
      }
 }
-<span class="hljs-addition"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5a711a1c3528377439283f3b2e3f">[email&#160;protected]</a>()</span>
+<span class="hljs-addition">+@Form.create()</span>
 <span class="hljs-addition">+class EditModal extends Component{</span>
 <span class="hljs-addition">+    render() {</span>
 <span class="hljs-addition">+     let {visible,onOk,isCreate,onCancel,record,form: {getFieldDecorator}=this.props;</span>
@@ -797,7 +806,7 @@ class user extends Component{
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h4 id="t308.1.2 models/user.js">8.1.2 models/user.js <a href="#t308.1.2 models/user.js"> # </a></h4>
+<h4 id="t308.1.2 models/user.js">8.1.2 models/user.js <a href="30.cms-14-front.html#t308.1.2 models/user.js"> # </a></h4>
 <p>src/pages/admin/user/models/user.js</p>
 <pre><code class="lang-diff">import * as userService from &apos;../services/user&apos;;
 
@@ -848,7 +857,7 @@ export default {
     }
 }
 </code></pre>
-<h4 id="t318.1.3 services/user.js">8.1.3 services/user.js <a href="#t318.1.3 services/user.js"> # </a></h4>
+<h4 id="t318.1.3 services/user.js">8.1.3 services/user.js <a href="30.cms-14-front.html#t318.1.3 services/user.js"> # </a></h4>
 <p>src/pages/admin/user/services/user.js</p>
 <pre><code class="lang-diff">import request from &apos;@/utils/request&apos;;
 import {PAGE_SIZE} from &apos;../constants&apos;;
@@ -870,8 +879,8 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    });</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t328.3 &#x5220;&#x9664;&#x7528;&#x6237;">8.3 &#x5220;&#x9664;&#x7528;&#x6237; <a href="#t328.3 &#x5220;&#x9664;&#x7528;&#x6237;"> # </a></h3>
-<h4 id="t338.3.1 index.js">8.3.1 index.js <a href="#t338.3.1 index.js"> # </a></h4>
+<h3 id="t328.3 &#x5220;&#x9664;&#x7528;&#x6237;">8.3 &#x5220;&#x9664;&#x7528;&#x6237; <a href="30.cms-14-front.html#t328.3 &#x5220;&#x9664;&#x7528;&#x6237;"> # </a></h3>
+<h4 id="t338.3.1 index.js">8.3.1 index.js <a href="30.cms-14-front.html#t338.3.1 index.js"> # </a></h4>
 <p>src\pages\admin\user\index.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+    onDel=(id) =&gt; {</span>
 <span class="hljs-addition">+        this.props.dispatch({</span>
@@ -892,22 +901,22 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+           &lt;/Popconfirm&gt;</span>
        &lt;/Fragment&gt;
 </code></pre>
-<h4 id="t348.3.2 models\user.js">8.3.2 models\user.js <a href="#t348.3.2 models\user.js"> # </a></h4>
+<h4 id="t348.3.2 models\user.js">8.3.2 models\user.js <a href="30.cms-14-front.html#t348.3.2 models\user.js"> # </a></h4>
 <p>src\pages\admin\user\models\user.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+        *del({payload},{call,put}) {</span>
 <span class="hljs-addition">+            yield call(userService.del,payload);</span>
 <span class="hljs-addition">+            yield put({type: &apos;fetch&apos;,payload: {pageNum:1}});</span>
 <span class="hljs-addition">+        }</span>
 </code></pre>
-<h4 id="t358.3.3 services\user.js">8.3.3 services\user.js <a href="#t358.3.3 services\user.js"> # </a></h4>
+<h4 id="t358.3.3 services\user.js">8.3.3 services\user.js <a href="30.cms-14-front.html#t358.3.3 services\user.js"> # </a></h4>
 <p>src\pages\admin\user\services\user.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+ export function del(id) {</span>
 <span class="hljs-addition">+     return request(`/api/user/${id}`,{</span>
 <span class="hljs-addition">+        method: &apos;DELETE&apos;</span>
 <span class="hljs-addition">+ });</span>
 </code></pre>
-<h3 id="t368.4 &#x5168;&#x90E8;&#x5220;&#x9664;">8.4 &#x5168;&#x90E8;&#x5220;&#x9664; <a href="#t368.4 &#x5168;&#x90E8;&#x5220;&#x9664;"> # </a></h3>
-<h4 id="t378.4.1 src\pages\admin\user\index.js">8.4.1 src\pages\admin\user\index.js <a href="#t378.4.1 src\pages\admin\user\index.js"> # </a></h4>
+<h3 id="t368.4 &#x5168;&#x90E8;&#x5220;&#x9664;">8.4 &#x5168;&#x90E8;&#x5220;&#x9664; <a href="30.cms-14-front.html#t368.4 &#x5168;&#x90E8;&#x5220;&#x9664;"> # </a></h3>
+<h4 id="t378.4.1 src\pages\admin\user\index.js">8.4.1 src\pages\admin\user\index.js <a href="30.cms-14-front.html#t378.4.1 src\pages\admin\user\index.js"> # </a></h4>
 <p>src\pages\admin\user\index.js</p>
 <pre><code class="lang-diff">            type: &apos;user/del&apos;,
             payload:id
@@ -947,7 +956,7 @@ export function fetch(pageNum) {
                  &lt;EditModal
                     wrappedComponentRef={instance =&gt;this.editForm=instance}         
 </code></pre>
-<h4 id="t388.4.2 user.js">8.4.2 user.js <a href="#t388.4.2 user.js"> # </a></h4>
+<h4 id="t388.4.2 user.js">8.4.2 user.js <a href="30.cms-14-front.html#t388.4.2 user.js"> # </a></h4>
 <p>pages\admin\user\models\user.js</p>
 <pre><code class="lang-diff">        record: {},
 <span class="hljs-addition">+        selectedRowKeys:[]</span>
@@ -956,7 +965,7 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+           yield put({type: &apos;fetch&apos;,payload: {pageNum:1}});</span>
 <span class="hljs-addition">+        }</span>
 </code></pre>
-<h4 id="t398.4.3 services\user.js">8.4.3 services\user.js <a href="#t398.4.3 services\user.js"> # </a></h4>
+<h4 id="t398.4.3 services\user.js">8.4.3 services\user.js <a href="30.cms-14-front.html#t398.4.3 services\user.js"> # </a></h4>
 <p>src\pages\admin\user\services\user.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+ export function delAll(ids) {</span>
 <span class="hljs-addition">+    return request(`/api/user/${ids[0]}`,{</span>
@@ -966,8 +975,8 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    });</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t408.5 &#x641C;&#x7D22;">8.5 &#x641C;&#x7D22; <a href="#t408.5 &#x641C;&#x7D22;"> # </a></h3>
-<h4 id="t418.5.1 src\pages\admin\user\index.js">8.5.1 src\pages\admin\user\index.js <a href="#t418.5.1 src\pages\admin\user\index.js"> # </a></h4>
+<h3 id="t408.5 &#x641C;&#x7D22;">8.5 &#x641C;&#x7D22; <a href="30.cms-14-front.html#t408.5 &#x641C;&#x7D22;"> # </a></h3>
+<h4 id="t418.5.1 src\pages\admin\user\index.js">8.5.1 src\pages\admin\user\index.js <a href="30.cms-14-front.html#t418.5.1 src\pages\admin\user\index.js"> # </a></h4>
 <p>src\pages\admin\user\index.js</p>
 <pre><code class="lang-diff">        type: &apos;user/delAll&apos;,
         payload:this.props.selectedRowKeys
@@ -1002,7 +1011,7 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    &lt;/&gt;      </span>
 
 
-<span class="hljs-addition"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="604b20260f120d4e031205011405">[email&#160;protected]</a>()</span>
+<span class="hljs-addition">+@Form.create()</span>
 <span class="hljs-addition">+class SearchForm extends Component{</span>
 <span class="hljs-addition">+    render() {</span>
 <span class="hljs-addition">+        let {form: {getFieldDecorator},onSearch,where={}}=this.props;</span>
@@ -1030,7 +1039,7 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h4 id="t428.5.2 user.js">8.5.2 user.js <a href="#t428.5.2 user.js"> # </a></h4>
+<h4 id="t428.5.2 user.js">8.5.2 user.js <a href="30.cms-14-front.html#t428.5.2 user.js"> # </a></h4>
 <p>pages\admin\user\models\user.js</p>
 <pre><code class="lang-diff">        selectedRowKeys:[],
 <span class="hljs-addition">+        where:{}</span>
@@ -1052,7 +1061,7 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+            yield put({type: &apos;fetch&apos;,payload: {pageNum:1,where}});</span>
 <span class="hljs-addition">+        },</span>
 </code></pre>
-<h4 id="t438.5.3 services\user.js">8.5.3 services\user.js <a href="#t438.5.3 services\user.js"> # </a></h4>
+<h4 id="t438.5.3 services\user.js">8.5.3 services\user.js <a href="30.cms-14-front.html#t438.5.3 services\user.js"> # </a></h4>
 <p>src\pages\admin\user\services\user.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+import querystring from &apos;querystring&apos;;</span>
 <span class="hljs-addition">+export function fetch(pageNum,where) {</span>
@@ -1060,8 +1069,8 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    return request(`/api/user?pageNum=${pageNum}&amp;pageSize=${PAGE_SIZE}&amp;${whereString}`);</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t448.6 &#x70B9;&#x884C;&#x9009;&#x62E9;&#x884C;">8.6 &#x70B9;&#x884C;&#x9009;&#x62E9;&#x884C; <a href="#t448.6 &#x70B9;&#x884C;&#x9009;&#x62E9;&#x884C;"> # </a></h3>
-<h4 id="t458.6.1 src\pages\admin\user\index.js">8.6.1 src\pages\admin\user\index.js <a href="#t458.6.1 src\pages\admin\user\index.js"> # </a></h4>
+<h3 id="t448.6 &#x70B9;&#x884C;&#x9009;&#x62E9;&#x884C;">8.6 &#x70B9;&#x884C;&#x9009;&#x62E9;&#x884C; <a href="30.cms-14-front.html#t448.6 &#x70B9;&#x884C;&#x9009;&#x62E9;&#x884C;"> # </a></h3>
+<h4 id="t458.6.1 src\pages\admin\user\index.js">8.6.1 src\pages\admin\user\index.js <a href="30.cms-14-front.html#t458.6.1 src\pages\admin\user\index.js"> # </a></h4>
 <p>src\pages\admin\user\index.js</p>
 <pre><code class="lang-diff"> &lt;Table
                     columns={columns}
@@ -1090,8 +1099,8 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+                    }</span>
                 /&gt;
 </code></pre>
-<h2 id="t469 &#x89D2;&#x8272;&#x7BA1;&#x7406;">9 &#x89D2;&#x8272;&#x7BA1;&#x7406; <a href="#t469 &#x89D2;&#x8272;&#x7BA1;&#x7406;"> # </a></h2>
-<h3 id="t479.1 role\index.js">9.1 role\index.js <a href="#t479.1 role\index.js"> # </a></h3>
+<h2 id="t469 &#x89D2;&#x8272;&#x7BA1;&#x7406;">9 &#x89D2;&#x8272;&#x7BA1;&#x7406; <a href="30.cms-14-front.html#t469 &#x89D2;&#x8272;&#x7BA1;&#x7406;"> # </a></h2>
+<h3 id="t479.1 role\index.js">9.1 role\index.js <a href="30.cms-14-front.html#t479.1 role\index.js"> # </a></h3>
 <p>src\pages\admin\role\index.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;dva&apos;</span>;
@@ -1202,21 +1211,21 @@ export function fetch(pageNum) {
             }
      }
          <span class="hljs-keyword">return</span> (
-            &lt;&gt;
-            &lt;Card&gt;
-                &lt;SearchForm
-                    where={where}
-                    onSearch={this.onSearch}
-                    wrappedComponentRef={inst=&gt;this.searchForm=inst}/&gt;
-            &lt;/Card&gt;
-             &lt;Card&gt;
-                &lt;Button type=&quot;warning&quot; onClick={this.onAdd}&gt;&#x6DFB;&#x52A0;&lt;/Button&gt;
-                &lt;Button type=&quot;danger&quot; onClick={this.onAllDel}&gt;&#x5168;&#x90E8;&#x5220;&#x9664;&lt;/Button&gt;
-                &lt;Table
-                        columns={columns}
-                        dataSource={list}
-                        loading={loading}
-                        rowKey={record =&gt; record.id}
+            <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">SearchForm</span>
+                    <span class="hljs-attr">where</span>=<span class="hljs-string">{where}</span>
+                    <span class="hljs-attr">onSearch</span>=<span class="hljs-string">{this.onSearch}</span>
+                    <span class="hljs-attr">wrappedComponentRef</span>=<span class="hljs-string">{inst</span>=&gt;</span>this.searchForm=inst}/&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">Card</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;warning&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.onAdd}</span>&gt;</span>&#x6DFB;&#x52A0;<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;danger&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.onAllDel}</span>&gt;</span>&#x5168;&#x90E8;&#x5220;&#x9664;<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Table</span>
+                        <span class="hljs-attr">columns</span>=<span class="hljs-string">{columns}</span>
+                        <span class="hljs-attr">dataSource</span>=<span class="hljs-string">{list}</span>
+                        <span class="hljs-attr">loading</span>=<span class="hljs-string">{loading}</span>
+                        <span class="hljs-attr">rowKey</span>=<span class="hljs-string">{record</span> =&gt;</span> record.id}
                         pagination={pagination}
                          rowSelection={rowSelection}
                         onRow = {
@@ -1238,65 +1247,65 @@ export function fetch(pageNum) {
                       }
                     }
                 /&gt;
-                 &lt;EditModal
-                    wrappedComponentRef={instance =&gt;this.editForm=instance}
+                 <span class="hljs-tag">&lt;<span class="hljs-name">EditModal</span>
+                    <span class="hljs-attr">wrappedComponentRef</span>=<span class="hljs-string">{instance</span> =&gt;</span>this.editForm=instance}
                     isCreate={isCreate}
                     visible={editVisible}
                     onOk={this.onEditOk}
                     onCancel={this.onEditCancel}
                     record={record}
                 /&gt;
-            &lt;/Card&gt;
-            &lt;/&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Card</span>&gt;</span>
+            <span class="hljs-tag">&lt;/&gt;</span></span>
          )
      }
 }
 
 @Form.create()
-class SearchForm extends Component{
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SearchForm</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
     render() {
-        let {form: {getFieldDecorator},onSearch,where={}}=this.props;
-        return (
-            &lt;Form layout=&quot;inline&quot;&gt;
-                    &lt;FormItem
-                        label=&quot;&#x89D2;&#x8272;&#x540D;&#x79F0;&quot;
-                    &gt;
+        <span class="hljs-keyword">let</span> {<span class="hljs-attr">form</span>: {getFieldDecorator},onSearch,where={}}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">layout</span>=<span class="hljs-string">&quot;inline&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>
+                        <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x89D2;&#x8272;&#x540D;&#x79F0;&quot;</span>
+                    &gt;</span>
                         {
-                            getFieldDecorator(&apos;name&apos;,{initialValue:where.name})(&lt;Input /&gt;)
+                            getFieldDecorator(&apos;name&apos;,{initialValue:where.name})(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span> /&gt;</span>)
                         }
-                    &lt;/FormItem&gt;
-                &lt;FormItem&gt;
-                    &lt;Button onClick={onSearch} shape=&quot;circle&quot; icon=&quot;search&quot;&gt;&lt;/Button&gt;
-                &lt;/FormItem&gt;
-                &lt;/Form&gt;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{onSearch}</span> <span class="hljs-attr">shape</span>=<span class="hljs-string">&quot;circle&quot;</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">&quot;search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
         )
     }
 }
 
 @Form.create()
-class EditModal extends Component{
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EditModal</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
     render() {
-        let {visible,onOk,isCreate,onCancel,record,form: {getFieldDecorator}}=this.props;
-        let {id,name}=record;
-        return (
-            &lt;Modal
-                title={isCreate?&apos;&#x521B;&#x5EFA;&#x89D2;&#x8272;&apos;:&apos;&#x4FEE;&#x6539;&#x89D2;&#x8272;&apos;}
-                visible={visible}
-                onOk={onOk}
-                onCancel={onCancel}
-                destroyOnClose
-            &gt;
-                &lt;Form&gt;
-                    &lt;FormItem&gt;
+        <span class="hljs-keyword">let</span> {visible,onOk,isCreate,onCancel,record,<span class="hljs-attr">form</span>: {getFieldDecorator}}=<span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">let</span> {id,name}=record;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Modal</span>
+                <span class="hljs-attr">title</span>=<span class="hljs-string">{isCreate?</span>&apos;&#x521B;&#x5EFA;&#x89D2;&#x8272;&apos;<span class="hljs-attr">:</span>&apos;&#x4FEE;&#x6539;&#x89D2;&#x8272;&apos;}
+                <span class="hljs-attr">visible</span>=<span class="hljs-string">{visible}</span>
+                <span class="hljs-attr">onOk</span>=<span class="hljs-string">{onOk}</span>
+                <span class="hljs-attr">onCancel</span>=<span class="hljs-string">{onCancel}</span>
+                <span class="hljs-attr">destroyOnClose</span>
+            &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Form</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>&gt;</span>
                        {
                             getFieldDecorator(&apos;id&apos;,{
                                 initialValue: id
-                            })(&lt;Input type=&quot;hidden&quot; /&gt;)
+                            })(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;hidden&quot;</span> /&gt;</span>)
                         }
-                    &lt;/FormItem&gt;
-                    &lt;FormItem
-                        label=&quot;&#x7528;&#x6237;&#x540D;&quot;
-                    &gt;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">FormItem</span>
+                        <span class="hljs-attr">label</span>=<span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&quot;</span>
+                    &gt;</span>
                         {
                             getFieldDecorator(&apos;name&apos;,{
                                 rules: [{
@@ -1304,20 +1313,20 @@ class EditModal extends Component{
                                     message:&apos;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x8F93;&#x5165;&apos;
                                 }],
                                 initialValue: name
-                            })(&lt;Input /&gt;)
+                            })(<span class="hljs-tag">&lt;<span class="hljs-name">Input</span> /&gt;</span>)
                         }
-                    &lt;/FormItem&gt;
-                &lt;/Form&gt;
-            &lt;/Modal&gt;
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">FormItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Modal</span>&gt;</span></span>
         )
     }
 }
 </code></pre>
-<h3 id="t489.2 role\constants.js">9.2 role\constants.js <a href="#t489.2 role\constants.js"> # </a></h3>
+<h3 id="t489.2 role\constants.js">9.2 role\constants.js <a href="30.cms-14-front.html#t489.2 role\constants.js"> # </a></h3>
 <p>src\pages\admin\role\constants.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> PAGE_SIZE = <span class="hljs-number">3</span>;
 </code></pre>
-<h3 id="t499.3 models\role.js">9.3 models\role.js <a href="#t499.3 models\role.js"> # </a></h3>
+<h3 id="t499.3 models\role.js">9.3 models\role.js <a href="30.cms-14-front.html#t499.3 models\role.js"> # </a></h3>
 <p>src\pages\admin\role\models\role.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> service <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../services/role&apos;</span>;
 <span class="hljs-keyword">const</span> ENTITY=<span class="hljs-string">&apos;role&apos;</span>;
@@ -1386,7 +1395,7 @@ class EditModal extends Component{
     }
 }
 </code></pre>
-<h3 id="t509.4 services\role.js">9.4 services\role.js <a href="#t509.4 services\role.js"> # </a></h3>
+<h3 id="t509.4 services\role.js">9.4 services\role.js <a href="30.cms-14-front.html#t509.4 services\role.js"> # </a></h3>
 <p>src\pages\admin\role\services\role.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@/utils/request&apos;</span>;
 <span class="hljs-keyword">import</span> {PAGE_SIZE} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../constants&apos;</span>;
@@ -1423,8 +1432,8 @@ class EditModal extends Component{
     });
 }
 </code></pre>
-<h2 id="t5110. &#x8BBE;&#x7F6E;&#x6743;&#x9650;">10. &#x8BBE;&#x7F6E;&#x6743;&#x9650; <a href="#t5110. &#x8BBE;&#x7F6E;&#x6743;&#x9650;"> # </a></h2>
-<h3 id="t5210.1 service\role.js">10.1 service\role.js <a href="#t5210.1 service\role.js"> # </a></h3>
+<h2 id="t5110. &#x8BBE;&#x7F6E;&#x6743;&#x9650;">10. &#x8BBE;&#x7F6E;&#x6743;&#x9650; <a href="30.cms-14-front.html#t5110. &#x8BBE;&#x7F6E;&#x6743;&#x9650;"> # </a></h2>
+<h3 id="t5210.1 service\role.js">10.1 service\role.js <a href="30.cms-14-front.html#t5210.1 service\role.js"> # </a></h3>
 <pre><code class="lang-js"><span class="hljs-comment">//list  resourceIds=&#x4EE3;&#x8868;&#x8FD9;&#x4E2A;&#x89D2;&#x8272;&#x6240;&#x62E5;&#x6709;&#x7684;&#x8D44;&#x6E90;ID&#x6570;&#x7EC4;</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; list.length; i++) {
     <span class="hljs-keyword">let</span> rows = <span class="hljs-keyword">await</span> app.mysql.select(<span class="hljs-string">&apos;role_resource&apos;</span>, {
@@ -1437,7 +1446,7 @@ class EditModal extends Component{
    list[i].userIds = rows.map(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item.user_id);<span class="hljs-comment">//[2,3]</span>
 }
 </code></pre>
-<h3 id="t5310.2 role/index.js">10.2 role/index.js <a href="#t5310.2 role/index.js"> # </a></h3>
+<h3 id="t5310.2 role/index.js">10.2 role/index.js <a href="30.cms-14-front.html#t5310.2 role/index.js"> # </a></h3>
 <pre><code class="lang-diff"><span class="hljs-addition">+ import {Tree,Card,Table,Button,Modal,Form,Input,message,Popconfirm} from &apos;antd&apos;;</span>
 <span class="hljs-addition">+const TreeNode=Tree.TreeNode;</span>
 
@@ -1522,7 +1531,7 @@ class EditModal extends Component{
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t5410.3 models\role.js">10.3 models\role.js <a href="#t5410.3 models\role.js"> # </a></h3>
+<h3 id="t5410.3 models\role.js">10.3 models\role.js <a href="30.cms-14-front.html#t5410.3 models\role.js"> # </a></h3>
 <p>src\pages\admin\role\models\role.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+        selectedRows: [],</span>
 <span class="hljs-addition">+        checkedKeys: [],</span>
@@ -1545,7 +1554,7 @@ class EditModal extends Component{
 <span class="hljs-addition">+                   dispatch({type:&apos;getResource&apos;});</span>
                 }
 </code></pre>
-<h3 id="t5510.4 role.js">10.4 role.js <a href="#t5510.4 role.js"> # </a></h3>
+<h3 id="t5510.4 role.js">10.4 role.js <a href="30.cms-14-front.html#t5510.4 role.js"> # </a></h3>
 <p>src\pages\admin\role\services\role.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+ export function getResources() {</span>
 <span class="hljs-addition">+    return request(`/api/role/getResource`);</span>
@@ -1558,8 +1567,8 @@ class EditModal extends Component{
 <span class="hljs-addition">+    });</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h2 id="t5611.&#x7ED9;&#x89D2;&#x8272;&#x52A0;&#x7528;&#x6237;">11.&#x7ED9;&#x89D2;&#x8272;&#x52A0;&#x7528;&#x6237; <a href="#t5611.&#x7ED9;&#x89D2;&#x8272;&#x52A0;&#x7528;&#x6237;"> # </a></h2>
-<h3 id="t5711.1 roles/index.js">11.1 roles/index.js <a href="#t5711.1 roles/index.js"> # </a></h3>
+<h2 id="t5611.&#x7ED9;&#x89D2;&#x8272;&#x52A0;&#x7528;&#x6237;">11.&#x7ED9;&#x89D2;&#x8272;&#x52A0;&#x7528;&#x6237; <a href="30.cms-14-front.html#t5611.&#x7ED9;&#x89D2;&#x8272;&#x52A0;&#x7528;&#x6237;"> # </a></h2>
+<h3 id="t5711.1 roles/index.js">11.1 roles/index.js <a href="30.cms-14-front.html#t5711.1 roles/index.js"> # </a></h3>
 <pre><code class="lang-diff"><span class="hljs-addition">+ import { Transfer} from &apos;antd&apos;;</span>
 <span class="hljs-addition">+ setUser = () =&gt; {</span>
 <span class="hljs-addition">+        let selectedRows = this.props.selectedRows;</span>
@@ -1632,7 +1641,7 @@ class EditModal extends Component{
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t5811.2 models/roles.js">11.2 models/roles.js <a href="#t5811.2 models/roles.js"> # </a></h3>
+<h3 id="t5811.2 models/roles.js">11.2 models/roles.js <a href="30.cms-14-front.html#t5811.2 models/roles.js"> # </a></h3>
 <p>src/pages/admin/roles/models/roles.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+        setPermissionVisible:false,</span>
 <span class="hljs-addition">+        setUserVisible: false,//&#x7A97;&#x53E3;&#x662F;&#x5426;&#x663E;&#x793A;</span>
@@ -1657,7 +1666,7 @@ class EditModal extends Component{
             dispatch({type:&apos;getResource&apos;});
 <span class="hljs-addition">+           dispatch({ type: &apos;getUser&apos; });</span>
 </code></pre>
-<h3 id="t5911.3 services/roles.js">11.3 services/roles.js <a href="#t5911.3 services/roles.js"> # </a></h3>
+<h3 id="t5911.3 services/roles.js">11.3 services/roles.js <a href="30.cms-14-front.html#t5911.3 services/roles.js"> # </a></h3>
 <p>src/pages/admin/roles/services/roles.js</p>
 <pre><code class="lang-diff"><span class="hljs-addition">+export function getUser() {</span>
 <span class="hljs-addition">+    return request(`/api/role/getUser`);</span>
@@ -1672,18 +1681,74 @@ class EditModal extends Component{
 <span class="hljs-addition">+    });</span>
 </code></pre>
 
-        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
     </div>
-    
 </div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+    aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">姓名:</label>
+                        <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码:</label>
+                        <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                    data-dismiss="modal">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+let zhufengjiagou = localStorage.getItem('zhufengjiagou');
+const host = 'http://login.zhufengpeixun.com';
+if(zhufengjiagou){
+  fetch(host+'/check',{method:"GET",mode: 'cors',
+　　headers: {'Content-Type': 'application/json', authorization: `Bearer ${zhufengjiagou}`}}).then(response => response.json()).then(res => {
+    if(res.success){
+     
+    }else{
+      $('#loginModal').modal('show')
+    }
+  }) 
+}else{
+   $('#loginModal').modal('show')
+}
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+$('#loginModal').on('hidden.bs.modal', function (event) {
+  var modal = $(this)
+  let username = modal.find('.modal-body #username').val();
+  let password = modal.find('.modal-body #password').val();
+  fetch(host+'/login',{method:"POST",mode: 'cors',
+　　headers: {'Content-Type': 'application/json'},
+　　body:JSON.stringify({username,password})}).then(response => response.json()).then(res => {
+    if(res.success){
+      localStorage.setItem('zhufengjiagou',res.zhufengjiagou);
+    }else{
+      window.location.href = 'http://www.zhufengpeixun.cn';
+    }
+  })
+})
+</script>
 <script>
 $('.warpper .page-toc ul ul li a').on('click',function(){
   $('.warpper .page-toc ul ul li a').removeClass('my-active')
   $(this).addClass('my-active')
 })
-
 $('.logo').on('mouseenter',function(){
   $('.nav').height('450px');
 })
@@ -1694,61 +1759,6 @@ $('.logo').on('click',function(){
   $('.nav').css('display','none');
  $('.warpper').css('padding','0px');
 })
-// if (!$('.understand-me').length) {
-  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
-  //   var count = bar / 26 / 2;
-  //   var barHeight = $('.page-toc').outerHeight();
-  //   $('.page-toc li').eq(0).children('a').addClass('red');
-  //   var arr = [];
-  //   $("h1,h2,h3,h4,h5,h6").each(function () {
-  //     arr.push($(this).position().top);
-  //   });
-  //   var timer
-  //   function dark() {
-  //     clearTimeout(timer)
-  //      timer = setTimeout(function () {
-  //      var top = Math.abs($('.page-toc > ul').position().top);
-  //      var cur = $('.content').scrollTop();
-  //      for (var i = arr.length; i >= 0; i--) {
-  //        if (arr[i] <= cur) {
-  //          break;
-  //        }
-  //      }
-  //      if (i === -1) {
-  //        i = 0;
-  //      }
-  //      $('.page-toc li a').removeClass('red');
-  //      $('.page-toc li').eq(i).children('a').addClass('red');
-  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
-  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
-  //    },200)
-  //   }
-
-  //   $('.content').on('scroll', dark);
-  // }
 </script>
-<style>
-
-    /* ::-webkit-scrollbar{width:14px;}
-    ::-webkit-scrollbar-track{background-color:transparent;}
-    ::-webkit-scrollbar-thumb{background-color:transparent;}
-    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
-    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
-
-    .page-toc > ul .red {
-        background: #f3f3f3;
-        z-index: 1;
-        border-left: 3px solid #009a61;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        color: #000
-    }
-
-
-
-
-
-</style>
-<script type="text/javascript"  src="https://idm-su.baidu.com/su_new.js"></script>
 </body>
 </html>

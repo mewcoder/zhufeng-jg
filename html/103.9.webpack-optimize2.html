@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="0.Async.html">0.Async</a></li><li><a href="0.module.html">0.module</a></li><li><a href="1.ES2015.html">1.ES2015</a></li><li><a href="2.Promise.html">2.Promise</a></li><li><a href="3.Node.html">3.Node</a></li><li><a href="4.NodeInstall.html">4.NodeInstall</a></li><li><a href="5.REPL.html">5.REPL</a></li><li><a href="6.NodeCore.html">6.NodeCore</a></li><li><a href="7.module&amp;NPM.html">7.module&NPM</a></li><li><a href="8.Encoding.html">8.Encoding</a></li><li><a href="9.Buffer.html">9.Buffer</a></li><li><a href="10.fs.html">10.fs</a></li><li><a href="11.Stream-1.html">11.Stream-1</a></li><li><a href="11.Stream-2.html">11.Stream-2</a></li><li><a href="11.Stream-3.html">11.Stream-3</a></li><li><a href="11.Stream-4.html">11.Stream-4</a></li><li><a href="12-Network-2.html">12-Network-2</a></li><li><a href="12.NetWork-3.html">12.NetWork-3</a></li><li><a href="12.Network-1.html">12.Network-1</a></li><li><a href="13.tcp.html">13.tcp</a></li><li><a href="14.http-1.html">14.http-1</a></li><li><a href="14.http-2.html">14.http-2</a></li><li><a href="15.compress.html">15.compress</a></li><li><a href="16.crypto.html">16.crypto</a></li><li><a href="17.process.html">17.process</a></li><li><a href="18.yargs.html">18.yargs</a></li><li><a href="19.cache.html">19.cache</a></li><li><a href="20.action.html">20.action</a></li><li><a href="21.https.html">21.https</a></li><li><a href="22.cookie.html">22.cookie</a></li><li><a href="23.session.html">23.session</a></li><li><a href="24.express-1.html">24.express-1</a></li><li><a href="24.express-2.html">24.express-2</a></li><li><a href="24.express-3.html">24.express-3</a></li><li><a href="24.express-4.html">24.express-4</a></li><li><a href="25.koa-1.html">25.koa-1</a></li><li><a href="26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="28.redux.html">28.redux</a></li><li><a href="28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="29.mongodb-1.html">29.mongodb-1</a></li><li><a href="29.mongodb-2.html">29.mongodb-2</a></li><li><a href="29.mongodb-3.html">29.mongodb-3</a></li><li><a href="29.mongodb-4.html">29.mongodb-4</a></li><li><a href="29.mongodb-5.html">29.mongodb-5</a></li><li><a href="29.mongodb-6.html">29.mongodb-6</a></li><li><a href="30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="30.cms-7-api.html">30.cms-7-api</a></li><li><a href="30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="30.cms-14-front.html">30.cms-14-front</a></li><li><a href="30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="31.dva.html">31.dva</a></li><li><a href="31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="33.redis.html">33.redis</a></li><li><a href="34.unittest.html">34.unittest</a></li><li><a href="35.jwt.html">35.jwt</a></li><li><a href="36.websocket-1.html">36.websocket-1</a></li><li><a href="36.websocket-2.html">36.websocket-2</a></li><li><a href="38.chat-api-1.html">38.chat-api-1</a></li><li><a href="38.chat-api-2.html">38.chat-api-2</a></li><li><a href="38.chat-3.html">38.chat-3</a></li><li><a href="38.chat-api-3.html">38.chat-api-3</a></li><li><a href="38.chat.html">38.chat</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="39.crawl-0.html">39.crawl-0</a></li><li><a href="39.crawl-1.html">39.crawl-1</a></li><li><a href="39.crawl-2.html">39.crawl-2</a></li><li><a href="40.deploy.html">40.deploy</a></li><li><a href="41.safe.html">41.safe</a></li><li><a href="42.test.html">42.test</a></li><li><a href="43.nginx.html">43.nginx</a></li><li><a href="44.enzyme.html">44.enzyme</a></li><li><a href="45.docker.html">45.docker</a></li><li><a href="46.elastic.html">46.elastic</a></li><li><a href="47.oauth.html">47.oauth</a></li><li><a href="48.wxpay.html">48.wxpay</a></li><li><a href="index.html">index</a></li><li><a href="52.UML.html">52.UML</a></li><li><a href="53.design.html">53.design</a></li><li><a href="index.html">index</a></li><li><a href="54.linux.html">54.linux</a></li><li><a href="57.ts.html">57.ts</a></li><li><a href="56.react-ssr.html">56.react-ssr</a></li><li><a href="58.ts_react.html">58.ts_react</a></li><li><a href="59.ketang.html">59.ketang</a></li><li><a href="59.ketang2.html">59.ketang2</a></li><li><a href="61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="61.3.devops-user.html">61.3.devops-user</a></li><li><a href="61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="61.6.devops-install.html">61.6.devops-install</a></li><li><a href="61.7.devops-system.html">61.7.devops-system</a></li><li><a href="61.8.devops-service.html">61.8.devops-service</a></li><li><a href="61.9.devops-network.html">61.9.devops-network</a></li><li><a href="61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="61.14.devops-php.html">61.14.devops-php</a></li><li><a href="61.15.devops-java.html">61.15.devops-java</a></li><li><a href="61.16.devops-node.html">61.16.devops-node</a></li><li><a href="61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="62.1.react-basic.html">62.1.react-basic</a></li><li><a href="62.2.react-state.html">62.2.react-state</a></li><li><a href="62.3.react-high.html">62.3.react-high</a></li><li><a href="62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="62.8.react-source.html">62.8.react-source</a></li><li><a href="63.1.redux.html">63.1.redux</a></li><li><a href="63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="64.1.router.html">64.1.router</a></li><li><a href="64.2.router-connected.html">64.2.router-connected</a></li><li><a href="65.1.typescript.html">65.1.typescript</a></li><li><a href="65.2.typescript.html">65.2.typescript</a></li><li><a href="65.3.typescript.html">65.3.typescript</a></li><li><a href="65.4.antd.html">65.4.antd</a></li><li><a href="65.4.definition.html">65.4.definition</a></li><li><a href="66-1.vue-base.html">66-1.vue-base</a></li><li><a href="66-2.vue-component.html">66-2.vue-component</a></li><li><a href="66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="66-4.$message组件.html">66-4.$message组件</a></li><li><a href="66-5.Form组件.html">66-5.Form组件</a></li><li><a href="66-6.tree.html">66-6.tree</a></li><li><a href="66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="66-13.pwa.html">66-13.pwa</a></li><li><a href="66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="66-15.权限校验.html">66-15.权限校验</a></li><li><a href="67-1-network.html">67-1-network</a></li><li><a href="68-2-wireshark.html">68-2-wireshark</a></li><li><a href="7.npm2.html">7.npm2</a></li><li><a href="69-hooks.html">69-hooks</a></li><li><a href="70-deploy.html">70-deploy</a></li><li><a href="71-hmr.html">71-hmr</a></li><li><a href="72.deploy.html">72.deploy</a></li><li><a href="73.import.html">73.import</a></li><li><a href="74.mobile.html">74.mobile</a></li><li><a href="75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="76.react_optimize.html">76.react_optimize</a></li><li><a href="77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="79.grammar.html">79.grammar</a></li><li><a href="80.tree.html">80.tree</a></li><li><a href="81.axios.html">81.axios</a></li><li><a href="82.1.react.html">82.1.react</a></li><li><a href="82.2.react-high.html">82.2.react-high</a></li><li><a href="82.3.react-router.html">82.3.react-router</a></li><li><a href="82.4.redux.html">82.4.redux</a></li><li><a href="82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="82.6.connected.html">82.6.connected</a></li><li><a href="82.7.saga.html">82.7.saga</a></li><li><a href="82.8.dva.html">82.8.dva</a></li><li><a href="82.8.dva-source.html">82.8.dva-source</a></li><li><a href="82.9.roadhog.html">82.9.roadhog</a></li><li><a href="82.10.umi.html">82.10.umi</a></li><li><a href="82.11.antdesign.html">82.11.antdesign</a></li><li><a href="82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="83.upload.html">83.upload</a></li><li><a href="84.graphql.html">84.graphql</a></li><li><a href="85.antpro.html">85.antpro</a></li><li><a href="86.1.uml.html">86.1.uml</a></li><li><a href="86.2.design.html">86.2.design</a></li><li><a href="87.postcss.html">87.postcss</a></li><li><a href="88.react16-1.html">88.react16-1</a></li><li><a href="89.nextjs.html">89.nextjs</a></li><li><a href="90.react-test.html">90.react-test</a></li><li><a href="91.react-ts.html">91.react-ts</a></li><li><a href="92.rbac.html">92.rbac</a></li><li><a href="93.tsnode.html">93.tsnode</a></li><li><a href="94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="94.3.MODULE.html">94.3.MODULE</a></li><li><a href="94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="94.5.文件上传.html">94.5.文件上传</a></li><li><a href="94.6.https.html">94.6.https</a></li><li><a href="94.7.&#32;nginx.html">94.7. nginx</a></li><li><a href="95.1.&#32;react.html">95.1. react</a></li><li><a href="95.2.react.html">95.2.react</a></li><li><a href="96.1.react16.html">96.1.react16</a></li><li><a href="96.2.fiber.html">96.2.fiber</a></li><li><a href="96.3.fiber.html">96.3.fiber</a></li><li><a href="97.serverless.html">97.serverless</a></li><li><a href="98.websocket.html">98.websocket</a></li><li><a href="100.1.react-basic.html">100.1.react-basic</a></li><li><a href="101.1.monitor.html">101.1.monitor</a></li><li><a href="101.2.monitor.html">101.2.monitor</a></li><li><a href="102.java.html">102.java</a></li><li><a href="103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li class="active"><a href="103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="103.16.vite.source.html">103.16.vite.source</a></li><li><a href="103.17.polyfill.html">103.17.polyfill</a></li><li><a href="104.1.binary.html">104.1.binary</a></li><li><a href="104.2.binary.html">104.2.binary</a></li><li><a href="105.skeleton.html">105.skeleton</a></li><li><a href="106.1.react.html">106.1.react</a></li><li><a href="106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="106.3.react_router.html">106.3.react_router</a></li><li><a href="106.4.redux.html">106.4.redux</a></li><li><a href="106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="106.8.dva.html">106.8.dva</a></li><li><a href="106.9.umi.html">106.9.umi</a></li><li><a href="106.10.ketang.html">106.10.ketang</a></li><li><a href="106.11.antdesign.html">106.11.antdesign</a></li><li><a href="106.12.antpro.html">106.12.antpro</a></li><li><a href="107.fiber.html">107.fiber</a></li><li><a href="108.http.html">108.http</a></li><li><a href="109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="109.3.dll.html">109.3.dll</a></li><li><a href="110.nest.js.html">110.nest.js</a></li><li><a href="111.xstate.html">111.xstate</a></li><li><a href="112.Form.html">112.Form</a></li><li><a href="113.redux-saga.html">113.redux-saga</a></li><li><a href="114.react+typescript.html">114.react+typescript</a></li><li><a href="115.immer.html">115.immer</a></li><li><a href="116.pro5.html">116.pro5</a></li><li><a href="117.css-loader.html">117.css-loader</a></li><li><a href="118.1.umi-core.html">118.1.umi-core</a></li><li><a href="119.2.module-federation.html">119.2.module-federation</a></li><li><a href="119.1.module-federation.html">119.1.module-federation</a></li><li><a href="120.create-react-app.html">120.create-react-app</a></li><li><a href="121.react-scripts.html">121.react-scripts</a></li><li><a href="122.react-optimize.html">122.react-optimize</a></li><li><a href="123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="124.next.js.html">124.next.js</a></li><li><a href="125.1.linux.html">125.1.linux</a></li><li><a href="125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="125.3.linux-user.html">125.3.linux-user</a></li><li><a href="125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="125.6.linux-install.html">125.6.linux-install</a></li><li><a href="125.7.linux-system.html">125.7.linux-system</a></li><li><a href="125.8.linux-service.html">125.8.linux-service</a></li><li><a href="125.9.linux-network.html">125.9.linux-network</a></li><li><a href="125.10.nginx.html">125.10.nginx</a></li><li><a href="125.11.docker.html">125.11.docker</a></li><li><a href="125.12.ci.html">125.12.ci</a></li><li><a href="125.13.k8s.html">125.13.k8s</a></li><li><a href="125.14.k8s.html">125.14.k8s</a></li><li><a href="125.15.k8s.html">125.15.k8s</a></li><li><a href="125.16.k8s.html">125.16.k8s</a></li><li><a href="126.11.react-1.html">126.11.react-1</a></li><li><a href="126.12.react-2.html">126.12.react-2</a></li><li><a href="126.12.react-3.html">126.12.react-3</a></li><li><a href="126.12.react-4.html">126.12.react-4</a></li><li><a href="126.12.react-5.html">126.12.react-5</a></li><li><a href="127.frontend.html">127.frontend</a></li><li><a href="128.rollup.html">128.rollup</a></li><li><a href="129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="130.health.html">130.health</a></li><li><a href="131.hooks.html">131.hooks</a></li><li><a href="132.keepalive.html">132.keepalive</a></li><li><a href="133.vue-cli.html">133.vue-cli</a></li><li><a href="134.react18.html">134.react18</a></li><li><a href="135.function.html">135.function</a></li><li><a href="136.toolkit.html">136.toolkit</a></li><li><a href="137.lerna.html">137.lerna</a></li><li><a href="138.create-vite.html">138.create-vite</a></li><li><a href="139.cli.html">139.cli</a></li><li><a href="140.antd.html">140.antd</a></li><li><a href="141.react-dnd.html">141.react-dnd</a></li><li><a href="142.1.link.html">142.1.link</a></li><li><a href="143.1.gulp.html">143.1.gulp</a></li><li><a href="143.2.stream.html">143.2.stream</a></li><li><a href="143.3.gulp.html">143.3.gulp</a></li><li><a href="144.1.closure.html">144.1.closure</a></li><li><a href="106.13.router-6.html">106.13.router-6</a></li><li><a href="145.react-router-v6.html">145.react-router-v6</a></li><li><a href="144.2.v8.html">144.2.v8</a></li><li><a href="144.3.gc.html">144.3.gc</a></li><li><a href="106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="146.browser.html">146.browser</a></li><li><a href="147.lighthouse.html">147.lighthouse</a></li><li><a href="148.1.basic.html">148.1.basic</a></li><li><a href="148.2.basic&#32;.html">148.2.basic </a></li><li><a href="148.3.basic.html">148.3.basic</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="103.9.webpack-optimize2.html#t01. 提取CSS">1. 提取CSS</a><ul><li><a href="103.9.webpack-optimize2.html#t11.1 安装">1.1 安装</a></li><li><a href="103.9.webpack-optimize2.html#t21.2 webpack.config.js">1.2 webpack.config.js</a></li></ul></li><li><a href="103.9.webpack-optimize2.html#t32 指定图片和CSS目录">2 指定图片和CSS目录</a><ul><li><a href="103.9.webpack-optimize2.html#t42.1 webpack.config.js">2.1 webpack.config.js</a></li><li><a href="103.9.webpack-optimize2.html#t53. 压缩JS、CSS和HTML">3. 压缩JS、CSS和HTML</a></li></ul></li><li><a href="103.9.webpack-optimize2.html#t64. purgecss-webpack-plugin">4. purgecss-webpack-plugin</a></li><li><a href="103.9.webpack-optimize2.html#t75. CDN">5. CDN</a><ul><li><a href="103.9.webpack-optimize2.html#t85.1 使用缓存">5.1 使用缓存</a></li><li><a href="103.9.webpack-optimize2.html#t95.2 域名限制">5.2 域名限制</a></li><li><a href="103.9.webpack-optimize2.html#t105.3 文件指纹">5.3 文件指纹</a><ul><li><a href="103.9.webpack-optimize2.html#t115.3.1 hash">5.3.1 hash</a></li><li><a href="103.9.webpack-optimize2.html#t125.3.2 chunkhash">5.3.2 chunkhash</a></li><li><a href="103.9.webpack-optimize2.html#t135.3.3 contenthash">5.3.3 contenthash</a></li><li><a href="103.9.webpack-optimize2.html#t145.3.4 hash">5.3.4 hash</a></li></ul></li><li><a href="103.9.webpack-optimize2.html#t155.4.HashPlugin">5.4.HashPlugin</a></li></ul></li><li><a href="103.9.webpack-optimize2.html#t166.moduleIds & chunkIds的优化">6.moduleIds & chunkIds的优化</a><ul><li><a href="103.9.webpack-optimize2.html#t176.1 概念和选项">6.1 概念和选项</a></li><li><a href="103.9.webpack-optimize2.html#t186.2 webpack.config.js">6.2 webpack.config.js</a></li><li><a href="103.9.webpack-optimize2.html#t196.3 src\index.js">6.3 src\index.js</a></li></ul></li><li><a href="103.9.webpack-optimize2.html#t207.模块联邦">7.模块联邦</a><ul><li><a href="103.9.webpack-optimize2.html#t217.1.动机">7.1.动机</a></li><li><a href="103.9.webpack-optimize2.html#t227.2.Module Federation">7.2.Module Federation</a></li><li><a href="103.9.webpack-optimize2.html#t237.3.实战">7.3.实战</a><ul><li><a href="103.9.webpack-optimize2.html#t247.3.1 配置参数">7.3.1 配置参数</a></li><li><a href="103.9.webpack-optimize2.html#t257.3.2 remote">7.3.2 remote</a><ul><li><a href="103.9.webpack-optimize2.html#t267.3.2.1 remote\webpack.config.js">7.3.2.1 remote\webpack.config.js</a></li><li><a href="103.9.webpack-optimize2.html#t277.3.2.2 remote\src\index.js">7.3.2.2 remote\src\index.js</a></li><li><a href="103.9.webpack-optimize2.html#t287.3.2.3 remote\src\bootstrap.js">7.3.2.3 remote\src\bootstrap.js</a></li><li><a href="103.9.webpack-optimize2.html#t297.3.2.4 remote\src\App.js">7.3.2.4 remote\src\App.js</a></li><li><a href="103.9.webpack-optimize2.html#t307.3.2.5 remote\src\NewsList.js">7.3.2.5 remote\src\NewsList.js</a></li></ul></li><li><a href="103.9.webpack-optimize2.html#t317.3.3 host">7.3.3 host</a><ul><li><a href="103.9.webpack-optimize2.html#t327.3.3.1 host\webpack.config.js">7.3.3.1 host\webpack.config.js</a></li><li><a href="103.9.webpack-optimize2.html#t337.3.3.2 host\src\index.js">7.3.3.2 host\src\index.js</a></li><li><a href="103.9.webpack-optimize2.html#t347.3.3.3 host\src\bootstrap.js">7.3.3.3 host\src\bootstrap.js</a></li><li><a href="103.9.webpack-optimize2.html#t357.3.3.4 host\src\App.js">7.3.3.4 host\src\App.js</a></li><li><a href="103.9.webpack-optimize2.html#t367.3.3.5 host\src\Slides.js">7.3.3.5 host\src\Slides.js</a></li></ul></li></ul></li><li><a href="103.9.webpack-optimize2.html#t377.4.shared">7.4.shared</a><ul><li><a href="103.9.webpack-optimize2.html#t387.4.1 remote\webpack.config.js">7.4.1 remote\webpack.config.js</a></li><li><a href="103.9.webpack-optimize2.html#t397.4.2 host\webpack.config.js">7.4.2 host\webpack.config.js</a></li></ul></li><li><a href="103.9.webpack-optimize2.html#t407.5.双向依赖">7.5.双向依赖</a><ul><li><a href="103.9.webpack-optimize2.html#t417.5.1 remote\webpack.config.js">7.5.1 remote\webpack.config.js</a></li><li><a href="103.9.webpack-optimize2.html#t427.5.2 host\webpack.config.js">7.5.2 host\webpack.config.js</a></li><li><a href="103.9.webpack-optimize2.html#t437.5.3 remote\src\App.js">7.5.3 remote\src\App.js</a></li></ul></li><li><a href="103.9.webpack-optimize2.html#t447.6.多个remote">7.6.多个remote</a><ul><li><a href="103.9.webpack-optimize2.html#t457.6.1 all\webpack.config.js">7.6.1 all\webpack.config.js</a></li><li><a href="103.9.webpack-optimize2.html#t467.6.2 remote\src\index.js">7.6.2 remote\src\index.js</a></li><li><a href="103.9.webpack-optimize2.html#t477.6.3 remote\src\bootstrap.js">7.6.3 remote\src\bootstrap.js</a></li><li><a href="103.9.webpack-optimize2.html#t487.6.4 remote\src\App.js">7.6.4 remote\src\App.js</a></li></ul></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01. &#x63D0;&#x53D6;CSS">1. &#x63D0;&#x53D6;CSS <a href="103.9.webpack-optimize2.html#t01. &#x63D0;&#x53D6;CSS"> # </a></h2>
+<ul>
+<li>&#x56E0;&#x4E3A;CSS&#x7684;&#x4E0B;&#x8F7D;&#x548C;JS&#x53EF;&#x4EE5;&#x5E76;&#x884C;,&#x5F53;&#x4E00;&#x4E2A;HTML&#x6587;&#x4EF6;&#x5F88;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;CSS&#x5355;&#x72EC;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#x52A0;&#x8F7D;</li>
+</ul>
+<h3 id="t11.1 &#x5B89;&#x88C5;">1.1 &#x5B89;&#x88C5; <a href="103.9.webpack-optimize2.html#t11.1 &#x5B89;&#x88C5;"> # </a></h3>
+<ul>
+<li><a href="https://github.com/webpack-contrib/mini-css-extract-plugin">mini-css-extract-plugin</a></li>
+</ul>
+<pre><code class="lang-js">npm install  mini-css-extract-plugin --save-dev
+</code></pre>
+<h3 id="t21.2 webpack.config.js">1.2 webpack.config.js <a href="103.9.webpack-optimize2.html#t21.2 webpack.config.js"> # </a></h3>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">const path = require(&apos;path&apos;);
+const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);
+<span class="hljs-addition">+const MiniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;);</span>
+module.exports = {
+  mode: &apos;development&apos;,
+  devtool: false,
+  entry: &apos;./src/index.js&apos;,
+  output: {
+    path: path.resolve(__dirname, &apos;dist&apos;),
+    filename: &apos;[name].js&apos;,
+<span class="hljs-addition">+    publicPath: &apos;/&apos;</span>
+  },
+  module: {
+    rules: [
+      { test: /\.txt$/, use: &apos;raw-loader&apos; },
+<span class="hljs-addition">+      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;] },</span>
+<span class="hljs-addition">+      { test: /\.less$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;, &apos;less-loader&apos;] },</span>
+<span class="hljs-addition">+      { test: /\.scss$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;, &apos;sass-loader&apos;] },</span>
+       {
+        test: /\.(jpg|png|gif|bmp|svg)$/,
+        type:&apos;asset/resource&apos;,
+        generator:{
+          filename:&apos;images/[hash][ext]&apos;
+        }
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({ template: &apos;./src/index.html&apos; }),
+<span class="hljs-addition">+   new MiniCssExtractPlugin({</span>
+<span class="hljs-addition">+      filename: &apos;[name].css&apos;</span>
+<span class="hljs-addition">+   })</span>
+  ]
+};
+</code></pre>
+<h2 id="t32 &#x6307;&#x5B9A;&#x56FE;&#x7247;&#x548C;CSS&#x76EE;&#x5F55;">2 &#x6307;&#x5B9A;&#x56FE;&#x7247;&#x548C;CSS&#x76EE;&#x5F55; <a href="103.9.webpack-optimize2.html#t32 &#x6307;&#x5B9A;&#x56FE;&#x7247;&#x548C;CSS&#x76EE;&#x5F55;"> # </a></h2>
+<h3 id="t42.1 webpack.config.js">2.1 webpack.config.js <a href="103.9.webpack-optimize2.html#t42.1 webpack.config.js"> # </a></h3>
+<pre><code class="lang-diff">const path = require(&apos;path&apos;);
+const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);
+const MiniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;);
+module.exports = {
+  mode: &apos;development&apos;,
+  devtool: false,
+  entry: &apos;./src/index.js&apos;,
+  output: {
+    path: path.resolve(__dirname, &apos;dist&apos;),
+    filename: &apos;[name].js&apos;,
+    publicPath: &apos;/&apos;
+  },
+  module: {
+    rules: [
+      { test: /\.txt$/, use: &apos;raw-loader&apos; },
+      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;] },
+      { test: /\.less$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;, &apos;less-loader&apos;] },
+      { test: /\.scss$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;, &apos;sass-loader&apos;] },
+      {
+        test: /\.(jpg|png|gif|bmp|svg)$/,
+        type:&apos;asset/resource&apos;,
+        generator:{
+          filename:&apos;images/[hash][ext]&apos;
+        }
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({ template: &apos;./src/index.html&apos; }),
+    new MiniCssExtractPlugin({
+<span class="hljs-addition">+      filename: &apos;css/[name].css&apos;</span>
+    }),
+  ]
+};
+</code></pre>
+<h3 id="t53. &#x538B;&#x7F29;JS&#x3001;CSS&#x548C;HTML">3. &#x538B;&#x7F29;JS&#x3001;CSS&#x548C;HTML <a href="103.9.webpack-optimize2.html#t53. &#x538B;&#x7F29;JS&#x3001;CSS&#x548C;HTML"> # </a></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/optimize-css-assets-webpack-plugin">optimize-css-assets-webpack-plugin</a>&#x662F;&#x4E00;&#x4E2A;&#x4F18;&#x5316;&#x548C;&#x538B;&#x7F29;CSS&#x8D44;&#x6E90;&#x7684;&#x63D2;&#x4EF6;</li>
+<li><a href="https://www.npmjs.com/package/terser-webpack-plugin">terser-webpack-plugin</a>&#x662F;&#x4E00;&#x4E2A;&#x4F18;&#x5316;&#x548C;&#x538B;&#x7F29;JS&#x8D44;&#x6E90;&#x7684;&#x63D2;&#x4EF6;</li>
+</ul>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">const path = require(&apos;path&apos;);
+const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);
+const MiniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;);
+<span class="hljs-addition">+const OptimizeCssAssetsWebpackPlugin = require(&apos;optimize-css-assets-webpack-plugin&apos;);</span>
+<span class="hljs-addition">+const TerserPlugin = require(&apos;terser-webpack-plugin&apos;);</span>
+
+module.exports = {
+<span class="hljs-addition">+  mode: &apos;none&apos;,</span>
+  devtool: false,
+  entry: &apos;./src/index.js&apos;,
+<span class="hljs-addition">+  optimization: {</span>
+<span class="hljs-addition">+    minimize: true,</span>
+<span class="hljs-addition">+    minimizer: [</span>
+<span class="hljs-addition">+      new TerserPlugin(),</span>
+<span class="hljs-addition">+    ],</span>
+<span class="hljs-addition">+  },</span>
+  output: {
+    path: path.resolve(__dirname, &apos;dist&apos;),
+    filename: &apos;[name].js&apos;,
+    publicPath: &apos;/&apos;,
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, &apos;dist&apos;),
+    compress: true,
+    port: 8080,
+    open: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        loader: &apos;eslint-loader&apos;,
+        enforce: &apos;pre&apos;,
+        options: { fix: true },
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.jsx?$/,
+        use: {
+          loader: &apos;babel-loader&apos;,
+          options: {
+            presets: [[
+              &apos;@babel/preset-env&apos;,
+              {
+                useBuiltIns: &apos;usage&apos;
+                corejs: {
+                  version: 3
+                },
+                targets: {
+                  chrome: &apos;60&apos;,
+                  firefox: &apos;60&apos;,
+                  ie: &apos;9&apos;,
+                  safari: &apos;10&apos;,
+                  edge: &apos;17&apos;,
+                },
+              },
+            ], &apos;@babel/preset-react&apos;],
+            plugins: [
+              [&apos;@babel/plugin-proposal-decorators&apos;, { legacy: true }],
+              [&apos;@babel/plugin-proposal-class-properties&apos;, { loose: true }],
+            ],
+          },
+        },
+        include: path.join(__dirname, &apos;src&apos;),
+        exclude: /node_modules/,
+      },
+      { test: /\.txt$/, use: &apos;raw-loader&apos; },
+      { test: /\.css$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;, &apos;postcss-loader&apos;] },
+      { test: /\.less$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;, &apos;postcss-loader&apos;, &apos;less-loader&apos;] },
+      { test: /\.scss$/, use: [MiniCssExtractPlugin.loader, &apos;css-loader&apos;, &apos;postcss-loader&apos;, &apos;sass-loader&apos;] },
+      {
+        test: /\.(jpg|png|gif|bmp|svg)$/,
+        type:&apos;asset/resource&apos;,
+        generator:{
+          filename:&apos;images/[hash][ext]&apos;
+        }
+      },
+      {
+        test: /\.html$/,
+        loader: &apos;html-loader&apos;,
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+    template: &apos;./src/index.html&apos;,
+<span class="hljs-addition">+     minify: {  </span>
+<span class="hljs-addition">+        collapseWhitespace: true,</span>
+<span class="hljs-addition">+        removeComments: true</span>
+      }
+    }),
+    new MiniCssExtractPlugin({
+      filename: &apos;css/[name].css&apos;,
+    }),
+<span class="hljs-addition">+    new OptimizeCssAssetsWebpackPlugin(),</span>
+  ],
+};
+</code></pre>
+<h2 id="t64. purgecss-webpack-plugin">4. purgecss-webpack-plugin <a href="103.9.webpack-optimize2.html#t64. purgecss-webpack-plugin"> # </a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/purgecss-webpack-plugin">purgecss-webpack-plugin</a></li>
+<li><a href="https://www.npmjs.com/package/mini-css-extract-plugin">mini-css-extract-plugin</a></li>
+<li><a href="https://www.purgecss.com/">purgecss</a></li>
+<li>&#x53EF;&#x4EE5;&#x53BB;&#x9664;&#x672A;&#x4F7F;&#x7528;&#x7684; css&#xFF0C;&#x4E00;&#x822C;&#x4E0E; glob&#x3001;glob-all &#x914D;&#x5408;&#x4F7F;&#x7528;</li>
+<li>&#x5FC5;&#x987B;&#x548C;<code>mini-css-extract-plugin</code>&#x914D;&#x5408;&#x4F7F;&#x7528;</li>
+<li><code>paths</code>&#x8DEF;&#x5F84;&#x662F;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84; </li>
+</ul>
+<pre><code class="lang-js">npm i  purgecss-webpack-plugin mini-css-extract-plugin css-loader glob -D
+</code></pre>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">const path = require(&quot;path&quot;);
+<span class="hljs-addition">+const glob = require(&quot;glob&quot;);</span>
+<span class="hljs-addition">+const PurgecssPlugin = require(&quot;purgecss-webpack-plugin&quot;);</span>
+<span class="hljs-addition">+const MiniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;);</span>
+const PATHS = {
+  src: path.join(__dirname, &apos;src&apos;)
+}
+module.exports = {
+  mode: &quot;development&quot;,
+  entry: &quot;./src/index.js&quot;,
+  module: {
+    rules: [
+      {
+        test: /\.js/,
+        include: path.resolve(__dirname, &quot;src&quot;),
+        use: [
+          {
+            loader: &quot;babel-loader&quot;,
+            options: {
+              presets: [&quot;@babel/preset-env&quot;, &quot;@babel/preset-react&quot;],
+            },
+          },
+        ],
+      },
+<span class="hljs-addition">+      {</span>
+<span class="hljs-addition">+        test: /\.css$/,</span>
+<span class="hljs-addition">+        include: path.resolve(__dirname, &quot;src&quot;),</span>
+<span class="hljs-addition">+        exclude: /node_modules/,</span>
+<span class="hljs-addition">+        use: [</span>
+<span class="hljs-addition">+          {</span>
+<span class="hljs-addition">+            loader: MiniCssExtractPlugin.loader,</span>
+<span class="hljs-addition">+          },</span>
+<span class="hljs-addition">+          &quot;css-loader&quot;,</span>
+<span class="hljs-addition">+        ],</span>
+<span class="hljs-addition">+      },</span>
+    ],
+  },
+  plugins: [
+<span class="hljs-addition">+    new MiniCssExtractPlugin({</span>
+<span class="hljs-addition">+      filename: &quot;[name].css&quot;,</span>
+<span class="hljs-addition">+    }),</span>
+<span class="hljs-addition">+    new PurgecssPlugin({</span>
+<span class="hljs-addition">+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),</span>
+<span class="hljs-addition">+    })</span>
+  ],
+};
+</code></pre>
+<p>style.css</p>
+<pre><code class="lang-css"><span class="hljs-selector-id">#root</span>{
+    <span class="hljs-attribute">color</span>: red;
+}
+<span class="hljs-selector-id">#logo</span>{
+    <span class="hljs-attribute">color</span>:green
+}
+</code></pre>
+<h2 id="t75. CDN">5. CDN <a href="103.9.webpack-optimize2.html#t75. CDN"> # </a></h2>
+<ul>
+<li><a href="https://www.qiniu.com/">qiniu</a></li>
+<li>CDN &#x53C8;&#x53EB;&#x5185;&#x5BB9;&#x5206;&#x53D1;&#x7F51;&#x7EDC;&#xFF0C;&#x901A;&#x8FC7;&#x628A;&#x8D44;&#x6E90;&#x90E8;&#x7F72;&#x5230;&#x4E16;&#x754C;&#x5404;&#x5730;&#xFF0C;&#x7528;&#x6237;&#x5728;&#x8BBF;&#x95EE;&#x65F6;&#x6309;&#x7167;&#x5C31;&#x8FD1;&#x539F;&#x5219;&#x4ECE;&#x79BB;&#x7528;&#x6237;&#x6700;&#x8FD1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;&#x8D44;&#x6E90;&#xFF0C;&#x4ECE;&#x800C;&#x52A0;&#x901F;&#x8D44;&#x6E90;&#x7684;&#x83B7;&#x53D6;&#x901F;&#x5EA6;&#x3002;</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/cdn2.jpg" alt="cdn"></p>
+<h3 id="t85.1 &#x4F7F;&#x7528;&#x7F13;&#x5B58;">5.1 &#x4F7F;&#x7528;&#x7F13;&#x5B58; <a href="103.9.webpack-optimize2.html#t85.1 &#x4F7F;&#x7528;&#x7F13;&#x5B58;"> # </a></h3>
+<ul>
+<li>HTML&#x6587;&#x4EF6;&#x4E0D;&#x7F13;&#x5B58;&#xFF0C;&#x653E;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x5173;&#x95ED;&#x81EA;&#x5DF1;&#x670D;&#x52A1;&#x5668;&#x7684;&#x7F13;&#x5B58;&#xFF0C;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x7684;URL&#x53D8;&#x6210;&#x6307;&#x5411;CDN&#x670D;&#x52A1;&#x5668;&#x7684;&#x5730;&#x5740;</li>
+<li>&#x9759;&#x6001;&#x7684;JavaScript&#x3001;CSS&#x3001;&#x56FE;&#x7247;&#x7B49;&#x6587;&#x4EF6;&#x5F00;&#x542F;CDN&#x548C;&#x7F13;&#x5B58;&#xFF0C;&#x5E76;&#x4E14;&#x6587;&#x4EF6;&#x540D;&#x5E26;&#x4E0A;HASH&#x503C;</li>
+<li>&#x4E3A;&#x4E86;&#x5E76;&#x884C;&#x52A0;&#x8F7D;&#x4E0D;&#x963B;&#x585E;&#xFF0C;&#x628A;&#x4E0D;&#x540C;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x5206;&#x914D;&#x5230;&#x4E0D;&#x540C;&#x7684;CDN&#x670D;&#x52A1;&#x5668;&#x4E0A;</li>
+</ul>
+<h3 id="t95.2 &#x57DF;&#x540D;&#x9650;&#x5236;">5.2 &#x57DF;&#x540D;&#x9650;&#x5236; <a href="103.9.webpack-optimize2.html#t95.2 &#x57DF;&#x540D;&#x9650;&#x5236;"> # </a></h3>
+<ul>
+<li>&#x540C;&#x4E00;&#x65F6;&#x523B;&#x9488;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#x7684;&#x8D44;&#x6E90;&#x5E76;&#x884C;&#x8BF7;&#x6C42;&#x662F;&#x6709;&#x9650;&#x5236;</li>
+<li>&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E9B;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x5206;&#x6563;&#x5230;&#x4E0D;&#x540C;&#x7684; CDN &#x670D;&#x52A1;&#x4E0A;&#x53BB;</li>
+<li>&#x591A;&#x4E2A;&#x57DF;&#x540D;&#x540E;&#x4F1A;&#x589E;&#x52A0;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x65F6;&#x95F4;</li>
+<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728; HTML HEAD &#x6807;&#x7B7E;&#x4E2D; &#x52A0;&#x5165;<code>&lt;link rel=&quot;dns-prefetch&quot; href=&quot;http://img.zhufengpeixun.cn&quot;&gt;</code>&#x53BB;&#x9884;&#x89E3;&#x6790;&#x57DF;&#x540D;&#xFF0C;&#x4EE5;&#x964D;&#x4F4E;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x5E26;&#x6765;&#x7684;&#x5EF6;&#x8FDF;</li>
+</ul>
+<h3 id="t105.3 &#x6587;&#x4EF6;&#x6307;&#x7EB9;">5.3 &#x6587;&#x4EF6;&#x6307;&#x7EB9; <a href="103.9.webpack-optimize2.html#t105.3 &#x6587;&#x4EF6;&#x6307;&#x7EB9;"> # </a></h3>
+<ul>
+<li>&#x6253;&#x5305;&#x540E;&#x8F93;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x548C;&#x540E;&#x7F00;</li>
+<li>hash&#x4E00;&#x822C;&#x662F;&#x7ED3;&#x5408;CDN&#x7F13;&#x5B58;&#x6765;&#x4F7F;&#x7528;&#xFF0C;&#x901A;&#x8FC7;webpack&#x6784;&#x5EFA;&#x4E4B;&#x540E;&#xFF0C;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x6587;&#x4EF6;&#x540D;&#x81EA;&#x52A8;&#x5E26;&#x4E0A;&#x5BF9;&#x5E94;&#x7684;MD5&#x503C;&#x3002;&#x5982;&#x679C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x6539;&#x53D8;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x5E94;&#x6587;&#x4EF6;&#x54C8;&#x5E0C;&#x503C;&#x4E5F;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;HTML&#x5F15;&#x7528;&#x7684;URL&#x5730;&#x5740;&#x4E5F;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;&#x89E6;&#x53D1;CDN&#x670D;&#x52A1;&#x5668;&#x4ECE;&#x6E90;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x62C9;&#x53D6;&#x5BF9;&#x5E94;&#x6570;&#x636E;&#xFF0C;&#x8FDB;&#x800C;&#x66F4;&#x65B0;&#x672C;&#x5730;&#x7F13;&#x5B58;&#x3002;</li>
+</ul>
+<p>&#x6307;&#x7EB9;&#x5360;&#x4F4D;&#x7B26;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5360;&#x4F4D;&#x7B26;&#x540D;&#x79F0;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ext</td>
+<td style="text-align:left">&#x8D44;&#x6E90;&#x540E;&#x7F00;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td style="text-align:left">path</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td style="text-align:left">folder</td>
+<td style="text-align:left">&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5939;</td>
+</tr>
+<tr>
+<td style="text-align:left">hash</td>
+<td style="text-align:left">&#x6BCF;&#x6B21;webpack&#x6784;&#x5EFA;&#x65F6;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;hash&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">chunkhash</td>
+<td style="text-align:left">&#x6839;&#x636E;chunk&#x751F;&#x6210;hash&#x503C;&#xFF0C;&#x6765;&#x6E90;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;chunk&#xFF0C;&#x5219;hash&#x503C;&#x5C31;&#x4E00;&#x6837;</td>
+</tr>
+<tr>
+<td style="text-align:left">contenthash</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x5185;&#x5BB9;&#x751F;&#x6210;hash&#x503C;&#xFF0C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x76F8;&#x540C;hash&#x503C;&#x5C31;&#x76F8;&#x540C;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="t115.3.1 hash">5.3.1 hash <a href="103.9.webpack-optimize2.html#t115.3.1 hash"> # </a></h4>
+<ul>
+<li>Hash &#x662F;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;hash&#x503C;&#xFF0C;&#x5176;&#x6839;&#x636E;&#x6BCF;&#x6B21;&#x7F16;&#x8BD1;&#x5185;&#x5BB9;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#xFF0C;&#x6BCF;&#x6B21;&#x7F16;&#x8BD1;&#x4E4B;&#x540E;&#x90FD;&#x4F1A;&#x751F;&#x6210;&#x65B0;&#x7684;hash,&#x5373;&#x4FEE;&#x6539;&#x4EFB;&#x4F55;&#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x7684;hash&#x53D1;&#x751F;&#x6539;&#x53D8;</li>
+</ul>
+<pre><code class="lang-diff">const path = require(&quot;path&quot;);
+const glob = require(&quot;glob&quot;);
+const PurgecssPlugin = require(&quot;purgecss-webpack-plugin&quot;);
+const MiniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;);
+const PATHS = {
+  src: path.join(__dirname, &apos;src&apos;)
+}
+module.exports = {
+  mode: &quot;production&quot;,
+<span class="hljs-addition">+  entry: {</span>
+<span class="hljs-addition">+    main: &apos;./src/index.js&apos;,</span>
+<span class="hljs-addition">+    vender:[&apos;lodash&apos;]</span>
+<span class="hljs-addition">+  },</span>
+  output:{
+    path:path.resolve(__dirname,&apos;dist&apos;),
+<span class="hljs-addition">+    filename:&apos;[name].[hash].js&apos;</span>
+  },
+  devServer:{
+    hot:false
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js/,
+        include: path.resolve(__dirname, &quot;src&quot;),
+        use: [
+          {
+            loader:&apos;thread-loader&apos;,
+            options:{
+              workers:3
+            }
+          },
+          {
+            loader: &quot;babel-loader&quot;,
+            options: {
+              presets: [&quot;@babel/preset-env&quot;, &quot;@babel/preset-react&quot;],
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        include: path.resolve(__dirname, &quot;src&quot;),
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          &quot;css-loader&quot;,
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+<span class="hljs-addition">+      filename: &quot;[name].[hash].css&quot;</span>
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+    }),
+  ],
+};
+
+</code></pre>
+<h4 id="t125.3.2 chunkhash">5.3.2 chunkhash <a href="103.9.webpack-optimize2.html#t125.3.2 chunkhash"> # </a></h4>
+<ul>
+<li>chunkhash &#x91C7;&#x7528;hash&#x8BA1;&#x7B97;&#x7684;&#x8BDD;&#xFF0C;&#x6BCF;&#x4E00;&#x6B21;&#x6784;&#x5EFA;&#x540E;&#x751F;&#x6210;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x90FD;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5373;&#x4F7F;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x538B;&#x6839;&#x6CA1;&#x6709;&#x6539;&#x53D8;&#x3002;&#x8FD9;&#x6837;&#x5B50;&#x662F;&#x6CA1;&#x529E;&#x6CD5;&#x5B9E;&#x73B0;&#x7F13;&#x5B58;&#x6548;&#x679C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6362;&#x53E6;&#x4E00;&#x79CD;&#x54C8;&#x5E0C;&#x503C;&#x8BA1;&#x7B97;&#x65B9;&#x5F0F;&#xFF0C;&#x5373;chunkhash,chunkhash&#x548C;hash&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x5B83;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x5165;&#x53E3;&#x6587;&#x4EF6;(Entry)&#x8FDB;&#x884C;&#x4F9D;&#x8D56;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#x3001;&#x6784;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;chunk&#xFF0C;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x91CC;&#x628A;&#x4E00;&#x4E9B;&#x516C;&#x5171;&#x5E93;&#x548C;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x533A;&#x5206;&#x5F00;&#xFF0C;&#x5355;&#x72EC;&#x6253;&#x5305;&#x6784;&#x5EFA;&#xFF0C;&#x63A5;&#x7740;&#x6211;&#x4EEC;&#x91C7;&#x7528;chunkhash&#x7684;&#x65B9;&#x5F0F;&#x751F;&#x6210;&#x54C8;&#x5E0C;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x4E0D;&#x6539;&#x52A8;&#x516C;&#x5171;&#x5E93;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x5176;&#x54C8;&#x5E0C;&#x503C;&#x4E0D;&#x4F1A;&#x53D7;&#x5F71;&#x54CD;</li>
+</ul>
+<pre><code class="lang-diff">const path = require(&quot;path&quot;);
+const glob = require(&quot;glob&quot;);
+const PurgecssPlugin = require(&quot;purgecss-webpack-plugin&quot;);
+const MiniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;);
+const PATHS = {
+  src: path.join(__dirname, &apos;src&apos;)
+}
+module.exports = {
+  mode: &quot;production&quot;,
+  entry: {
+    main: &apos;./src/index.js&apos;,
+    vender:[&apos;lodash&apos;]
+  },
+  output:{
+    path:path.resolve(__dirname,&apos;dist&apos;),
+<span class="hljs-addition">+    filename:&apos;[name].[chunkhash].js&apos;</span>
+  },
+  devServer:{
+    hot:false
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js/,
+        include: path.resolve(__dirname, &quot;src&quot;),
+        use: [
+          {
+            loader:&apos;thread-loader&apos;,
+            options:{
+              workers:3
+            }
+          },
+          {
+            loader: &quot;babel-loader&quot;,
+            options: {
+              presets: [&quot;@babel/preset-env&quot;, &quot;@babel/preset-react&quot;],
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        include: path.resolve(__dirname, &quot;src&quot;),
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          &quot;css-loader&quot;,
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+<span class="hljs-addition">+      filename: &quot;[name].[chunkhash].css&quot;</span>
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+    }),
+  ],
+};
+
+</code></pre>
+<h4 id="t135.3.3 contenthash">5.3.3 contenthash <a href="103.9.webpack-optimize2.html#t135.3.3 contenthash"> # </a></h4>
+<ul>
+<li>&#x4F7F;&#x7528;chunkhash&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x662F;&#x5F53;&#x5728;&#x4E00;&#x4E2A;JS&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x5165;CSS&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x8BD1;&#x540E;&#x5B83;&#x4EEC;&#x7684;hash&#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x53EA;&#x8981;js&#x6587;&#x4EF6;&#x53D1;&#x751F;&#x6539;&#x53D8; &#xFF0C;&#x5173;&#x8054;&#x7684;css&#x6587;&#x4EF6;hash&#x4E5F;&#x4F1A;&#x6539;&#x53D8;,&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>mini-css-extract-plugin</code>&#x91CC;&#x7684;<code>contenthash</code>&#x503C;&#xFF0C;&#x4FDD;&#x8BC1;&#x5373;&#x4F7F;css&#x6587;&#x4EF6;&#x6240;&#x5904;&#x7684;&#x6A21;&#x5757;&#x91CC;&#x5C31;&#x7B97;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x6539;&#x53D8;&#xFF0C;&#x53EA;&#x8981;css&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x4E0D;&#x53D8;&#xFF0C;&#x90A3;&#x4E48;&#x4E0D;&#x4F1A;&#x91CD;&#x590D;&#x6784;&#x5EFA;</li>
+</ul>
+<pre><code class="lang-diff">const path = require(&quot;path&quot;);
+const glob = require(&quot;glob&quot;);
+const PurgecssPlugin = require(&quot;purgecss-webpack-plugin&quot;);
+const MiniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;);
+const PATHS = {
+  src: path.join(__dirname, &apos;src&apos;)
+}
+module.exports = {
+  mode: &quot;production&quot;,
+  entry: {
+    main: &apos;./src/index.js&apos;,
+    vender:[&apos;lodash&apos;]
+  },
+  output:{
+    path:path.resolve(__dirname,&apos;dist&apos;),
+    filename:&apos;[name].[chunkhash].js&apos;
+  },
+  devServer:{
+    hot:false
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js/,
+        include: path.resolve(__dirname, &quot;src&quot;),
+        use: [
+          {
+            loader:&apos;thread-loader&apos;,
+            options:{
+              workers:3
+            }
+          },
+          {
+            loader: &quot;babel-loader&quot;,
+            options: {
+              presets: [&quot;@babel/preset-env&quot;, &quot;@babel/preset-react&quot;],
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        include: path.resolve(__dirname, &quot;src&quot;),
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          &quot;css-loader&quot;,
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+<span class="hljs-addition">+      filename: &quot;[name].[contenthash].css&quot;</span>
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+    }),
+  ],
+};
+
+</code></pre>
+<h4 id="t145.3.4 hash">5.3.4 hash <a href="103.9.webpack-optimize2.html#t145.3.4 hash"> # </a></h4>
+<p><img src="https://img.zhufengpeixun.com/variableHash.jpg" alt="variableHash"></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createHash</span>(<span class="hljs-params"></span>)</span>{
+   <span class="hljs-keyword">return</span>  <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;crypto&apos;</span>).createHash(<span class="hljs-string">&apos;md5&apos;</span>);
+}
+<span class="hljs-keyword">let</span> entry = {
+    <span class="hljs-attr">entry1</span>:<span class="hljs-string">&apos;entry1&apos;</span>,
+    <span class="hljs-attr">entry2</span>:<span class="hljs-string">&apos;entry2&apos;</span>
+}
+<span class="hljs-keyword">let</span> entry1 = <span class="hljs-string">&apos;require depModule1&apos;</span>;<span class="hljs-comment">//&#x6A21;&#x5757;entry1</span>
+<span class="hljs-keyword">let</span> entry2 = <span class="hljs-string">&apos;require depModule2&apos;</span>;<span class="hljs-comment">//&#x6A21;&#x5757;entry2</span>
+
+<span class="hljs-keyword">let</span> depModule1 = <span class="hljs-string">&apos;depModule1&apos;</span>;<span class="hljs-comment">//&#x6A21;&#x5757;depModule1</span>
+<span class="hljs-keyword">let</span> depModule2 = <span class="hljs-string">&apos;depModule2&apos;</span>;<span class="hljs-comment">//&#x6A21;&#x5757;depModule2</span>
+<span class="hljs-comment">//&#x5982;&#x679C;&#x90FD;&#x4F7F;&#x7528;hash&#x7684;&#x8BDD;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x662F;&#x5DE5;&#x7A0B;&#x7EA7;&#x522B;&#x7684;&#xFF0C;&#x5373;&#x6BCF;&#x6B21;&#x4FEE;&#x6539;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x540D;&#x7684;hash&#x81F3;&#x90FD;&#x5C06;&#x6539;&#x53D8;&#x3002;&#x6240;&#x4EE5;&#x4E00;&#x65E6;&#x4FEE;&#x6539;&#x4E86;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x6587;&#x4EF6;&#x7F13;&#x5B58;&#x90FD;&#x5C06;&#x5931;&#x6548;</span>
+<span class="hljs-keyword">let</span> hash =  createHash()
+.update(entry1)
+.update(entry2)
+.update(depModule1)
+.update(depModule2)
+.digest(<span class="hljs-string">&apos;hex&apos;</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hash&apos;</span>,hash)
+<span class="hljs-comment">//chunkhash&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x5165;&#x53E3;&#x6587;&#x4EF6;(Entry)&#x8FDB;&#x884C;&#x4F9D;&#x8D56;&#x6587;&#x4EF6;&#x89E3;&#x6790;&#x3001;&#x6784;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;chunk&#xFF0C;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x3002;</span>
+<span class="hljs-comment">//&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x91CC;&#x628A;&#x4E00;&#x4E9B;&#x516C;&#x5171;&#x5E93;&#x548C;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#x533A;&#x5206;&#x5F00;&#xFF0C;&#x5355;&#x72EC;&#x6253;&#x5305;&#x6784;&#x5EFA;&#xFF0C;&#x63A5;&#x7740;&#x6211;&#x4EEC;&#x91C7;&#x7528;chunkhash&#x7684;&#x65B9;&#x5F0F;&#x751F;&#x6210;&#x54C8;&#x5E0C;&#x503C;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x4E0D;&#x6539;&#x52A8;&#x516C;&#x5171;&#x5E93;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x5176;&#x54C8;&#x5E0C;&#x503C;&#x4E0D;&#x4F1A;&#x53D7;&#x5F71;&#x54CD;</span>
+<span class="hljs-keyword">let</span> entry1ChunkHash = createHash()
+.update(entry1)
+.update(depModule1).digest(<span class="hljs-string">&apos;hex&apos;</span>);;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;entry1ChunkHash&apos;</span>,entry1ChunkHash);
+
+<span class="hljs-keyword">let</span> entry2ChunkHash = createHash()
+.update(entry2)
+.update(depModule2).digest(<span class="hljs-string">&apos;hex&apos;</span>);;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;entry2ChunkHash&apos;</span>,entry2ChunkHash);
+
+<span class="hljs-keyword">let</span> entry1File = entry1+depModule1;
+<span class="hljs-keyword">let</span> entry1ContentHash = createHash()
+.update(entry1File).digest(<span class="hljs-string">&apos;hex&apos;</span>);;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;entry1ContentHash&apos;</span>,entry1ContentHash);
+
+<span class="hljs-keyword">let</span> entry2File = entry2+depModule2;
+<span class="hljs-keyword">let</span> entry2ContentHash = createHash()
+.update(entry2File).digest(<span class="hljs-string">&apos;hex&apos;</span>);;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;entry2ContentHash&apos;</span>,entry2ContentHash);
+</code></pre>
+<h3 id="t155.4.HashPlugin">5.4.HashPlugin <a href="103.9.webpack-optimize2.html#t155.4.HashPlugin"> # </a></h3>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x4FEE;&#x6539;&#x5404;&#x79CD;hash&#x503C; </li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HashPlugin</span></span>{
+    <span class="hljs-keyword">constructor</span>(options){
+        <span class="hljs-keyword">this</span>.options = options;
+    }
+    apply(compiler){
+        compiler.hooks.compilation.tap(<span class="hljs-string">&apos;HashPlugin&apos;</span>,(compilation,params)=&gt;{
+            <span class="hljs-comment">//&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6539;&#x53D8;hash&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;hash&#x751F;&#x6210;&#x8FD9;&#x540E;&#x4FEE;&#x6539;</span>
+            compilation.hooks.afterHash.tap(<span class="hljs-string">&apos;HashPlugin&apos;</span>,()=&gt;{
+                <span class="hljs-keyword">let</span> fullhash = <span class="hljs-string">&apos;fullhash&apos;</span>;<span class="hljs-comment">//&#x65F6;&#x95F4;&#x6233;</span>
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x672C;&#x6B21;&#x7F16;&#x8BD1;&#x7684;compilation.hash&apos;</span>,compilation.hash);
+                compilation.hash= fullhash;<span class="hljs-comment">//output.filename [fullhash]</span>
+                <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> chunk <span class="hljs-keyword">of</span> compilation.chunks){
+                    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;chunk.hash&apos;</span>,chunk.hash);
+                    chunk.renderedHash = <span class="hljs-string">&apos;chunkHash&apos;</span>;<span class="hljs-comment">//&#x53EF;&#x4EE5;&#x6539;&#x53D8;chunkhash</span>
+                    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;chunk.contentHash&apos;</span>,chunk.contentHash);
+                    chunk.contentHash= { <span class="hljs-attr">javascript</span>: <span class="hljs-string">&apos;javascriptContentHash&apos;</span>,<span class="hljs-string">&apos;css/mini-extract&apos;</span>:<span class="hljs-string">&apos;cssContentHash&apos;</span> }
+                }
+            });
+        });
+    }
+}
+<span class="hljs-built_in">module</span>.exports = HashPlugin;
+<span class="hljs-comment">/**
+ * &#x4E09;&#x79CD;hash
+ * 1. hash compilation.hash 
+ * 2. chunkHash &#x6BCF;&#x4E2A;chunk&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;hash
+ * 3. contentHash &#x5185;&#x5BB9;hash &#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x4F1A;&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x4E2A;hash&#x503C;
+ */</span>
+</code></pre>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">const path = require(&apos;path&apos;);
+const DonePlugin = require(&apos;./plugins/DonePlugin&apos;);
+const AssetPlugin = require(&apos;./plugins/AssetPlugin&apos;);
+const ZipPlugin = require(&apos;./plugins/ZipPlugin&apos;);
+const HashPlugin = require(&apos;./plugins/HashPlugin&apos;);
+const AutoExternalPlugin = require(&apos;./plugins/AutoExternalPlugin&apos;);
+const MiniCssExtractPlugin = require(&apos;mini-css-extract-plugin&apos;);
+const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);
+module.exports = {
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+<span class="hljs-addition">+                   MiniCssExtractPlugin.loader,</span>
+                    &apos;css-loader&apos;
+                ]
+            }
+        ]
+    },
+    plugins: [
+<span class="hljs-addition">+       new HashPlugin(),</span>
+    ]
+}
+</code></pre>
+<h2 id="t166.moduleIds &amp; chunkIds&#x7684;&#x4F18;&#x5316;">6.moduleIds &amp; chunkIds&#x7684;&#x4F18;&#x5316; <a href="103.9.webpack-optimize2.html#t166.moduleIds &amp; chunkIds&#x7684;&#x4F18;&#x5316;"> # </a></h2>
+<h3 id="t176.1 &#x6982;&#x5FF5;&#x548C;&#x9009;&#x9879;">6.1 &#x6982;&#x5FF5;&#x548C;&#x9009;&#x9879; <a href="103.9.webpack-optimize2.html#t176.1 &#x6982;&#x5FF5;&#x548C;&#x9009;&#x9879;"> # </a></h3>
+<ul>
+<li>module: &#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5176;&#x5B9E;&#x90FD;&#x53EF;&#x4EE5;&#x770B;&#x6210;&#x4E00;&#x4E2A; module</li>
+<li>chunk: webpack&#x6253;&#x5305;&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x4EE3;&#x7801;&#x5757;&#x4F1A;&#x751F;&#x6210;&#x6587;&#x4EF6;&#xFF0C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;chunk</li>
+<li>&#x5728;webpack5&#x4E4B;&#x524D;&#xFF0C;&#x6CA1;&#x6709;&#x4ECE;entry&#x6253;&#x5305;&#x7684;chunk&#x6587;&#x4EF6;&#xFF0C;&#x90FD;&#x4F1A;&#x4EE5;1&#x3001;2&#x3001;3...&#x7684;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x8F93;&#x51FA;,&#x5220;&#x9664;&#x67D0;&#x4E9B;&#x4E9B;&#x6587;&#x4EF6;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x7F13;&#x5B58;&#x5931;&#x6548;</li>
+<li>&#x5728;&#x751F;&#x4EA7;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x9ED8;&#x8BA4;&#x542F;&#x7528;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;chunkIds: &quot;deterministic&quot;, moduleIds: &quot;deterministic&quot;&#xFF0C;&#x6B64;&#x7B97;&#x6CD5;&#x91C7;&#x7528;<code>&#x786E;&#x5B9A;&#x6027;</code>&#x7684;&#x65B9;&#x5F0F;&#x5C06;&#x77ED;&#x6570;&#x5B57; ID(3 &#x6216; 4 &#x4E2A;&#x5B57;&#x7B26;)&#x77ED;hash&#x503C;&#x5206;&#x914D;&#x7ED9; modules &#x548C; chunks</li>
+<li>chunkId&#x8BBE;&#x7F6E;&#x4E3A;deterministic&#xFF0C;&#x5219;output&#x4E2D;chunkFilename&#x91CC;&#x7684;[name]&#x4F1A;&#x88AB;&#x66FF;&#x6362;&#x6210;&#x786E;&#x5B9A;&#x6027;&#x77ED;&#x6570;&#x5B57;ID</li>
+<li>&#x867D;&#x7136;chunkId&#x4E0D;&#x53D8;(&#x4E0D;&#x7BA1;&#x503C;&#x662F;deterministic | natural | named)&#xFF0C;&#x4F46;&#x66F4;&#x6539;chunk&#x5185;&#x5BB9;&#xFF0C;chunkhash&#x8FD8;&#x662F;&#x4F1A;&#x6539;&#x53D8;&#x7684;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x53EF;&#x9009;&#x503C;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+<th style="text-align:left">&#x793A;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">natural</td>
+<td style="text-align:left">&#x6309;&#x4F7F;&#x7528;&#x987A;&#x5E8F;&#x7684;&#x6570;&#x5B57;ID</td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">named</td>
+<td style="text-align:left">&#x65B9;&#x4FBF;&#x8C03;&#x8BD5;&#x7684;&#x9AD8;&#x53EF;&#x8BFB;&#x6027;id</td>
+<td style="text-align:left">src_two_js.js</td>
+</tr>
+<tr>
+<td style="text-align:left">deterministic</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x6A21;&#x5757;&#x540D;&#x79F0;&#x751F;&#x6210;&#x7B80;&#x77ED;&#x7684;hash&#x503C;</td>
+<td style="text-align:left">915</td>
+</tr>
+<tr>
+<td style="text-align:left">size</td>
+<td style="text-align:left">&#x6839;&#x636E;&#x6A21;&#x5757;&#x5927;&#x5C0F;&#x751F;&#x6210;&#x7684;&#x6570;&#x5B57;id</td>
+<td style="text-align:left">0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="t186.2 webpack.config.js">6.2 webpack.config.js <a href="103.9.webpack-optimize2.html#t186.2 webpack.config.js"> # </a></h3>
+<p>webpack.config.js</p>
+<pre><code class="lang-diff">const path = require(&apos;path&apos;);
+module.exports = {
+    mode: &apos;development&apos;,
+    devtool:false,
+<span class="hljs-addition">+   optimization:{</span>
+<span class="hljs-addition">+       moduleIds:&apos;deterministic&apos;,</span>
+<span class="hljs-addition">+       chunkIds:&apos;deterministic&apos;</span>
+<span class="hljs-addition">+   }</span>
+}
+</code></pre>
+<h3 id="t196.3 src\index.js">6.3 src\index.js <a href="103.9.webpack-optimize2.html#t196.3 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span>(<span class="hljs-string">&apos;./one&apos;</span>);
+<span class="hljs-keyword">import</span>(<span class="hljs-string">&apos;./two&apos;</span>);
+<span class="hljs-keyword">import</span>(<span class="hljs-string">&apos;./three&apos;</span>);
+</code></pre>
+<h2 id="t207.&#x6A21;&#x5757;&#x8054;&#x90A6;">7.&#x6A21;&#x5757;&#x8054;&#x90A6; <a href="103.9.webpack-optimize2.html#t207.&#x6A21;&#x5757;&#x8054;&#x90A6;"> # </a></h2>
+<h3 id="t217.1.&#x52A8;&#x673A;">7.1.&#x52A8;&#x673A; <a href="103.9.webpack-optimize2.html#t217.1.&#x52A8;&#x673A;"> # </a></h3>
+<ul>
+<li>Module Federation&#x7684;&#x52A8;&#x673A;&#x662F;&#x4E3A;&#x4E86;&#x4E0D;&#x540C;&#x5F00;&#x53D1;&#x5C0F;&#x7EC4;&#x95F4;&#x5171;&#x540C;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x5E94;&#x7528;</li>
+<li>&#x5E94;&#x7528;&#x5C06;&#x88AB;&#x5212;&#x5206;&#x4E3A;&#x66F4;&#x5C0F;&#x7684;&#x5E94;&#x7528;&#x5757;&#xFF0C;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x5757;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x6BD4;&#x5982;&#x5934;&#x90E8;&#x5BFC;&#x822A;&#x6216;&#x8005;&#x4FA7;&#x8FB9;&#x680F;&#x7684;&#x524D;&#x7AEF;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x6570;&#x636E;&#x83B7;&#x53D6;&#x903B;&#x8F91;&#x7684;&#x903B;&#x8F91;&#x7EC4;&#x4EF6;</li>
+<li>&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x5757;&#x7531;&#x4E0D;&#x540C;&#x7684;&#x7EC4;&#x5F00;&#x53D1;</li>
+<li>&#x5E94;&#x7528;&#x6216;&#x5E94;&#x7528;&#x5757;&#x5171;&#x4EAB;&#x5176;&#x4ED6;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x5757;&#x6216;&#x8005;&#x5E93;</li>
+</ul>
+<p><img src="https://img.zhufengpeixun.com/1608392171072" alt="1608392171072"></p>
+<h3 id="t227.2.Module Federation">7.2.Module Federation <a href="103.9.webpack-optimize2.html#t227.2.Module Federation"> # </a></h3>
+<ul>
+<li>&#x4F7F;&#x7528;Module Federation&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x5757;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x6784;&#x5EFA;&#xFF0C;&#x8FD9;&#x4E9B;&#x6784;&#x5EFA;&#x90FD;&#x5C06;&#x7F16;&#x8BD1;&#x4E3A;&#x5BB9;&#x5668;</li>
+<li>&#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x88AB;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x5BB9;&#x5668;&#x5E94;&#x7528;</li>
+<li>&#x4E00;&#x4E2A;&#x88AB;&#x5F15;&#x7528;&#x7684;&#x5BB9;&#x5668;&#x88AB;&#x79F0;&#x4E3A;<code>remote</code>, &#x5F15;&#x7528;&#x8005;&#x88AB;&#x79F0;&#x4E3A;<code>host</code>&#xFF0C;<code>remote</code>&#x66B4;&#x9732;&#x6A21;&#x5757;&#x7ED9;<code>host</code>, <code>host</code>&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x66B4;&#x9732;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x8FD9;&#x4E9B;&#x6A21;&#x5757;&#x88AB;&#x6210;&#x4E3A;<code>remote</code>&#x6A21;&#x5757;</li>
+</ul>
+<p><img src="https://img.zhufengpeixun.com/1608722799323" alt="1608722799323"></p>
+<h3 id="t237.3.&#x5B9E;&#x6218;">7.3.&#x5B9E;&#x6218; <a href="103.9.webpack-optimize2.html#t237.3.&#x5B9E;&#x6218;"> # </a></h3>
+<h4 id="t247.3.1 &#x914D;&#x7F6E;&#x53C2;&#x6570;">7.3.1 &#x914D;&#x7F6E;&#x53C2;&#x6570; <a href="103.9.webpack-optimize2.html#t247.3.1 &#x914D;&#x7F6E;&#x53C2;&#x6570;"> # </a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5B57;&#x6BB5;</th>
+<th style="text-align:left">&#x7C7B;&#x578B;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">&#x5FC5;&#x4F20;&#x503C;&#xFF0C;&#x5373;&#x8F93;&#x51FA;&#x7684;&#x6A21;&#x5757;&#x540D;&#xFF0C;&#x88AB;&#x8FDC;&#x7A0B;&#x5F15;&#x7528;&#x65F6;&#x8DEF;&#x5F84;&#x4E3A;${name}/${expose}</td>
+</tr>
+<tr>
+<td style="text-align:left">library</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">&#x58F0;&#x660E;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;name&#x4E3A;umd&#x7684;name</td>
+</tr>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">&#x6784;&#x5EFA;&#x8F93;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">remotes</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">&#x8FDC;&#x7A0B;&#x5F15;&#x7528;&#x7684;&#x5E94;&#x7528;&#x540D;&#x53CA;&#x5176;&#x522B;&#x540D;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x4EE5;key&#x503C;&#x4F5C;&#x4E3A;name</td>
+</tr>
+<tr>
+<td style="text-align:left">exposes</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">&#x88AB;&#x8FDC;&#x7A0B;&#x5F15;&#x7528;&#x65F6;&#x53EF;&#x66B4;&#x9732;&#x7684;&#x8D44;&#x6E90;&#x8DEF;&#x5F84;&#x53CA;&#x5176;&#x522B;&#x540D;</td>
+</tr>
+<tr>
+<td style="text-align:left">shared</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">&#x4E0E;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x5171;&#x4EAB;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x4F9D;&#x8D56;&#xFF0C;&#x4F7F;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4E0D;&#x7528;&#x91CD;&#x590D;&#x52A0;&#x8F7D;&#x540C;&#x4E00;&#x4EFD;&#x4F9D;&#x8D56;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="t257.3.2 remote">7.3.2 remote <a href="103.9.webpack-optimize2.html#t257.3.2 remote"> # </a></h4>
+<h5 id="t267.3.2.1 remote\webpack.config.js">7.3.2.1 remote\webpack.config.js <a href="103.9.webpack-optimize2.html#t267.3.2.1 remote\webpack.config.js"> # </a></h5>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);
+<span class="hljs-keyword">let</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack&quot;</span>);
+<span class="hljs-keyword">let</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;html-webpack-plugin&quot;</span>);
+<span class="hljs-keyword">const</span> ModuleFederationPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack/lib/container/ModuleFederationPlugin&quot;</span>);
+<span class="hljs-built_in">module</span>.exports = {
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">&quot;development&quot;</span>,
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">&quot;./src/index.js&quot;</span>,
+    <span class="hljs-attr">output</span>: {
+        <span class="hljs-attr">publicPath</span>: <span class="hljs-string">&quot;http://localhost:3000/&quot;</span>,
+    },
+    <span class="hljs-attr">devServer</span>: {
+        <span class="hljs-attr">port</span>: <span class="hljs-number">3000</span>
+    },
+    <span class="hljs-attr">module</span>: {
+        <span class="hljs-attr">rules</span>: [
+            {
+                <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.jsx?$/</span>,
+                <span class="hljs-attr">use</span>: {
+                    <span class="hljs-attr">loader</span>: <span class="hljs-string">&apos;babel-loader&apos;</span>,
+                    <span class="hljs-attr">options</span>: {
+                        <span class="hljs-attr">presets</span>: [<span class="hljs-string">&quot;@babel/preset-react&quot;</span>]
+                    },
+                },
+                <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
+            },
+        ]
+    },
+    <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-keyword">new</span> HtmlWebpackPlugin({
+            <span class="hljs-attr">template</span>:<span class="hljs-string">&apos;./public/index.html&apos;</span>
+        }),
+        <span class="hljs-keyword">new</span> ModuleFederationPlugin({
+            <span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;remoteEntry.js&quot;</span>,
+            <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;remote&quot;</span>,
+            <span class="hljs-attr">exposes</span>: {
+                <span class="hljs-string">&quot;./NewsList&quot;</span>: <span class="hljs-string">&quot;./src/NewsList&quot;</span>,
+            }
+          })
+    ]
+}
+</code></pre>
+<h5 id="t277.3.2.2 remote\src\index.js">7.3.2.2 remote\src\index.js <a href="103.9.webpack-optimize2.html#t277.3.2.2 remote\src\index.js"> # </a></h5>
+<p>remote\src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span>(<span class="hljs-string">&quot;./bootstrap&quot;</span>);
+</code></pre>
+<h5 id="t287.3.2.3 remote\src\bootstrap.js">7.3.2.3 remote\src\bootstrap.js <a href="103.9.webpack-optimize2.html#t287.3.2.3 remote\src\bootstrap.js"> # </a></h5>
+<p>remote\src\bootstrap.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-dom&quot;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./App&quot;</span>;
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;root&quot;</span>));
+</code></pre>
+<h5 id="t297.3.2.4 remote\src\App.js">7.3.2.4 remote\src\App.js <a href="103.9.webpack-optimize2.html#t297.3.2.4 remote\src\App.js"> # </a></h5>
+<p>remote\src\App.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">import</span> NewsList <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./NewsList&apos;</span>;
+<span class="hljs-keyword">const</span> App = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x672C;&#x5730;&#x7EC4;&#x4EF6;NewsList<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">NewsList</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h5 id="t307.3.2.5 remote\src\NewsList.js">7.3.2.5 remote\src\NewsList.js <a href="103.9.webpack-optimize2.html#t307.3.2.5 remote\src\NewsList.js"> # </a></h5>
+<p>remote\src\NewsList.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ()=&gt;(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>&#x65B0;&#x95FB;&#x5217;&#x8868;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)
+</code></pre>
+<h4 id="t317.3.3 host">7.3.3 host <a href="103.9.webpack-optimize2.html#t317.3.3 host"> # </a></h4>
+<h5 id="t327.3.3.1 host\webpack.config.js">7.3.3.1 host\webpack.config.js <a href="103.9.webpack-optimize2.html#t327.3.3.1 host\webpack.config.js"> # </a></h5>
+<p>host\webpack.config.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);
+<span class="hljs-keyword">let</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack&quot;</span>);
+<span class="hljs-keyword">let</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;html-webpack-plugin&quot;</span>);
+<span class="hljs-keyword">const</span> ModuleFederationPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack/lib/container/ModuleFederationPlugin&quot;</span>);
+<span class="hljs-built_in">module</span>.exports = {
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">&quot;development&quot;</span>,
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">&quot;./src/index.js&quot;</span>,
+    <span class="hljs-attr">output</span>: {
+        <span class="hljs-attr">publicPath</span>: <span class="hljs-string">&quot;http://localhost:8000/&quot;</span>,
+    },
+    <span class="hljs-attr">devServer</span>: {
+        <span class="hljs-attr">port</span>: <span class="hljs-number">8000</span>
+    },
+    <span class="hljs-attr">module</span>: {
+        <span class="hljs-attr">rules</span>: [
+            {
+                <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.jsx?$/</span>,
+                <span class="hljs-attr">use</span>: {
+                    <span class="hljs-attr">loader</span>: <span class="hljs-string">&apos;babel-loader&apos;</span>,
+                    <span class="hljs-attr">options</span>: {
+                        <span class="hljs-attr">presets</span>: [<span class="hljs-string">&quot;@babel/preset-react&quot;</span>]
+                    },
+                },
+                <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
+            },
+        ]
+    },
+    <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-keyword">new</span> HtmlWebpackPlugin({
+            <span class="hljs-attr">template</span>: <span class="hljs-string">&apos;./public/index.html&apos;</span>
+        }),
+        <span class="hljs-keyword">new</span> ModuleFederationPlugin({
+            <span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;remoteEntry.js&quot;</span>,
+            <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;host&quot;</span>,
+            <span class="hljs-attr">remotes</span>: {
+                <span class="hljs-attr">remote</span>: <span class="hljs-string">&quot;remote@http://localhost:3000/remoteEntry.js&quot;</span>
+            }
+        })
+    ]
+}
+</code></pre>
+<h5 id="t337.3.3.2 host\src\index.js">7.3.3.2 host\src\index.js <a href="103.9.webpack-optimize2.html#t337.3.3.2 host\src\index.js"> # </a></h5>
+<p>host\src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span>(<span class="hljs-string">&quot;./bootstrap&quot;</span>);
+</code></pre>
+<h5 id="t347.3.3.3 host\src\bootstrap.js">7.3.3.3 host\src\bootstrap.js <a href="103.9.webpack-optimize2.html#t347.3.3.3 host\src\bootstrap.js"> # </a></h5>
+<p>host\src\bootstrap.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-dom&quot;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./App&quot;</span>;
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;root&quot;</span>));
+</code></pre>
+<h5 id="t357.3.3.4 host\src\App.js">7.3.3.4 host\src\App.js <a href="103.9.webpack-optimize2.html#t357.3.3.4 host\src\App.js"> # </a></h5>
+<p>host\src\App.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">import</span> Slides <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Slides&apos;</span>;
+<span class="hljs-keyword">const</span> RemoteNewsList = React.lazy(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&quot;remote/NewsList&quot;</span>));
+
+<span class="hljs-keyword">const</span> App = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> &gt;</span>&#x672C;&#x5730;&#x7EC4;&#x4EF6;Slides, &#x8FDC;&#x7A0B;&#x7EC4;&#x4EF6;NewsList<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Slides</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">React.Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">&quot;Loading NewsList&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">RemoteNewsList</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">React.Suspense</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h5 id="t367.3.3.5 host\src\Slides.js">7.3.3.5 host\src\Slides.js <a href="103.9.webpack-optimize2.html#t367.3.3.5 host\src\Slides.js"> # </a></h5>
+<p>host\src\Slides.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ()=&gt;(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>&#x8F6E;&#x64AD;&#x56FE;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)
+</code></pre>
+<h3 id="t377.4.shared">7.4.shared <a href="103.9.webpack-optimize2.html#t377.4.shared"> # </a></h3>
+<ul>
+<li><code>shared</code>&#x914D;&#x7F6E;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x6765;&#x907F;&#x514D;&#x9879;&#x76EE;&#x51FA;&#x73B0;&#x591A;&#x4E2A;&#x516C;&#x5171;&#x4F9D;&#x8D56;</li>
+</ul>
+<p><img src="https://static.zhufengpeixun.com/1608851802459_1637746243640.jpg" alt="1608851802459"></p>
+<h4 id="t387.4.1 remote\webpack.config.js">7.4.1 remote\webpack.config.js <a href="103.9.webpack-optimize2.html#t387.4.1 remote\webpack.config.js"> # </a></h4>
+<pre><code class="lang-diff">    plugins: [
+        new HtmlWebpackPlugin({
+            template:&apos;./public/index.html&apos;
+        }),
+        new ModuleFederationPlugin({
+            filename: &quot;remoteEntry.js&quot;,
+            name: &quot;remote&quot;,
+            exposes: {
+                &quot;./NewsList&quot;: &quot;./src/NewsList&quot;,
+            },
+<span class="hljs-addition">+            shared:{</span>
+<span class="hljs-addition">+                react: { singleton: true },</span>
+<span class="hljs-addition">+                &quot;react-dom&quot;: { singleton: true }</span>
+<span class="hljs-addition">+              }</span>
+          })
+    ]
+</code></pre>
+<h4 id="t397.4.2 host\webpack.config.js">7.4.2 host\webpack.config.js <a href="103.9.webpack-optimize2.html#t397.4.2 host\webpack.config.js"> # </a></h4>
+<pre><code class="lang-diff">    plugins: [
+        new HtmlWebpackPlugin({
+            template: &apos;./public/index.html&apos;
+        }),
+        new ModuleFederationPlugin({
+            filename: &quot;remoteEntry.js&quot;,
+            name: &quot;host&quot;,
+            remotes: {
+                remote: &quot;remote@http://localhost:3000/remoteEntry.js&quot;
+            },
+<span class="hljs-addition">+           shared:{</span>
+<span class="hljs-addition">+                react: { singleton: true },</span>
+<span class="hljs-addition">+                &quot;react-dom&quot;: { singleton: true }</span>
+<span class="hljs-addition">+           }</span>
+        })
+    ]
+</code></pre>
+<h3 id="t407.5.&#x53CC;&#x5411;&#x4F9D;&#x8D56;">7.5.&#x53CC;&#x5411;&#x4F9D;&#x8D56; <a href="103.9.webpack-optimize2.html#t407.5.&#x53CC;&#x5411;&#x4F9D;&#x8D56;"> # </a></h3>
+<ul>
+<li>Module Federation &#x7684;&#x5171;&#x4EAB;&#x53EF;&#x4EE5;&#x662F;&#x53CC;&#x5411;&#x7684;</li>
+</ul>
+<h4 id="t417.5.1 remote\webpack.config.js">7.5.1 remote\webpack.config.js <a href="103.9.webpack-optimize2.html#t417.5.1 remote\webpack.config.js"> # </a></h4>
+<pre><code class="lang-diff">    plugins: [
+        new HtmlWebpackPlugin({
+            template:&apos;./public/index.html&apos;
+        }),
+        new ModuleFederationPlugin({
+            filename: &quot;remoteEntry.js&quot;,
+            name: &quot;remote&quot;,
+<span class="hljs-addition">+            remotes: {</span>
+<span class="hljs-addition">+                host: &quot;host@http://localhost:8000/remoteEntry.js&quot;</span>
+<span class="hljs-addition">+            },</span>
+            exposes: {
+                &quot;./NewsList&quot;: &quot;./src/NewsList&quot;,
+            },
+            shared:{
+                react: { singleton: true },
+                &quot;react-dom&quot;: { singleton: true }
+              }
+          })
+    ]
+</code></pre>
+<h4 id="t427.5.2 host\webpack.config.js">7.5.2 host\webpack.config.js <a href="103.9.webpack-optimize2.html#t427.5.2 host\webpack.config.js"> # </a></h4>
+<pre><code class="lang-diff">    plugins: [
+        new HtmlWebpackPlugin({
+            template: &apos;./public/index.html&apos;
+        }),
+        new ModuleFederationPlugin({
+            filename: &quot;remoteEntry.js&quot;,
+            name: &quot;host&quot;,
+            remotes: {
+                remote: &quot;remote@http://localhost:3000/remoteEntry.js&quot;
+            },
+<span class="hljs-addition">+           exposes: {</span>
+<span class="hljs-addition">+                &quot;./Slides&quot;: &quot;./src/Slides&quot;,</span>
+<span class="hljs-addition">+           },</span>
+            shared:{
+                react: { singleton: true },
+                &quot;react-dom&quot;: { singleton: true }
+              }
+        })
+    ]
+</code></pre>
+<h4 id="t437.5.3 remote\src\App.js">7.5.3 remote\src\App.js <a href="103.9.webpack-optimize2.html#t437.5.3 remote\src\App.js"> # </a></h4>
+<p>remote\src\App.js</p>
+<pre><code class="lang-diff">import React from &quot;react&quot;;
+import NewsList from &apos;./NewsList&apos;;
+<span class="hljs-addition">+const RemoteSlides = React.lazy(() =&gt; import(&quot;host/Slides&quot;));</span>
+const App = () =&gt; (
+  &lt;div&gt;
+<span class="hljs-addition">+    &lt;h2&gt;&#x672C;&#x5730;&#x7EC4;&#x4EF6;NewsList,&#x8FDC;&#x7A0B;&#x7EC4;&#x4EF6;Slides&lt;/h2&gt;</span>
+    &lt;NewsList /&gt;
+<span class="hljs-addition">+    &lt;React.Suspense fallback=&quot;Loading Slides&quot;&gt;</span>
+<span class="hljs-addition">+      &lt;RemoteSlides /&gt;</span>
+<span class="hljs-addition">+    &lt;/React.Suspense&gt;</span>
+  &lt;/div&gt;
+);
+
+export default App;
+</code></pre>
+<h3 id="t447.6.&#x591A;&#x4E2A;remote">7.6.&#x591A;&#x4E2A;remote <a href="103.9.webpack-optimize2.html#t447.6.&#x591A;&#x4E2A;remote"> # </a></h3>
+<h4 id="t457.6.1 all\webpack.config.js">7.6.1 all\webpack.config.js <a href="103.9.webpack-optimize2.html#t457.6.1 all\webpack.config.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);
+<span class="hljs-keyword">let</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack&quot;</span>);
+<span class="hljs-keyword">let</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;html-webpack-plugin&quot;</span>);
+<span class="hljs-keyword">const</span> ModuleFederationPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack/lib/container/ModuleFederationPlugin&quot;</span>);
+<span class="hljs-built_in">module</span>.exports = {
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">&quot;development&quot;</span>,
+    <span class="hljs-attr">entry</span>: <span class="hljs-string">&quot;./src/index.js&quot;</span>,
+    <span class="hljs-attr">output</span>: {
+        <span class="hljs-attr">publicPath</span>: <span class="hljs-string">&quot;http://localhost:3000/&quot;</span>,
+    },
+    <span class="hljs-attr">devServer</span>: {
+        <span class="hljs-attr">port</span>: <span class="hljs-number">5000</span>
+    },
+    <span class="hljs-attr">module</span>: {
+        <span class="hljs-attr">rules</span>: [
+            {
+                <span class="hljs-attr">test</span>: <span class="hljs-regexp">/\.jsx?$/</span>,
+                <span class="hljs-attr">use</span>: {
+                    <span class="hljs-attr">loader</span>: <span class="hljs-string">&apos;babel-loader&apos;</span>,
+                    <span class="hljs-attr">options</span>: {
+                        <span class="hljs-attr">presets</span>: [<span class="hljs-string">&quot;@babel/preset-react&quot;</span>]
+                    },
+                },
+                <span class="hljs-attr">exclude</span>: <span class="hljs-regexp">/node_modules/</span>,
+            },
+        ]
+    },
+    <span class="hljs-attr">plugins</span>: [
+        <span class="hljs-keyword">new</span> HtmlWebpackPlugin({
+            <span class="hljs-attr">template</span>:<span class="hljs-string">&apos;./public/index.html&apos;</span>
+        }),
+        <span class="hljs-keyword">new</span> ModuleFederationPlugin({
+            <span class="hljs-attr">filename</span>: <span class="hljs-string">&quot;remoteEntry.js&quot;</span>,
+            <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;all&quot;</span>,
+            <span class="hljs-attr">remotes</span>: {
+                <span class="hljs-attr">remote</span>: <span class="hljs-string">&quot;remote@http://localhost:3000/remoteEntry.js&quot;</span>,
+                <span class="hljs-attr">host</span>: <span class="hljs-string">&quot;host@http://localhost:8000/remoteEntry.js&quot;</span>,
+            },
+            <span class="hljs-attr">shared</span>:{
+                <span class="hljs-attr">react</span>: { <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span> },
+                <span class="hljs-string">&quot;react-dom&quot;</span>: { <span class="hljs-attr">singleton</span>: <span class="hljs-literal">true</span> }
+              }
+          })
+    ]
+}
+</code></pre>
+<h4 id="t467.6.2 remote\src\index.js">7.6.2 remote\src\index.js <a href="103.9.webpack-optimize2.html#t467.6.2 remote\src\index.js"> # </a></h4>
+<p>remote\src\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span>(<span class="hljs-string">&quot;./bootstrap&quot;</span>);
+</code></pre>
+<h4 id="t477.6.3 remote\src\bootstrap.js">7.6.3 remote\src\bootstrap.js <a href="103.9.webpack-optimize2.html#t477.6.3 remote\src\bootstrap.js"> # </a></h4>
+<p>remote\src\bootstrap.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react-dom&quot;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./App&quot;</span>;
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;root&quot;</span>));
+</code></pre>
+<h4 id="t487.6.4 remote\src\App.js">7.6.4 remote\src\App.js <a href="103.9.webpack-optimize2.html#t487.6.4 remote\src\App.js"> # </a></h4>
+<p>remote\src\App.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;react&quot;</span>;
+<span class="hljs-keyword">const</span> RemoteSlides = React.lazy(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&quot;host/Slides&quot;</span>));
+<span class="hljs-keyword">const</span> RemoteNewsList = React.lazy(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&quot;remote/NewsList&quot;</span>));
+<span class="hljs-keyword">const</span> App = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>&#x8FDC;&#x7A0B;&#x7EC4;&#x4EF6;Slides,&#x8FDC;&#x7A0B;&#x7EC4;&#x4EF6;NewsList<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">React.Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">&quot;Loading Slides&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">RemoteSlides</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">React.Suspense</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">React.Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">&quot;Loading NewsList&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">RemoteNewsList</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">React.Suspense</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+
+    </div>
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+    aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">姓名:</label>
+                        <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码:</label>
+                        <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                    data-dismiss="modal">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+let zhufengjiagou = localStorage.getItem('zhufengjiagou');
+const host = 'http://login.zhufengpeixun.com';
+if(zhufengjiagou){
+  fetch(host+'/check',{method:"GET",mode: 'cors',
+　　headers: {'Content-Type': 'application/json', authorization: `Bearer ${zhufengjiagou}`}}).then(response => response.json()).then(res => {
+    if(res.success){
+     
+    }else{
+      $('#loginModal').modal('show')
+    }
+  }) 
+}else{
+   $('#loginModal').modal('show')
+}
+
+$('#loginModal').on('hidden.bs.modal', function (event) {
+  var modal = $(this)
+  let username = modal.find('.modal-body #username').val();
+  let password = modal.find('.modal-body #password').val();
+  fetch(host+'/login',{method:"POST",mode: 'cors',
+　　headers: {'Content-Type': 'application/json'},
+　　body:JSON.stringify({username,password})}).then(response => response.json()).then(res => {
+    if(res.success){
+      localStorage.setItem('zhufengjiagou',res.zhufengjiagou);
+    }else{
+      window.location.href = 'http://www.zhufengpeixun.cn';
+    }
+  })
+})
+</script>
+<script>
+$('.warpper .page-toc ul ul li a').on('click',function(){
+  $('.warpper .page-toc ul ul li a').removeClass('my-active')
+  $(this).addClass('my-active')
+})
+$('.logo').on('mouseenter',function(){
+  $('.nav').height('450px');
+})
+$('.nav').on('mouseleave',function(){
+  $('.nav').height('80px');
+})
+$('.logo').on('click',function(){
+  $('.nav').css('display','none');
+ $('.warpper').css('padding','0px');
+})
+</script>
+</body>
+</html>

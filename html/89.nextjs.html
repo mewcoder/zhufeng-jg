@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
     <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
 </head>
 <body>
 <div class="nav">
     <div class="logo">
         
-            珠峰架构师成长计划
-        
-    </div>
-<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li class="active"><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li></ul></div>
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="0.Async.html">0.Async</a></li><li><a href="0.module.html">0.module</a></li><li><a href="1.ES2015.html">1.ES2015</a></li><li><a href="2.Promise.html">2.Promise</a></li><li><a href="3.Node.html">3.Node</a></li><li><a href="4.NodeInstall.html">4.NodeInstall</a></li><li><a href="5.REPL.html">5.REPL</a></li><li><a href="6.NodeCore.html">6.NodeCore</a></li><li><a href="7.module&amp;NPM.html">7.module&NPM</a></li><li><a href="8.Encoding.html">8.Encoding</a></li><li><a href="9.Buffer.html">9.Buffer</a></li><li><a href="10.fs.html">10.fs</a></li><li><a href="11.Stream-1.html">11.Stream-1</a></li><li><a href="11.Stream-2.html">11.Stream-2</a></li><li><a href="11.Stream-3.html">11.Stream-3</a></li><li><a href="11.Stream-4.html">11.Stream-4</a></li><li><a href="12-Network-2.html">12-Network-2</a></li><li><a href="12.NetWork-3.html">12.NetWork-3</a></li><li><a href="12.Network-1.html">12.Network-1</a></li><li><a href="13.tcp.html">13.tcp</a></li><li><a href="14.http-1.html">14.http-1</a></li><li><a href="14.http-2.html">14.http-2</a></li><li><a href="15.compress.html">15.compress</a></li><li><a href="16.crypto.html">16.crypto</a></li><li><a href="17.process.html">17.process</a></li><li><a href="18.yargs.html">18.yargs</a></li><li><a href="19.cache.html">19.cache</a></li><li><a href="20.action.html">20.action</a></li><li><a href="21.https.html">21.https</a></li><li><a href="22.cookie.html">22.cookie</a></li><li><a href="23.session.html">23.session</a></li><li><a href="24.express-1.html">24.express-1</a></li><li><a href="24.express-2.html">24.express-2</a></li><li><a href="24.express-3.html">24.express-3</a></li><li><a href="24.express-4.html">24.express-4</a></li><li><a href="25.koa-1.html">25.koa-1</a></li><li><a href="26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="28.redux.html">28.redux</a></li><li><a href="28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="29.mongodb-1.html">29.mongodb-1</a></li><li><a href="29.mongodb-2.html">29.mongodb-2</a></li><li><a href="29.mongodb-3.html">29.mongodb-3</a></li><li><a href="29.mongodb-4.html">29.mongodb-4</a></li><li><a href="29.mongodb-5.html">29.mongodb-5</a></li><li><a href="29.mongodb-6.html">29.mongodb-6</a></li><li><a href="30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="30.cms-7-api.html">30.cms-7-api</a></li><li><a href="30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="30.cms-14-front.html">30.cms-14-front</a></li><li><a href="30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="31.dva.html">31.dva</a></li><li><a href="31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="33.redis.html">33.redis</a></li><li><a href="34.unittest.html">34.unittest</a></li><li><a href="35.jwt.html">35.jwt</a></li><li><a href="36.websocket-1.html">36.websocket-1</a></li><li><a href="36.websocket-2.html">36.websocket-2</a></li><li><a href="38.chat-api-1.html">38.chat-api-1</a></li><li><a href="38.chat-api-2.html">38.chat-api-2</a></li><li><a href="38.chat-3.html">38.chat-3</a></li><li><a href="38.chat-api-3.html">38.chat-api-3</a></li><li><a href="38.chat.html">38.chat</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="39.crawl-0.html">39.crawl-0</a></li><li><a href="39.crawl-1.html">39.crawl-1</a></li><li><a href="39.crawl-2.html">39.crawl-2</a></li><li><a href="40.deploy.html">40.deploy</a></li><li><a href="41.safe.html">41.safe</a></li><li><a href="42.test.html">42.test</a></li><li><a href="43.nginx.html">43.nginx</a></li><li><a href="44.enzyme.html">44.enzyme</a></li><li><a href="45.docker.html">45.docker</a></li><li><a href="46.elastic.html">46.elastic</a></li><li><a href="47.oauth.html">47.oauth</a></li><li><a href="48.wxpay.html">48.wxpay</a></li><li><a href="index.html">index</a></li><li><a href="52.UML.html">52.UML</a></li><li><a href="53.design.html">53.design</a></li><li><a href="index.html">index</a></li><li><a href="54.linux.html">54.linux</a></li><li><a href="57.ts.html">57.ts</a></li><li><a href="56.react-ssr.html">56.react-ssr</a></li><li><a href="58.ts_react.html">58.ts_react</a></li><li><a href="59.ketang.html">59.ketang</a></li><li><a href="59.ketang2.html">59.ketang2</a></li><li><a href="61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="61.3.devops-user.html">61.3.devops-user</a></li><li><a href="61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="61.6.devops-install.html">61.6.devops-install</a></li><li><a href="61.7.devops-system.html">61.7.devops-system</a></li><li><a href="61.8.devops-service.html">61.8.devops-service</a></li><li><a href="61.9.devops-network.html">61.9.devops-network</a></li><li><a href="61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="61.14.devops-php.html">61.14.devops-php</a></li><li><a href="61.15.devops-java.html">61.15.devops-java</a></li><li><a href="61.16.devops-node.html">61.16.devops-node</a></li><li><a href="61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="62.1.react-basic.html">62.1.react-basic</a></li><li><a href="62.2.react-state.html">62.2.react-state</a></li><li><a href="62.3.react-high.html">62.3.react-high</a></li><li><a href="62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="62.8.react-source.html">62.8.react-source</a></li><li><a href="63.1.redux.html">63.1.redux</a></li><li><a href="63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="64.1.router.html">64.1.router</a></li><li><a href="64.2.router-connected.html">64.2.router-connected</a></li><li><a href="65.1.typescript.html">65.1.typescript</a></li><li><a href="65.2.typescript.html">65.2.typescript</a></li><li><a href="65.3.typescript.html">65.3.typescript</a></li><li><a href="65.4.antd.html">65.4.antd</a></li><li><a href="65.4.definition.html">65.4.definition</a></li><li><a href="66-1.vue-base.html">66-1.vue-base</a></li><li><a href="66-2.vue-component.html">66-2.vue-component</a></li><li><a href="66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="66-4.$message组件.html">66-4.$message组件</a></li><li><a href="66-5.Form组件.html">66-5.Form组件</a></li><li><a href="66-6.tree.html">66-6.tree</a></li><li><a href="66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="66-13.pwa.html">66-13.pwa</a></li><li><a href="66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="66-15.权限校验.html">66-15.权限校验</a></li><li><a href="67-1-network.html">67-1-network</a></li><li><a href="68-2-wireshark.html">68-2-wireshark</a></li><li><a href="7.npm2.html">7.npm2</a></li><li><a href="69-hooks.html">69-hooks</a></li><li><a href="70-deploy.html">70-deploy</a></li><li><a href="71-hmr.html">71-hmr</a></li><li><a href="72.deploy.html">72.deploy</a></li><li><a href="73.import.html">73.import</a></li><li><a href="74.mobile.html">74.mobile</a></li><li><a href="75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="76.react_optimize.html">76.react_optimize</a></li><li><a href="77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="79.grammar.html">79.grammar</a></li><li><a href="80.tree.html">80.tree</a></li><li><a href="81.axios.html">81.axios</a></li><li><a href="82.1.react.html">82.1.react</a></li><li><a href="82.2.react-high.html">82.2.react-high</a></li><li><a href="82.3.react-router.html">82.3.react-router</a></li><li><a href="82.4.redux.html">82.4.redux</a></li><li><a href="82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="82.6.connected.html">82.6.connected</a></li><li><a href="82.7.saga.html">82.7.saga</a></li><li><a href="82.8.dva.html">82.8.dva</a></li><li><a href="82.8.dva-source.html">82.8.dva-source</a></li><li><a href="82.9.roadhog.html">82.9.roadhog</a></li><li><a href="82.10.umi.html">82.10.umi</a></li><li><a href="82.11.antdesign.html">82.11.antdesign</a></li><li><a href="82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="83.upload.html">83.upload</a></li><li><a href="84.graphql.html">84.graphql</a></li><li><a href="85.antpro.html">85.antpro</a></li><li><a href="86.1.uml.html">86.1.uml</a></li><li><a href="86.2.design.html">86.2.design</a></li><li><a href="87.postcss.html">87.postcss</a></li><li><a href="88.react16-1.html">88.react16-1</a></li><li class="active"><a href="89.nextjs.html">89.nextjs</a></li><li><a href="90.react-test.html">90.react-test</a></li><li><a href="91.react-ts.html">91.react-ts</a></li><li><a href="92.rbac.html">92.rbac</a></li><li><a href="93.tsnode.html">93.tsnode</a></li><li><a href="94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="94.3.MODULE.html">94.3.MODULE</a></li><li><a href="94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="94.5.文件上传.html">94.5.文件上传</a></li><li><a href="94.6.https.html">94.6.https</a></li><li><a href="94.7.&#32;nginx.html">94.7. nginx</a></li><li><a href="95.1.&#32;react.html">95.1. react</a></li><li><a href="95.2.react.html">95.2.react</a></li><li><a href="96.1.react16.html">96.1.react16</a></li><li><a href="96.2.fiber.html">96.2.fiber</a></li><li><a href="96.3.fiber.html">96.3.fiber</a></li><li><a href="97.serverless.html">97.serverless</a></li><li><a href="98.websocket.html">98.websocket</a></li><li><a href="100.1.react-basic.html">100.1.react-basic</a></li><li><a href="101.1.monitor.html">101.1.monitor</a></li><li><a href="101.2.monitor.html">101.2.monitor</a></li><li><a href="102.java.html">102.java</a></li><li><a href="103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="103.16.vite.source.html">103.16.vite.source</a></li><li><a href="103.17.polyfill.html">103.17.polyfill</a></li><li><a href="104.1.binary.html">104.1.binary</a></li><li><a href="104.2.binary.html">104.2.binary</a></li><li><a href="105.skeleton.html">105.skeleton</a></li><li><a href="106.1.react.html">106.1.react</a></li><li><a href="106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="106.3.react_router.html">106.3.react_router</a></li><li><a href="106.4.redux.html">106.4.redux</a></li><li><a href="106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="106.8.dva.html">106.8.dva</a></li><li><a href="106.9.umi.html">106.9.umi</a></li><li><a href="106.10.ketang.html">106.10.ketang</a></li><li><a href="106.11.antdesign.html">106.11.antdesign</a></li><li><a href="106.12.antpro.html">106.12.antpro</a></li><li><a href="107.fiber.html">107.fiber</a></li><li><a href="108.http.html">108.http</a></li><li><a href="109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="109.3.dll.html">109.3.dll</a></li><li><a href="110.nest.js.html">110.nest.js</a></li><li><a href="111.xstate.html">111.xstate</a></li><li><a href="112.Form.html">112.Form</a></li><li><a href="113.redux-saga.html">113.redux-saga</a></li><li><a href="114.react+typescript.html">114.react+typescript</a></li><li><a href="115.immer.html">115.immer</a></li><li><a href="116.pro5.html">116.pro5</a></li><li><a href="117.css-loader.html">117.css-loader</a></li><li><a href="118.1.umi-core.html">118.1.umi-core</a></li><li><a href="119.2.module-federation.html">119.2.module-federation</a></li><li><a href="119.1.module-federation.html">119.1.module-federation</a></li><li><a href="120.create-react-app.html">120.create-react-app</a></li><li><a href="121.react-scripts.html">121.react-scripts</a></li><li><a href="122.react-optimize.html">122.react-optimize</a></li><li><a href="123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="124.next.js.html">124.next.js</a></li><li><a href="125.1.linux.html">125.1.linux</a></li><li><a href="125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="125.3.linux-user.html">125.3.linux-user</a></li><li><a href="125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="125.6.linux-install.html">125.6.linux-install</a></li><li><a href="125.7.linux-system.html">125.7.linux-system</a></li><li><a href="125.8.linux-service.html">125.8.linux-service</a></li><li><a href="125.9.linux-network.html">125.9.linux-network</a></li><li><a href="125.10.nginx.html">125.10.nginx</a></li><li><a href="125.11.docker.html">125.11.docker</a></li><li><a href="125.12.ci.html">125.12.ci</a></li><li><a href="125.13.k8s.html">125.13.k8s</a></li><li><a href="125.14.k8s.html">125.14.k8s</a></li><li><a href="125.15.k8s.html">125.15.k8s</a></li><li><a href="125.16.k8s.html">125.16.k8s</a></li><li><a href="126.11.react-1.html">126.11.react-1</a></li><li><a href="126.12.react-2.html">126.12.react-2</a></li><li><a href="126.12.react-3.html">126.12.react-3</a></li><li><a href="126.12.react-4.html">126.12.react-4</a></li><li><a href="126.12.react-5.html">126.12.react-5</a></li><li><a href="127.frontend.html">127.frontend</a></li><li><a href="128.rollup.html">128.rollup</a></li><li><a href="129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="130.health.html">130.health</a></li><li><a href="131.hooks.html">131.hooks</a></li><li><a href="132.keepalive.html">132.keepalive</a></li><li><a href="133.vue-cli.html">133.vue-cli</a></li><li><a href="134.react18.html">134.react18</a></li><li><a href="135.function.html">135.function</a></li><li><a href="136.toolkit.html">136.toolkit</a></li><li><a href="137.lerna.html">137.lerna</a></li><li><a href="138.create-vite.html">138.create-vite</a></li><li><a href="139.cli.html">139.cli</a></li><li><a href="140.antd.html">140.antd</a></li><li><a href="141.react-dnd.html">141.react-dnd</a></li><li><a href="142.1.link.html">142.1.link</a></li><li><a href="143.1.gulp.html">143.1.gulp</a></li><li><a href="143.2.stream.html">143.2.stream</a></li><li><a href="143.3.gulp.html">143.3.gulp</a></li><li><a href="144.1.closure.html">144.1.closure</a></li><li><a href="106.13.router-6.html">106.13.router-6</a></li><li><a href="145.react-router-v6.html">145.react-router-v6</a></li><li><a href="144.2.v8.html">144.2.v8</a></li><li><a href="144.3.gc.html">144.3.gc</a></li><li><a href="106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="146.browser.html">146.browser</a></li><li><a href="147.lighthouse.html">147.lighthouse</a></li><li><a href="148.1.basic.html">148.1.basic</a></li><li><a href="148.2.basic&#32;.html">148.2.basic </a></li><li><a href="148.3.basic.html">148.3.basic</a></li></ul>                        </div>
 
-
+                        
 <div class="warpper">
-
     <div class="page-toc">
-        <ul><li><a href="#t01. 同构">1. 同构</a></li><li><a href="#t12.Next.js">2.Next.js</a></li><li><a href="#t23.初始化">3.初始化</a><ul><li><a href="#t33.1 创建项目">3.1 创建项目</a></li><li><a href="#t43.2 创建脚本">3.2 创建脚本</a></li><li><a href="#t53.3 访问">3.3 访问</a></li></ul></li><li><a href="#t64.跑通路由">4.跑通路由</a><ul><li><a href="#t74.1 知识点">4.1 知识点</a></li><li><a href="#t84.2 安装依赖包">4.2 安装依赖包</a></li><li><a href="#t94.3 .babelrc">4.3 .babelrc</a></li><li><a href="#t104.4 next.config.js">4.4 next.config.js</a></li><li><a href="#t114.5 pages_app.tsx">4.5 pages_app.tsx</a></li><li><a href="#t124.6 pages\index.tsx">4.6 pages\index.tsx</a></li><li><a href="#t134.7 pages\user.tsx">4.7 pages\user.tsx</a></li><li><a href="#t144.8 pages\profile.tsx">4.8 pages\profile.tsx</a></li></ul></li><li><a href="#t155.二级路由">5.二级路由</a><ul><li><a href="#t165.1 知识点">5.1 知识点</a></li><li><a href="#t175.2 执行顺序">5.2 执行顺序</a><ul><li><a href="#t185.2.1 后台顺序">5.2.1 后台顺序</a></li><li><a href="#t195.2.2 前台顺序">5.2.2 前台顺序</a></li></ul></li><li><a href="#t205.3 pages_app.tsx">5.3 pages_app.tsx</a></li><li><a href="#t215.4 user\index.tsx">5.4 user\index.tsx</a></li><li><a href="#t225.5 user\list.tsx">5.5 user\list.tsx</a></li><li><a href="#t235.6 user\add.tsx">5.6 user\add.tsx</a></li></ul></li><li><a href="#t246.集成koa">6.集成koa</a><ul><li><a href="#t256.1 知识点">6.1 知识点</a></li><li><a href="#t266.2 安装依赖">6.2 安装依赖</a></li><li><a href="#t276.3 client\index.js">6.3 client\index.js</a></li><li><a href="#t286.4 package.json">6.4 package.json</a></li></ul></li><li><a href="#t297.调用接口">7.调用接口</a><ul><li><a href="#t307.1 utils\axios.tsx">7.1 utils\axios.tsx</a></li><li><a href="#t317.2 pages\user\add.tsx">7.2 pages\user\add.tsx</a></li><li><a href="#t327.3 user\list.tsx">7.3 user\list.tsx</a></li></ul></li><li><a href="#t338.用户详情">8.用户详情</a><ul><li><a href="#t348.1 知识点">8.1 知识点</a></li><li><a href="#t358.2 user\detail.tsx">8.2 user\detail.tsx</a></li><li><a href="#t368.2 components\UserInfo.tsx">8.2 components\UserInfo.tsx</a></li><li><a href="#t378.3 client\index.js">8.3 client\index.js</a></li></ul></li><li><a href="#t389.登录">9.登录</a><ul><li><a href="#t399.1 pages\login.tsx">9.1 pages\login.tsx</a></li></ul></li><li><a href="#t4010.集成redux">10.集成redux</a><ul><li><a href="#t4110.1 安装依赖">10.1 安装依赖</a></li><li><a href="#t4210.2 pages_app.tsx">10.2 pages_app.tsx</a></li><li><a href="#t4310.3 user\add.tsx">10.3 user\add.tsx</a></li><li><a href="#t4410.4 action-types.tsx">10.4 action-types.tsx</a></li><li><a href="#t4510.5 store\index.tsx">10.5 store\index.tsx</a></li></ul></li><li><a href="#t4611.loading效果">11.loading效果</a><ul><li><a href="#t4711.1 pages_app.tsx">11.1 pages_app.tsx</a></li></ul></li><li><a href="#t4812.受保护路由">12.受保护路由</a><ul><li><a href="#t4912.1 pages\profile.tsx">12.1 pages\profile.tsx</a></li></ul></li><li><a href="#t5013.自定义Document">13.自定义Document</a><ul><li><a href="#t5113.1 pages_document.js">13.1 pages_document.js</a></li><li><a href="#t5213.2 pages\index.tsx">13.2 pages\index.tsx</a></li></ul></li><li><a href="#t5314.服务端">14.服务端</a><ul><li><a href="#t5414.1 api\index.js">14.1 api\index.js</a></li><li><a href="#t5514.2 api\config.js">14.2 api\config.js</a></li><li><a href="#t5614.3 api\db.js">14.3 api\db.js</a></li></ul></li></ul>
+        <ul><li><a href="89.nextjs.html#t01. 同构">1. 同构</a></li><li><a href="89.nextjs.html#t12.Next.js">2.Next.js</a></li><li><a href="89.nextjs.html#t23.初始化">3.初始化</a><ul><li><a href="89.nextjs.html#t33.1 创建项目">3.1 创建项目</a></li><li><a href="89.nextjs.html#t43.2 创建脚本">3.2 创建脚本</a></li><li><a href="89.nextjs.html#t53.3 访问">3.3 访问</a></li></ul></li><li><a href="89.nextjs.html#t64.跑通路由">4.跑通路由</a><ul><li><a href="89.nextjs.html#t74.1 知识点">4.1 知识点</a></li><li><a href="89.nextjs.html#t84.2 安装依赖包">4.2 安装依赖包</a></li><li><a href="89.nextjs.html#t94.3 .babelrc">4.3 .babelrc</a></li><li><a href="89.nextjs.html#t104.4 next.config.js">4.4 next.config.js</a></li><li><a href="89.nextjs.html#t114.5 pages_app.tsx">4.5 pages_app.tsx</a></li><li><a href="89.nextjs.html#t124.6 pages\index.tsx">4.6 pages\index.tsx</a></li><li><a href="89.nextjs.html#t134.7 pages\user.tsx">4.7 pages\user.tsx</a></li><li><a href="89.nextjs.html#t144.8 pages\profile.tsx">4.8 pages\profile.tsx</a></li></ul></li><li><a href="89.nextjs.html#t155.二级路由">5.二级路由</a><ul><li><a href="89.nextjs.html#t165.1 知识点">5.1 知识点</a></li><li><a href="89.nextjs.html#t175.2 执行顺序">5.2 执行顺序</a><ul><li><a href="89.nextjs.html#t185.2.1 后台顺序">5.2.1 后台顺序</a></li><li><a href="89.nextjs.html#t195.2.2 前台顺序">5.2.2 前台顺序</a></li></ul></li><li><a href="89.nextjs.html#t205.3 pages_app.tsx">5.3 pages_app.tsx</a></li><li><a href="89.nextjs.html#t215.4 user\index.tsx">5.4 user\index.tsx</a></li><li><a href="89.nextjs.html#t225.5 user\list.tsx">5.5 user\list.tsx</a></li><li><a href="89.nextjs.html#t235.6 user\add.tsx">5.6 user\add.tsx</a></li></ul></li><li><a href="89.nextjs.html#t246.集成koa">6.集成koa</a><ul><li><a href="89.nextjs.html#t256.1 知识点">6.1 知识点</a></li><li><a href="89.nextjs.html#t266.2 安装依赖">6.2 安装依赖</a></li><li><a href="89.nextjs.html#t276.3 client\index.js">6.3 client\index.js</a></li><li><a href="89.nextjs.html#t286.4 package.json">6.4 package.json</a></li></ul></li><li><a href="89.nextjs.html#t297.调用接口">7.调用接口</a><ul><li><a href="89.nextjs.html#t307.1 utils\axios.tsx">7.1 utils\axios.tsx</a></li><li><a href="89.nextjs.html#t317.2 pages\user\add.tsx">7.2 pages\user\add.tsx</a></li><li><a href="89.nextjs.html#t327.3 user\list.tsx">7.3 user\list.tsx</a></li></ul></li><li><a href="89.nextjs.html#t338.用户详情">8.用户详情</a><ul><li><a href="89.nextjs.html#t348.1 知识点">8.1 知识点</a></li><li><a href="89.nextjs.html#t358.2 user\detail.tsx">8.2 user\detail.tsx</a></li><li><a href="89.nextjs.html#t368.2 components\UserInfo.tsx">8.2 components\UserInfo.tsx</a></li><li><a href="89.nextjs.html#t378.3 client\index.js">8.3 client\index.js</a></li></ul></li><li><a href="89.nextjs.html#t389.登录">9.登录</a><ul><li><a href="89.nextjs.html#t399.1 pages\login.tsx">9.1 pages\login.tsx</a></li></ul></li><li><a href="89.nextjs.html#t4010.集成redux">10.集成redux</a><ul><li><a href="89.nextjs.html#t4110.1 安装依赖">10.1 安装依赖</a></li><li><a href="89.nextjs.html#t4210.2 pages_app.tsx">10.2 pages_app.tsx</a></li><li><a href="89.nextjs.html#t4310.3 user\add.tsx">10.3 user\add.tsx</a></li><li><a href="89.nextjs.html#t4410.4 action-types.tsx">10.4 action-types.tsx</a></li><li><a href="89.nextjs.html#t4510.5 store\index.tsx">10.5 store\index.tsx</a></li></ul></li><li><a href="89.nextjs.html#t4611.loading效果">11.loading效果</a><ul><li><a href="89.nextjs.html#t4711.1 pages_app.tsx">11.1 pages_app.tsx</a></li></ul></li><li><a href="89.nextjs.html#t4812.受保护路由">12.受保护路由</a><ul><li><a href="89.nextjs.html#t4912.1 pages\profile.tsx">12.1 pages\profile.tsx</a></li></ul></li><li><a href="89.nextjs.html#t5013.自定义Document">13.自定义Document</a><ul><li><a href="89.nextjs.html#t5113.1 pages_document.js">13.1 pages_document.js</a></li><li><a href="89.nextjs.html#t5213.2 pages\index.tsx">13.2 pages\index.tsx</a></li></ul></li><li><a href="89.nextjs.html#t5314.服务端">14.服务端</a><ul><li><a href="89.nextjs.html#t5414.1 api\index.js">14.1 api\index.js</a></li><li><a href="89.nextjs.html#t5514.2 api\config.js">14.2 api\config.js</a></li><li><a href="89.nextjs.html#t5614.3 api\db.js">14.3 api\db.js</a></li></ul></li></ul>
     </div>
-    
     <div class="content markdown-body">
-        <h2 id="t01. &#x540C;&#x6784;">1. &#x540C;&#x6784; <a href="#t01. &#x540C;&#x6784;"> # </a></h2>
+        <h2 id="t01. &#x540C;&#x6784;">1. &#x540C;&#x6784; <a href="89.nextjs.html#t01. &#x540C;&#x6784;"> # </a></h2>
 <ul>
 <li>&#x540C;&#x6784;&#x7684;&#x9879;&#x76EE;&#x652F;&#x6301;&#x5BA2;&#x6237;&#x7AEF;&#x6E32;&#x67D3;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x6E32;&#x67D3;</li>
 <li>&#x5BA2;&#x6237;&#x7AEF;&#x6E32;&#x67D3;&#x7F3A;&#x70B9;<ul>
@@ -34,7 +43,7 @@
 </li>
 </ul>
 <p><img src="http://img.zhufengpeixun.cn/renderflow.png" alt="renderflow"></p>
-<h2 id="t12.Next.js">2.Next.js <a href="#t12.Next.js"> # </a></h2>
+<h2 id="t12.Next.js">2.Next.js <a href="89.nextjs.html#t12.Next.js"> # </a></h2>
 <ul>
 <li><a href="https://nextjs.org/docs">Next.js&#x82F1;&#x6587;&#x6587;&#x6863;</a> <a href="https://nextjs.frontendx.cn/docs/">Next.js&#x4E2D;&#x6587;&#x6587;&#x6863;</a> &#x662F;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x7684; React &#x670D;&#x52A1;&#x7AEF;&#x6E32;&#x67D3;&#x5E94;&#x7528;&#x6846;&#x67B6;</li>
 <li>&#x9ED8;&#x8BA4;&#x652F;&#x6301;&#x670D;&#x52A1;&#x7AEF;&#x6E32;&#x67D3;</li>
@@ -45,15 +54,15 @@
 <li>&#x652F;&#x6301; Babel &#x548C; Webpack &#x7684;&#x914D;&#x7F6E;&#x9879;&#x5B9A;&#x5236;</li>
 <li>&#x9759;&#x6001;&#x6587;&#x4EF6;&#x670D;&#x52A1; public</li>
 </ul>
-<h2 id="t23.&#x521D;&#x59CB;&#x5316;">3.&#x521D;&#x59CB;&#x5316; <a href="#t23.&#x521D;&#x59CB;&#x5316;"> # </a></h2>
-<h3 id="t33.1 &#x521B;&#x5EFA;&#x9879;&#x76EE;">3.1 &#x521B;&#x5EFA;&#x9879;&#x76EE; <a href="#t33.1 &#x521B;&#x5EFA;&#x9879;&#x76EE;"> # </a></h3>
+<h2 id="t23.&#x521D;&#x59CB;&#x5316;">3.&#x521D;&#x59CB;&#x5316; <a href="89.nextjs.html#t23.&#x521D;&#x59CB;&#x5316;"> # </a></h2>
+<h3 id="t33.1 &#x521B;&#x5EFA;&#x9879;&#x76EE;">3.1 &#x521B;&#x5EFA;&#x9879;&#x76EE; <a href="89.nextjs.html#t33.1 &#x521B;&#x5EFA;&#x9879;&#x76EE;"> # </a></h3>
 <pre><code class="lang-js">mkdir zhufengnextjs
 cd zhufengnextjs
 npm init -y
 yarn add --dev typescript react @types/react react-dom @types/node next axios
 mkdir pages
 </code></pre>
-<h3 id="t43.2 &#x521B;&#x5EFA;&#x811A;&#x672C;">3.2 &#x521B;&#x5EFA;&#x811A;&#x672C; <a href="#t43.2 &#x521B;&#x5EFA;&#x811A;&#x672C;"> # </a></h3>
+<h3 id="t43.2 &#x521B;&#x5EFA;&#x811A;&#x672C;">3.2 &#x521B;&#x5EFA;&#x811A;&#x672C; <a href="89.nextjs.html#t43.2 &#x521B;&#x5EFA;&#x811A;&#x672C;"> # </a></h3>
 <p>package.json</p>
 <pre><code class="lang-json">{
   <span class="hljs-attr">&quot;scripts&quot;</span>: {
@@ -64,7 +73,7 @@ mkdir pages
 }
 </code></pre>
 <p><a href="https://github.com/zeit/next.js/blob/canary/.gitignore">https://github.com/zeit/next.js/blob/canary/.gitignore</a></p>
-<h3 id="t53.3 &#x8BBF;&#x95EE;">3.3 &#x8BBF;&#x95EE; <a href="#t53.3 &#x8BBF;&#x95EE;"> # </a></h3>
+<h3 id="t53.3 &#x8BBF;&#x95EE;">3.3 &#x8BBF;&#x95EE; <a href="89.nextjs.html#t53.3 &#x8BBF;&#x95EE;"> # </a></h3>
 <ul>
 <li>&#x4EE5; ./pages&#x4F5C;&#x4E3A;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x6E32;&#x67D3;&#x548C;&#x7D22;&#x5F15;&#x7684;&#x6839;&#x76EE;&#x5F55;</li>
 <li><code>public</code>&#x9759;&#x6001;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x6620;&#x5C04;</li>
@@ -79,18 +88,18 @@ mkdir pages
 </code></pre>
 <pre><code class="lang-js">curl http:<span class="hljs-comment">//localhost:3000/</span>
 </code></pre>
-<h2 id="t64.&#x8DD1;&#x901A;&#x8DEF;&#x7531;">4.&#x8DD1;&#x901A;&#x8DEF;&#x7531; <a href="#t64.&#x8DD1;&#x901A;&#x8DEF;&#x7531;"> # </a></h2>
-<h3 id="t74.1 &#x77E5;&#x8BC6;&#x70B9;">4.1 &#x77E5;&#x8BC6;&#x70B9; <a href="#t74.1 &#x77E5;&#x8BC6;&#x70B9;"> # </a></h3>
+<h2 id="t64.&#x8DD1;&#x901A;&#x8DEF;&#x7531;">4.&#x8DD1;&#x901A;&#x8DEF;&#x7531; <a href="89.nextjs.html#t64.&#x8DD1;&#x901A;&#x8DEF;&#x7531;"> # </a></h2>
+<h3 id="t74.1 &#x77E5;&#x8BC6;&#x70B9;">4.1 &#x77E5;&#x8BC6;&#x70B9; <a href="89.nextjs.html#t74.1 &#x77E5;&#x8BC6;&#x70B9;"> # </a></h3>
 <ul>
 <li>&#x7ED1;&#x5B9A; <code>styled-jsx</code> &#x6765;&#x751F;&#x6210;&#x72EC;&#x7ACB;&#x4F5C;&#x7528;&#x57DF;&#x7684; <code>CSS</code></li>
 <li>&#x5982;&#x4F55;&#x652F;&#x6301;<code>css</code></li>
 <li>&#x5982;&#x4F55;&#x652F;&#x6301;<code>antd</code>&#x5E76;&#x5B9E;&#x73B0;&#x6309;&#x9700;&#x52A0;&#x8F7D;</li>
 <li>&#x8DEF;&#x7531;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x4E24;&#x79CD;&#x8DF3;&#x8F6C;&#x8DEF;&#x5F84;&#x7684;&#x65B9;&#x6CD5;</li>
 </ul>
-<h3 id="t84.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;">4.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305; <a href="#t84.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;"> # </a></h3>
+<h3 id="t84.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;">4.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305; <a href="89.nextjs.html#t84.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;"> # </a></h3>
 <pre><code class="lang-js">yarn add @zeit/next-css antd babel-plugin-<span class="hljs-keyword">import</span>
 </code></pre>
-<h3 id="t94.3 .babelrc">4.3 .babelrc <a href="#t94.3 .babelrc"> # </a></h3>
+<h3 id="t94.3 .babelrc">4.3 .babelrc <a href="89.nextjs.html#t94.3 .babelrc"> # </a></h3>
 <p>.babelrc</p>
 <pre><code class="lang-json">{
     <span class="hljs-attr">&quot;presets&quot;</span>: [
@@ -106,7 +115,7 @@ mkdir pages
     ]
 }
 </code></pre>
-<h3 id="t104.4 next.config.js">4.4 next.config.js <a href="#t104.4 next.config.js"> # </a></h3>
+<h3 id="t104.4 next.config.js">4.4 next.config.js <a href="89.nextjs.html#t104.4 next.config.js"> # </a></h3>
 <ul>
 <li><a href="https://github.com/zeit/next-plugins/tree/master/packages/next-css">next-css</a>&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5F15;&#x7528;CSS</li>
 </ul>
@@ -119,7 +128,7 @@ mkdir pages
 
 <span class="hljs-built_in">module</span>.exports = withCSS({})
 </code></pre>
-<h3 id="t114.5 pages_app.tsx">4.5 pages_app.tsx <a href="#t114.5 pages_app.tsx"> # </a></h3>
+<h3 id="t114.5 pages_app.tsx">4.5 pages_app.tsx <a href="89.nextjs.html#t114.5 pages_app.tsx"> # </a></h3>
 <ul>
 <li><code>App</code>&#x7EC4;&#x4EF6;&#x6765;&#x521D;&#x59CB;&#x5316;&#x9875;&#x9762;,&#x4F60;&#x53EF;&#x4EE5;&#x91CD;&#x5199;&#x5B83;&#x6765;&#x63A7;&#x5236;&#x9875;&#x9762;&#x521D;&#x59CB;&#x5316;<ul>
 <li>&#x5F53;&#x9875;&#x9762;&#x53D8;&#x5316;&#x65F6;&#x4FDD;&#x6301;&#x9875;&#x9762;&#x5E03;&#x5C40;</li>
@@ -141,40 +150,40 @@ mkdir pages
         <span class="hljs-keyword">let</span> pathname = <span class="hljs-keyword">this</span>.props.router.pathname;
         pathname = <span class="hljs-string">&apos;/&apos;</span> + (pathname.split(<span class="hljs-string">&apos;/&apos;</span>)[<span class="hljs-number">1</span>]);
         <span class="hljs-keyword">return</span> (
-            &lt;Container&gt;
-                &lt;style jsx&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Container</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">jsx</span>&gt;</span>
                      {`a{display:inline-block!important;}`}
-                &lt;/style&gt;
-                &lt;Layout&gt;
-                    &lt;Header className=&quot;header&quot;&gt;
-                       &lt;img src=&quot;/images/jglogo.png&quot; style={{ width: 120, height: 31, margin: &apos;16px 24px 16px 0px&apos;, float: &apos;left&apos; }} /&gt;
-                        &lt;Menu theme=&quot;dark&quot; mode=&quot;horizontal&quot; style={{ lineHeight: &apos;64px&apos;, display: &apos;inline-block&apos; }}
-                            selectedKeys={[pathname]} 
-                            defaultSelectedKeys={[pathname]}&gt;
-                            &lt;Menu.Item key=&quot;/&quot;&gt;
-                                &lt;Icon type=&quot;home&quot; /&gt;&lt;Link href=&quot;/&quot;&gt;&lt;a&gt;&#x9996;&#x9875;&lt;/a&gt;&lt;/Link&gt;
-                            &lt;/Menu.Item&gt;
-                            &lt;Menu.Item key=&quot;/user&quot;&gt;
-                                &lt;Icon type=&quot;/user&quot; /&gt; &lt;Link href=&quot;/user&quot; &gt;&lt;a&gt;&#x7528;&#x6237;&#x7BA1;&#x7406;&lt;/a&gt;&lt;/Link&gt;
-                            &lt;/Menu.Item&gt;
-                            &lt;Menu.Item key=&quot;/profile&quot;&gt;
-                                &lt;Icon type=&quot;profile&quot; /&gt;&lt;Link href=&quot;/profile&quot;&gt;&lt;a&gt;&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;&lt;/a&gt;&lt;/Link&gt;
-                            &lt;/Menu.Item&gt;
-                            &lt;Menu.Item key=&quot;/login&quot;&gt;
-                                &lt;Icon type=&quot;login&quot; /&gt;&lt;Link href=&quot;/login&quot;&gt;&lt;a&gt;&#x767B;&#x5F55;&lt;/a&gt;&lt;/Link&gt;
-                            &lt;/Menu.Item&gt;
-                        &lt;/Menu&gt;
-                    &lt;/Header&gt;
-                    &lt;Component /&gt;
-                    &lt;Footer style={{ textAlign: &apos;center&apos; }} &gt;@copyright &#x73E0;&#x5CF0;&#x67B6;&#x6784;&lt;/Footer&gt;
-                &lt;/Layout&gt;
-            &lt;/Container&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Layout</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span>
+                       <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/images/jglogo.png&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">width:</span> <span class="hljs-attr">120</span>, <span class="hljs-attr">height:</span> <span class="hljs-attr">31</span>, <span class="hljs-attr">margin:</span> &apos;<span class="hljs-attr">16px</span> <span class="hljs-attr">24px</span> <span class="hljs-attr">16px</span> <span class="hljs-attr">0px</span>&apos;, <span class="hljs-attr">float:</span> &apos;<span class="hljs-attr">left</span>&apos; }} /&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu</span> <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;dark&quot;</span> <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;horizontal&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">lineHeight:</span> &apos;<span class="hljs-attr">64px</span>&apos;, <span class="hljs-attr">display:</span> &apos;<span class="hljs-attr">inline-block</span>&apos; }}
+                            <span class="hljs-attr">selectedKeys</span>=<span class="hljs-string">{[pathname]}</span> 
+                            <span class="hljs-attr">defaultSelectedKeys</span>=<span class="hljs-string">{[pathname]}</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;home&quot;</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&#x9996;&#x9875;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/user&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;/user&quot;</span> /&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/user&quot;</span> &gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&#x7528;&#x6237;&#x7BA1;&#x7406;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/profile&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;profile&quot;</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/profile&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/login&quot;</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;login&quot;</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/login&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&#x767B;&#x5F55;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Menu</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Header</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Component</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Footer</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">textAlign:</span> &apos;<span class="hljs-attr">center</span>&apos; }} &gt;</span>@copyright &#x73E0;&#x5CF0;&#x67B6;&#x6784;<span class="hljs-tag">&lt;/<span class="hljs-name">Footer</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Container</span>&gt;</span></span>
         )
     }
 }
-export default withRouter(LayoutApp);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> withRouter(LayoutApp);
 </code></pre>
-<h3 id="t124.6 pages\index.tsx">4.6 pages\index.tsx <a href="#t124.6 pages\index.tsx"> # </a></h3>
+<h3 id="t124.6 pages\index.tsx">4.6 pages\index.tsx <a href="89.nextjs.html#t124.6 pages\index.tsx"> # </a></h3>
 <p>pages\index.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/router&apos;</span>
 <span class="hljs-keyword">import</span> { Button, Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -189,7 +198,7 @@ export default withRouter(LayoutApp);
     )
 }
 </code></pre>
-<h3 id="t134.7 pages\user.tsx">4.7 pages\user.tsx <a href="#t134.7 pages\user.tsx"> # </a></h3>
+<h3 id="t134.7 pages\user.tsx">4.7 pages\user.tsx <a href="89.nextjs.html#t134.7 pages\user.tsx"> # </a></h3>
 <p>pages\user.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/router&apos;</span>;
 <span class="hljs-keyword">import</span> { Button, Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -203,7 +212,7 @@ export default withRouter(LayoutApp);
     )
 }
 </code></pre>
-<h3 id="t144.8 pages\profile.tsx">4.8 pages\profile.tsx <a href="#t144.8 pages\profile.tsx"> # </a></h3>
+<h3 id="t144.8 pages\profile.tsx">4.8 pages\profile.tsx <a href="89.nextjs.html#t144.8 pages\profile.tsx"> # </a></h3>
 <p>pages\profile.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/router&apos;</span>;
 <span class="hljs-keyword">import</span> { Button, Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -217,20 +226,20 @@ export default withRouter(LayoutApp);
     )
 }
 </code></pre>
-<h2 id="t155.&#x4E8C;&#x7EA7;&#x8DEF;&#x7531;">5.&#x4E8C;&#x7EA7;&#x8DEF;&#x7531; <a href="#t155.&#x4E8C;&#x7EA7;&#x8DEF;&#x7531;"> # </a></h2>
-<h3 id="t165.1 &#x77E5;&#x8BC6;&#x70B9;">5.1 &#x77E5;&#x8BC6;&#x70B9; <a href="#t165.1 &#x77E5;&#x8BC6;&#x70B9;"> # </a></h3>
+<h2 id="t155.&#x4E8C;&#x7EA7;&#x8DEF;&#x7531;">5.&#x4E8C;&#x7EA7;&#x8DEF;&#x7531; <a href="89.nextjs.html#t155.&#x4E8C;&#x7EA7;&#x8DEF;&#x7531;"> # </a></h2>
+<h3 id="t165.1 &#x77E5;&#x8BC6;&#x70B9;">5.1 &#x77E5;&#x8BC6;&#x70B9; <a href="89.nextjs.html#t165.1 &#x77E5;&#x8BC6;&#x70B9;"> # </a></h3>
 <ul>
 <li>&#x652F;&#x6301;&#x4E8C;&#x7EA7;&#x8DEF;&#x7531;</li>
 <li>&#x5B9E;&#x73B0;&#x4E8C;&#x7EA7;&#x5E03;&#x5C40;&#x7EC4;&#x4EF6;</li>
 <li>&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;&#x4F20;&#x9012;&#x53C2;&#x6570;</li>
 <li>&#x9875;&#x9762;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;<code>getInitialProps</code>&#x83B7;&#x53D6;&#x6570;&#x636E;</li>
 </ul>
-<h3 id="t175.2 &#x6267;&#x884C;&#x987A;&#x5E8F;">5.2 &#x6267;&#x884C;&#x987A;&#x5E8F; <a href="#t175.2 &#x6267;&#x884C;&#x987A;&#x5E8F;"> # </a></h3>
-<h4 id="t185.2.1 &#x540E;&#x53F0;&#x987A;&#x5E8F;">5.2.1 &#x540E;&#x53F0;&#x987A;&#x5E8F; <a href="#t185.2.1 &#x540E;&#x53F0;&#x987A;&#x5E8F;"> # </a></h4>
+<h3 id="t175.2 &#x6267;&#x884C;&#x987A;&#x5E8F;">5.2 &#x6267;&#x884C;&#x987A;&#x5E8F; <a href="89.nextjs.html#t175.2 &#x6267;&#x884C;&#x987A;&#x5E8F;"> # </a></h3>
+<h4 id="t185.2.1 &#x540E;&#x53F0;&#x987A;&#x5E8F;">5.2.1 &#x540E;&#x53F0;&#x987A;&#x5E8F; <a href="89.nextjs.html#t185.2.1 &#x540E;&#x53F0;&#x987A;&#x5E8F;"> # </a></h4>
 <p><img src="http://img.zhufengpeixun.cn/severflow.png" alt="severflow.png"></p>
-<h4 id="t195.2.2 &#x524D;&#x53F0;&#x987A;&#x5E8F;">5.2.2 &#x524D;&#x53F0;&#x987A;&#x5E8F; <a href="#t195.2.2 &#x524D;&#x53F0;&#x987A;&#x5E8F;"> # </a></h4>
+<h4 id="t195.2.2 &#x524D;&#x53F0;&#x987A;&#x5E8F;">5.2.2 &#x524D;&#x53F0;&#x987A;&#x5E8F; <a href="89.nextjs.html#t195.2.2 &#x524D;&#x53F0;&#x987A;&#x5E8F;"> # </a></h4>
 <p><img src="http://img.zhufengpeixun.cn/clientflow.png" alt="clientflow.png"></p>
-<h3 id="t205.3 pages_app.tsx">5.3 pages_app.tsx <a href="#t205.3 pages_app.tsx"> # </a></h3>
+<h3 id="t205.3 pages_app.tsx">5.3 pages_app.tsx <a href="89.nextjs.html#t205.3 pages_app.tsx"> # </a></h3>
 <p>pages_app.tsx</p>
 <pre><code class="lang-diff">import App from &apos;next/app&apos;;
 import Link from &apos;next/link&apos;;
@@ -285,7 +294,7 @@ class LayoutApp extends App&lt;any&gt; {
 }
 export default withRouter(LayoutApp);
 </code></pre>
-<h3 id="t215.4 user\index.tsx">5.4 user\index.tsx <a href="#t215.4 user\index.tsx"> # </a></h3>
+<h3 id="t215.4 user\index.tsx">5.4 user\index.tsx <a href="89.nextjs.html#t215.4 user\index.tsx"> # </a></h3>
 <p>pages\user\index.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> { withRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/router&apos;</span>;
 <span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/link&apos;</span>;
@@ -293,35 +302,35 @@ export default withRouter(LayoutApp);
 <span class="hljs-keyword">const</span> { Sider, Content } = Layout;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserLayout</span>(<span class="hljs-params">props</span>) </span>{
     <span class="hljs-keyword">return</span> (
-        &lt;&gt;
-            &lt;style jsx&gt;
+        <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">jsx</span>&gt;</span>
                  {`a{display:inline-block!important;}`}
-            &lt;/style&gt;
-            &lt;Layout&gt;
-                &lt;Sider&gt;
-                    &lt;Menu
-                        theme=&quot;dark&quot;
-                        mode=&quot;inline&quot;
-                        defaultSelectedKeys={[props.router.pathname]}
-                    &gt;
-                        &lt;Menu.Item key=&quot;/user/list&quot;&gt;
-                            &lt;Icon type=&quot;user&quot; /&gt;&lt;Link href=&quot;/user/list&quot;&gt;&lt;a&gt;&#x7528;&#x6237;&#x5217;&#x8868;&lt;/a&gt;&lt;/Link&gt;
-                        &lt;/Menu.Item&gt;
-                        &lt;Menu.Item key=&quot;/user/add&quot;&gt;
-                            &lt;Icon type=&quot;plus&quot; /&gt;&lt;Link href=&quot;/user/add&quot;&gt;&lt;a&gt;&#x6DFB;&#x52A0;&#x7528;&#x6237;&lt;/a&gt;&lt;/Link&gt;
-                        &lt;/Menu.Item&gt;
-                    &lt;/Menu&gt;
-                &lt;/Sider&gt;
-                &lt;Content style={{ padding: 8 }}&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Layout</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Sider</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Menu</span>
+                        <span class="hljs-attr">theme</span>=<span class="hljs-string">&quot;dark&quot;</span>
+                        <span class="hljs-attr">mode</span>=<span class="hljs-string">&quot;inline&quot;</span>
+                        <span class="hljs-attr">defaultSelectedKeys</span>=<span class="hljs-string">{[props.router.pathname]}</span>
+                    &gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/user/list&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;user&quot;</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/user/list&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&#x7528;&#x6237;&#x5217;&#x8868;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Menu.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">&quot;/user/add&quot;</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;plus&quot;</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/user/add&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&#x6DFB;&#x52A0;&#x7528;&#x6237;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Menu.Item</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">Menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Sider</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">padding:</span> <span class="hljs-attr">8</span> }}&gt;</span>
                     {props.children}
-                &lt;/Content&gt;
-            &lt;/Layout&gt;
-        &lt;/&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span>
+        <span class="hljs-tag">&lt;/&gt;</span></span>
     )
 }
-export default withRouter(UserLayout);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> withRouter(UserLayout);
 </code></pre>
-<h3 id="t225.5 user\list.tsx">5.5 user\list.tsx <a href="#t225.5 user\list.tsx"> # </a></h3>
+<h3 id="t225.5 user\list.tsx">5.5 user\list.tsx <a href="89.nextjs.html#t225.5 user\list.tsx"> # </a></h3>
 <p>pages\user\list.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> UserLayout <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./index&apos;</span>;
 <span class="hljs-keyword">import</span> { List } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -329,33 +338,33 @@ export default withRouter(UserLayout);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UseList</span>(<span class="hljs-params">props</span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;4.UseList.render&apos;</span>, props);
     <span class="hljs-keyword">return</span> (
-        &lt;UserLayout&gt;
-            &lt;List
-                header={&lt;div&gt;&#x7528;&#x6237;&#x5217;&#x8868;&lt;/div&gt;}
-                footer={&lt;div&gt;&#x5171;&#x8BA1;&#x591A;&#x5C11;{props.list.length}&#x4E2A;&#x7528;&#x6237;&lt;/div&gt;}
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserLayout</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">List</span>
+                <span class="hljs-attr">header</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">div</span>&gt;</span>&#x7528;&#x6237;&#x5217;&#x8868;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>}
+                footer={<span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>&#x5171;&#x8BA1;&#x591A;&#x5C11;{props.list.length}&#x4E2A;&#x7528;&#x6237;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>}
                 bordered
                 dataSource={props.list}
                 renderItem={(item: any) =&gt; (
-                    &lt;List.Item key={item._id}&gt;
-                        &lt;Link as={`/user/detail/${item._id}`} href={{ pathname: `/user/detail`, query: { id: item._id } }}&gt;&lt;a&gt;{item.username}&lt;/a&gt;&lt;/Link&gt;
-                    &lt;/List.Item&gt;
+                    <span class="hljs-tag">&lt;<span class="hljs-name">List.Item</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item._id}</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">as</span>=<span class="hljs-string">{</span>`/<span class="hljs-attr">user</span>/<span class="hljs-attr">detail</span>/${<span class="hljs-attr">item._id</span>}`} <span class="hljs-attr">href</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">pathname:</span> `/<span class="hljs-attr">user</span>/<span class="hljs-attr">detail</span>`, <span class="hljs-attr">query:</span> { <span class="hljs-attr">id:</span> <span class="hljs-attr">item._id</span> } }}&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>{item.username}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">List.Item</span>&gt;</span>
                 )}
             /&gt;
-        &lt;/UserLayout&gt;
+        <span class="hljs-tag">&lt;/<span class="hljs-name">UserLayout</span>&gt;</span></span>
     )
 }
 
-UseList.getInitialProps = async (ctx) =&gt; {
-    if (ctx.req) { ctx.req = &apos;req&apos;; }
-    if (ctx.res) { ctx.res = &apos;res&apos;; }
-    console.log(&apos;2.UseList.getInitialProps ctx&apos;, ctx);
-    let list = [{ _id: 1, username: &apos;zhangsan&apos;, password: &apos;1&apos; }, { _id: 2, username: &apos;lisi&apos;, password: &apos;2&apos; }];
-    return { list };
+UseList.getInitialProps = <span class="hljs-keyword">async</span> (ctx) =&gt; {
+    <span class="hljs-keyword">if</span> (ctx.req) { ctx.req = <span class="hljs-string">&apos;req&apos;</span>; }
+    <span class="hljs-keyword">if</span> (ctx.res) { ctx.res = <span class="hljs-string">&apos;res&apos;</span>; }
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;2.UseList.getInitialProps ctx&apos;</span>, ctx);
+    <span class="hljs-keyword">let</span> list = [{ <span class="hljs-attr">_id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">username</span>: <span class="hljs-string">&apos;zhangsan&apos;</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">&apos;1&apos;</span> }, { <span class="hljs-attr">_id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">username</span>: <span class="hljs-string">&apos;lisi&apos;</span>, <span class="hljs-attr">password</span>: <span class="hljs-string">&apos;2&apos;</span> }];
+    <span class="hljs-keyword">return</span> { list };
 }
 
-export default UseList;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> UseList;
 </code></pre>
-<h3 id="t235.6 user\add.tsx">5.6 user\add.tsx <a href="#t235.6 user\add.tsx"> # </a></h3>
+<h3 id="t235.6 user\add.tsx">5.6 user\add.tsx <a href="89.nextjs.html#t235.6 user\add.tsx"> # </a></h3>
 <p>pages\user\add.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> UserLayout <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./index&apos;</span>;
 <span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/router&apos;</span>;
@@ -363,54 +372,54 @@ export default UseList;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">UserAdd</span>(<span class="hljs-params">props</span>) </span>{
     <span class="hljs-keyword">const</span> { getFieldDecorator } = props.form;
     <span class="hljs-keyword">return</span> (
-        &lt;UserLayout&gt;
-            &lt;Form className=&quot;login-form&quot; style={{ maxWidth: &apos;300px&apos; }}&gt;
-                &lt;Form.Item&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserLayout</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;login-form&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">maxWidth:</span> &apos;<span class="hljs-attr">300px</span>&apos; }}&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Form.Item</span>&gt;</span>
                     {getFieldDecorator(&apos;username&apos;, {
                         rules: [{ required: true, message: &apos;Please input your username!&apos; }],
                     })(
-                        &lt;Input
-                            prefix={&lt;Icon type=&quot;user&quot; style={{ color: &apos;rgba(0,0,0,.25)&apos; }} /&gt;}
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                            <span class="hljs-attr">prefix</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;user&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &apos;<span class="hljs-attr">rgba</span>(<span class="hljs-attr">0</span>,<span class="hljs-attr">0</span>,<span class="hljs-attr">0</span>,<span class="hljs-attr">.25</span>)&apos; }} /&gt;</span>}
                             placeholder=&quot;Username&quot;
                         /&gt;,
                     )}
-                &lt;/Form.Item&gt;
-                &lt;Form.Item&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Form.Item</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Form.Item</span>&gt;</span>
                     {getFieldDecorator(&apos;password&apos;, {
                         rules: [{ required: true, message: &apos;Please input your Password!&apos; }],
                     })(
-                        &lt;Input
-                            prefix={&lt;Icon type=&quot;lock&quot; style={{ color: &apos;rgba(0,0,0,.25)&apos; }} /&gt;}
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                            <span class="hljs-attr">prefix</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;lock&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &apos;<span class="hljs-attr">rgba</span>(<span class="hljs-attr">0</span>,<span class="hljs-attr">0</span>,<span class="hljs-attr">0</span>,<span class="hljs-attr">.25</span>)&apos; }} /&gt;</span>}
                             type=&quot;password&quot;
                             placeholder=&quot;Password&quot;
                         /&gt;,
                     )}
-                &lt;/Form.Item&gt;
-                &lt;Form.Item&gt;
-                    &lt;Button type=&quot;primary&quot; htmlType=&quot;submit&quot; className=&quot;login-form-button&quot;&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Form.Item</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Form.Item</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> <span class="hljs-attr">htmlType</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;login-form-button&quot;</span>&gt;</span>
                         &#x6DFB;&#x52A0;&#x7528;&#x6237;
-                &lt;/Button&gt;
-                &lt;/Form.Item&gt;
-            &lt;/Form&gt;
-        &lt;/UserLayout&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Form.Item</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">UserLayout</span>&gt;</span></span>
     )
 }
-export default Form.create({ name: &apos;UserAdd&apos; })(UserAdd);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Form.create({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;UserAdd&apos;</span> })(UserAdd);
 </code></pre>
-<h2 id="t246.&#x96C6;&#x6210;koa">6.&#x96C6;&#x6210;koa <a href="#t246.&#x96C6;&#x6210;koa"> # </a></h2>
+<h2 id="t246.&#x96C6;&#x6210;koa">6.&#x96C6;&#x6210;koa <a href="89.nextjs.html#t246.&#x96C6;&#x6210;koa"> # </a></h2>
 <ul>
 <li>Next&#x81EA;&#x8EAB;&#x7684;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x80FD;&#x5904;&#x7406;SSR&#x8BF7;&#x6C42;</li>
 <li>&#x65E0;&#x6CD5;&#x5904;&#x7406;API&#x63A5;&#x53E3;&#x7684;&#x8BF7;&#x6C42;</li>
 </ul>
-<h3 id="t256.1 &#x77E5;&#x8BC6;&#x70B9;">6.1 &#x77E5;&#x8BC6;&#x70B9; <a href="#t256.1 &#x77E5;&#x8BC6;&#x70B9;"> # </a></h3>
+<h3 id="t256.1 &#x77E5;&#x8BC6;&#x70B9;">6.1 &#x77E5;&#x8BC6;&#x70B9; <a href="89.nextjs.html#t256.1 &#x77E5;&#x8BC6;&#x70B9;"> # </a></h3>
 <ul>
 <li>&#x5982;&#x4F55;&#x96C6;&#x6210;<code>koa</code></li>
 <li>&#x5728;<code>koa</code>&#x4F7F;&#x7528;<code>next</code>&#x4F5C;&#x4E2D;&#x95F4;&#x4EF6;</li>
 </ul>
-<h3 id="t266.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;">6.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56; <a href="#t266.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;"> # </a></h3>
+<h3 id="t266.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;">6.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56; <a href="89.nextjs.html#t266.2 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;"> # </a></h3>
 <pre><code class="lang-js">yarn add koa koa-router
 </code></pre>
-<h3 id="t276.3 client\index.js">6.3 client\index.js <a href="#t276.3 client\index.js"> # </a></h3>
+<h3 id="t276.3 client\index.js">6.3 client\index.js <a href="89.nextjs.html#t276.3 client\index.js"> # </a></h3>
 <p>client\index.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa&apos;</span>);
 <span class="hljs-keyword">let</span> Router = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;koa-router&apos;</span>);
@@ -430,7 +439,7 @@ app.prepare().then(<span class="hljs-function"><span class="hljs-params">()</spa
 });
 
 </code></pre>
-<h3 id="t286.4 package.json">6.4 package.json <a href="#t286.4 package.json"> # </a></h3>
+<h3 id="t286.4 package.json">6.4 package.json <a href="89.nextjs.html#t286.4 package.json"> # </a></h3>
 <p>package.json</p>
 <pre><code class="lang-diff">  &quot;scripts&quot;: {
 <span class="hljs-addition">+   &quot;client&quot;: &quot;nodemon client&quot;,</span>
@@ -438,7 +447,7 @@ app.prepare().then(<span class="hljs-function"><span class="hljs-params">()</spa
     &quot;start&quot;: &quot;next start&quot;
   },
 </code></pre>
-<h2 id="t297.&#x8C03;&#x7528;&#x63A5;&#x53E3;">7.&#x8C03;&#x7528;&#x63A5;&#x53E3; <a href="#t297.&#x8C03;&#x7528;&#x63A5;&#x53E3;"> # </a></h2>
+<h2 id="t297.&#x8C03;&#x7528;&#x63A5;&#x53E3;">7.&#x8C03;&#x7528;&#x63A5;&#x53E3; <a href="89.nextjs.html#t297.&#x8C03;&#x7528;&#x63A5;&#x53E3;"> # </a></h2>
 <ul>
 <li>&#x6DFB;&#x52A0;&#x7528;&#x6237;</li>
 <li>&#x67E5;&#x770B;&#x7528;&#x6237;&#x5217;&#x8868;</li>
@@ -449,7 +458,7 @@ app.prepare().then(<span class="hljs-function"><span class="hljs-params">()</spa
 <li><a href="https://nextjs.frontendx.cn/docs/#%E8%B7%AF%E7%94%B1">getInitialProps&#x5165;&#x53C2;&#x5BF9;&#x8C61;</a></li>
 <li>&#x5982;&#x679C;&#x9700;&#x8981;&#x6CE8;&#x5165;<code>pathname</code>,<code>query</code> &#x6216; <code>asPath</code>&#x5230;&#x4F60;&#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>withRouter</code></li>
 </ul>
-<h3 id="t307.1 utils\axios.tsx">7.1 utils\axios.tsx <a href="#t307.1 utils\axios.tsx"> # </a></h3>
+<h3 id="t307.1 utils\axios.tsx">7.1 utils\axios.tsx <a href="89.nextjs.html#t307.1 utils\axios.tsx"> # </a></h3>
 <p>utils\axios.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
 axios.defaults.withCredentials = <span class="hljs-literal">true</span>
@@ -458,7 +467,7 @@ axios.defaults.withCredentials = <span class="hljs-literal">true</span>
 })
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> instance;
 </code></pre>
-<h3 id="t317.2 pages\user\add.tsx">7.2 pages\user\add.tsx <a href="#t317.2 pages\user\add.tsx"> # </a></h3>
+<h3 id="t317.2 pages\user\add.tsx">7.2 pages\user\add.tsx <a href="89.nextjs.html#t317.2 pages\user\add.tsx"> # </a></h3>
 <p>pages\user\add.tsx</p>
 <pre><code class="lang-diff">import UserLayout from &apos;./index&apos;;
 import router from &apos;next/router&apos;;
@@ -512,7 +521,7 @@ function UserAdd(props) {
 }
 export default Form.create({ name: &apos;UserAdd&apos; })(UserAdd);
 </code></pre>
-<h3 id="t327.3 user\list.tsx">7.3 user\list.tsx <a href="#t327.3 user\list.tsx"> # </a></h3>
+<h3 id="t327.3 user\list.tsx">7.3 user\list.tsx <a href="89.nextjs.html#t327.3 user\list.tsx"> # </a></h3>
 <p>pages\user\list.tsx</p>
 <pre><code class="lang-diff">import UserLayout from &apos;./index&apos;;
 import { List } from &apos;antd&apos;;
@@ -547,14 +556,14 @@ UseList.getInitialProps = async (ctx) =&gt; {
 
 export default UseList;
 </code></pre>
-<h2 id="t338.&#x7528;&#x6237;&#x8BE6;&#x60C5;">8.&#x7528;&#x6237;&#x8BE6;&#x60C5; <a href="#t338.&#x7528;&#x6237;&#x8BE6;&#x60C5;"> # </a></h2>
-<h3 id="t348.1 &#x77E5;&#x8BC6;&#x70B9;">8.1 &#x77E5;&#x8BC6;&#x70B9; <a href="#t348.1 &#x77E5;&#x8BC6;&#x70B9;"> # </a></h3>
+<h2 id="t338.&#x7528;&#x6237;&#x8BE6;&#x60C5;">8.&#x7528;&#x6237;&#x8BE6;&#x60C5; <a href="89.nextjs.html#t338.&#x7528;&#x6237;&#x8BE6;&#x60C5;"> # </a></h2>
+<h3 id="t348.1 &#x77E5;&#x8BC6;&#x70B9;">8.1 &#x77E5;&#x8BC6;&#x70B9; <a href="89.nextjs.html#t348.1 &#x77E5;&#x8BC6;&#x70B9;"> # </a></h3>
 <ul>
 <li>&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;&#x4F20;&#x53C2;&#x6570;</li>
 <li>&#x6A21;&#x5757;&#x548C;&#x7EC4;&#x4EF6;&#x61D2;&#x52A0;&#x8F7D;</li>
 <li>&#x81EA;&#x5B9A;&#x4E49;&#x670D;&#x52A1;&#x7AEF;&#x8DEF;&#x7531;</li>
 </ul>
-<h3 id="t358.2 user\detail.tsx">8.2 user\detail.tsx <a href="#t358.2 user\detail.tsx"> # </a></h3>
+<h3 id="t358.2 user\detail.tsx">8.2 user\detail.tsx <a href="89.nextjs.html#t358.2 user\detail.tsx"> # </a></h3>
 <p>pages\user\detail.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> UserLayout <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./&apos;</span>;
@@ -573,16 +582,16 @@ export default UseList;
       {
         show &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">UserInfo</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{props.user}</span> /&gt;</span>
       }
-    <span class="hljs-tag">&lt;/<span class="hljs-name">UserLayout</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">UserLayout</span>&gt;</span></span>
   )
 }
-UserDetail.getInitialProps = async (ctx) =&gt; {
-  let response = await axios({ url: `/api/users/${ctx.query.id}`, method: &apos;GET&apos; });
-  return { user: response.data.data };
+UserDetail.getInitialProps = <span class="hljs-keyword">async</span> (ctx) =&gt; {
+  <span class="hljs-keyword">let</span> response = <span class="hljs-keyword">await</span> axios({ <span class="hljs-attr">url</span>: <span class="hljs-string">`/api/users/<span class="hljs-subst">${ctx.query.id}</span>`</span>, <span class="hljs-attr">method</span>: <span class="hljs-string">&apos;GET&apos;</span> });
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">user</span>: response.data.data };
 }
-export default withRouter(UserDetail);
-</span></code></pre>
-<h3 id="t368.2 components\UserInfo.tsx">8.2 components\UserInfo.tsx <a href="#t368.2 components\UserInfo.tsx"> # </a></h3>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> withRouter(UserDetail);
+</code></pre>
+<h3 id="t368.2 components\UserInfo.tsx">8.2 components\UserInfo.tsx <a href="89.nextjs.html#t368.2 components\UserInfo.tsx"> # </a></h3>
 <p>components\UserInfo.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> { Button } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -597,12 +606,12 @@ export default withRouter(UserDetail);
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x7528;&#x6237;&#x540D;:{props.user.username}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x5BC6;&#x7801;:{props.user.password}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>&#x521B;&#x5EFA;&#x65F6;&#x95F4;:{created}<span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{changeFormat}</span>&gt;</span>&#x5207;&#x6362;&#x4E3A;&#x76F8;&#x5BF9;&#x65F6;&#x95F4;<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;/&gt;</span>
+        <span class="hljs-tag">&lt;/&gt;</span></span>
     )
 }
-export default UserInfo;
-</span></code></pre>
-<h3 id="t378.3 client\index.js">8.3 client\index.js <a href="#t378.3 client\index.js"> # </a></h3>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> UserInfo;
+</code></pre>
+<h3 id="t378.3 client\index.js">8.3 client\index.js <a href="89.nextjs.html#t378.3 client\index.js"> # </a></h3>
 <p>client\index.js</p>
 <pre><code class="lang-diff">let Koa = require(&apos;koa&apos;);
 let Router = require(&apos;koa-router&apos;);
@@ -629,8 +638,8 @@ app.prepare().then(() =&gt; {
     server.listen(3000, () =&gt; console.log(&apos;server started at port 3000&apos;));
 });
 </code></pre>
-<h2 id="t389.&#x767B;&#x5F55;">9.&#x767B;&#x5F55; <a href="#t389.&#x767B;&#x5F55;"> # </a></h2>
-<h3 id="t399.1 pages\login.tsx">9.1 pages\login.tsx <a href="#t399.1 pages\login.tsx"> # </a></h3>
+<h2 id="t389.&#x767B;&#x5F55;">9.&#x767B;&#x5F55; <a href="89.nextjs.html#t389.&#x767B;&#x5F55;"> # </a></h2>
+<h3 id="t399.1 pages\login.tsx">9.1 pages\login.tsx <a href="89.nextjs.html#t399.1 pages\login.tsx"> # </a></h3>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/router&apos;</span>;
 <span class="hljs-keyword">import</span> { Form, Input, Button, Icon, message } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
 <span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../utils/axios&apos;</span>;
@@ -647,44 +656,44 @@ app.prepare().then(() =&gt; {
         }
     }
     <span class="hljs-keyword">return</span> (
-        &lt;Form onSubmit={handleSubmit} className=&quot;login-form&quot; style={{ maxWidth: &apos;300px&apos;,margin:&apos;20px auto&apos; }}&gt;
-            &lt;Form.Item&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Form</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{handleSubmit}</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;login-form&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">maxWidth:</span> &apos;<span class="hljs-attr">300px</span>&apos;,<span class="hljs-attr">margin:</span>&apos;<span class="hljs-attr">20px</span> <span class="hljs-attr">auto</span>&apos; }}&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Form.Item</span>&gt;</span>
                 {getFieldDecorator(&apos;username&apos;, {
                     rules: [{ required: true, message: &apos;Please input your username!&apos; }],
                 })(
-                    &lt;Input
-                        prefix={&lt;Icon type=&quot;user&quot; style={{ color: &apos;rgba(0,0,0,.25)&apos; }} /&gt;}
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                        <span class="hljs-attr">prefix</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;user&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &apos;<span class="hljs-attr">rgba</span>(<span class="hljs-attr">0</span>,<span class="hljs-attr">0</span>,<span class="hljs-attr">0</span>,<span class="hljs-attr">.25</span>)&apos; }} /&gt;</span>}
                         placeholder=&quot;Username&quot;
                     /&gt;,
                 )}
-            &lt;/Form.Item&gt;
-            &lt;Form.Item&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Form.Item</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Form.Item</span>&gt;</span>
                 {getFieldDecorator(&apos;password&apos;, {
                     rules: [{ required: true, message: &apos;Please input your Password!&apos; }],
                 })(
-                    &lt;Input
-                        prefix={&lt;Icon type=&quot;lock&quot; style={{ color: &apos;rgba(0,0,0,.25)&apos; }} /&gt;}
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Input</span>
+                        <span class="hljs-attr">prefix</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Icon</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;lock&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &apos;<span class="hljs-attr">rgba</span>(<span class="hljs-attr">0</span>,<span class="hljs-attr">0</span>,<span class="hljs-attr">0</span>,<span class="hljs-attr">.25</span>)&apos; }} /&gt;</span>}
                         type=&quot;password&quot;
                         placeholder=&quot;Password&quot;
                     /&gt;,
                 )}
-            &lt;/Form.Item&gt;
-            &lt;Form.Item&gt;
-                &lt;Button type=&quot;primary&quot; htmlType=&quot;submit&quot; className=&quot;login-form-button&quot;&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Form.Item</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Form.Item</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span> <span class="hljs-attr">htmlType</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;login-form-button&quot;</span>&gt;</span>
                     &#x767B;&#x5F55;
-                &lt;/Button&gt;
-            &lt;/Form.Item&gt;
-        &lt;/Form&gt;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Form.Item</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Form</span>&gt;</span></span>
     )
 }
-const WrappedLogin = Form.create({ name: &apos;Login&apos; })(Login);
-export default WrappedLogin;
+<span class="hljs-keyword">const</span> WrappedLogin = Form.create({ <span class="hljs-attr">name</span>: <span class="hljs-string">&apos;Login&apos;</span> })(Login);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> WrappedLogin;
 </code></pre>
-<h2 id="t4010.&#x96C6;&#x6210;redux">10.&#x96C6;&#x6210;redux <a href="#t4010.&#x96C6;&#x6210;redux"> # </a></h2>
-<h3 id="t4110.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;">10.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56; <a href="#t4110.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;"> # </a></h3>
+<h2 id="t4010.&#x96C6;&#x6210;redux">10.&#x96C6;&#x6210;redux <a href="89.nextjs.html#t4010.&#x96C6;&#x6210;redux"> # </a></h2>
+<h3 id="t4110.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;">10.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56; <a href="89.nextjs.html#t4110.1 &#x5B89;&#x88C5;&#x4F9D;&#x8D56;"> # </a></h3>
 <pre><code class="lang-js">yarn add redux react-redux
 </code></pre>
-<h3 id="t4210.2 pages_app.tsx">10.2 pages_app.tsx <a href="#t4210.2 pages_app.tsx"> # </a></h3>
+<h3 id="t4210.2 pages_app.tsx">10.2 pages_app.tsx <a href="89.nextjs.html#t4210.2 pages_app.tsx"> # </a></h3>
 <p>pages_app.tsx</p>
 <pre><code class="lang-diff">import App from &apos;next/app&apos;;
 import Link from &apos;next/link&apos;;
@@ -778,7 +787,7 @@ class LayoutApp extends App&lt;any&gt; {
 }
 export default withRouter(LayoutApp);
 </code></pre>
-<h3 id="t4310.3 user\add.tsx">10.3 user\add.tsx <a href="#t4310.3 user\add.tsx"> # </a></h3>
+<h3 id="t4310.3 user\add.tsx">10.3 user\add.tsx <a href="89.nextjs.html#t4310.3 user\add.tsx"> # </a></h3>
 <p>pages\user\add.tsx</p>
 <pre><code class="lang-diff">import UserLayout from &apos;./index&apos;;
 import router from &apos;next/router&apos;;
@@ -834,11 +843,11 @@ function UserAdd(props) {
 <span class="hljs-addition">+export default WrappedUserAdd;</span>
 
 </code></pre>
-<h3 id="t4410.4 action-types.tsx">10.4 action-types.tsx <a href="#t4410.4 action-types.tsx"> # </a></h3>
+<h3 id="t4410.4 action-types.tsx">10.4 action-types.tsx <a href="89.nextjs.html#t4410.4 action-types.tsx"> # </a></h3>
 <p>store\action-types.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> SET_USER_INFO = <span class="hljs-string">&apos;SET_USER_INFO&apos;</span>;<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x4FE1;&#x606F;</span>
 </code></pre>
-<h3 id="t4510.5 store\index.tsx">10.5 store\index.tsx <a href="#t4510.5 store\index.tsx"> # </a></h3>
+<h3 id="t4510.5 store\index.tsx">10.5 store\index.tsx <a href="89.nextjs.html#t4510.5 store\index.tsx"> # </a></h3>
 <p>store\index.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> TYPES <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./action-types&apos;</span>;
@@ -849,7 +858,7 @@ function UserAdd(props) {
     <span class="hljs-keyword">switch</span> (action.type) {
         <span class="hljs-keyword">case</span> TYPES.SET_USER_INFO:
             <span class="hljs-keyword">return</span> { <span class="hljs-attr">currentUser</span>: action.payload }
-        <span class="hljs-keyword">default</span>:
+        <span class="hljs-attr">default</span>:
             <span class="hljs-keyword">return</span> state;
     }
 }
@@ -859,7 +868,7 @@ function UserAdd(props) {
     <span class="hljs-keyword">return</span> store;
 }
 </code></pre>
-<h2 id="t4611.loading&#x6548;&#x679C;">11.loading&#x6548;&#x679C; <a href="#t4611.loading&#x6548;&#x679C;"> # </a></h2>
+<h2 id="t4611.loading&#x6548;&#x679C;">11.loading&#x6548;&#x679C; <a href="89.nextjs.html#t4611.loading&#x6548;&#x679C;"> # </a></h2>
 <ul>
 <li><a href="https://nextjs.frontendx.cn/docs/#%E8%B7%AF%E7%94%B1">&#x8DEF;&#x7531;&#x4E8B;&#x4EF6;</a></li>
 </ul>
@@ -897,7 +906,7 @@ function UserAdd(props) {
 </tr>
 </tbody>
 </table>
-<h3 id="t4711.1 pages_app.tsx">11.1 pages_app.tsx <a href="#t4711.1 pages_app.tsx"> # </a></h3>
+<h3 id="t4711.1 pages_app.tsx">11.1 pages_app.tsx <a href="89.nextjs.html#t4711.1 pages_app.tsx"> # </a></h3>
 <pre><code class="lang-diff">import App from &apos;next/app&apos;;
 import Link from &apos;next/link&apos;;
 import { Layout, Menu, Icon, Avatar } from &apos;antd&apos;;
@@ -1011,8 +1020,8 @@ class LayoutApp extends App&lt;any&gt; {
 }
 export default withRouter(LayoutApp);
 </code></pre>
-<h2 id="t4812.&#x53D7;&#x4FDD;&#x62A4;&#x8DEF;&#x7531;">12.&#x53D7;&#x4FDD;&#x62A4;&#x8DEF;&#x7531; <a href="#t4812.&#x53D7;&#x4FDD;&#x62A4;&#x8DEF;&#x7531;"> # </a></h2>
-<h3 id="t4912.1 pages\profile.tsx">12.1 pages\profile.tsx <a href="#t4912.1 pages\profile.tsx"> # </a></h3>
+<h2 id="t4812.&#x53D7;&#x4FDD;&#x62A4;&#x8DEF;&#x7531;">12.&#x53D7;&#x4FDD;&#x62A4;&#x8DEF;&#x7531; <a href="89.nextjs.html#t4812.&#x53D7;&#x4FDD;&#x62A4;&#x8DEF;&#x7531;"> # </a></h2>
+<h3 id="t4912.1 pages\profile.tsx">12.1 pages\profile.tsx <a href="89.nextjs.html#t4912.1 pages\profile.tsx"> # </a></h3>
 <p>pages\profile.tsx</p>
 <pre><code class="lang-diff">import router from &apos;next/router&apos;;
 import { Button, Layout } from &apos;antd&apos;;
@@ -1050,8 +1059,8 @@ const { Content } = Layout;
 <span class="hljs-addition">+)(Profile);</span>
 <span class="hljs-addition">+export default WrappedProfile;</span>
 </code></pre>
-<h2 id="t5013.&#x81EA;&#x5B9A;&#x4E49;Document">13.&#x81EA;&#x5B9A;&#x4E49;Document <a href="#t5013.&#x81EA;&#x5B9A;&#x4E49;Document"> # </a></h2>
-<h3 id="t5113.1 pages_document.js">13.1 pages_document.js <a href="#t5113.1 pages_document.js"> # </a></h3>
+<h2 id="t5013.&#x81EA;&#x5B9A;&#x4E49;Document">13.&#x81EA;&#x5B9A;&#x4E49;Document <a href="89.nextjs.html#t5013.&#x81EA;&#x5B9A;&#x4E49;Document"> # </a></h2>
+<h3 id="t5113.1 pages_document.js">13.1 pages_document.js <a href="89.nextjs.html#t5113.1 pages_document.js"> # </a></h3>
 <p>pages_document.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> Document, { Html, Head, Main, NextScript } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/document&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomDocument</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Document</span> </span>{
@@ -1063,7 +1072,7 @@ const { Content } = Layout;
         <span class="hljs-keyword">return</span> (
             <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Html</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">Head</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+                    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span>
                         {
                             `
                             *{
@@ -1072,7 +1081,7 @@ const { Content } = Layout;
                             }
                             `
                         }
-                    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">Head</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">Main</span> /&gt;</span>
@@ -1084,7 +1093,7 @@ const { Content } = Layout;
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> CustomDocument;
 </code></pre>
-<h3 id="t5213.2 pages\index.tsx">13.2 pages\index.tsx <a href="#t5213.2 pages\index.tsx"> # </a></h3>
+<h3 id="t5213.2 pages\index.tsx">13.2 pages\index.tsx <a href="89.nextjs.html#t5213.2 pages\index.tsx"> # </a></h3>
 <p>pages\index.tsx</p>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/router&apos;</span>
 <span class="hljs-keyword">import</span> { Button, Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;antd&apos;</span>;
@@ -1092,23 +1101,23 @@ const { Content } = Layout;
 <span class="hljs-keyword">const</span> { Content } = Layout;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">return</span> (
-        &lt;&gt;
-            &lt;Head&gt;
-                &lt;title&gt;&#x9996;&#x9875;&lt;/title&gt;
-                &lt;meta name=&quot;description&quot; content=&quot;&#x8FD9;&#x662F;&#x9996;&#x9875;&quot; /&gt;
-            &lt;/Head&gt;
-            &lt;Content style={{ margin: &apos;20px auto&apos; }}&gt;
-                &lt;div&gt;Home&lt;/div&gt;
-                &lt;Button onClick={() =&gt; router.push(&apos;/user&apos;)}&gt;/user&lt;/Button&gt;
-            &lt;/Content&gt;
-        &lt;/&gt;
+        <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Head</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x9996;&#x9875;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;description&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;&#x8FD9;&#x662F;&#x9996;&#x9875;&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Head</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">margin:</span> &apos;<span class="hljs-attr">20px</span> <span class="hljs-attr">auto</span>&apos; }}&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> router.push(&apos;/user&apos;)}&gt;/user<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+        <span class="hljs-tag">&lt;/&gt;</span></span>
     )
 }
 </code></pre>
-<h2 id="t5314.&#x670D;&#x52A1;&#x7AEF;">14.&#x670D;&#x52A1;&#x7AEF; <a href="#t5314.&#x670D;&#x52A1;&#x7AEF;"> # </a></h2>
+<h2 id="t5314.&#x670D;&#x52A1;&#x7AEF;">14.&#x670D;&#x52A1;&#x7AEF; <a href="89.nextjs.html#t5314.&#x670D;&#x52A1;&#x7AEF;"> # </a></h2>
 <pre><code class="lang-js">yarn add express  body-parser  cors express-session connect-mongo mongoose
 </code></pre>
-<h3 id="t5414.1 api\index.js">14.1 api\index.js <a href="#t5414.1 api\index.js"> # </a></h3>
+<h3 id="t5414.1 api\index.js">14.1 api\index.js <a href="89.nextjs.html#t5414.1 api\index.js"> # </a></h3>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;express&quot;</span>);
 <span class="hljs-keyword">let</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;body-parser&quot;</span>);
 <span class="hljs-keyword">let</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;cors&quot;</span>);
@@ -1177,14 +1186,14 @@ app.listen(<span class="hljs-number">4000</span>, () =&gt; {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x670D;&#x52A1;&#x5668;&#x5728;4000&#x7AEF;&#x53E3;&#x542F;&#x52A8;!&apos;</span>);
 });
 </code></pre>
-<h3 id="t5514.2 api\config.js">14.2 api\config.js <a href="#t5514.2 api\config.js"> # </a></h3>
+<h3 id="t5514.2 api\config.js">14.2 api\config.js <a href="89.nextjs.html#t5514.2 api\config.js"> # </a></h3>
 <p>api\config.js</p>
 <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
     <span class="hljs-attr">secret</span>: <span class="hljs-string">&apos;zhufeng&apos;</span>,
     <span class="hljs-attr">dbUrl</span>: <span class="hljs-string">&quot;mongodb://127.0.0.1/zhufengnext2&quot;</span>
 }
 </code></pre>
-<h3 id="t5614.3 api\db.js">14.3 api\db.js <a href="#t5614.3 api\db.js"> # </a></h3>
+<h3 id="t5614.3 api\db.js">14.3 api\db.js <a href="89.nextjs.html#t5614.3 api\db.js"> # </a></h3>
 <p>api\db.js</p>
 <pre><code class="lang-js"><span class="hljs-keyword">const</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongoose&apos;</span>);
 <span class="hljs-keyword">const</span> Schema = mongoose.Schema;
@@ -1201,18 +1210,74 @@ app.listen(<span class="hljs-number">4000</span>, () =&gt; {
 }
 </code></pre>
 
-        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
     </div>
-    
 </div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+    aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">姓名:</label>
+                        <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码:</label>
+                        <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                    data-dismiss="modal">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+let zhufengjiagou = localStorage.getItem('zhufengjiagou');
+const host = 'http://login.zhufengpeixun.com';
+if(zhufengjiagou){
+  fetch(host+'/check',{method:"GET",mode: 'cors',
+　　headers: {'Content-Type': 'application/json', authorization: `Bearer ${zhufengjiagou}`}}).then(response => response.json()).then(res => {
+    if(res.success){
+     
+    }else{
+      $('#loginModal').modal('show')
+    }
+  }) 
+}else{
+   $('#loginModal').modal('show')
+}
 
-<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+$('#loginModal').on('hidden.bs.modal', function (event) {
+  var modal = $(this)
+  let username = modal.find('.modal-body #username').val();
+  let password = modal.find('.modal-body #password').val();
+  fetch(host+'/login',{method:"POST",mode: 'cors',
+　　headers: {'Content-Type': 'application/json'},
+　　body:JSON.stringify({username,password})}).then(response => response.json()).then(res => {
+    if(res.success){
+      localStorage.setItem('zhufengjiagou',res.zhufengjiagou);
+    }else{
+      window.location.href = 'http://www.zhufengpeixun.cn';
+    }
+  })
+})
+</script>
 <script>
 $('.warpper .page-toc ul ul li a').on('click',function(){
   $('.warpper .page-toc ul ul li a').removeClass('my-active')
   $(this).addClass('my-active')
 })
-
 $('.logo').on('mouseenter',function(){
   $('.nav').height('450px');
 })
@@ -1223,61 +1288,6 @@ $('.logo').on('click',function(){
   $('.nav').css('display','none');
  $('.warpper').css('padding','0px');
 })
-// if (!$('.understand-me').length) {
-  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
-  //   var count = bar / 26 / 2;
-  //   var barHeight = $('.page-toc').outerHeight();
-  //   $('.page-toc li').eq(0).children('a').addClass('red');
-  //   var arr = [];
-  //   $("h1,h2,h3,h4,h5,h6").each(function () {
-  //     arr.push($(this).position().top);
-  //   });
-  //   var timer
-  //   function dark() {
-  //     clearTimeout(timer)
-  //      timer = setTimeout(function () {
-  //      var top = Math.abs($('.page-toc > ul').position().top);
-  //      var cur = $('.content').scrollTop();
-  //      for (var i = arr.length; i >= 0; i--) {
-  //        if (arr[i] <= cur) {
-  //          break;
-  //        }
-  //      }
-  //      if (i === -1) {
-  //        i = 0;
-  //      }
-  //      $('.page-toc li a').removeClass('red');
-  //      $('.page-toc li').eq(i).children('a').addClass('red');
-  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
-  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
-  //    },200)
-  //   }
-
-  //   $('.content').on('scroll', dark);
-  // }
 </script>
-<style>
-
-    /* ::-webkit-scrollbar{width:14px;}
-    ::-webkit-scrollbar-track{background-color:transparent;}
-    ::-webkit-scrollbar-thumb{background-color:transparent;}
-    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
-    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
-
-    .page-toc > ul .red {
-        background: #f3f3f3;
-        z-index: 1;
-        border-left: 3px solid #009a61;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        color: #000
-    }
-
-
-
-
-
-</style>
-<script type="text/javascript"  src="https://idm-su.baidu.com/su_new.js"></script>
 </body>
 </html>

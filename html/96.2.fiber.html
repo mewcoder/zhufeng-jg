@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
     <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
 </head>
 <body>
 <div class="nav">
     <div class="logo">
         
-            珠峰架构师成长计划
-        
-    </div>
-<ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/51.typescript.html">51.typescript</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li class="active"><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li></ul></div>
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.api</a></li><li><a href="0.Async.html">0.Async</a></li><li><a href="0.module.html">0.module</a></li><li><a href="1.ES2015.html">1.ES2015</a></li><li><a href="2.Promise.html">2.Promise</a></li><li><a href="3.Node.html">3.Node</a></li><li><a href="4.NodeInstall.html">4.NodeInstall</a></li><li><a href="5.REPL.html">5.REPL</a></li><li><a href="6.NodeCore.html">6.NodeCore</a></li><li><a href="7.module&amp;NPM.html">7.module&NPM</a></li><li><a href="8.Encoding.html">8.Encoding</a></li><li><a href="9.Buffer.html">9.Buffer</a></li><li><a href="10.fs.html">10.fs</a></li><li><a href="11.Stream-1.html">11.Stream-1</a></li><li><a href="11.Stream-2.html">11.Stream-2</a></li><li><a href="11.Stream-3.html">11.Stream-3</a></li><li><a href="11.Stream-4.html">11.Stream-4</a></li><li><a href="12-Network-2.html">12-Network-2</a></li><li><a href="12.NetWork-3.html">12.NetWork-3</a></li><li><a href="12.Network-1.html">12.Network-1</a></li><li><a href="13.tcp.html">13.tcp</a></li><li><a href="14.http-1.html">14.http-1</a></li><li><a href="14.http-2.html">14.http-2</a></li><li><a href="15.compress.html">15.compress</a></li><li><a href="16.crypto.html">16.crypto</a></li><li><a href="17.process.html">17.process</a></li><li><a href="18.yargs.html">18.yargs</a></li><li><a href="19.cache.html">19.cache</a></li><li><a href="20.action.html">20.action</a></li><li><a href="21.https.html">21.https</a></li><li><a href="22.cookie.html">22.cookie</a></li><li><a href="23.session.html">23.session</a></li><li><a href="24.express-1.html">24.express-1</a></li><li><a href="24.express-2.html">24.express-2</a></li><li><a href="24.express-3.html">24.express-3</a></li><li><a href="24.express-4.html">24.express-4</a></li><li><a href="25.koa-1.html">25.koa-1</a></li><li><a href="26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="28.redux.html">28.redux</a></li><li><a href="28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="29.mongodb-1.html">29.mongodb-1</a></li><li><a href="29.mongodb-2.html">29.mongodb-2</a></li><li><a href="29.mongodb-3.html">29.mongodb-3</a></li><li><a href="29.mongodb-4.html">29.mongodb-4</a></li><li><a href="29.mongodb-5.html">29.mongodb-5</a></li><li><a href="29.mongodb-6.html">29.mongodb-6</a></li><li><a href="30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="30.cms-7-api.html">30.cms-7-api</a></li><li><a href="30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="30.cms-14-front.html">30.cms-14-front</a></li><li><a href="30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="31.dva.html">31.dva</a></li><li><a href="31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="33.redis.html">33.redis</a></li><li><a href="34.unittest.html">34.unittest</a></li><li><a href="35.jwt.html">35.jwt</a></li><li><a href="36.websocket-1.html">36.websocket-1</a></li><li><a href="36.websocket-2.html">36.websocket-2</a></li><li><a href="38.chat-api-1.html">38.chat-api-1</a></li><li><a href="38.chat-api-2.html">38.chat-api-2</a></li><li><a href="38.chat-3.html">38.chat-3</a></li><li><a href="38.chat-api-3.html">38.chat-api-3</a></li><li><a href="38.chat.html">38.chat</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="38.chat2.html">38.chat2</a></li><li><a href="39.crawl-0.html">39.crawl-0</a></li><li><a href="39.crawl-1.html">39.crawl-1</a></li><li><a href="39.crawl-2.html">39.crawl-2</a></li><li><a href="40.deploy.html">40.deploy</a></li><li><a href="41.safe.html">41.safe</a></li><li><a href="42.test.html">42.test</a></li><li><a href="43.nginx.html">43.nginx</a></li><li><a href="44.enzyme.html">44.enzyme</a></li><li><a href="45.docker.html">45.docker</a></li><li><a href="46.elastic.html">46.elastic</a></li><li><a href="47.oauth.html">47.oauth</a></li><li><a href="48.wxpay.html">48.wxpay</a></li><li><a href="index.html">index</a></li><li><a href="52.UML.html">52.UML</a></li><li><a href="53.design.html">53.design</a></li><li><a href="index.html">index</a></li><li><a href="54.linux.html">54.linux</a></li><li><a href="57.ts.html">57.ts</a></li><li><a href="56.react-ssr.html">56.react-ssr</a></li><li><a href="58.ts_react.html">58.ts_react</a></li><li><a href="59.ketang.html">59.ketang</a></li><li><a href="59.ketang2.html">59.ketang2</a></li><li><a href="61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="61.3.devops-user.html">61.3.devops-user</a></li><li><a href="61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="61.6.devops-install.html">61.6.devops-install</a></li><li><a href="61.7.devops-system.html">61.7.devops-system</a></li><li><a href="61.8.devops-service.html">61.8.devops-service</a></li><li><a href="61.9.devops-network.html">61.9.devops-network</a></li><li><a href="61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="61.14.devops-php.html">61.14.devops-php</a></li><li><a href="61.15.devops-java.html">61.15.devops-java</a></li><li><a href="61.16.devops-node.html">61.16.devops-node</a></li><li><a href="61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="62.1.react-basic.html">62.1.react-basic</a></li><li><a href="62.2.react-state.html">62.2.react-state</a></li><li><a href="62.3.react-high.html">62.3.react-high</a></li><li><a href="62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="62.8.react-source.html">62.8.react-source</a></li><li><a href="63.1.redux.html">63.1.redux</a></li><li><a href="63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="64.1.router.html">64.1.router</a></li><li><a href="64.2.router-connected.html">64.2.router-connected</a></li><li><a href="65.1.typescript.html">65.1.typescript</a></li><li><a href="65.2.typescript.html">65.2.typescript</a></li><li><a href="65.3.typescript.html">65.3.typescript</a></li><li><a href="65.4.antd.html">65.4.antd</a></li><li><a href="65.4.definition.html">65.4.definition</a></li><li><a href="66-1.vue-base.html">66-1.vue-base</a></li><li><a href="66-2.vue-component.html">66-2.vue-component</a></li><li><a href="66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="66-4.$message组件.html">66-4.$message组件</a></li><li><a href="66-5.Form组件.html">66-5.Form组件</a></li><li><a href="66-6.tree.html">66-6.tree</a></li><li><a href="66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="66-13.pwa.html">66-13.pwa</a></li><li><a href="66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="66-15.权限校验.html">66-15.权限校验</a></li><li><a href="67-1-network.html">67-1-network</a></li><li><a href="68-2-wireshark.html">68-2-wireshark</a></li><li><a href="7.npm2.html">7.npm2</a></li><li><a href="69-hooks.html">69-hooks</a></li><li><a href="70-deploy.html">70-deploy</a></li><li><a href="71-hmr.html">71-hmr</a></li><li><a href="72.deploy.html">72.deploy</a></li><li><a href="73.import.html">73.import</a></li><li><a href="74.mobile.html">74.mobile</a></li><li><a href="75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="76.react_optimize.html">76.react_optimize</a></li><li><a href="77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="79.grammar.html">79.grammar</a></li><li><a href="80.tree.html">80.tree</a></li><li><a href="81.axios.html">81.axios</a></li><li><a href="82.1.react.html">82.1.react</a></li><li><a href="82.2.react-high.html">82.2.react-high</a></li><li><a href="82.3.react-router.html">82.3.react-router</a></li><li><a href="82.4.redux.html">82.4.redux</a></li><li><a href="82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="82.6.connected.html">82.6.connected</a></li><li><a href="82.7.saga.html">82.7.saga</a></li><li><a href="82.8.dva.html">82.8.dva</a></li><li><a href="82.8.dva-source.html">82.8.dva-source</a></li><li><a href="82.9.roadhog.html">82.9.roadhog</a></li><li><a href="82.10.umi.html">82.10.umi</a></li><li><a href="82.11.antdesign.html">82.11.antdesign</a></li><li><a href="82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="83.upload.html">83.upload</a></li><li><a href="84.graphql.html">84.graphql</a></li><li><a href="85.antpro.html">85.antpro</a></li><li><a href="86.1.uml.html">86.1.uml</a></li><li><a href="86.2.design.html">86.2.design</a></li><li><a href="87.postcss.html">87.postcss</a></li><li><a href="88.react16-1.html">88.react16-1</a></li><li><a href="89.nextjs.html">89.nextjs</a></li><li><a href="90.react-test.html">90.react-test</a></li><li><a href="91.react-ts.html">91.react-ts</a></li><li><a href="92.rbac.html">92.rbac</a></li><li><a href="93.tsnode.html">93.tsnode</a></li><li><a href="94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="94.3.MODULE.html">94.3.MODULE</a></li><li><a href="94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="94.5.文件上传.html">94.5.文件上传</a></li><li><a href="94.6.https.html">94.6.https</a></li><li><a href="94.7.&#32;nginx.html">94.7. nginx</a></li><li><a href="95.1.&#32;react.html">95.1. react</a></li><li><a href="95.2.react.html">95.2.react</a></li><li><a href="96.1.react16.html">96.1.react16</a></li><li class="active"><a href="96.2.fiber.html">96.2.fiber</a></li><li><a href="96.3.fiber.html">96.3.fiber</a></li><li><a href="97.serverless.html">97.serverless</a></li><li><a href="98.websocket.html">98.websocket</a></li><li><a href="100.1.react-basic.html">100.1.react-basic</a></li><li><a href="101.1.monitor.html">101.1.monitor</a></li><li><a href="101.2.monitor.html">101.2.monitor</a></li><li><a href="102.java.html">102.java</a></li><li><a href="103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="103.16.vite.source.html">103.16.vite.source</a></li><li><a href="103.17.polyfill.html">103.17.polyfill</a></li><li><a href="104.1.binary.html">104.1.binary</a></li><li><a href="104.2.binary.html">104.2.binary</a></li><li><a href="105.skeleton.html">105.skeleton</a></li><li><a href="106.1.react.html">106.1.react</a></li><li><a href="106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="106.3.react_router.html">106.3.react_router</a></li><li><a href="106.4.redux.html">106.4.redux</a></li><li><a href="106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="106.8.dva.html">106.8.dva</a></li><li><a href="106.9.umi.html">106.9.umi</a></li><li><a href="106.10.ketang.html">106.10.ketang</a></li><li><a href="106.11.antdesign.html">106.11.antdesign</a></li><li><a href="106.12.antpro.html">106.12.antpro</a></li><li><a href="107.fiber.html">107.fiber</a></li><li><a href="108.http.html">108.http</a></li><li><a href="109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="109.3.dll.html">109.3.dll</a></li><li><a href="110.nest.js.html">110.nest.js</a></li><li><a href="111.xstate.html">111.xstate</a></li><li><a href="112.Form.html">112.Form</a></li><li><a href="113.redux-saga.html">113.redux-saga</a></li><li><a href="114.react+typescript.html">114.react+typescript</a></li><li><a href="115.immer.html">115.immer</a></li><li><a href="116.pro5.html">116.pro5</a></li><li><a href="117.css-loader.html">117.css-loader</a></li><li><a href="118.1.umi-core.html">118.1.umi-core</a></li><li><a href="119.2.module-federation.html">119.2.module-federation</a></li><li><a href="119.1.module-federation.html">119.1.module-federation</a></li><li><a href="120.create-react-app.html">120.create-react-app</a></li><li><a href="121.react-scripts.html">121.react-scripts</a></li><li><a href="122.react-optimize.html">122.react-optimize</a></li><li><a href="123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="124.next.js.html">124.next.js</a></li><li><a href="125.1.linux.html">125.1.linux</a></li><li><a href="125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="125.3.linux-user.html">125.3.linux-user</a></li><li><a href="125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="125.6.linux-install.html">125.6.linux-install</a></li><li><a href="125.7.linux-system.html">125.7.linux-system</a></li><li><a href="125.8.linux-service.html">125.8.linux-service</a></li><li><a href="125.9.linux-network.html">125.9.linux-network</a></li><li><a href="125.10.nginx.html">125.10.nginx</a></li><li><a href="125.11.docker.html">125.11.docker</a></li><li><a href="125.12.ci.html">125.12.ci</a></li><li><a href="125.13.k8s.html">125.13.k8s</a></li><li><a href="125.14.k8s.html">125.14.k8s</a></li><li><a href="125.15.k8s.html">125.15.k8s</a></li><li><a href="125.16.k8s.html">125.16.k8s</a></li><li><a href="126.11.react-1.html">126.11.react-1</a></li><li><a href="126.12.react-2.html">126.12.react-2</a></li><li><a href="126.12.react-3.html">126.12.react-3</a></li><li><a href="126.12.react-4.html">126.12.react-4</a></li><li><a href="126.12.react-5.html">126.12.react-5</a></li><li><a href="127.frontend.html">127.frontend</a></li><li><a href="128.rollup.html">128.rollup</a></li><li><a href="129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="130.health.html">130.health</a></li><li><a href="131.hooks.html">131.hooks</a></li><li><a href="132.keepalive.html">132.keepalive</a></li><li><a href="133.vue-cli.html">133.vue-cli</a></li><li><a href="134.react18.html">134.react18</a></li><li><a href="135.function.html">135.function</a></li><li><a href="136.toolkit.html">136.toolkit</a></li><li><a href="137.lerna.html">137.lerna</a></li><li><a href="138.create-vite.html">138.create-vite</a></li><li><a href="139.cli.html">139.cli</a></li><li><a href="140.antd.html">140.antd</a></li><li><a href="141.react-dnd.html">141.react-dnd</a></li><li><a href="142.1.link.html">142.1.link</a></li><li><a href="143.1.gulp.html">143.1.gulp</a></li><li><a href="143.2.stream.html">143.2.stream</a></li><li><a href="143.3.gulp.html">143.3.gulp</a></li><li><a href="144.1.closure.html">144.1.closure</a></li><li><a href="106.13.router-6.html">106.13.router-6</a></li><li><a href="145.react-router-v6.html">145.react-router-v6</a></li><li><a href="144.2.v8.html">144.2.v8</a></li><li><a href="144.3.gc.html">144.3.gc</a></li><li><a href="106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="146.browser.html">146.browser</a></li><li><a href="147.lighthouse.html">147.lighthouse</a></li><li><a href="148.1.basic.html">148.1.basic</a></li><li><a href="148.2.basic&#32;.html">148.2.basic </a></li><li><a href="148.3.basic.html">148.3.basic</a></li></ul>                        </div>
 
-
+                        
 <div class="warpper">
-
     <div class="page-toc">
-        <ul><li><a href="#t01. 屏幕刷新率">1. 屏幕刷新率</a></li><li><a href="#t12. 帧">2. 帧</a><ul><li><a href="#t22.1 rAF">2.1 rAF</a></li><li><a href="#t32.2 requestIdleCallback">2.2 requestIdleCallback</a></li><li><a href="#t42.3 MessageChannel">2.3 MessageChannel</a></li></ul></li><li><a href="#t53. 单链表">3. 单链表</a></li><li><a href="#t64.Fiber历史">4.Fiber历史</a><ul><li><a href="#t74.1 Fiber之前的协调">4.1 Fiber之前的协调</a></li><li><a href="#t84.2 Fiber是什么">4.2 Fiber是什么</a><ul><li><a href="#t94.2.1 Fiber是一个执行单元">4.2.1 Fiber是一个执行单元</a></li><li><a href="#t104.2.2 Fiber是一种数据结构">4.2.2 Fiber是一种数据结构</a></li></ul></li></ul></li><li><a href="#t115.Fiber执行阶段">5.Fiber执行阶段</a><ul><li><a href="#t125.1 render阶段">5.1 render阶段</a><ul><li><a href="#t135.1.1 element.js">5.1.1 element.js</a></li><li><a href="#t145.1.2 render.js">5.1.2 render.js</a></li></ul></li><li><a href="#t155.2 commit阶段">5.2 commit阶段</a></li></ul></li></ul>
+        <ul><li><a href="96.2.fiber.html#t01. 屏幕刷新率">1. 屏幕刷新率</a></li><li><a href="96.2.fiber.html#t12. 帧">2. 帧</a><ul><li><a href="96.2.fiber.html#t22.1 rAF">2.1 rAF</a></li><li><a href="96.2.fiber.html#t32.2 requestIdleCallback">2.2 requestIdleCallback</a></li><li><a href="96.2.fiber.html#t42.3 MessageChannel">2.3 MessageChannel</a></li></ul></li><li><a href="96.2.fiber.html#t53. 单链表">3. 单链表</a></li><li><a href="96.2.fiber.html#t64.Fiber历史">4.Fiber历史</a><ul><li><a href="96.2.fiber.html#t74.1 Fiber之前的协调">4.1 Fiber之前的协调</a></li><li><a href="96.2.fiber.html#t84.2 Fiber是什么">4.2 Fiber是什么</a><ul><li><a href="96.2.fiber.html#t94.2.1 Fiber是一个执行单元">4.2.1 Fiber是一个执行单元</a></li><li><a href="96.2.fiber.html#t104.2.2 Fiber是一种数据结构">4.2.2 Fiber是一种数据结构</a></li></ul></li></ul></li><li><a href="96.2.fiber.html#t115.Fiber执行阶段">5.Fiber执行阶段</a><ul><li><a href="96.2.fiber.html#t125.1 render阶段">5.1 render阶段</a><ul><li><a href="96.2.fiber.html#t135.1.1 element.js">5.1.1 element.js</a></li><li><a href="96.2.fiber.html#t145.1.2 render.js">5.1.2 render.js</a></li></ul></li><li><a href="96.2.fiber.html#t155.2 commit阶段">5.2 commit阶段</a></li></ul></li></ul>
     </div>
-    
     <div class="content markdown-body">
-        <h2 id="t01. &#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x7387;">1. &#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x7387; <a href="#t01. &#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x7387;"> # </a></h2>
+        <h2 id="t01. &#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x7387;">1. &#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x7387; <a href="96.2.fiber.html#t01. &#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x7387;"> # </a></h2>
 <ul>
 <li>&#x76EE;&#x524D;&#x5927;&#x591A;&#x6570;&#x8BBE;&#x5907;&#x7684;&#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x7387;&#x4E3A; 60 &#x6B21;/&#x79D2;</li>
 <li>&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x52A8;&#x753B;&#x6216;&#x9875;&#x9762;&#x7684;&#x6BCF;&#x4E00;&#x5E27;&#x7684;&#x901F;&#x7387;&#x4E5F;&#x9700;&#x8981;&#x8DDF;&#x8BBE;&#x5907;&#x5C4F;&#x5E55;&#x7684;&#x5237;&#x65B0;&#x7387;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
@@ -32,7 +41,7 @@
 <li>1s 60&#x5E27;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x4E00;&#x5E27;&#x5206;&#x5230;&#x7684;&#x65F6;&#x95F4;&#x662F; 1000/60 &#x2248; 16 ms&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E66;&#x5199;&#x4EE3;&#x7801;&#x65F6;&#x529B;&#x6C42;&#x4E0D;&#x8BA9;&#x4E00;&#x5E27;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#x8D85;&#x8FC7; 16ms</li>
 </ul>
 <p><img src="http://img.zhufengpeixun.cn/autogivefood.gif" alt="autogivefood"></p>
-<h2 id="t12. &#x5E27;">2. &#x5E27; <a href="#t12. &#x5E27;"> # </a></h2>
+<h2 id="t12. &#x5E27;">2. &#x5E27; <a href="96.2.fiber.html#t12. &#x5E27;"> # </a></h2>
 <ul>
 <li>&#x6BCF;&#x4E2A;&#x5E27;&#x7684;&#x5F00;&#x5934;&#x5305;&#x62EC;&#x6837;&#x5F0F;&#x8BA1;&#x7B97;&#x3001;&#x5E03;&#x5C40;&#x548C;&#x7ED8;&#x5236;</li>
 <li><p>JavaScript&#x6267;&#x884C; Javascript&#x5F15;&#x64CE;&#x548C;&#x9875;&#x9762;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6E32;&#x67D3;&#x7EBF;&#x7A0B;,GUI&#x6E32;&#x67D3;&#x548C;Javascript&#x6267;&#x884C;&#x4E24;&#x8005;&#x662F;&#x4E92;&#x65A5;&#x7684;</p>
@@ -41,11 +50,11 @@
 </li>
 </ul>
 <p><img src="http://img.zhufengpeixun.cn/lifeofframe.jpg" alt="lifeofframe"></p>
-<h3 id="t22.1 rAF">2.1 rAF <a href="#t22.1 rAF"> # </a></h3>
+<h3 id="t22.1 rAF">2.1 rAF <a href="96.2.fiber.html#t22.1 rAF"> # </a></h3>
 <ul>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame">requestAnimationFrame</a>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x5728;&#x7ED8;&#x5236;&#x4E4B;&#x524D;&#x6267;&#x884C;</li>
 </ul>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -86,7 +95,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h3 id="t32.2 requestIdleCallback">2.2 requestIdleCallback <a href="#t32.2 requestIdleCallback"> # </a></h3>
+<h3 id="t32.2 requestIdleCallback">2.2 requestIdleCallback <a href="96.2.fiber.html#t32.2 requestIdleCallback"> # </a></h3>
 <ul>
 <li>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5FEB;&#x901F;&#x54CD;&#x5E94;&#x7528;&#x6237;&#xFF0C;&#x8BA9;&#x7528;&#x6237;&#x89C9;&#x5F97;&#x591F;&#x5FEB;&#xFF0C;&#x4E0D;&#x80FD;&#x963B;&#x585E;&#x7528;&#x6237;&#x7684;&#x4EA4;&#x4E92;</li>
 <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestIdleCallback">requestIdleCallback</a>&#x4F7F;&#x5F00;&#x53D1;&#x8005;&#x80FD;&#x591F;&#x5728;&#x4E3B;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x4E0A;&#x6267;&#x884C;&#x540E;&#x53F0;&#x548C;&#x4F4E;&#x4F18;&#x5148;&#x7EA7;&#x5DE5;&#x4F5C;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5EF6;&#x8FDF;&#x5173;&#x952E;&#x4E8B;&#x4EF6;&#xFF0C;&#x5982;&#x52A8;&#x753B;&#x548C;&#x8F93;&#x5165;&#x54CD;&#x5E94;</li>
@@ -155,7 +164,7 @@ interface IdleDeadline {
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
-<h3 id="t42.3 MessageChannel">2.3 MessageChannel <a href="#t42.3 MessageChannel"> # </a></h3>
+<h3 id="t42.3 MessageChannel">2.3 MessageChannel <a href="96.2.fiber.html#t42.3 MessageChannel"> # </a></h3>
 <ul>
 <li>&#x76EE;&#x524D; <code>requestIdleCallback</code> &#x76EE;&#x524D;&#x53EA;&#x6709;Chrome&#x652F;&#x6301;</li>
 <li>&#x6240;&#x4EE5;&#x76EE;&#x524D; React&#x5229;&#x7528; <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MessageChannel">MessageChannel</a>&#x6A21;&#x62DF;&#x4E86;requestIdleCallback&#xFF0C;&#x5C06;&#x56DE;&#x8C03;&#x5EF6;&#x8FDF;&#x5230;&#x7ED8;&#x5236;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;&#x6267;&#x884C;</li>
@@ -180,7 +189,7 @@ port2.onmessage = <span class="hljs-function"><span class="hljs-keyword">functio
 port1.postMessage(<span class="hljs-string">&quot;&#x53D1;&#x9001;&#x7ED9;port2&quot;</span>);
 port2.postMessage(<span class="hljs-string">&quot;&#x53D1;&#x9001;&#x7ED9;port1&quot;</span>);
 </code></pre>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -255,13 +264,13 @@ port2.postMessage(<span class="hljs-string">&quot;&#x53D1;&#x9001;&#x7ED9;port1&
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="t53. &#x5355;&#x94FE;&#x8868;">3. &#x5355;&#x94FE;&#x8868; <a href="#t53. &#x5355;&#x94FE;&#x8868;"> # </a></h2>
+<h2 id="t53. &#x5355;&#x94FE;&#x8868;">3. &#x5355;&#x94FE;&#x8868; <a href="96.2.fiber.html#t53. &#x5355;&#x94FE;&#x8868;"> # </a></h2>
 <ul>
 <li>&#x5355;&#x94FE;&#x8868;&#x662F;&#x4E00;&#x79CD;&#x94FE;&#x5F0F;&#x5B58;&#x53D6;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</li>
 <li>&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x662F;&#x4EE5;&#x8282;&#x70B9;&#x6765;&#x8868;&#x793A;&#x7684;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x6784;&#x6210;&#xFF1A;&#x5143;&#x7D20; + &#x6307;&#x9488;(&#x6307;&#x793A;&#x540E;&#x7EE7;&#x5143;&#x7D20;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;)&#xFF0C;&#x5143;&#x7D20;&#x5C31;&#x662F;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x5B58;&#x50A8;&#x5355;&#x5143;&#xFF0C;&#x6307;&#x9488;&#x5C31;&#x662F;&#x8FDE;&#x63A5;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5730;&#x5740;</li>
 </ul>
-<p><img src="http://img.zhufengpeixun.cn/trainlist.jpg" alt="trainlist"></p>
-<p><img src="http://img.zhufengpeixun.cn/singlelink2.jpg" alt="singlelink2"></p>
+<p><img src="https://img.zhufengpeixun.cn/trainlist.jpg" alt="trainlist"></p>
+<p><img src="https://img.zhufengpeixun.cn/singlelink2.jpg" alt="singlelink2"></p>
 <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Update</span> </span>{
     <span class="hljs-keyword">constructor</span>(payload) {
         <span class="hljs-keyword">this</span>.payload = payload;
@@ -309,8 +318,8 @@ queue.enqueueUpdate(<span class="hljs-keyword">new</span> Update(<span class="hl
 queue.forceUpdate();
 <span class="hljs-built_in">console</span>.log(queue.baseState);
 </code></pre>
-<h2 id="t64.Fiber&#x5386;&#x53F2;">4.Fiber&#x5386;&#x53F2; <a href="#t64.Fiber&#x5386;&#x53F2;"> # </a></h2>
-<h3 id="t74.1 Fiber&#x4E4B;&#x524D;&#x7684;&#x534F;&#x8C03;">4.1 Fiber&#x4E4B;&#x524D;&#x7684;&#x534F;&#x8C03; <a href="#t74.1 Fiber&#x4E4B;&#x524D;&#x7684;&#x534F;&#x8C03;"> # </a></h3>
+<h2 id="t64.Fiber&#x5386;&#x53F2;">4.Fiber&#x5386;&#x53F2; <a href="96.2.fiber.html#t64.Fiber&#x5386;&#x53F2;"> # </a></h2>
+<h3 id="t74.1 Fiber&#x4E4B;&#x524D;&#x7684;&#x534F;&#x8C03;">4.1 Fiber&#x4E4B;&#x524D;&#x7684;&#x534F;&#x8C03; <a href="96.2.fiber.html#t74.1 Fiber&#x4E4B;&#x524D;&#x7684;&#x534F;&#x8C03;"> # </a></h3>
 <ul>
 <li>React &#x4F1A;&#x9012;&#x5F52;&#x6BD4;&#x5BF9;VirtualDOM&#x6811;&#xFF0C;&#x627E;&#x51FA;&#x9700;&#x8981;&#x53D8;&#x52A8;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x540C;&#x6B65;&#x66F4;&#x65B0;&#x5B83;&#x4EEC;&#x3002;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B; React &#x79F0;&#x4E3A;Reconcilation(&#x534F;&#x8C03;)</li>
 <li>&#x5728;<code>Reconcilation</code>&#x671F;&#x95F4;&#xFF0C;React &#x4F1A;&#x4E00;&#x76F4;&#x5360;&#x7528;&#x7740;&#x6D4F;&#x89C8;&#x5668;&#x8D44;&#x6E90;&#xFF0C;&#x4E00;&#x5219;&#x4F1A;&#x5BFC;&#x81F4;&#x7528;&#x6237;&#x89E6;&#x53D1;&#x7684;&#x4E8B;&#x4EF6;&#x5F97;&#x4E0D;&#x5230;&#x54CD;&#x5E94;, &#x4E8C;&#x5219;&#x4F1A;&#x5BFC;&#x81F4;&#x6389;&#x5E27;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x80FD;&#x4F1A;&#x611F;&#x89C9;&#x5230;&#x5361;&#x987F;</li>
@@ -347,43 +356,43 @@ queue.forceUpdate();
 }
 walk(root);
 </code></pre>
-<h3 id="t84.2 Fiber&#x662F;&#x4EC0;&#x4E48;">4.2 Fiber&#x662F;&#x4EC0;&#x4E48; <a href="#t84.2 Fiber&#x662F;&#x4EC0;&#x4E48;"> # </a></h3>
+<h3 id="t84.2 Fiber&#x662F;&#x4EC0;&#x4E48;">4.2 Fiber&#x662F;&#x4EC0;&#x4E48; <a href="96.2.fiber.html#t84.2 Fiber&#x662F;&#x4EC0;&#x4E48;"> # </a></h3>
 <ul>
 <li>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x67D0;&#x4E9B;&#x8C03;&#x5EA6;&#x7B56;&#x7565;&#x5408;&#x7406;&#x5206;&#x914D;CPU&#x8D44;&#x6E90;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x7528;&#x6237;&#x7684;&#x54CD;&#x5E94;&#x901F;&#x5EA6;</li>
 <li>&#x901A;&#x8FC7;Fiber&#x67B6;&#x6784;&#xFF0C;&#x8BA9;&#x81EA;&#x5DF1;&#x7684;Reconcilation&#x8FC7;&#x7A0B;&#x53D8;&#x6210;&#x53EF;&#x88AB;&#x4E2D;&#x65AD;&#x3002; <code>&#x9002;&#x65F6;</code>&#x5730;&#x8BA9;&#x51FA;CPU&#x6267;&#x884C;&#x6743;&#xFF0C;&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x53CA;&#x65F6;&#x5730;&#x54CD;&#x5E94;&#x7528;&#x6237;&#x7684;&#x4EA4;&#x4E92;</li>
 </ul>
-<h4 id="t94.2.1 Fiber&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5355;&#x5143;">4.2.1 Fiber&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5355;&#x5143; <a href="#t94.2.1 Fiber&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5355;&#x5143;"> # </a></h4>
+<h4 id="t94.2.1 Fiber&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5355;&#x5143;">4.2.1 Fiber&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5355;&#x5143; <a href="96.2.fiber.html#t94.2.1 Fiber&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5355;&#x5143;"> # </a></h4>
 <ul>
 <li>Fiber&#x662F;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5355;&#x5143;,&#x6BCF;&#x6B21;&#x6267;&#x884C;&#x5B8C;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5355;&#x5143;, React &#x5C31;&#x4F1A;&#x68C0;&#x67E5;&#x73B0;&#x5728;&#x8FD8;&#x5269;&#x591A;&#x5C11;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x65F6;&#x95F4;&#x5C31;&#x5C06;&#x63A7;&#x5236;&#x6743;&#x8BA9;&#x51FA;&#x53BB;</li>
 </ul>
 <p><img src="http://img.zhufengpeixun.cn/fiberflow.jpg" alt="fiberflow"></p>
-<h4 id="t104.2.2 Fiber&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;">4.2.2 Fiber&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784; <a href="#t104.2.2 Fiber&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;"> # </a></h4>
+<h4 id="t104.2.2 Fiber&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;">4.2.2 Fiber&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784; <a href="96.2.fiber.html#t104.2.2 Fiber&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;"> # </a></h4>
 <ul>
 <li>React&#x76EE;&#x524D;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x4F7F;&#x7528;&#x94FE;&#x8868;, &#x6BCF;&#x4E2A; VirtualDOM &#x8282;&#x70B9;&#x5185;&#x90E8;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x4E2A;<code>Fiber</code></li>
 </ul>
 <p><img src="http://img.zhufengpeixun.cn/fiberconstructor.jpg" alt="fiberconstructor"></p>
 <pre><code class="lang-js">type Fiber = {
   <span class="hljs-comment">//&#x7C7B;&#x578B;  </span>
-  type: any,
+  <span class="hljs-attr">type</span>: any,
   <span class="hljs-comment">//&#x7236;&#x8282;&#x70B9;</span>
-  <span class="hljs-keyword">return</span>: Fiber,
+  <span class="hljs-attr">return</span>: Fiber,
   <span class="hljs-comment">// &#x6307;&#x5411;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x8282;&#x70B9;</span>
-  child: Fiber,
+  <span class="hljs-attr">child</span>: Fiber,
   <span class="hljs-comment">// &#x6307;&#x5411;&#x4E0B;&#x4E00;&#x4E2A;&#x5F1F;&#x5F1F;</span>
-  sibling: Fiber
+  <span class="hljs-attr">sibling</span>: Fiber
 }
 </code></pre>
-<h2 id="t115.Fiber&#x6267;&#x884C;&#x9636;&#x6BB5;">5.Fiber&#x6267;&#x884C;&#x9636;&#x6BB5; <a href="#t115.Fiber&#x6267;&#x884C;&#x9636;&#x6BB5;"> # </a></h2>
+<h2 id="t115.Fiber&#x6267;&#x884C;&#x9636;&#x6BB5;">5.Fiber&#x6267;&#x884C;&#x9636;&#x6BB5; <a href="96.2.fiber.html#t115.Fiber&#x6267;&#x884C;&#x9636;&#x6BB5;"> # </a></h2>
 <ul>
 <li>&#x6BCF;&#x6B21;&#x6E32;&#x67D3;&#x6709;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#xFF1A;Reconciliation(&#x534F;&#x8C03;\render&#x9636;&#x6BB5;)&#x548C;Commit(&#x63D0;&#x4EA4;&#x9636;&#x6BB5;)</li>
 <li>&#x534F;&#x8C03;&#x9636;&#x6BB5;: &#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F; Diff &#x9636;&#x6BB5;, &#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x53EF;&#x4EE5;&#x88AB;&#x4E2D;&#x65AD;, &#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x4F1A;&#x627E;&#x51FA;&#x6240;&#x6709;&#x8282;&#x70B9;&#x53D8;&#x66F4;&#xFF0C;&#x4F8B;&#x5982;&#x8282;&#x70B9;&#x65B0;&#x589E;&#x3001;&#x5220;&#x9664;&#x3001;&#x5C5E;&#x6027;&#x53D8;&#x66F4;&#x7B49;&#x7B49;, &#x8FD9;&#x4E9B;&#x53D8;&#x66F4;React &#x79F0;&#x4E4B;&#x4E3A;&#x526F;&#x4F5C;&#x7528;(Effect)</li>
 <li>&#x63D0;&#x4EA4;&#x9636;&#x6BB5;: &#x5C06;&#x4E0A;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x7684;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x526F;&#x4F5C;&#x7528;(Effects)&#x4E00;&#x6B21;&#x6027;&#x6267;&#x884C;&#x4E86;&#x3002;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x5FC5;&#x987B;&#x540C;&#x6B65;&#x6267;&#x884C;&#xFF0C;&#x4E0D;&#x80FD;&#x88AB;&#x6253;&#x65AD;</li>
 </ul>
-<h3 id="t125.1 render&#x9636;&#x6BB5;">5.1 render&#x9636;&#x6BB5; <a href="#t125.1 render&#x9636;&#x6BB5;"> # </a></h3>
+<h3 id="t125.1 render&#x9636;&#x6BB5;">5.1 render&#x9636;&#x6BB5; <a href="96.2.fiber.html#t125.1 render&#x9636;&#x6BB5;"> # </a></h3>
 <ul>
 <li>render&#x9636;&#x6BB5;&#x4F1A;&#x6784;&#x5EFA;fiber&#x6811;</li>
 </ul>
-<h4 id="t135.1.1 element.js">5.1.1 element.js <a href="#t135.1.1 element.js"> # </a></h4>
+<h4 id="t135.1.1 element.js">5.1.1 element.js <a href="96.2.fiber.html#t135.1.1 element.js"> # </a></h4>
 <pre><code class="lang-js"><span class="hljs-keyword">let</span> A1 = { <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;div&apos;</span>, <span class="hljs-attr">key</span>: <span class="hljs-string">&apos;A1&apos;</span> };
 <span class="hljs-keyword">let</span> B1 = { <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;div&apos;</span>, <span class="hljs-attr">key</span>: <span class="hljs-string">&apos;B1&apos;</span>, <span class="hljs-attr">return</span>: A1 };
 <span class="hljs-keyword">let</span> B2 = { <span class="hljs-attr">type</span>: <span class="hljs-string">&apos;div&apos;</span>, <span class="hljs-attr">key</span>: <span class="hljs-string">&apos;B2&apos;</span>, <span class="hljs-attr">return</span>: A1 };
@@ -395,7 +404,7 @@ B1.child = C1;
 C1.sibling = C2;
 <span class="hljs-built_in">module</span>.exports = A1;
 </code></pre>
-<h4 id="t145.1.2 render.js">5.1.2 render.js <a href="#t145.1.2 render.js"> # </a></h4>
+<h4 id="t145.1.2 render.js">5.1.2 render.js <a href="96.2.fiber.html#t145.1.2 render.js"> # </a></h4>
 <ul>
 <li>&#x4ECE;&#x9876;&#x70B9;&#x5F00;&#x59CB;&#x904D;&#x5386;</li>
 <li>&#x5982;&#x679C;&#x6709;&#x7B2C;&#x4E00;&#x4E2A;&#x513F;&#x5B50;&#xFF0C;&#x5148;&#x904D;&#x5386;&#x7B2C;&#x4E00;&#x4E2A;&#x513F;&#x5B50;</li>
@@ -444,7 +453,7 @@ workLoop();
 <li>&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x904D;&#x5386;&#x5B8C;&#x6210;? &#x6CA1;&#x6709;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x6216;&#x8005;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x90FD;&#x904D;&#x5386;&#x5B8C;&#x6210;&#x4E86;</li>
 <li>&#x6CA1;&#x7239;&#x4E86;&#x5C31;&#x8868;&#x793A;&#x5168;&#x90E8;&#x904D;&#x5386;&#x5B8C;&#x6210;&#x4E86;</li>
 </ul>
-<h3 id="t155.2 commit&#x9636;&#x6BB5;">5.2 commit&#x9636;&#x6BB5; <a href="#t155.2 commit&#x9636;&#x6BB5;"> # </a></h3>
+<h3 id="t155.2 commit&#x9636;&#x6BB5;">5.2 commit&#x9636;&#x6BB5; <a href="96.2.fiber.html#t155.2 commit&#x9636;&#x6BB5;"> # </a></h3>
 <ul>
 <li>&#x7C7B;&#x6BD4;Git&#x5206;&#x652F;&#x529F;&#x80FD;,&#x4ECE;&#x65E7;&#x6811;&#x4E2D;fork&#x51FA;&#x6765;&#x4E00;&#x4EFD;&#xFF0C;&#x5728;&#x65B0;&#x5206;&#x652F;&#x8FDB;&#x884C;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x548C;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#xFF0C;&#x7ECF;&#x8FC7;&#x6D4B;&#x8BD5;&#x540E;&#x8FDB;&#x884C;&#x63D0;&#x4EA4;</li>
 </ul>
@@ -554,18 +563,74 @@ nextUnitOfWork = workInProgressRoot;<span class="hljs-comment">//&#x4ECE;RootFib
 workLoop();
 </code></pre>
 
-        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
     </div>
-    
 </div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+    aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">姓名:</label>
+                        <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码:</label>
+                        <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                    data-dismiss="modal">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+let zhufengjiagou = localStorage.getItem('zhufengjiagou');
+const host = 'http://login.zhufengpeixun.com';
+if(zhufengjiagou){
+  fetch(host+'/check',{method:"GET",mode: 'cors',
+　　headers: {'Content-Type': 'application/json', authorization: `Bearer ${zhufengjiagou}`}}).then(response => response.json()).then(res => {
+    if(res.success){
+     
+    }else{
+      $('#loginModal').modal('show')
+    }
+  }) 
+}else{
+   $('#loginModal').modal('show')
+}
 
-<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+$('#loginModal').on('hidden.bs.modal', function (event) {
+  var modal = $(this)
+  let username = modal.find('.modal-body #username').val();
+  let password = modal.find('.modal-body #password').val();
+  fetch(host+'/login',{method:"POST",mode: 'cors',
+　　headers: {'Content-Type': 'application/json'},
+　　body:JSON.stringify({username,password})}).then(response => response.json()).then(res => {
+    if(res.success){
+      localStorage.setItem('zhufengjiagou',res.zhufengjiagou);
+    }else{
+      window.location.href = 'http://www.zhufengpeixun.cn';
+    }
+  })
+})
+</script>
 <script>
 $('.warpper .page-toc ul ul li a').on('click',function(){
   $('.warpper .page-toc ul ul li a').removeClass('my-active')
   $(this).addClass('my-active')
 })
-
 $('.logo').on('mouseenter',function(){
   $('.nav').height('450px');
 })
@@ -576,61 +641,6 @@ $('.logo').on('click',function(){
   $('.nav').css('display','none');
  $('.warpper').css('padding','0px');
 })
-// if (!$('.understand-me').length) {
-  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
-  //   var count = bar / 26 / 2;
-  //   var barHeight = $('.page-toc').outerHeight();
-  //   $('.page-toc li').eq(0).children('a').addClass('red');
-  //   var arr = [];
-  //   $("h1,h2,h3,h4,h5,h6").each(function () {
-  //     arr.push($(this).position().top);
-  //   });
-  //   var timer
-  //   function dark() {
-  //     clearTimeout(timer)
-  //      timer = setTimeout(function () {
-  //      var top = Math.abs($('.page-toc > ul').position().top);
-  //      var cur = $('.content').scrollTop();
-  //      for (var i = arr.length; i >= 0; i--) {
-  //        if (arr[i] <= cur) {
-  //          break;
-  //        }
-  //      }
-  //      if (i === -1) {
-  //        i = 0;
-  //      }
-  //      $('.page-toc li a').removeClass('red');
-  //      $('.page-toc li').eq(i).children('a').addClass('red');
-  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
-  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
-  //    },200)
-  //   }
-
-  //   $('.content').on('scroll', dark);
-  // }
 </script>
-<style>
-
-    /* ::-webkit-scrollbar{width:14px;}
-    ::-webkit-scrollbar-track{background-color:transparent;}
-    ::-webkit-scrollbar-thumb{background-color:transparent;}
-    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
-    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
-
-    .page-toc > ul .red {
-        background: #f3f3f3;
-        z-index: 1;
-        border-left: 3px solid #009a61;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        color: #000
-    }
-
-
-
-
-
-</style>
-<script type="text/javascript"  src="https://idm-su.baidu.com/su_new.js"></script>
 </body>
 </html>

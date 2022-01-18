@@ -3,285 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>web前端</title>
+    <title>珠峰架构师成长计划</title>
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
 </head>
 <body>
 <div class="nav">
     <div class="logo">
         
-      web前端
-        
-    </div>
-<ul><li class="active"><a href="index.html">0.Async</a></li><li><a href="html/0.editor.html">0.editor</a></li><li><a href="html/0.module.html">0.module</a></li><li><a href="html/1.ES2015.html">1.ES2015</a></li><li><a href="html/2.Promise.html">2.Promise</a></li><li><a href="html/3.Node.html">3.Node</a></li><li><a href="html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="html/5.REPL.html">5.REPL</a></li><li><a href="html/6.NodeCore.html">6.NodeCore</a></li><li><a href="html/7.module&NPM.html">7.module&NPM</a></li><li><a href="html/8.Encoding.html">8.Encoding</a></li><li><a href="html/9.Buffer.html">9.Buffer</a></li><li><a href="html/10.fs.html">10.fs</a></li><li><a href="html/11.Stream-1.html">11.Stream-1</a></li><li><a href="html/11.Stream-2.html">11.Stream-2</a></li><li><a href="html/11.Stream-3.html">11.Stream-3</a></li><li><a href="html/11.Stream-4.html">11.Stream-4</a></li><li><a href="html/12-Network-2.html">12-Network-2</a></li><li><a href="html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="html/12.Network-1.html">12.Network-1</a></li><li><a href="html/13.tcp.html">13.tcp</a></li><li><a href="html/14.http-1.html">14.http-1</a></li><li><a href="html/14.http-2.html">14.http-2</a></li><li><a href="html/15.compress.html">15.compress</a></li><li><a href="html/16.crypto.html">16.crypto</a></li><li><a href="html/17.process.html">17.process</a></li><li><a href="html/18.yargs.html">18.yargs</a></li><li><a href="html/19.cache.html">19.cache</a></li><li><a href="html/20.action.html">20.action</a></li><li><a href="html/21.https.html">21.https</a></li><li><a href="html/22.cookie.html">22.cookie</a></li><li><a href="html/23.session.html">23.session</a></li><li><a href="html/24.express-1.html">24.express-1</a></li><li><a href="html/24.express-2.html">24.express-2</a></li><li><a href="html/24.express-3.html">24.express-3</a></li><li><a href="html/24.express-4.html">24.express-4</a></li><li><a href="html/25.koa-1.html">25.koa-1</a></li><li><a href="html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="html/28.redux.html">28.redux</a></li><li><a href="html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="html/31.dva.html">31.dva</a></li><li><a href="html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="html/33.redis.html">33.redis</a></li><li><a href="html/34.unittest.html">34.unittest</a></li><li><a href="html/35.jwt.html">35.jwt</a></li><li><a href="html/36.websocket-1.html">36.websocket-1</a></li><li><a href="html/36.websocket-2.html">36.websocket-2</a></li><li><a href="html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="html/38.chat-3.html">38.chat-3</a></li><li><a href="html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="html/38.chat.html">38.chat</a></li><li><a href="html/38.chat2.html">38.chat2</a></li><li><a href="html/38.chat2.html">38.chat2</a></li><li><a href="html/39.crawl-0.html">39.crawl-0</a></li><li><a href="html/39.crawl-1.html">39.crawl-1</a></li><li><a href="html/39.crawl-2.html">39.crawl-2</a></li><li><a href="html/40.deploy.html">40.deploy</a></li><li><a href="html/41.safe.html">41.safe</a></li><li><a href="html/42.test.html">42.test</a></li><li><a href="html/43.nginx.html">43.nginx</a></li><li><a href="html/44.enzyme.html">44.enzyme</a></li><li><a href="html/45.docker.html">45.docker</a></li><li><a href="html/46.elastic.html">46.elastic</a></li><li><a href="html/47.oauth.html">47.oauth</a></li><li><a href="html/48.wxpay.html">48.wxpay</a></li><li><a href="html/index.html">index</a></li><li><a href="html/51.typescript.html">51.typescript</a></li><li><a href="html/52.UML.html">52.UML</a></li><li><a href="html/53.design.html">53.design</a></li><li><a href="html/index.html">index</a></li><li><a href="html/54.linux.html">54.linux</a></li><li><a href="html/57.ts.html">57.ts</a></li><li><a href="html/56.react-ssr.html">56.react-ssr</a></li><li><a href="html/58.ts_react.html">58.ts_react</a></li><li><a href="html/59.ketang.html">59.ketang</a></li><li><a href="html/59.ketang2.html">59.ketang2</a></li><li><a href="html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="html/62.2.react-state.html">62.2.react-state</a></li><li><a href="html/62.3.react-high.html">62.3.react-high</a></li><li><a href="html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="html/62.8.react-source.html">62.8.react-source</a></li><li><a href="html/63.1.redux.html">63.1.redux</a></li><li><a href="html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="html/64.1.router.html">64.1.router</a></li><li><a href="html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="html/65.1.typescript.html">65.1.typescript</a></li><li><a href="html/65.2.typescript.html">65.2.typescript</a></li><li><a href="html/65.3.typescript.html">65.3.typescript</a></li><li><a href="html/65.4.antd.html">65.4.antd</a></li><li><a href="html/65.4.definition.html">65.4.definition</a></li><li><a href="html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="html/66-6.tree.html">66-6.tree</a></li><li><a href="html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="html/66-13.pwa.html">66-13.pwa</a></li><li><a href="html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="html/67-1-network.html">67-1-network</a></li><li><a href="html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="html/7.npm2.html">7.npm2</a></li><li><a href="html/69-hooks.html">69-hooks</a></li><li><a href="html/70-deploy.html">70-deploy</a></li><li><a href="html/71-hmr.html">71-hmr</a></li><li><a href="html/72.deploy.html">72.deploy</a></li><li><a href="html/73.import.html">73.import</a></li><li><a href="html/74.mobile.html">74.mobile</a></li><li><a href="html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="html/75.webpack-6.实现.html">75.webpack-6.实现</a></li><li><a href="html/76.react_optimize.html">76.react_optimize</a></li><li><a href="html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="html/79.grammar.html">79.grammar</a></li><li><a href="html/80.tree.html">80.tree</a></li><li><a href="html/81.axios.html">81.axios</a></li><li><a href="html/82.1.react.html">82.1.react</a></li><li><a href="html/82.2.react-high.html">82.2.react-high</a></li><li><a href="html/82.3.react-router.html">82.3.react-router</a></li><li><a href="html/82.4.redux.html">82.4.redux</a></li><li><a href="html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="html/82.6.connected.html">82.6.connected</a></li><li><a href="html/82.7.saga.html">82.7.saga</a></li><li><a href="html/82.8.dva.html">82.8.dva</a></li><li><a href="html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="html/82.10.umi.html">82.10.umi</a></li><li><a href="html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="html/83.upload.html">83.upload</a></li><li><a href="html/84.graphql.html">84.graphql</a></li><li><a href="html/85.antpro.html">85.antpro</a></li><li><a href="html/86.1.uml.html">86.1.uml</a></li><li><a href="html/86.2.design.html">86.2.design</a></li><li><a href="html/87.postcss.html">87.postcss</a></li><li><a href="html/88.react16-1.html">88.react16-1</a></li><li><a href="html/89.nextjs.html">89.nextjs</a></li><li><a href="html/90.react-test.html">90.react-test</a></li><li><a href="html/91.react-ts.html">91.react-ts</a></li><li><a href="html/92.rbac.html">92.rbac</a></li><li><a href="html/93.tsnode.html">93.tsnode</a></li><li><a href="html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="html/94.6.https.html">94.6.https</a></li><li><a href="html/94.7. nginx.html">94.7. nginx</a></li><li><a href="html/95.1. react.html">95.1. react</a></li><li><a href="html/95.2.react.html">95.2.react</a></li><li><a href="html/96.1.react16.html">96.1.react16</a></li><li><a href="html/96.2.fiber.html">96.2.fiber</a></li><li><a href="html/96.3.fiber.html">96.3.fiber</a></li><li><a href="html/97.serverless.html">97.serverless</a></li></ul></div>
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li class="active"><a href="index.html">0.api</a></li><li><a href="html/0.Async.html">0.Async</a></li><li><a href="html/0.module.html">0.module</a></li><li><a href="html/1.ES2015.html">1.ES2015</a></li><li><a href="html/2.Promise.html">2.Promise</a></li><li><a href="html/3.Node.html">3.Node</a></li><li><a href="html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="html/5.REPL.html">5.REPL</a></li><li><a href="html/6.NodeCore.html">6.NodeCore</a></li><li><a href="html/7.module&amp;NPM.html">7.module&NPM</a></li><li><a href="html/8.Encoding.html">8.Encoding</a></li><li><a href="html/9.Buffer.html">9.Buffer</a></li><li><a href="html/10.fs.html">10.fs</a></li><li><a href="html/11.Stream-1.html">11.Stream-1</a></li><li><a href="html/11.Stream-2.html">11.Stream-2</a></li><li><a href="html/11.Stream-3.html">11.Stream-3</a></li><li><a href="html/11.Stream-4.html">11.Stream-4</a></li><li><a href="html/12-Network-2.html">12-Network-2</a></li><li><a href="html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="html/12.Network-1.html">12.Network-1</a></li><li><a href="html/13.tcp.html">13.tcp</a></li><li><a href="html/14.http-1.html">14.http-1</a></li><li><a href="html/14.http-2.html">14.http-2</a></li><li><a href="html/15.compress.html">15.compress</a></li><li><a href="html/16.crypto.html">16.crypto</a></li><li><a href="html/17.process.html">17.process</a></li><li><a href="html/18.yargs.html">18.yargs</a></li><li><a href="html/19.cache.html">19.cache</a></li><li><a href="html/20.action.html">20.action</a></li><li><a href="html/21.https.html">21.https</a></li><li><a href="html/22.cookie.html">22.cookie</a></li><li><a href="html/23.session.html">23.session</a></li><li><a href="html/24.express-1.html">24.express-1</a></li><li><a href="html/24.express-2.html">24.express-2</a></li><li><a href="html/24.express-3.html">24.express-3</a></li><li><a href="html/24.express-4.html">24.express-4</a></li><li><a href="html/25.koa-1.html">25.koa-1</a></li><li><a href="html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="html/28.redux.html">28.redux</a></li><li><a href="html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="html/31.dva.html">31.dva</a></li><li><a href="html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="html/33.redis.html">33.redis</a></li><li><a href="html/34.unittest.html">34.unittest</a></li><li><a href="html/35.jwt.html">35.jwt</a></li><li><a href="html/36.websocket-1.html">36.websocket-1</a></li><li><a href="html/36.websocket-2.html">36.websocket-2</a></li><li><a href="html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="html/38.chat-3.html">38.chat-3</a></li><li><a href="html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="html/38.chat.html">38.chat</a></li><li><a href="html/38.chat2.html">38.chat2</a></li><li><a href="html/38.chat2.html">38.chat2</a></li><li><a href="html/39.crawl-0.html">39.crawl-0</a></li><li><a href="html/39.crawl-1.html">39.crawl-1</a></li><li><a href="html/39.crawl-2.html">39.crawl-2</a></li><li><a href="html/40.deploy.html">40.deploy</a></li><li><a href="html/41.safe.html">41.safe</a></li><li><a href="html/42.test.html">42.test</a></li><li><a href="html/43.nginx.html">43.nginx</a></li><li><a href="html/44.enzyme.html">44.enzyme</a></li><li><a href="html/45.docker.html">45.docker</a></li><li><a href="html/46.elastic.html">46.elastic</a></li><li><a href="html/47.oauth.html">47.oauth</a></li><li><a href="html/48.wxpay.html">48.wxpay</a></li><li><a href="html/index.html">index</a></li><li><a href="html/52.UML.html">52.UML</a></li><li><a href="html/53.design.html">53.design</a></li><li><a href="html/index.html">index</a></li><li><a href="html/54.linux.html">54.linux</a></li><li><a href="html/57.ts.html">57.ts</a></li><li><a href="html/56.react-ssr.html">56.react-ssr</a></li><li><a href="html/58.ts_react.html">58.ts_react</a></li><li><a href="html/59.ketang.html">59.ketang</a></li><li><a href="html/59.ketang2.html">59.ketang2</a></li><li><a href="html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="html/62.2.react-state.html">62.2.react-state</a></li><li><a href="html/62.3.react-high.html">62.3.react-high</a></li><li><a href="html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="html/62.8.react-source.html">62.8.react-source</a></li><li><a href="html/63.1.redux.html">63.1.redux</a></li><li><a href="html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="html/64.1.router.html">64.1.router</a></li><li><a href="html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="html/65.1.typescript.html">65.1.typescript</a></li><li><a href="html/65.2.typescript.html">65.2.typescript</a></li><li><a href="html/65.3.typescript.html">65.3.typescript</a></li><li><a href="html/65.4.antd.html">65.4.antd</a></li><li><a href="html/65.4.definition.html">65.4.definition</a></li><li><a href="html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="html/66-6.tree.html">66-6.tree</a></li><li><a href="html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="html/66-13.pwa.html">66-13.pwa</a></li><li><a href="html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="html/67-1-network.html">67-1-network</a></li><li><a href="html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="html/7.npm2.html">7.npm2</a></li><li><a href="html/69-hooks.html">69-hooks</a></li><li><a href="html/70-deploy.html">70-deploy</a></li><li><a href="html/71-hmr.html">71-hmr</a></li><li><a href="html/72.deploy.html">72.deploy</a></li><li><a href="html/73.import.html">73.import</a></li><li><a href="html/74.mobile.html">74.mobile</a></li><li><a href="html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="html/76.react_optimize.html">76.react_optimize</a></li><li><a href="html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="html/79.grammar.html">79.grammar</a></li><li><a href="html/80.tree.html">80.tree</a></li><li><a href="html/81.axios.html">81.axios</a></li><li><a href="html/82.1.react.html">82.1.react</a></li><li><a href="html/82.2.react-high.html">82.2.react-high</a></li><li><a href="html/82.3.react-router.html">82.3.react-router</a></li><li><a href="html/82.4.redux.html">82.4.redux</a></li><li><a href="html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="html/82.6.connected.html">82.6.connected</a></li><li><a href="html/82.7.saga.html">82.7.saga</a></li><li><a href="html/82.8.dva.html">82.8.dva</a></li><li><a href="html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="html/82.10.umi.html">82.10.umi</a></li><li><a href="html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="html/83.upload.html">83.upload</a></li><li><a href="html/84.graphql.html">84.graphql</a></li><li><a href="html/85.antpro.html">85.antpro</a></li><li><a href="html/86.1.uml.html">86.1.uml</a></li><li><a href="html/86.2.design.html">86.2.design</a></li><li><a href="html/87.postcss.html">87.postcss</a></li><li><a href="html/88.react16-1.html">88.react16-1</a></li><li><a href="html/89.nextjs.html">89.nextjs</a></li><li><a href="html/90.react-test.html">90.react-test</a></li><li><a href="html/91.react-ts.html">91.react-ts</a></li><li><a href="html/92.rbac.html">92.rbac</a></li><li><a href="html/93.tsnode.html">93.tsnode</a></li><li><a href="html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="html/94.6.https.html">94.6.https</a></li><li><a href="html/94.7.&#32;nginx.html">94.7. nginx</a></li><li><a href="html/95.1.&#32;react.html">95.1. react</a></li><li><a href="html/95.2.react.html">95.2.react</a></li><li><a href="html/96.1.react16.html">96.1.react16</a></li><li><a href="html/96.2.fiber.html">96.2.fiber</a></li><li><a href="html/96.3.fiber.html">96.3.fiber</a></li><li><a href="html/97.serverless.html">97.serverless</a></li><li><a href="html/98.websocket.html">98.websocket</a></li><li><a href="html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="html/101.1.monitor.html">101.1.monitor</a></li><li><a href="html/101.2.monitor.html">101.2.monitor</a></li><li><a href="html/102.java.html">102.java</a></li><li><a href="html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="html/103.13.splitChunks.html">103.13.splitChunks</a></li><li><a href="html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="html/103.17.polyfill.html">103.17.polyfill</a></li><li><a href="html/104.1.binary.html">104.1.binary</a></li><li><a href="html/104.2.binary.html">104.2.binary</a></li><li><a href="html/105.skeleton.html">105.skeleton</a></li><li><a href="html/106.1.react.html">106.1.react</a></li><li><a href="html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="html/106.3.react_router.html">106.3.react_router</a></li><li><a href="html/106.4.redux.html">106.4.redux</a></li><li><a href="html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="html/106.8.dva.html">106.8.dva</a></li><li><a href="html/106.9.umi.html">106.9.umi</a></li><li><a href="html/106.10.ketang.html">106.10.ketang</a></li><li><a href="html/106.11.antdesign.html">106.11.antdesign</a></li><li><a href="html/106.12.antpro.html">106.12.antpro</a></li><li><a href="html/107.fiber.html">107.fiber</a></li><li><a href="html/108.http.html">108.http</a></li><li><a href="html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="html/109.3.dll.html">109.3.dll</a></li><li><a href="html/110.nest.js.html">110.nest.js</a></li><li><a href="html/111.xstate.html">111.xstate</a></li><li><a href="html/112.Form.html">112.Form</a></li><li><a href="html/113.redux-saga.html">113.redux-saga</a></li><li><a href="html/114.react+typescript.html">114.react+typescript</a></li><li><a href="html/115.immer.html">115.immer</a></li><li><a href="html/116.pro5.html">116.pro5</a></li><li><a href="html/117.css-loader.html">117.css-loader</a></li><li><a href="html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="html/120.create-react-app.html">120.create-react-app</a></li><li><a href="html/121.react-scripts.html">121.react-scripts</a></li><li><a href="html/122.react-optimize.html">122.react-optimize</a></li><li><a href="html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="html/124.next.js.html">124.next.js</a></li><li><a href="html/125.1.linux.html">125.1.linux</a></li><li><a href="html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="html/125.10.nginx.html">125.10.nginx</a></li><li><a href="html/125.11.docker.html">125.11.docker</a></li><li><a href="html/125.12.ci.html">125.12.ci</a></li><li><a href="html/125.13.k8s.html">125.13.k8s</a></li><li><a href="html/125.14.k8s.html">125.14.k8s</a></li><li><a href="html/125.15.k8s.html">125.15.k8s</a></li><li><a href="html/125.16.k8s.html">125.16.k8s</a></li><li><a href="html/126.11.react-1.html">126.11.react-1</a></li><li><a href="html/126.12.react-2.html">126.12.react-2</a></li><li><a href="html/126.12.react-3.html">126.12.react-3</a></li><li><a href="html/126.12.react-4.html">126.12.react-4</a></li><li><a href="html/126.12.react-5.html">126.12.react-5</a></li><li><a href="html/127.frontend.html">127.frontend</a></li><li><a href="html/128.rollup.html">128.rollup</a></li><li><a href="html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="html/130.health.html">130.health</a></li><li><a href="html/131.hooks.html">131.hooks</a></li><li><a href="html/132.keepalive.html">132.keepalive</a></li><li><a href="html/133.vue-cli.html">133.vue-cli</a></li><li><a href="html/134.react18.html">134.react18</a></li><li><a href="html/135.function.html">135.function</a></li><li><a href="html/136.toolkit.html">136.toolkit</a></li><li><a href="html/137.lerna.html">137.lerna</a></li><li><a href="html/138.create-vite.html">138.create-vite</a></li><li><a href="html/139.cli.html">139.cli</a></li><li><a href="html/140.antd.html">140.antd</a></li><li><a href="html/141.react-dnd.html">141.react-dnd</a></li><li><a href="html/142.1.link.html">142.1.link</a></li><li><a href="html/143.1.gulp.html">143.1.gulp</a></li><li><a href="html/143.2.stream.html">143.2.stream</a></li><li><a href="html/143.3.gulp.html">143.3.gulp</a></li><li><a href="html/144.1.closure.html">144.1.closure</a></li><li><a href="html/106.13.router-6.html">106.13.router-6</a></li><li><a href="html/145.react-router-v6.html">145.react-router-v6</a></li><li><a href="html/144.2.v8.html">144.2.v8</a></li><li><a href="html/144.3.gc.html">144.3.gc</a></li><li><a href="html/106.6.redux-first-history.html">106.6.redux-first-history</a></li><li><a href="html/146.browser.html">146.browser</a></li><li><a href="html/147.lighthouse.html">147.lighthouse</a></li><li><a href="html/148.1.basic.html">148.1.basic</a></li><li><a href="html/148.2.basic&#32;.html">148.2.basic </a></li><li><a href="html/148.3.basic.html">148.3.basic</a></li></ul>                        </div>
 
-
+                        
 <div class="warpper">
-
     <div class="page-toc">
-        <ul><li><a href="#t01. 异步">1. 异步</a></li><li><a href="#t12.高阶函数">2.高阶函数</a><ul><li><a href="#t22.1 可以用于批量生成函数">2.1 可以用于批量生成函数</a></li><li><a href="#t32.2 可以用于需要调用多次才执行的函数">2.2 可以用于需要调用多次才执行的函数</a></li></ul></li><li><a href="#t43. 异步编程的语法目标，就是怎样让它更像同步编程,有以下几种">3. 异步编程的语法目标，就是怎样让它更像同步编程,有以下几种</a></li><li><a href="#t54. 回调">4. 回调</a></li><li><a href="#t65 回调的问题">5 回调的问题</a><ul><li><a href="#t75.1 异常处理">5.1 异常处理</a></li><li><a href="#t85.2 回调地狱">5.2 回调地狱</a></li></ul></li><li><a href="#t96. 异步流程解决方案">6. 异步流程解决方案</a><ul><li><a href="#t106.1 事件发布/订阅模型">6.1 事件发布/订阅模型</a></li><li><a href="#t116.2 哨兵变量">6.2 哨兵变量</a></li><li><a href="#t126.3 Promise/Deferred模式">6.3 Promise/Deferred模式</a></li><li><a href="#t136.4 生成器Generators/ yield">6.4 生成器Generators/ yield</a><ul><li><a href="#t146.4.1 生成器的使用">6.4.1 生成器的使用</a></li><li><a href="#t156.4.2 Co">6.4.2 Co</a></li></ul></li></ul></li><li><a href="#t166.5 Async/ await">6.5 Async/ await</a><ul><li><a href="#t176.5.1 Async的优点">6.5.1 Async的优点</a></li><li><a href="#t186.5.2 async 函数的实现">6.5.2 async 函数的实现</a></li></ul></li></ul>
+        <ul><li><a href="index.html#t01. VSCODE">1. VSCODE</a><ul><li><a href="index.html#t11.1 使用node启动调试">1.1 使用node启动调试</a></li><li><a href="index.html#t21.2 保存时自动格式化">1.2 保存时自动格式化</a></li><li><a href="index.html#t31.3 语言改为英文">1.3 语言改为英文</a></li><li><a href="index.html#t41.4 快捷键">1.4 快捷键</a></li><li><a href="index.html#t51.5 单行注释">1.5 单行注释</a></li><li><a href="index.html#t61.6 多行注释">1.6 多行注释</a></li><li><a href="index.html#t71.7 空行">1.7 空行</a></li><li><a href="index.html#t81.8 全部替换">1.8 全部替换</a></li></ul></li><li><a href="index.html#t92.MAC">2.MAC</a><ul><li><a href="index.html#t102.1 杀死进程">2.1 杀死进程</a></li><li><a href="index.html#t112.2 查看端口占用">2.2 查看端口占用</a><ul><li><a href="index.html#t122.2.1 lsof">2.2.1 lsof</a></li><li><a href="index.html#t132.2.2 netstat">2.2.2 netstat</a></li></ul></li></ul></li><li><a href="index.html#t143.安装需要编译包">3.安装需要编译包</a><ul><li><a href="index.html#t153.1 安装sharp">3.1 安装sharp</a></li><li><a href="index.html#t163.2 编译">3.2 编译</a></li><li><a href="index.html#t173.2 cache目录">3.2 cache目录</a></li></ul></li><li><a href="index.html#t184.Yarn">4.Yarn</a></li><li><a href="index.html#t195.lerna">5.lerna</a></li><li><a href="index.html#t206.yarn">6.yarn</a></li><li><a href="index.html#t217.调试命令">7.调试命令</a></li><li><a href="index.html#t228.配置alias">8.配置alias</a></li><li><a href="index.html#t239.解决vscode卡顿问题">9.解决vscode卡顿问题</a></li><li><a href="index.html#t2410. window编译C++">10. window编译C++</a><ul><li><a href="index.html#t2510.1 Python executable python2 in the PATH">10.1 Python executable python2 in the PATH</a></li><li><a href="index.html#t2610.2 getaddrinfo ENOENT raw.githubusercontent.com">10.2 getaddrinfo ENOENT raw.githubusercontent.com</a></li><li><a href="index.html#t2710.3  npm ERR! gyp verb which failed Error: not found: python2">10.3  npm ERR! gyp verb which failed Error: not found: python2</a></li><li><a href="index.html#t2810.4">10.4</a></li></ul></li><li><a href="index.html#t2911. .npmr镜像">11. .npmr镜像</a></li><li><a href="index.html#t30mirror config">mirror config</a></li></ul>
     </div>
-    
     <div class="content markdown-body">
-        <h2 id="t01. &#x5F02;&#x6B65;">1. &#x5F02;&#x6B65; <a href="#t01. &#x5F02;&#x6B65;"> # </a></h2>
-<ul>
-<li>&#x6240;&#x8C13;&quot;&#x5F02;&#x6B65;&quot;&#xFF0C;&#x7B80;&#x5355;&#x8BF4;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x5206;&#x6210;&#x4E24;&#x6BB5;&#xFF0C;&#x5148;&#x6267;&#x884C;&#x7B2C;&#x4E00;&#x6BB5;&#xFF0C;&#x7136;&#x540E;&#x8F6C;&#x800C;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x4EFB;&#x52A1;&#xFF0C;&#x7B49;&#x505A;&#x597D;&#x4E86;&#x51C6;&#x5907;&#xFF0C;&#x518D;&#x56DE;&#x8FC7;&#x5934;&#x6267;&#x884C;&#x7B2C;&#x4E8C;&#x6BB5;,&#x6BD4;&#x5982;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x662F;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5F02;&#x6B65;&#x7684;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x5C31;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x3002;</li>
-</ul>
-<p><img src="../2020/static/img/asyncfunc1.png" alt=""></p>
-<p>&#x8FD9;&#x79CD;&#x4E0D;&#x8FDE;&#x7EED;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x5C31;&#x53EB;&#x505A;&#x5F02;&#x6B65;&#x3002;&#x76F8;&#x5E94;&#x5730;&#xFF0C;&#x8FDE;&#x7EED;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x5C31;&#x53EB;&#x505A;&#x540C;&#x6B65;&#x3002;</p>
-<p><img src="../2020/static/img/syncfunc.png" alt=""></p>
-<h2 id="t12.&#x9AD8;&#x9636;&#x51FD;&#x6570;">2.&#x9AD8;&#x9636;&#x51FD;&#x6570; <a href="#t12.&#x9AD8;&#x9636;&#x51FD;&#x6570;"> # </a></h2>
-<p>&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x4E00;&#x7B49;&#x516C;&#x6C11;&#xFF0C;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x503C;</p>
-<h3 id="t22.1 &#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x751F;&#x6210;&#x51FD;&#x6570;">2.1 &#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x751F;&#x6210;&#x51FD;&#x6570; <a href="#t22.1 &#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x751F;&#x6210;&#x51FD;&#x6570;"> # </a></h3>
-<pre><code>let toString = Object.prototype.toString;
-let isString = function (obj) {
-  return toString.call(obj) == `[object String]`;
-}
-let isFunction = function (obj) {
-  return toString.call(obj) == `[object Function]`;
-}
-let isType = function (type) {
-  return function (obj) {
-    return toString.call(obj) == `[object ${type}]`;
-  }
-}
-</code></pre><h3 id="t32.2 &#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x9700;&#x8981;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x624D;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;">2.2 &#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x9700;&#x8981;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x624D;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570; <a href="#t32.2 &#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x9700;&#x8981;&#x8C03;&#x7528;&#x591A;&#x6B21;&#x624D;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;"> # </a></h3>
-<pre><code>let after = function(times,task){
-  return function(){
-    if(times--==1){
-      return task.apply(this,arguments);
-    }
-  }
-}
-let fn = after(3,function(){
-  console.log(3);});
-fn();
-</code></pre><h2 id="t43. &#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x7684;&#x8BED;&#x6CD5;&#x76EE;&#x6807;&#xFF0C;&#x5C31;&#x662F;&#x600E;&#x6837;&#x8BA9;&#x5B83;&#x66F4;&#x50CF;&#x540C;&#x6B65;&#x7F16;&#x7A0B;,&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;">3. &#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x7684;&#x8BED;&#x6CD5;&#x76EE;&#x6807;&#xFF0C;&#x5C31;&#x662F;&#x600E;&#x6837;&#x8BA9;&#x5B83;&#x66F4;&#x50CF;&#x540C;&#x6B65;&#x7F16;&#x7A0B;,&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD; <a href="#t43. &#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x7684;&#x8BED;&#x6CD5;&#x76EE;&#x6807;&#xFF0C;&#x5C31;&#x662F;&#x600E;&#x6837;&#x8BA9;&#x5B83;&#x66F4;&#x50CF;&#x540C;&#x6B65;&#x7F16;&#x7A0B;,&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;"> # </a></h2>
-<ul>
-<li>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5B9E;&#x73B0;</li>
-<li>&#x4E8B;&#x4EF6;&#x76D1;&#x542C;</li>
-<li>&#x53D1;&#x5E03;&#x8BA2;&#x9605;</li>
-<li>Promise/A+ &#x548C;&#x751F;&#x6210;&#x5668;&#x51FD;&#x6570;</li>
-<li>async/await</li>
-</ul>
-<h2 id="t54. &#x56DE;&#x8C03;">4. &#x56DE;&#x8C03; <a href="#t54. &#x56DE;&#x8C03;"> # </a></h2>
-<p>&#x6240;&#x8C13;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x4EFB;&#x52A1;&#x7684;&#x7B2C;&#x4E8C;&#x6BB5;&#x5355;&#x72EC;&#x5199;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#x9762;&#xFF0C;&#x7B49;&#x5230;&#x91CD;&#x65B0;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;</p>
-<pre><code>fs.readFile(&apos;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&apos;, function (err, data) {
-  if (err) throw err;
-  console.log(data);
-});
-</code></pre><p> &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x4F18;&#x5148;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;(error-first callbacks),&#x8FD9;&#x4E5F;&#x662F;Node.js&#x672C;&#x8EAB;&#x7684;&#x7279;&#x70B9;&#x4E4B;&#x4E00;&#x3002;</p>
-<h2 id="t65 &#x56DE;&#x8C03;&#x7684;&#x95EE;&#x9898;">5 &#x56DE;&#x8C03;&#x7684;&#x95EE;&#x9898; <a href="#t65 &#x56DE;&#x8C03;&#x7684;&#x95EE;&#x9898;"> # </a></h2>
-<h3 id="t75.1 &#x5F02;&#x5E38;&#x5904;&#x7406;">5.1 &#x5F02;&#x5E38;&#x5904;&#x7406; <a href="#t75.1 &#x5F02;&#x5E38;&#x5904;&#x7406;"> # </a></h3>
-<pre><code>try{
-  //xxx
-}catch(e){//TODO}
-</code></pre><p> &#x5F02;&#x6B65;&#x4EE3;&#x7801;&#x65F6;<code>try catch</code>&#x4E0D;&#x518D;&#x751F;&#x6548;</p>
-<pre><code>let async = function(callback){
-  try{
-    setTimeout(function(){
-      callback();
-    },1000)
-  }catch(e){
-    console.log(&apos;&#x6355;&#x83B7;&#x9519;&#x8BEF;&apos;,e);
-  }
-}
-
-async(function(){
-  console.log(t);
-});
-</code></pre><p> &#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x88AB;&#x5B58;&#x653E;&#x4E86;&#x8D77;&#x6765;&#xFF0C;&#x76F4;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x73AF;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x53D6;&#x51FA;,try&#x53EA;&#x80FD;&#x6355;&#x83B7;&#x5F53;&#x524D;&#x5FAA;&#x73AF;&#x5185;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x5BF9;callback&#x5F02;&#x6B65;&#x65E0;&#x80FD;&#x4E3A;&#x529B;&#x3002;</p>
-<p>Node&#x5728;&#x5904;&#x7406;&#x5F02;&#x5E38;&#x6709;&#x4E00;&#x4E2A;&#x7EA6;&#x5B9A;&#xFF0C;&#x5C06;&#x5F02;&#x5E38;&#x4F5C;&#x4E3A;&#x56DE;&#x8C03;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B9E;&#x53C2;&#x4F20;&#x56DE;&#xFF0C;&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#x8868;&#x793A;&#x6CA1;&#x6709;&#x51FA;&#x9519;&#x3002;</p>
-<pre><code>async(function(err,callback){
-  if(err){
-    console.log(err);
-  }
-});
-</code></pre><p>&#x5F02;&#x6B65;&#x65B9;&#x6CD5;&#x4E5F;&#x8981;&#x9075;&#x5FAA;&#x4E24;&#x4E2A;&#x539F;&#x5219;</p>
-<ul>
-<li>&#x5FC5;&#x987B;&#x5728;&#x5F02;&#x6B65;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#x4F20;&#x5165;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</li>
-<li>&#x5982;&#x679C;&#x51FA;&#x9519;&#x4E86;&#x8981;&#x5411;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F20;&#x5165;&#x5F02;&#x5E38;&#x4F9B;&#x8C03;&#x7528;&#x8005;&#x5224;&#x65AD;<pre><code>let async = function(callback){
-try{
-  setTimeout(function(){
-    if(success)
-      callback(null);
-    else
-      callback(&apos;&#x9519;&#x8BEF;&apos;);
-  },1000)
-}catch(e){
-  console.log(&apos;&#x6355;&#x83B7;&#x9519;&#x8BEF;&apos;,e);
-}
-}
-</code></pre><h3 id="t85.2 &#x56DE;&#x8C03;&#x5730;&#x72F1;">5.2 &#x56DE;&#x8C03;&#x5730;&#x72F1; <a href="#t85.2 &#x56DE;&#x8C03;&#x5730;&#x72F1;"> # </a></h3>
-&#x5F02;&#x6B65;&#x591A;&#x7EA7;&#x4F9D;&#x8D56;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5D4C;&#x5957;&#x975E;&#x5E38;&#x6DF1;&#xFF0C;&#x4EE3;&#x7801;&#x96BE;&#x4EE5;&#x9605;&#x8BFB;&#x7684;&#x7EF4;&#x62A4;<pre><code>let fs = require(&apos;fs&apos;);
-fs.readFile(&apos;template.txt&apos;,&apos;utf8&apos;,function(err,template){
-fs.readFile(&apos;data.txt&apos;,&apos;utf8&apos;,function(err,data){
-  console.log(template+&apos; &apos;+data);
-})
-})
-</code></pre></li>
-</ul>
-<h2 id="t96. &#x5F02;&#x6B65;&#x6D41;&#x7A0B;&#x89E3;&#x51B3;&#x65B9;&#x6848;">6. &#x5F02;&#x6B65;&#x6D41;&#x7A0B;&#x89E3;&#x51B3;&#x65B9;&#x6848; <a href="#t96. &#x5F02;&#x6B65;&#x6D41;&#x7A0B;&#x89E3;&#x51B3;&#x65B9;&#x6848;"> # </a></h2>
-<h3 id="t106.1 &#x4E8B;&#x4EF6;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x6A21;&#x578B;">6.1 &#x4E8B;&#x4EF6;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x6A21;&#x578B; <a href="#t106.1 &#x4E8B;&#x4EF6;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x6A21;&#x578B;"> # </a></h3>
-<p>&#x8BA2;&#x9605;&#x4E8B;&#x4EF6;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E0E;&#x591A;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x5173;&#x8054;</p>
-<pre><code>let fs = require(&apos;fs&apos;);
-let EventEmitter = require(&apos;events&apos;);
-let eve = new EventEmitter();
-let html = {};
-eve.on(&apos;ready&apos;,function(key,value){
-  html[key] = value;
-  if(Object.keys(html).length==2){
-    console.log(html);
-  }
-});
-function render(){
-  fs.readFile(&apos;template.txt&apos;,&apos;utf8&apos;,function(err,template){
-    eve.emit(&apos;ready&apos;,&apos;template&apos;,template);
-  })
-  fs.readFile(&apos;data.txt&apos;,&apos;utf8&apos;,function(err,data){
-    eve.emit(&apos;ready&apos;,&apos;data&apos;,data);
-  })
-}
-render();
-</code></pre><h3 id="t116.2 &#x54E8;&#x5175;&#x53D8;&#x91CF;">6.2 &#x54E8;&#x5175;&#x53D8;&#x91CF; <a href="#t116.2 &#x54E8;&#x5175;&#x53D8;&#x91CF;"> # </a></h3>
-<pre><code>let fs = require(&apos;fs&apos;);
-
-let after = function(times,callback){
-  let result = {};
-  return function(key,value){
-    result[key] = value;
-    if(Object.keys(result).length==times){
-      callback(result);
-    }
-  }
-}
-let done = after(2,function(result){
-  console.log(result);
-});
-
-function render(){
-  fs.readFile(&apos;template.txt&apos;,&apos;utf8&apos;,function(err,template){
-    done(&apos;template&apos;,template);
-  })
-  fs.readFile(&apos;data.txt&apos;,&apos;utf8&apos;,function(err,data){
-    done(&apos;data&apos;,data);
-  })
-}
-rende
-</code></pre><h3 id="t126.3 Promise/Deferred&#x6A21;&#x5F0F;">6.3 Promise/Deferred&#x6A21;&#x5F0F; <a href="#t126.3 Promise/Deferred&#x6A21;&#x5F0F;"> # </a></h3>
-<h3 id="t136.4 &#x751F;&#x6210;&#x5668;Generators/ yield">6.4 &#x751F;&#x6210;&#x5668;Generators/ yield <a href="#t136.4 &#x751F;&#x6210;&#x5668;Generators/ yield"> # </a></h3>
-<ul>
-<li>&#x5F53;&#x4F60;&#x5728;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x67D0;&#x4E2A;&#x70B9;&#x6682;&#x505C;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x505A;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x5DE5;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C; &#x751A;&#x81F3;&#x662F;&#x643A;&#x5E26;&#x4E00;&#x4E9B;&#x65B0;&#x7684;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;</li>
-<li>&#x4E0A;&#x9762;&#x63CF;&#x8FF0;&#x7684;&#x573A;&#x666F;&#x6B63;&#x662F;JavaScript&#x751F;&#x6210;&#x5668;&#x51FD;&#x6570;&#x6240;&#x81F4;&#x529B;&#x4E8E;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;&#x51FD;&#x6570;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B83;&#x5E76;&#x4E0D;&#x4F1A;&#x7ACB;&#x5373;&#x6267;&#x884C;&#xFF0C; &#x800C;&#x662F;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x7684;&#x53BB;&#x6267;&#x884C;&#x8FED;&#x4EE3;&#x64CD;&#x4F5C;&#xFF08;next&#x65B9;&#x6CD5;&#xFF09;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4F60;&#x8C03;&#x7528;&#x751F;&#x6210;&#x5668;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x4F1A;&#x8FD4;&#x56DE;&#x7ED9;&#x4F60;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#x5668;&#x3002;&#x8FED;&#x4EE3;&#x5668;&#x4F1A;&#x904D;&#x5386;&#x6BCF;&#x4E2A;&#x4E2D;&#x65AD;&#x70B9;&#x3002;</li>
-<li>next &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x503C;&#x7684; value &#x5C5E;&#x6027;&#xFF0C;&#x662F; Generator &#x51FD;&#x6570;&#x5411;&#x5916;&#x8F93;&#x51FA;&#x6570;&#x636E;&#xFF1B;next &#x65B9;&#x6CD5;&#x8FD8;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x662F;&#x5411; Generator &#x51FD;&#x6570;&#x4F53;&#x5185;&#x8F93;&#x5165;&#x6570;&#x636E;</li>
-</ul>
-<h4 id="t146.4.1 &#x751F;&#x6210;&#x5668;&#x7684;&#x4F7F;&#x7528;">6.4.1 &#x751F;&#x6210;&#x5668;&#x7684;&#x4F7F;&#x7528; <a href="#t146.4.1 &#x751F;&#x6210;&#x5668;&#x7684;&#x4F7F;&#x7528;"> # </a></h4>
-<pre><code>function* foo () {
-  var index = 0;
-  while (index &lt; 2) {
-    yield index++; //&#x6682;&#x505C;&#x51FD;&#x6570;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x6267;&#x884C;yield&#x540E;&#x7684;&#x64CD;&#x4F5C;
-  }
-}
-var bar =  foo(); // &#x8FD4;&#x56DE;&#x7684;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#x5668;
-
-console.log(bar.next());    // { value: 0, done: false }
-console.log(bar.next());    // { value: 1, done: false }
-console.log(bar.next());    // { value: undefined, done: true }
-</code></pre><h4 id="t156.4.2 Co">6.4.2 Co <a href="#t156.4.2 Co"> # </a></h4>
-<p><code>co</code>&#x662F;&#x4E00;&#x4E2A;&#x4E3A;<code>Node.js</code>&#x548C;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x9020;&#x7684;&#x57FA;&#x4E8E;&#x751F;&#x6210;&#x5668;&#x7684;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x5DE5;&#x5177;&#xFF0C;&#x501F;&#x52A9;&#x4E8E;Promise&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x66F4;&#x52A0;&#x4F18;&#x96C5;&#x7684;&#x65B9;&#x5F0F;&#x7F16;&#x5199;&#x975E;&#x963B;&#x585E;&#x4EE3;&#x7801;&#x3002;</p>
-<pre><code>let fs = require(&apos;fs&apos;);
-function readFile(filename) {
-  return new Promise(function (resolve, reject) {
-    fs.readFile(filename, function (err, data) {
-      if (err)
-        reject(err);
-      else
-        resolve(data);
-    })
-  })
-}
-function *read() {
-  let template = yield readFile(&apos;./template.txt&apos;);
-  let data = yield readFile(&apos;./data.txt&apos;);
-  return template + &apos;+&apos; + data;
-}
-co(read).then(function (data) {
-  console.log(data);
-}, function (err) {
-  console.log(err);
-});
-</code></pre><pre><code>function co(gen) {
-  let it = gen();
-  return new Promise(function (resolve, reject) {
-    !function next(lastVal) {
-      let {value, done} = it.next(lastVal);
-      if (done) {
-        resolve(value);
-      } else {
-        value.then(next, reason =&gt; reject(reason));
-      }
-    }();
-  });
-}
-</code></pre><h2 id="t166.5 Async/ await">6.5 Async/ await <a href="#t166.5 Async/ await"> # </a></h2>
-<p>&#x4F7F;&#x7528;<code>async</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x8FBE;&#x6210;&#x4E4B;&#x524D;&#x4F7F;&#x7528;&#x751F;&#x6210;&#x5668;&#x548C;co&#x51FD;&#x6570;&#x6240;&#x505A;&#x5230;&#x7684;&#x5DE5;&#x4F5C;</p>
-<h3 id="t176.5.1 Async&#x7684;&#x4F18;&#x70B9;">6.5.1 Async&#x7684;&#x4F18;&#x70B9; <a href="#t176.5.1 Async&#x7684;&#x4F18;&#x70B9;"> # </a></h3>
-<ul>
-<li>&#x5185;&#x7F6E;&#x6267;&#x884C;&#x5668;</li>
-<li>&#x66F4;&#x597D;&#x7684;&#x8BED;&#x4E49;</li>
-<li>&#x66F4;&#x5E7F;&#x7684;&#x9002;&#x7528;&#x6027;</li>
-</ul>
-<pre><code>let fs = require(&apos;fs&apos;);
-function readFile(filename) {
-  return new Promise(function (resolve, reject) {
-    fs.readFile(filename, &apos;utf8&apos;, function (err, data) {
-      if (err)
-        reject(err);
-      else
-        resolve(data);
-    })
-  })
-}
-
-async function read() {
-  let template = await readFile(&apos;./template.txt&apos;);
-  let data = await readFile(&apos;./data.txt&apos;);
-  return template + &apos;+&apos; + data;
-}
-let result = read();
-result.then(data=&gt;console.log(data));
-</code></pre><h3 id="t186.5.2 async &#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;">6.5.2 async &#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0; <a href="#t186.5.2 async &#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;"> # </a></h3>
-<p>async &#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5C31;&#x662F;&#x5C06; Generator &#x51FD;&#x6570;&#x548C;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x5668;&#xFF0C;&#x5305;&#x88C5;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#x3002;</p>
-<pre><code>async function read() {
-  let template = await readFile(&apos;./template.txt&apos;);
-  let data = await readFile(&apos;./data.txt&apos;);
-  return template + &apos;+&apos; + data;
-}
-
-// &#x7B49;&#x540C;&#x4E8E;
-function read(){
-  return co(function*() {
-    let template = yield readFile(&apos;./template.txt&apos;);
-    let data = yield readFile(&apos;./data.txt&apos;);
-    return template + &apos;+&apos; + data;
-  });
-}
+        <h2 id="t01. VSCODE">1. VSCODE <a href="index.html#t01. VSCODE"> # </a></h2>
+<h3 id="t11.1 &#x4F7F;&#x7528;node&#x542F;&#x52A8;&#x8C03;&#x8BD5;">1.1 &#x4F7F;&#x7528;node&#x542F;&#x52A8;&#x8C03;&#x8BD5; <a href="index.html#t11.1 &#x4F7F;&#x7528;node&#x542F;&#x52A8;&#x8C03;&#x8BD5;"> # </a></h3>
+<pre><code>{
+            &quot;type&quot;: &quot;node&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;name&quot;: &quot;&#x542F;&#x52A8;&#x7A0B;&#x5E8F;&quot;,
+            &quot;program&quot;: &quot;E:/cli.js&quot;
+        }
 </code></pre><ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/async_function">async_function</a>- <a href="https://www.ruanyifeng.com/blog/2015/04/generator.html">generator</a></li>
+<li><a href="https://cnodejs.org/topic/58f376fec749f63d48fe9548">VSCODE</a><h3 id="t21.2 &#x4FDD;&#x5B58;&#x65F6;&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316;">1.2 &#x4FDD;&#x5B58;&#x65F6;&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316; <a href="index.html#t21.2 &#x4FDD;&#x5B58;&#x65F6;&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316;"> # </a></h3>
+File-&gt;Preferences-&gt;User Settings<pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;editor.formatOnType&quot;</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">&quot;editor.formatOnSave&quot;</span>: <span class="hljs-literal">false</span>
+}
+</code></pre>
+</li>
 </ul>
+<h3 id="t31.3 &#x8BED;&#x8A00;&#x6539;&#x4E3A;&#x82F1;&#x6587;">1.3 &#x8BED;&#x8A00;&#x6539;&#x4E3A;&#x82F1;&#x6587; <a href="index.html#t31.3 &#x8BED;&#x8A00;&#x6539;&#x4E3A;&#x82F1;&#x6587;"> # </a></h3>
+<p>&#x5FEB;&#x6377;&#x952E;Command+Shift+P&#xFF08;Win&#x4E0B;&#x4E3A;Control&#xFF09;&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;,&#x8F93;&#x5165;&#x8BBE;&#x7F6E;&#x8BED;&#x8A00;&#xFF0C;&#x4F1A;&#x6253;&#x5F00;&#x4E00;&#x4E2A;locale.json&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#x9762;&#x6240;&#x793A;</p>
+<p>{
+ // &#x5B9A;&#x4E49; VSCode &#x7684;&#x663E;&#x793A;&#x8BED;&#x8A00;&#x3002;
+ // &#x8BF7;&#x53C2;&#x9605; <a href="http://go.microsoft.com/fwlink/?LinkId=761051&#xFF0C;&#x4E86;&#x89E3;&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;&#x5217;&#x8868;&#x3002;">http://go.microsoft.com/fwlink/?LinkId=761051&#xFF0C;&#x4E86;&#x89E3;&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;&#x5217;&#x8868;&#x3002;</a>
+ // &#x8981;&#x66F4;&#x6539;&#x503C;&#x9700;&#x8981;&#x91CD;&#x542F; VSCode&#x3002;
+ &quot;locale&quot;:&quot;zh-CN&quot; 
+}
+&#x5C06;locale&#x7684;&#x503C;&#x6539;&#x4E3A;en-US&#x4E4B;&#x540E;&#x91CD;&#x542F;VSCode&#x5C31;&#x6062;&#x590D;&#x5230;&#x82F1;&#x6587;&#x7248;&#x672C;&#x7684;&#x4E86;!</p>
+<h3 id="t41.4 &#x5FEB;&#x6377;&#x952E;">1.4 &#x5FEB;&#x6377;&#x952E; <a href="index.html#t41.4 &#x5FEB;&#x6377;&#x952E;"> # </a></h3>
+<ul>
+<li>&#x5217;&#x9009;&#x62E9; alt+shift+&#x5DE6;&#x952E;</li>
+<li>&#x591A;&#x70B9;&#x7F16;&#x8F91; &#x6309;alt&#x70B9;&#x51FB;&#x5DE6;&#x952E;</li>
+<li>&#x683C;&#x5F0F;&#x5316; Alt+shift+f</li>
+</ul>
+<h3 id="t51.5 &#x5355;&#x884C;&#x6CE8;&#x91CA;">1.5 &#x5355;&#x884C;&#x6CE8;&#x91CA; <a href="index.html#t51.5 &#x5355;&#x884C;&#x6CE8;&#x91CA;"> # </a></h3>
+<p>&#x5355;&#x884C;&#x6CE8;&#x91CA; </p>
+<pre><code class="lang-js"><span class="hljs-comment">//.+?(?=[&quot;$\r\n]</span>
+</code></pre>
+<h3 id="t61.6 &#x591A;&#x884C;&#x6CE8;&#x91CA;">1.6 &#x591A;&#x884C;&#x6CE8;&#x91CA; <a href="index.html#t61.6 &#x591A;&#x884C;&#x6CE8;&#x91CA;"> # </a></h3>
+<pre><code class="lang-js">\/\*([\w\W]+?)\*\/
+</code></pre>
+<h3 id="t71.7 &#x7A7A;&#x884C;">1.7 &#x7A7A;&#x884C; <a href="index.html#t71.7 &#x7A7A;&#x884C;"> # </a></h3>
+<pre><code class="lang-js">^\s*(?=\r?$)\n
+</code></pre>
+<h3 id="t81.8 &#x5168;&#x90E8;&#x66FF;&#x6362;">1.8 &#x5168;&#x90E8;&#x66FF;&#x6362; <a href="index.html#t81.8 &#x5168;&#x90E8;&#x66FF;&#x6362;"> # </a></h3>
+<pre><code class="lang-js">((\/\*([\w\W]+?)\*\/)|(\/\/.+?(?=[&quot;$\r\n]))|(^\s*(?=\r?$)\n))
+</code></pre>
+<p><img src="http://img.zhufengpeixun.cn/emptylineregexp.png" alt="emptylineregexp.png"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x8868;&#x8FBE;&#x5F0F;</th>
+<th style="text-align:left">&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">(?:)</td>
+<td style="text-align:left">&#x8868;&#x793A;&#x975E;&#x6355;&#x83B7;&#x5206;&#x7EC4;&#xFF0C;&#x548C;&#x6355;&#x83B7;&#x5206;&#x7EC4;&#x552F;&#x4E00;&#x7684;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF0C;&#x975E;&#x6355;&#x83B7;&#x5206;&#x7EC4;&#x5339;&#x914D;&#x7684;&#x503C;&#x4E0D;&#x4F1A;&#x4FDD;&#x5B58;&#x8D77;&#x6765;</td>
+</tr>
+<tr>
+<td style="text-align:left">(?=pattern)</td>
+<td style="text-align:left">&#x6B63;&#x5411;&#x80AF;&#x5B9A;&#x67E5;&#x627E;(&#x524D;&#x77BB;),&#x540E;&#x9762;&#x5FC5;&#x987B;&#x8DDF;&#x7740;&#x4EC0;&#x4E48;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="t92.MAC">2.MAC <a href="index.html#t92.MAC"> # </a></h2>
+<h3 id="t102.1 &#x6740;&#x6B7B;&#x8FDB;&#x7A0B;">2.1 &#x6740;&#x6B7B;&#x8FDB;&#x7A0B; <a href="index.html#t102.1 &#x6740;&#x6B7B;&#x8FDB;&#x7A0B;"> # </a></h3>
+<p>&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x5360;&#x7528;</p>
+<pre><code class="lang-javascript">lsof -i tcp:<span class="hljs-number">8080</span> 
+</code></pre>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x4F1A;&#x663E;&#x793A;&#x5360;&#x7528;8080&#x7AEF;&#x53E3;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x6709;&#x5176; pid ,&#x53EF;&#x4EE5;&#x901A;&#x8FC7;pid&#x5173;&#x6389;&#x8BE5;&#x8FDB;&#x7A0B;</p>
+<pre><code class="lang-javascript">kill pid
+</code></pre>
+<h3 id="t112.2 &#x67E5;&#x770B;&#x7AEF;&#x53E3;&#x5360;&#x7528;">2.2 &#x67E5;&#x770B;&#x7AEF;&#x53E3;&#x5360;&#x7528; <a href="index.html#t112.2 &#x67E5;&#x770B;&#x7AEF;&#x53E3;&#x5360;&#x7528;"> # </a></h3>
+<h4 id="t122.2.1 lsof">2.2.1 lsof <a href="index.html#t122.2.1 lsof"> # </a></h4>
+<pre><code>lsof -i:port
+</code></pre><pre><code>lsof -i:8080
+</code></pre><h4 id="t132.2.2 netstat">2.2.2 netstat <a href="index.html#t132.2.2 netstat"> # </a></h4>
+<pre><code>netstat -antp | grep port
+</code></pre><pre><code>netstat -antp | grep 8080
+</code></pre><h2 id="t143.&#x5B89;&#x88C5;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x5305;">3.&#x5B89;&#x88C5;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x5305; <a href="index.html#t143.&#x5B89;&#x88C5;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x5305;"> # </a></h2>
+<h3 id="t153.1 &#x5B89;&#x88C5;sharp">3.1 &#x5B89;&#x88C5;sharp <a href="index.html#t153.1 &#x5B89;&#x88C5;sharp"> # </a></h3>
+<ul>
+<li><a href="https://www.iqi360.com/p/sharp-cn">sharp</a>&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6027;&#x80FD;&#x7684;nodejs&#x56FE;&#x50CF;&#x5904;&#x7406;&#x5E93;</li>
+<li><a href="https://www.iqi360.com/p/sharp-cn/docs/5f8b012a5a726a40e3f0f02e">&#x5B89;&#x88C5;sharp</a></li>
+<li><a href="https://www.cnblogs.com/zzsdream/p/13391731.html">&#x5B89;&#x88C5;&#x8FC7;&#x7A0B;&#x4E2D;&#x9047;&#x5230;sharp&#x5B89;&#x88C5;&#x6162;</a></li>
+<li><a href="https://github.com/lovell/sharp-libvips/releases/tag/v8.10.5">sharp-libvips</a></li>
+<li><pre><code class="lang-js">npm config <span class="hljs-keyword">set</span> sharp_binary_host &quot;https://npm.taobao.org/mirrors/sharp&quot;
+npm config <span class="hljs-keyword">set</span> sharp_libvips_binary_host &quot;https://npm.taobao.org/mirrors/sharp-libvips&quot;
+npm install sharp
+</code></pre>
+<h3 id="t163.2 &#x7F16;&#x8BD1;">3.2 &#x7F16;&#x8BD1; <a href="index.html#t163.2 &#x7F16;&#x8BD1;"> # </a></h3>
+</li>
+<li><a href="https://github.com/nodejs/node-gyp#on-windows">node-gyp#on-windows</a></li>
+<li><a href="https://github.com/felixrieseberg/windows-build-tools">windows-build-tools</a></li>
+<li><a href="https://www.python.org/">python</a></li>
+</ul>
+<h3 id="t173.2 cache&#x76EE;&#x5F55;">3.2 cache&#x76EE;&#x5F55; <a href="index.html#t173.2 cache&#x76EE;&#x5F55;"> # </a></h3>
+<ul>
+<li>NPM&#x4F1A;&#x628A;&#x6240;&#x6709;&#x4E0B;&#x8F7D;&#x7684;&#x5305;&#x4FDD;&#x5B58;&#xFF0C;&#x653E;&#x5728;&#x7528;&#x6237;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#xFF0C;&#x5728;&#x6211;&#x7684;windows10&#x673A;&#x5668;&#x4E0A;&#x662F;&#x4FDD;&#x5B58;&#x5728;C:\Users\Administrator\AppData\Roaming\npm-cache&#x4E0B;&#x9762;</li>
+<li>NPM install&#x4E4B;&#x540E;&#x4F1A;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x5305;&#x7684;sha1&#x503C;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5305;&#x4E0E;&#x4ED6;&#x7684;sha1&#x503C;&#x5173;&#x8054;&#x4FDD;&#x5B58;&#x5728;package.lock.json&#x91CC;&#x9762;</li>
+<li>&#x4E0B;&#x6B21;NPM install&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x6839;&#x636E;package.lock.json&#x91CC;&#x9762;&#x4FDD;&#x5B58;&#x7684;sha1&#x503C;&#x53BB;&#x6587;&#x4EF6;&#x5939;C:\Users\Administrator\AppData\Roaming\npm-cache&#x91CC;&#x9762;&#x5BFB;&#x627E;&#x5305;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x518D;&#x6B21;&#x4ECE;&#x7F51;&#x4E0A;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;</li>
+<li>NPM cache verify &#x91CD;&#x65B0;&#x8BA1;&#x7B97;C:\Users\Administrator\AppData\Roaming\npm-cache&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x4E0E;sha1&#x503C;&#x5339;&#x914D;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5339;&#x914D;&#x53EF;&#x80FD;&#x5220;&#x9664;&#xFF1F;</li>
+<li>NPM cache clean --force &#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x4ECE;C:\Users\Administrator\AppData\Roaming\npm-cache&#x4E0B;&#x5220;&#x9664;&#x6240;&#x6709;&#x7F13;&#x5B58;&#x6587;&#x4EF6;</li>
+<li><p>NPM&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7B97;&#x51FA;&#x6765;&#x7684;sha1&#x8C8C;&#x4F3C;&#x4E0D;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x522B;&#x4EBA;&#x7684;package.lock.json&#x4F1A;&#x62A5;sha1&#x4E0D;&#x5339;&#x914D;&#x7684;error</p>
+</li>
+<li><p><code>yarn cache list</code> &#x67E5;&#x770B;&#x7F13;&#x5B58;&#x7684;&#x5305;</p>
+</li>
+<li><code>yarn cache dir</code> &#x67E5;&#x8BE2;cache&#x7F13;&#x5B58;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x8DEF;&#x5F84;</li>
+<li><p><code>yarn cache clean</code>  yarn &#x6E05;&#x9664;&#x7F13;&#x5B58;</p>
+</li>
+<li><p><code>npm cache clean --force</code> npm&#x6E05;&#x9664;&#x7F13;&#x5B58;</p>
+</li>
+</ul>
+<h2 id="t184.Yarn">4.Yarn <a href="index.html#t184.Yarn"> # </a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x547D;&#x4EE4;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">yarn -v</td>
+<td style="text-align:left">&#x67E5;&#x770B;yarn&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td style="text-align:left">yarn config list</td>
+<td style="text-align:left">&#x67E5;&#x770B;yarn&#x7684;&#x6240;&#x6709;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td style="text-align:left">yarn config set registry <a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org/</a></td>
+<td style="text-align:left">&#x4FEE;&#x6539;yarn&#x7684;&#x6E90;&#x955C;&#x50CF;&#x4E3A;&#x6DD8;&#x5B9D;&#x6E90;</td>
+</tr>
+<tr>
+<td style="text-align:left">yarn config set global-folder &quot;D:\RTE\Yarn\global&quot;</td>
+<td style="text-align:left">&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x76EE;&#x5F55;, &#x5148;&#x521B;&#x5EFA;&#x597D;&#x76EE;&#x5F55;(global), &#x6211;&#x653E;&#x5728;&#x4E86;Yarn&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;(D:\RTE\Yarn\global)</td>
+</tr>
+<tr>
+<td style="text-align:left">yarn config set prefix &quot;D:\RTE\Yarn\global\&quot;</td>
+<td style="text-align:left">&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x7684;bin&#x76EE;&#x5F55;&#x4F4D;&#x7F6E;</td>
+</tr>
+<tr>
+<td style="text-align:left">yarn config set cache-folder &quot;D:\RTE\Yarn\cache&quot;</td>
+<td style="text-align:left">&#x4FEE;&#x6539;&#x5168;&#x5C40;&#x7F13;&#x5B58;&#x76EE;&#x5F55;, &#x5148;&#x521B;&#x5EFA;&#x597D;&#x76EE;&#x5F55;(cache), &#x548C;global&#x653E;&#x5728;&#x540C;&#x4E00;&#x5C42;&#x76EE;&#x5F55;&#x4E0B;</td>
+</tr>
+<tr>
+<td style="text-align:left">yarn config list</td>
+<td style="text-align:left">&#x67E5;&#x770B;&#x6240;&#x6709;&#x914D;&#x7F6E;</td>
+</tr>
+<tr>
+<td style="text-align:left">yarn global bin</td>
+<td style="text-align:left">&#x67E5;&#x770B;&#x5F53;&#x524D;yarn&#x7684;bin&#x7684;&#x4F4D;&#x7F6E;</td>
+</tr>
+<tr>
+<td style="text-align:left">yarn global dir</td>
+<td style="text-align:left">&#x67E5;&#x770B;&#x5F53;&#x524D;yarn&#x7684;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x4F4D;&#x7F6E;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="t195.lerna">5.lerna <a href="index.html#t195.lerna"> # </a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x547D;&#x4EE4;</th>
+<th style="text-align:left">&#x529F;&#x80FD;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">lerna bootstrap</td>
+<td style="text-align:left">&#x5B89;&#x88C5;&#x4F9D;&#x8D56;</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna clean</td>
+<td style="text-align:left">&#x5220;&#x9664;&#x5404;&#x4E2A;&#x5305;&#x4E0B;&#x7684;node_modules</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna init</td>
+<td style="text-align:left">&#x521B;&#x5EFA;&#x65B0;&#x7684;lerna&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna list</td>
+<td style="text-align:left">&#x67E5;&#x770B;&#x672C;&#x5730;&#x5305;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna changed</td>
+<td style="text-align:left">&#x663E;&#x793A;&#x81EA;&#x4E0A;&#x6B21;release tag&#x4EE5;&#x6765;&#x6709;&#x4FEE;&#x6539;&#x7684;&#x5305;&#xFF0C; &#x9009;&#x9879;&#x901A; list</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna diff</td>
+<td style="text-align:left">&#x663E;&#x793A;&#x81EA;&#x4E0A;&#x6B21;release tag&#x4EE5;&#x6765;&#x6709;&#x4FEE;&#x6539;&#x7684;&#x5305;&#x7684;&#x5DEE;&#x5F02;&#xFF0C; &#x6267;&#x884C; git diff</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna exec</td>
+<td style="text-align:left">&#x5728;&#x6BCF;&#x4E2A;&#x5305;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x4EFB;&#x610F;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna run</td>
+<td style="text-align:left">&#x6267;&#x884C;&#x6BCF;&#x4E2A;&#x5305;package.json&#x4E2D;&#x7684;&#x811A;&#x672C;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna add</td>
+<td style="text-align:left">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5305;&#x7684;&#x7248;&#x672C;&#x4E3A;&#x5404;&#x4E2A;&#x5305;&#x7684;&#x4F9D;&#x8D56;</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna import</td>
+<td style="text-align:left">&#x5F15;&#x5165;package</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna link</td>
+<td style="text-align:left">&#x94FE;&#x63A5;&#x4E92;&#x76F8;&#x5F15;&#x7528;&#x7684;&#x5E93;</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna create</td>
+<td style="text-align:left">&#x65B0;&#x5EFA;package</td>
+</tr>
+<tr>
+<td style="text-align:left">lerna publish</td>
+<td style="text-align:left">&#x53D1;&#x5E03;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="t206.yarn">6.yarn <a href="index.html#t206.yarn"> # </a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x4F5C;&#x7528;</th>
+<th style="text-align:left">&#x547D;&#x4EE4;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x67E5;&#x770B;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x4FE1;&#x606F;</td>
+<td style="text-align:left">yarn workspaces info</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x7ED9;&#x6839;&#x7A7A;&#x95F4;&#x6DFB;&#x52A0;&#x4F9D;&#x8D56;</td>
+<td style="text-align:left">yarn add chalk cross-spawn fs-extra --ignore-workspace-root-check</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x7ED9;&#x67D0;&#x4E2A;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x4F9D;&#x8D56;</td>
+<td style="text-align:left">yarn workspace create-react-app3 add commander</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x5220;&#x9664;&#x6240;&#x6709;&#x7684; node_modules</td>
+<td style="text-align:left">lerna clean &#x7B49;&#x4E8E; yarn workspaces run clean</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x5B89;&#x88C5;&#x548C;link</td>
+<td style="text-align:left">yarn install &#x7B49;&#x4E8E; lerna bootstrap --npm-client yarn --use-workspaces</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x91CD;&#x65B0;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684; node_modules</td>
+<td style="text-align:left">yarn install --force</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x67E5;&#x770B;&#x7F13;&#x5B58;&#x76EE;&#x5F55;</td>
+<td style="text-align:left">yarn cache dir</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6E05;&#x9664;&#x672C;&#x5730;&#x7F13;&#x5B58;</td>
+<td style="text-align:left">yarn cache clean</td>
+</tr>
+</tbody>
+</table>
+<h2 id="t217.&#x8C03;&#x8BD5;&#x547D;&#x4EE4;">7.&#x8C03;&#x8BD5;&#x547D;&#x4EE4; <a href="index.html#t217.&#x8C03;&#x8BD5;&#x547D;&#x4EE4;"> # </a></h2>
+<p>.vscode\launch.json</p>
+<pre><code class="lang-json">{
+    <span class="hljs-attr">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.2.0&quot;</span>,
+    <span class="hljs-attr">&quot;configurations&quot;</span>: [
+        {
+            <span class="hljs-attr">&quot;type&quot;</span>: <span class="hljs-string">&quot;node&quot;</span>,
+            <span class="hljs-attr">&quot;request&quot;</span>: <span class="hljs-string">&quot;launch&quot;</span>,
+            <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;vue-cli&quot;</span>,
+            <span class="hljs-attr">&quot;cwd&quot;</span>:<span class="hljs-string">&quot;${workspaceFolder}&quot;</span>,
+            <span class="hljs-attr">&quot;runtimeExecutable&quot;</span>: <span class="hljs-string">&quot;npm&quot;</span>,
+            <span class="hljs-attr">&quot;runtimeArgs&quot;</span>: [
+                <span class="hljs-string">&quot;run&quot;</span>,
+                <span class="hljs-string">&quot;create&quot;</span>
+            ],
+            <span class="hljs-attr">&quot;port&quot;</span>:<span class="hljs-number">9229</span>,
+            <span class="hljs-attr">&quot;autoAttachChildProcesses&quot;</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">&quot;stopOnEntry&quot;</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">&quot;skipFiles&quot;</span>: [
+                <span class="hljs-string">&quot;&lt;node_internals&gt;/**&quot;</span>
+            ]
+        }
+    ]
+}
+</code></pre>
+<h2 id="t228.&#x914D;&#x7F6E;alias">8.&#x914D;&#x7F6E;alias <a href="index.html#t228.&#x914D;&#x7F6E;alias"> # </a></h2>
+<p>Create React App&#x65E0;eject&#x914D;&#x7F6E;
+&#x6253;&#x5305;&#x6210;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x914D;&#x7F6E;
+&#x5728;package.json&#x4E2D;&#x589E;&#x52A0;&#xFF1A;</p>
+<pre><code class="lang-json">&quot;homepage&quot;: &quot;.&quot;
+</code></pre>
+<h2 id="t239.&#x89E3;&#x51B3;vscode&#x5361;&#x987F;&#x95EE;&#x9898;">9.&#x89E3;&#x51B3;vscode&#x5361;&#x987F;&#x95EE;&#x9898; <a href="index.html#t239.&#x89E3;&#x51B3;vscode&#x5361;&#x987F;&#x95EE;&#x9898;"> # </a></h2>
+<p>vscode&#x5728;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x5668;&#x89C2;&#x5BDF;CPU&#x5360;&#x7528;&#x7387;100%
+&#x89E3;&#x51B3;&#x65B9;&#x6848; VScode&#x4E2D;&#x6587;&#x4EF6;-&gt;&#x9996;&#x9009;&#x9879;-&gt;&#x8BBE;&#x7F6E; &#xFF0C;&#x4E4B;&#x540E;&#x641C;&#x7D22;&quot;search.followSymlinks&quot;:true,&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x4E3A;false</p>
+<p><img src="https://static.zhufengpeixun.com/20210805195616161_1637830390170.png" alt="exclude"></p>
+<h2 id="t2410. window&#x7F16;&#x8BD1;C++">10. window&#x7F16;&#x8BD1;C++ <a href="index.html#t2410. window&#x7F16;&#x8BD1;C++"> # </a></h2>
+<ul>
+<li><a href="https://github.com/nodejs/node-gyp">node-gyp</a></li>
+<li><a href="https://www.npmjs.com/package/node-sass">node-sass</a></li>
+</ul>
+<h3 id="t2510.1 Python executable python2 in the PATH">10.1 Python executable python2 in the PATH <a href="index.html#t2510.1 Python executable python2 in the PATH"> # </a></h3>
+<ul>
+<li>npm install &#x62A5;&#x9519; check python checking for Python executable python2 in the PATH</li>
+<li>&#x5220;&#x9664; node_modules &#x6587;&#x4EF6;&#x5939;</li>
+<li>&#x5728; Terminal &#x8FD0;&#x884C; <code>npm install --global windows-build-tools --save</code></li>
+<li>&#x518D;&#x5B89;&#x88C5; <code>npm install node-sass --save</code></li>
+<li>&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x9519;&#x8BEF;&#x5E94;&#x8BE5;&#x5C31;&#x5DF2;&#x7ECF;&#x89E3;&#x51B3;&#x4E86;&#xFF0C;&#x6536;&#x5230;&#x4E86; <code>gyp info ok</code> &#x7684;&#x63D0;&#x793A;&#xFF01;</li>
+<li>&#x5982;&#x679C;&#x9047;&#x5230; <code>Node Sass could not find a binding for your current environment</code>&#xFF0C;&#x518D;&#x8FD0;&#x884C; <code>npm rebuild node-sass</code> &#x5C31;&#x53EF;&#x4EE5;&#x4E86;</li>
+</ul>
+<h3 id="t2610.2 getaddrinfo ENOENT raw.githubusercontent.com">10.2 getaddrinfo ENOENT raw.githubusercontent.com <a href="index.html#t2610.2 getaddrinfo ENOENT raw.githubusercontent.com"> # </a></h3>
+<ul>
+<li>&#x70B9;&#x5F00;&#x7F51;&#x5740; <a href="https://www.ipaddress.com/">https://www.ipaddress.com/</a> &#xFF0C;&#x8F93;&#x5165;<code>raw.githubusercontent.com</code>&#xFF0C;&#x70B9;&#x51FB;&#x67E5;&#x8BE2;&#xFF1A;</li>
+<li>&#x4FEE;&#x6539;hosts&#x6587;&#x4EF6; <code>C:\Windows\System32\drivers\etc\hosts</code>  <code>ip raw.githubusercontent.com</code></li>
+<li>npm install</li>
+</ul>
+<h3 id="t2710.3  npm ERR! gyp verb which failed Error: not found: python2">10.3  npm ERR! gyp verb which failed Error: not found: python2 <a href="index.html#t2710.3  npm ERR! gyp verb which failed Error: not found: python2"> # </a></h3>
+<ul>
+<li>npm config set python <code>C:/Python27/python.exe</code></li>
+</ul>
+<h3 id="t2810.4">10.4 <a href="index.html#t2810.4"> # </a></h3>
+<p>npm ERR! gyp ERR! stack Error: spawn C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\15.0\Bin\MSBuild.exe ENOENT</p>
+<p>npm cache clean --force</p>
+<p>C:\Users\zhangrenyang\AppData\Roaming\npm\node_modules\node-gyp\gyp\pylib\gyp\MSVSVersion.py</p>
+<p>npm audit fix</p>
+<h2 id="t2911. .npmr&#x955C;&#x50CF;">11. .npmr&#x955C;&#x50CF; <a href="index.html#t2911. .npmr&#x955C;&#x50CF;"> # </a></h2>
+<h1 id="t30mirror config">mirror config <a href="index.html#t30mirror config"> # </a></h1>
+<p>sharp_dist_base_url = <a href="https://npm.taobao.org/mirrors/sharp-libvips/v8.9.1/">https://npm.taobao.org/mirrors/sharp-libvips/v8.9.1/</a>
+profiler_binary_host_mirror = <a href="https://npm.taobao.org/mirrors/node-inspector/">https://npm.taobao.org/mirrors/node-inspector/</a>
+fse_binary_host_mirror = <a href="https://npm.taobao.org/mirrors/fsevents">https://npm.taobao.org/mirrors/fsevents</a>
+node_sqlite3_binary_host_mirror = <a href="https://npm.taobao.org/mirrors">https://npm.taobao.org/mirrors</a>
+sqlite3_binary_host_mirror = <a href="https://npm.taobao.org/mirrors">https://npm.taobao.org/mirrors</a>
+sqlite3_binary_site = <a href="https://npm.taobao.org/mirrors/sqlite3">https://npm.taobao.org/mirrors/sqlite3</a>
+sass_binary_site = <a href="https://npm.taobao.org/mirrors/node-sass">https://npm.taobao.org/mirrors/node-sass</a>
+electron_mirror = <a href="https://npm.taobao.org/mirrors/electron/">https://npm.taobao.org/mirrors/electron/</a>
+puppeteer_download_host = <a href="https://npm.taobao.org/mirrors">https://npm.taobao.org/mirrors</a>
+chromedriver_cdnurl = <a href="https://npm.taobao.org/mirrors/chromedriver">https://npm.taobao.org/mirrors/chromedriver</a>
+operadriver_cdnurl = <a href="https://npm.taobao.org/mirrors/operadriver">https://npm.taobao.org/mirrors/operadriver</a>
+phantomjs_cdnurl = <a href="https://npm.taobao.org/mirrors/phantomjs">https://npm.taobao.org/mirrors/phantomjs</a>
+python_mirror = <a href="https://npm.taobao.org/mirrors/python">https://npm.taobao.org/mirrors/python</a>
+registry = <a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org/</a>
+disturl = <a href="https://npm.taobao.org/dist">https://npm.taobao.org/dist</a></p>
+<p>git config --global http.proxy &quot;127.0.0.1:33210&quot;</p>
 
-        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
     </div>
-    
 </div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+    aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginModalLabel">请登录</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="username" class="control-label">姓名:</label>
+                        <input type="text" class="form-control" id="username" placeholder="珠峰架构VIP会员系统用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="control-label">密码:</label>
+                        <input type="text" class="form-control" id="password" placeholder="珠峰架构VIP会员系统密码">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                    data-dismiss="modal">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+let zhufengjiagou = localStorage.getItem('zhufengjiagou');
+const host = 'http://login.zhufengpeixun.com';
+if(zhufengjiagou){
+  fetch(host+'/check',{method:"GET",mode: 'cors',
+　　headers: {'Content-Type': 'application/json', authorization: `Bearer ${zhufengjiagou}`}}).then(response => response.json()).then(res => {
+    if(res.success){
+     
+    }else{
+      $('#loginModal').modal('show')
+    }
+  }) 
+}else{
+   $('#loginModal').modal('show')
+}
 
-<script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+$('#loginModal').on('hidden.bs.modal', function (event) {
+  var modal = $(this)
+  let username = modal.find('.modal-body #username').val();
+  let password = modal.find('.modal-body #password').val();
+  fetch(host+'/login',{method:"POST",mode: 'cors',
+　　headers: {'Content-Type': 'application/json'},
+　　body:JSON.stringify({username,password})}).then(response => response.json()).then(res => {
+    if(res.success){
+      localStorage.setItem('zhufengjiagou',res.zhufengjiagou);
+    }else{
+      window.location.href = 'http://www.zhufengpeixun.cn';
+    }
+  })
+})
+</script>
 <script>
 $('.warpper .page-toc ul ul li a').on('click',function(){
   $('.warpper .page-toc ul ul li a').removeClass('my-active')
   $(this).addClass('my-active')
 })
-
 $('.logo').on('mouseenter',function(){
   $('.nav').height('450px');
 })
@@ -292,61 +459,6 @@ $('.logo').on('click',function(){
   $('.nav').css('display','none');
  $('.warpper').css('padding','0px');
 })
-// if (!$('.understand-me').length) {
-  //   var bar = $(window).height() - $('.navbar ').height() - $('.page-toc').position().top;
-  //   var count = bar / 26 / 2;
-  //   var barHeight = $('.page-toc').outerHeight();
-  //   $('.page-toc li').eq(0).children('a').addClass('red');
-  //   var arr = [];
-  //   $("h1,h2,h3,h4,h5,h6").each(function () {
-  //     arr.push($(this).position().top);
-  //   });
-  //   var timer
-  //   function dark() {
-  //     clearTimeout(timer)
-  //      timer = setTimeout(function () {
-  //      var top = Math.abs($('.page-toc > ul').position().top);
-  //      var cur = $('.content').scrollTop();
-  //      for (var i = arr.length; i >= 0; i--) {
-  //        if (arr[i] <= cur) {
-  //          break;
-  //        }
-  //      }
-  //      if (i === -1) {
-  //        i = 0;
-  //      }
-  //      $('.page-toc li a').removeClass('red');
-  //      $('.page-toc li').eq(i).children('a').addClass('red');
-  //      let height = $('.page-toc li').eq(i).position().top-$('.page-toc').height(); // 如果当前的offset出去了 回到中间可好？
-  //      $('.page-toc').scrollTop(height+$('.page-toc').height()/2);
-  //    },200)
-  //   }
-
-  //   $('.content').on('scroll', dark);
-  // }
 </script>
-<style>
-
-    /* ::-webkit-scrollbar{width:14px;}
-    ::-webkit-scrollbar-track{background-color:transparent;}
-    ::-webkit-scrollbar-thumb{background-color:transparent;}
-    ::-webkit-scrollbar-thumb:hover {background-color:transparent}
-    ::-webkit-scrollbar-thumb:active {background-color:transparent} */
-
-    .page-toc > ul .red {
-        background: #f3f3f3;
-        z-index: 1;
-        border-left: 3px solid #009a61;
-        -webkit-transition: all .2s ease;
-        transition: all .2s ease;
-        color: #000
-    }
-
-
-
-
-
-</style>
-<script type="text/javascript"  src="https://idm-su.baidu.com/su_new.js"></script>
 </body>
 </html>
